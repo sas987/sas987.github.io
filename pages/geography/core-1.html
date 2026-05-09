@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bihar Geography — Part 1 | BPSC Prelims Master Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=JetBrains+Mono:wght@400;500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0e0b;--bg2:#161410;--bg3:#1d1b17;--bg4:#252320;--surface:#2a2824;--border:#3a3730;--text:#e8e2d5;--text2:#b8b0a0;--text3:#7a7060;--gold:#d4a843;--gold2:#e8c068;--amber:#c8843a;--red:#c85040;--green:#6a9e60;--blue:#5888b8;--teal:#4a9898;--sidebar-w:280px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:16px;line-height:1.75;display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--bg2);border-right:1px solid var(--border);position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100;display:flex;flex-direction:column}
+.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-track{background:var(--bg2)}.sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.sidebar-header{padding:24px 20px 20px;border-bottom:1px solid var(--border);background:var(--bg2);position:sticky;top:0;z-index:10}
+.sidebar-part-badge{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;display:block}
+.sidebar-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--text);line-height:1.3}
+.sidebar-sub{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--text3);margin-top:4px}
+.nav-section{padding:6px 0}
+.nav-section-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.2em;color:var(--text3);text-transform:uppercase;padding:12px 20px 4px}
+.nav-item{display:block;padding:7px 20px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text2);text-decoration:none;border-left:2px solid transparent;transition:all .15s ease;cursor:pointer;line-height:1.4}
+.nav-item:hover{color:var(--gold);background:rgba(212,168,67,.05);border-left-color:rgba(212,168,67,.3)}
+.nav-item.active{color:var(--gold);background:rgba(212,168,67,.08);border-left-color:var(--gold);font-weight:500}
+.nav-item .nav-num{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);margin-right:8px}
+.sidebar-footer{margin-top:auto;padding:16px 20px;border-top:1px solid var(--border);font-family:'DM Sans',sans-serif;font-size:11px;color:var(--text3);line-height:1.6}
+.main{margin-left:var(--sidebar-w);flex:1;min-width:0}
+.hero{background:var(--bg2);border-bottom:1px solid var(--border);padding:60px 64px 48px;position:relative;overflow:hidden}
+.hero::before{content:'BIHAR';position:absolute;right:-20px;top:-20px;font-family:'Playfair Display',serif;font-size:140px;font-weight:900;color:rgba(212,168,67,.04);letter-spacing:-4px;pointer-events:none;line-height:1}
+.hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.hero-eyebrow::after{content:'';display:block;width:40px;height:1px;background:var(--gold);opacity:.5}
+.hero-title{font-family:'Playfair Display',serif;font-size:52px;font-weight:900;line-height:1.05;color:var(--text);margin-bottom:8px;letter-spacing:-1px}
+.hero-title span{color:var(--gold);font-style:italic}
+.hero-subtitle{font-family:'Source Serif 4',serif;font-size:18px;color:var(--text2);margin-top:12px;font-style:italic;font-weight:300}
+.hero-stats{display:flex;gap:32px;margin-top:32px;padding-top:28px;border-top:1px solid var(--border)}
+.hero-stat{display:flex;flex-direction:column;gap:4px}
+.hero-stat-num{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--gold);line-height:1}
+.hero-stat-label{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.08em}
+.content{padding:0 64px 80px;max-width:900px}
+.section{padding-top:56px;border-top:1px solid var(--border);margin-top:48px}
+.section:first-child{border-top:none;margin-top:0;padding-top:48px}
+.section-number{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;display:block}
+.section-title{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:var(--text);line-height:1.15;margin-bottom:6px;letter-spacing:-.5px}
+.section-desc{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text3);margin-bottom:28px;font-style:italic}
+.subsection{margin-top:36px}
+.subsection-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:600;color:var(--text);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+.subsection-title .bullet{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0}
+.exam-box{background:linear-gradient(135deg,rgba(212,168,67,.08),rgba(212,168,67,.03));border:1px solid rgba(212,168,67,.25);border-left:3px solid var(--gold);border-radius:4px;padding:16px 20px;margin:20px 0}
+.exam-box-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.exam-box-label::before{content:'★';font-size:10px}
+.exam-box p,.exam-box li{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);line-height:1.6}
+.exam-box ul{list-style:none;padding:0}
+.exam-box li{padding:3px 0 3px 16px;position:relative}
+.exam-box li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:12px}
+.warn-box{background:rgba(200,80,64,.07);border:1px solid rgba(200,80,64,.2);border-left:3px solid var(--red);border-radius:4px;padding:14px 18px;margin:16px 0}
+.warn-box-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:var(--red);letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+.warn-box p{font-family:'DM Sans',sans-serif;font-size:13.5px;color:#d4907a;line-height:1.55}
+.info-box{background:rgba(88,136,184,.07);border:1px solid rgba(88,136,184,.2);border-left:3px solid var(--blue);border-radius:4px;padding:14px 18px;margin:16px 0}
+.info-box-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:var(--blue);letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+.info-box p,.info-box li{font-family:'DM Sans',sans-serif;font-size:13.5px;color:#90b8d8;line-height:1.6}
+.info-box ul{list-style:none;padding:0}.info-box li{padding-left:14px;position:relative}.info-box li::before{content:'·';position:absolute;left:0;color:var(--blue)}
+.fact-table{width:100%;border-collapse:collapse;margin:20px 0;font-family:'DM Sans',sans-serif}
+.fact-table th{background:var(--bg3);color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:10px 16px;text-align:left;border:1px solid var(--border);font-family:'JetBrains Mono',monospace}
+.fact-table td{padding:10px 16px;font-size:14px;color:var(--text);border:1px solid var(--border);line-height:1.5;vertical-align:top}
+.fact-table tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+.fact-table tr:hover td{background:rgba(212,168,67,.04)}
+.fact-table td.key{color:var(--gold2);font-weight:600;font-size:13px;white-space:nowrap}
+.fact-table td.hl{color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700}
+.river-card{background:var(--bg3);border:1px solid var(--border);border-radius:6px;margin:16px 0;overflow:hidden}
+.river-card-header{background:var(--surface);padding:14px 20px;display:flex;align-items:baseline;gap:12px;border-bottom:1px solid var(--border)}
+.river-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--text)}
+.river-alias{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--teal);font-style:italic}
+.river-tag{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--blue);background:rgba(88,136,184,.12);padding:3px 10px;border-radius:20px}
+.river-card-body{padding:16px 20px}
+.river-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.river-fact-item{display:flex;flex-direction:column;gap:2px}
+.river-fact-label{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:.15em}
+.river-fact-value{font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--text);line-height:1.4}
+.river-fact-value strong{color:var(--gold2)}
+.bpsc-q{background:var(--bg4);border:1px solid var(--border);border-radius:4px;padding:14px 18px;margin:12px 0}
+.bpsc-q-label{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--amber);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px}
+.bpsc-q-text{font-family:'Source Serif 4',serif;font-size:14px;color:var(--text);font-style:italic;line-height:1.55;margin-bottom:6px}
+.bpsc-q-ans{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--green)}
+.bpsc-q-ans::before{content:'✓ '}
+p{margin-bottom:14px;color:var(--text2);font-size:15.5px;line-height:1.8}
+strong{color:var(--text);font-weight:600}
+em{color:var(--gold2);font-style:normal;font-weight:600}
+ul.cl{list-style:none;padding:0;margin:10px 0 16px}
+ul.cl li{padding:6px 0 6px 22px;position:relative;font-family:'DM Sans',sans-serif;font-size:14.5px;color:var(--text2);line-height:1.5;border-bottom:1px solid rgba(255,255,255,.03)}
+ul.cl li:last-child{border-bottom:none}
+ul.cl li::before{content:'◆';position:absolute;left:0;color:var(--gold);font-size:8px;top:10px}
+ul.cl li strong{color:var(--text)}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:10px;padding:2px 8px;border-radius:3px;margin:2px 3px 2px 0;font-weight:600}
+.tag-red{background:rgba(200,80,64,.15);color:#e09080}
+.tag-green{background:rgba(106,158,96,.15);color:#8ec480}
+.tag-gold{background:rgba(212,168,67,.15);color:var(--gold2)}
+.divider{height:1px;background:var(--border);margin:28px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.grid-card{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:16px}
+.grid-card-title{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.grid-card ul{list-style:none;padding:0}
+.grid-card li{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.03);line-height:1.4}
+.grid-card li:last-child{border-bottom:none}
+.grid-card li strong{color:var(--text)}
+.highlight-row{display:flex;align-items:center;background:var(--bg3);border:1px solid rgba(212,168,67,.2);border-radius:4px;padding:12px 16px;gap:12px;margin:8px 0}
+.highlight-row-icon{font-size:18px;flex-shrink:0}
+.highlight-row-text{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);line-height:1.5}
+.highlight-row-text small{display:block;color:var(--text3);font-size:12px;margin-top:2px}
+.memo{background:var(--bg4);border-radius:4px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--teal);line-height:1.7;border-left:2px solid var(--teal)}
+.memo strong{color:var(--gold)}
+.progress-bar{position:fixed;top:0;left:var(--sidebar-w);right:0;height:2px;background:rgba(212,168,67,.15);z-index:200}
+.progress-fill{height:100%;background:var(--gold);width:0%;transition:width .1s linear}
+.pull-quote{border-left:3px solid var(--gold);padding:12px 20px;margin:24px 0;background:rgba(212,168,67,.04);border-radius:0 4px 4px 0}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:17px;font-style:italic;color:var(--text);line-height:1.6;margin:0}
+@media(max-width:900px){.sidebar{display:none}.main{margin-left:0}.hero{padding:32px 24px}.content{padding:0 24px 60px}.grid-2{grid-template-columns:1fr}.river-facts{grid-template-columns:1fr}.hero-stats{flex-wrap:wrap;gap:20px}.hero-title{font-size:36px}}
+</style>
+</head>
+<body>
+<div class="progress-bar"><div class="progress-fill" id="pf"></div></div>
+
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <span class="sidebar-part-badge">Part I of III</span>
+    <div class="sidebar-title">Bihar Geography</div>
+    <div class="sidebar-sub">BPSC Prelims Zero-Failure Guide</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Physical Geography</div>
+    <a class="nav-item" href="#s1"><span class="nav-num">01</span>Location & Extent</a>
+    <a class="nav-item" href="#s2"><span class="nav-num">02</span>Physical Divisions</a>
+    <a class="nav-item" href="#s3"><span class="nav-num">03</span>Rivers of Bihar</a>
+    <a class="nav-item" href="#s3a"><span class="nav-num">↳</span>Ganga</a>
+    <a class="nav-item" href="#s3b"><span class="nav-num">↳</span>North Bihar Rivers</a>
+    <a class="nav-item" href="#s3c"><span class="nav-num">↳</span>South Bihar Rivers</a>
+    <a class="nav-item" href="#s3d"><span class="nav-num">↳</span>Lakes & Wetlands</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Climate & Soil</div>
+    <a class="nav-item" href="#s4"><span class="nav-num">04</span>Climate of Bihar</a>
+    <a class="nav-item" href="#s5"><span class="nav-num">05</span>Soils of Bihar</a>
+    <a class="nav-item" href="#s6"><span class="nav-num">06</span>Forests & Vegetation</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Terrain & Wildlife</div>
+    <a class="nav-item" href="#s7"><span class="nav-num">07</span>Hills & Highlands</a>
+    <a class="nav-item" href="#s8"><span class="nav-num">08</span>Wildlife Sanctuaries</a>
+    <a class="nav-item" href="#s9"><span class="nav-num">09</span>PYQ Drills</a>
+  </div>
+  <div class="sidebar-footer">🎯 Rivers & Climate = 8–12 marks per paper. Master these first.</div>
+</nav>
+
+<main class="main">
+<div class="hero">
+  <div class="hero-eyebrow">BPSC Prelims 2026 — Zero Scope of Failure</div>
+  <h1 class="hero-title">Bihar <span>Geography</span><br>Master Guide</h1>
+  <div class="hero-subtitle">Part I · Physical Geography · Rivers · Climate · Soils · Forests · Hills</div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hero-stat-num">15–20</div><div class="hero-stat-label">Questions Per Paper</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">38</div><div class="hero-stat-label">Districts Covered</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">3</div><div class="hero-stat-label">Guide Parts Total</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">94,163</div><div class="hero-stat-label">sq km — State Area</div></div>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- S1: LOCATION -->
+<section class="section" id="s1">
+<span class="section-number">Section 01</span>
+<h2 class="section-title">Location & Extent</h2>
+<div class="section-desc">Most frequently tested "basic" facts — guaranteed 2–3 marks every paper</div>
+
+<table class="fact-table">
+<tr><td class="key">Latitude</td><td><strong>24°20'10″ N</strong> to <strong>27°31'15″ N</strong></td></tr>
+<tr><td class="key">Longitude</td><td><strong>83°19'50″ E</strong> to <strong>88°17'40″ E</strong></td></tr>
+<tr><td class="key">Total Area</td><td class="hl">94,163 sq km &nbsp;<span style="color:var(--text3);font-family:'DM Sans',sans-serif;font-weight:400;">(13th largest state in India)</span></td></tr>
+<tr><td class="key">North border</td><td><strong>Nepal</strong> — Himalayan Terai region</td></tr>
+<tr><td class="key">South border</td><td><strong>Jharkhand</strong> — separated on 15 November 2000</td></tr>
+<tr><td class="key">East border</td><td><strong>West Bengal</strong></td></tr>
+<tr><td class="key">West border</td><td><strong>Uttar Pradesh</strong></td></tr>
+<tr><td class="key">Capital</td><td><strong>Patna</strong> (ancient names: Pataliputra, Kusumpur, Azimabad)</td></tr>
+<tr><td class="key">Districts / Divisions</td><td class="hl">38 districts · 9 administrative divisions</td></tr>
+<tr><td class="key">Highest point</td><td><strong>Someshwar Hill (~880m)</strong>, West Champaran (Shivalik foothills)</td></tr>
+<tr><td class="key">Longest river in Bihar</td><td><strong>Ganga</strong> — ~445 km within Bihar</td></tr>
+<tr><td class="key">Tropic of Cancer (23.5°N)</td><td>Passes through southern Bihar — through <strong>Gaya &amp; Bhagalpur</strong> districts</td></tr>
+<tr><td class="key">Population rank</td><td><strong>3rd most populous state</strong>; highest population density ~1,106/sq km (2011)</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">BPSC Trap — Gets 30% Wrong</div>
+<ul>
+<li>Bihar's area is exactly <strong>94,163 sq km</strong> — not 94,000 or 93,000. Memorise exact.</li>
+<li>Bihar ranks <strong>13th in area</strong> but <strong>3rd in population</strong> — both asked separately.</li>
+<li>Bihar is <strong>landlocked</strong> — no sea coast, no international port, but has Nepal border.</li>
+<li><strong>Tropic of Cancer</strong> passes through Bihar's south — affects climate of Gaya, Bhagalpur.</li>
+<li>Jharkhand was carved out on <strong>15 November 2000</strong> — also Birsa Munda's birth anniversary.</li>
+</ul>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — 65th BPSC Style</div><div class="bpsc-q-text">"Bihar is bounded in the north by which country?"</div><div class="bpsc-q-ans">Nepal — the border zone is the Terai/Bhabar physiographic region</div></div>
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — 68th BPSC Style</div><div class="bpsc-q-text">"What is the total area of Bihar and what is its rank among Indian states by area?"</div><div class="bpsc-q-ans">94,163 sq km — 13th largest state in India</div></div>
+</section>
+
+<!-- S2: PHYSICAL DIVISIONS -->
+<section class="section" id="s2">
+<span class="section-number">Section 02</span>
+<h2 class="section-title">Physical Divisions of Bihar</h2>
+<div class="section-desc">Post-2000 Bihar has 3 physiographic units — questions test terrain features, not just names</div>
+
+<p>After Jharkhand's separation (which took most of the Chota Nagpur Plateau), present-day Bihar has <strong>three main physiographic divisions</strong>. The Ganga river is the defining spine.</p>
+
+<div class="grid-2">
+<div class="grid-card">
+<div class="grid-card-title">① North Bihar Plains (Tarai)</div>
+<ul>
+<li>Between <strong>Nepal Himalayas</strong> and Ganga river</li>
+<li>Sub-zones: <strong>Bhabar → Tarai → Alluvial Plains</strong></li>
+<li><strong>Bhabar:</strong> narrow porous gravel zone at foothills (West Champaran)</li>
+<li><strong>Tarai:</strong> marshy dense forest (Valmiki Tiger Reserve)</li>
+<li>Braided rivers, frequent floods (Kosi, Gandak, Bagmati)</li>
+<li>Most fertile zone; "granary" of Bihar</li>
+</ul>
+</div>
+<div class="grid-card">
+<div class="grid-card-title">② South Bihar Plains</div>
+<ul>
+<li>Between Ganga and Jharkhand border</li>
+<li>Older, more stable alluvial land</li>
+<li>Southern fringe: <strong>Rajgir Hills, Kaimur Plateau</strong></li>
+<li>Less flood-prone than North Bihar</li>
+<li>Rivers: Son, Punpun, Phalgu, Karmnasa</li>
+<li>More drought-prone (less rainfall)</li>
+</ul>
+</div>
+</div>
+
+<div class="grid-card" style="margin-top:14px;">
+<div class="grid-card-title">③ Ganga Plains (The Dividing Corridor)</div>
+<ul style="list-style:none;padding:0;">
+<li style="padding:5px 0;font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--text2);">The <strong style="color:var(--text);">Ganga river valley</strong> itself — separates North and South Bihar plains</li>
+<li style="padding:5px 0;font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--text2);">Width ~6–8 km near Patna; floodplain deposits (Khadar — newer alluvium)</li>
+<li style="padding:5px 0;font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--text2);">Ganga <strong style="color:var(--gold2);">enters Bihar at Chausa, Buxar</strong> (from UP) and exits near <strong style="color:var(--gold2);">Rajmahal</strong> into West Bengal</li>
+</ul>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Alluvial Deposits: Khadar vs Bhangar</div>
+<table class="fact-table">
+<tr><th>Feature</th><th>Khadar (Newer Alluvium)</th><th>Bhangar (Older Alluvium)</th></tr>
+<tr><td class="key">Location</td><td>Near river banks, floodplains</td><td>Elevated areas, away from rivers</td></tr>
+<tr><td class="key">Fertility</td><td>More fertile, renewed each flood</td><td>Less fertile, more leached</td></tr>
+<tr><td class="key">Special feature</td><td>Finer particles, loamy</td><td>Contains <strong>Kankars</strong> (calcium nodules)</td></tr>
+<tr><td class="key">Bihar belt</td><td>Ganga corridor, North Bihar rivers</td><td>Parts of South Bihar, Kaimur</td></tr>
+</table>
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">High-Frequency BPSC Land-Type Concepts</div>
+<ul>
+<li><strong>Diara land:</strong> Alluvial islands/land in middle of rivers (esp. Ganga). Fertile but flood-prone. Districts: Patna, Bhojpur, Saran, Vaishali.</li>
+<li><strong>Chaur:</strong> Shallow seasonal lakes/depressions in North Bihar — poor drainage. Kanwar Lake (Begusarai) is a famous chaur (oxbow type). Makhana grows in chaurs.</li>
+<li><strong>Tal:</strong> Lower waterlogged depressions in South Bihar. Gaya, Nalanda districts.</li>
+<li><strong>Terai:</strong> Marshy zone at base of Himalayas — West Champaran; Valmiki National Park.</li>
+</ul>
+</div>
+</section>
+
+<!-- S3: RIVERS -->
+<section class="section" id="s3">
+<span class="section-number">Section 03</span>
+<h2 class="section-title">Rivers of Bihar</h2>
+<div class="section-desc">Single most tested topic — 5–8 direct questions per paper. Know every river as a complete system.</div>
+
+<div class="pull-quote"><p>"Bihar is a river-dominated state. Every geographical, agricultural, disaster, and historical question eventually connects back to its rivers. Master rivers = master Bihar geography."</p></div>
+
+<!-- GANGA -->
+<div class="subsection" id="s3a">
+<div class="subsection-title"><div class="bullet"></div>The Ganga — Bihar's Spine</div>
+<div class="river-card">
+<div class="river-card-header">
+<span class="river-name">Ganga (Ganges)</span>
+<span class="river-alias">National River of India · Bhagirathi below Devprayag</span>
+<span class="river-tag">INDIA'S NATIONAL RIVER</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Origin</div><div class="river-fact-value"><strong>Gangotri Glacier</strong>, Uttarakhand</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Enters Bihar at</div><div class="river-fact-value"><strong>Chausa</strong>, Buxar district (from UP)</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Exits Bihar at</div><div class="river-fact-value"><strong>Rajmahal Hills</strong>, into West Bengal</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Length in Bihar</div><div class="river-fact-value"><strong>~445 km</strong> — west to east</div></div>
+<div class="river-fact-item"><div class="river-fact-label">North bank cities</div><div class="river-fact-value">Hajipur, Muzaffarpur corridor, Sonepur</div></div>
+<div class="river-fact-item"><div class="river-fact-label">South bank cities</div><div class="river-fact-value">Buxar, Arrah, Patna, Barh, Munger, Bhagalpur</div></div>
+</div>
+<ul class="cl" style="margin-top:12px;">
+<li>Ganga divides Bihar into <strong>North Bihar</strong> (larger) and <strong>South Bihar</strong></li>
+<li><strong>Gandhi Setu</strong> (Patna) — 5.575 km — was once Asia's longest river bridge</li>
+<li><strong>Vikramshila Gangetic Dolphin Sanctuary</strong> (Bhagalpur) — 60 km stretch of Ganga</li>
+<li><strong>Sonepur Mela</strong> held at Gandak-Ganga confluence — Asia's largest animal fair</li>
+<li>Ganga is designated as Bihar's <strong>State River</strong></li>
+<li>Meandering pattern in plains → creates ox-bow lakes (chaurs)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- NORTH BIHAR RIVERS -->
+<div class="subsection" id="s3b">
+<div class="subsection-title"><div class="bullet"></div>North Bihar Rivers — Himalayan Tributaries</div>
+<p>These rivers originate from <strong>Nepal Himalayas</strong>, carry heavy silt, are perennial, and are the primary cause of Bihar's annual floods. They join Ganga from the north bank.</p>
+
+<!-- GANDAK -->
+<div class="river-card">
+<div class="river-card-header">
+<span class="river-name">Gandak</span>
+<span class="river-alias">Narayani (Nepal) · Sapt-Gandaki (7 tributaries) · Krishnagandhara</span>
+<span class="river-tag">NORTH BIHAR</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Origin</div><div class="river-fact-value">Nepal Himalayas — 7 tributaries merge = Sapt-Gandaki</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Enters Bihar at</div><div class="river-fact-value"><strong>Trivenighat</strong>, West Champaran</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Joins Ganga at</div><div class="river-fact-value"><strong>Hajipur / Sonepur</strong>, Vaishali district</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Project</div><div class="river-fact-value">Valmiki Nagar / Gandak Barrage — irrigates Bihar + UP</div></div>
+</div>
+<ul class="cl" style="margin-top:10px;">
+<li><strong>Sonepur Mela</strong> (Kartik Purnima) — Asia's largest animal fair — held at Gandak-Ganga confluence</li>
+<li>Forms partial Bihar–UP boundary in some stretches</li>
+</ul>
+</div>
+</div>
+
+<!-- BURHI GANDAK -->
+<div class="river-card">
+<div class="river-card-header">
+<span class="river-name">Burhi Gandak</span>
+<span class="river-alias">Old Gandak · Sikarhana (upper course)</span>
+<span class="river-tag">NORTH BIHAR</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Origin</div><div class="river-fact-value"><strong>Chautarwa Chaur</strong> (swamp), Sheohar district — originates WITHIN Bihar</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Joins Ganga at</div><div class="river-fact-value"><strong>Munger</strong> district</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Districts</div><div class="river-fact-value">Sheohar → Sitamarhi → Muzaffarpur → Samastipur → Begusarai → Munger</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Key distinction</div><div class="river-fact-value">Originates <strong>within Bihar</strong> (not Nepal) — unlike most N. Bihar rivers</div></div>
+</div>
+</div>
+</div>
+
+<!-- BAGMATI -->
+<div class="river-card">
+<div class="river-card-header">
+<span class="river-name">Bagmati</span>
+<span class="river-alias">Flows past Pashupatinath temple in Kathmandu</span>
+<span class="river-tag">NORTH BIHAR</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Origin</div><div class="river-fact-value">Shivapuri Hills, Nepal (near Kathmandu)</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Enters Bihar at</div><div class="river-fact-value"><strong>Sitamarhi</strong> district</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Joins</div><div class="river-fact-value">Burhi Gandak near Khagaria / eventually Ganga</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Note</div><div class="river-fact-value">Sita's birthplace (Sitamarhi) on banks — religious significance</div></div>
+</div>
+</div>
+</div>
+
+<!-- KAMLA-BALAN -->
+<div class="river-card">
+<div class="river-card-header">
+<span class="river-name">Kamla-Balan</span>
+<span class="river-alias">Central to Mithila culture and identity</span>
+<span class="river-tag">NORTH BIHAR</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Origin</div><div class="river-fact-value">Mahabharat Range, Nepal</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Enters Bihar at</div><div class="river-fact-value"><strong>Jhanjharpur</strong>, Madhubani district</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Joins</div><div class="river-fact-value">Kosi river (Darbhanga/Saharsa region)</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Infrastructure</div><div class="river-fact-value">Kamla Barrage at <strong>Jainagar</strong>, Madhubani</div></div>
+</div>
+</div>
+</div>
+
+<!-- KOSI -->
+<div class="river-card" style="border-color:rgba(200,80,64,.35);">
+<div class="river-card-header" style="background:rgba(200,80,64,.1);border-bottom-color:rgba(200,80,64,.3);">
+<span class="river-name" style="color:#e09080;">Kosi (Koshi)</span>
+<span class="river-alias" style="color:#c07060;">"Sorrow of Bihar" — Bihar Ka Shok</span>
+<span class="river-tag" style="color:#e09080;background:rgba(200,80,64,.12);border-color:rgba(200,80,64,.3);">⚠ MOST TESTED RIVER</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Origin</div><div class="river-fact-value">Tibet/Nepal glaciers near <strong>Mt. Everest</strong> (Sagarmatha) region</div></div>
+<div class="river-fact-item"><div class="river-fact-label">7 Tributaries (Sapt-Koshi)</div><div class="river-fact-value">Indravati, Sun Kosi, Tama Kosi, Likhu, Dudh Kosi, Arun, Tamur</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Enters Bihar at</div><div class="river-fact-value"><strong>Bhimnagar</strong>, Supaul district</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Joins Ganga at</div><div class="river-fact-value"><strong>Kursela</strong>, Katihar district</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Course shift</div><div class="river-fact-value">Shifted <strong>~120 km westward</strong> over 250 years — world's most shifting river</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Districts affected</div><div class="river-fact-value">Supaul, Saharsa, Madhepura, Khagaria, Katihar</div></div>
+</div>
+<div class="warn-box" style="margin-top:14px;">
+<div class="warn-box-label">⚠ Critical Kosi Facts — Appear Every Few Papers</div>
+<p>
+<strong>Kosi Project / Bhimnagar Barrage (1959):</strong> Indo-Nepal joint project at Supaul district border. Controls floods; provides irrigation to North Bihar and Nepal.<br><br>
+<strong>2008 Kosi Disaster:</strong> Kosi breached the embankment at Kusaha (Nepal) and suddenly shifted course ~100 km eastward. Affected 40+ lakh people in Bihar — one of independent India's worst flood disasters.<br><br>
+<strong>Why "Sorrow"?</strong> Highest silt load of all Himalayan rivers → raises its own bed → overflows embankments → catastrophic annual flooding.<br><br>
+<strong>Mnemonic for 7 tributaries:</strong> <em>"I Started The Long Dangerous Aquatic Trek"</em> → Indravati, Sun Kosi, Tama Kosi, Likhu, Dudh Kosi, Arun, Tamur
+</p>
+</div>
+</div>
+</div>
+
+<!-- MAHANANDA -->
+<div class="river-card">
+<div class="river-card-header">
+<span class="river-name">Mahananda</span>
+<span class="river-alias">Easternmost river of Bihar — unique origin</span>
+<span class="river-tag">NORTH BIHAR</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Origin</div><div class="river-fact-value"><strong>Darjeeling Hills, West Bengal</strong> — NOT Nepal</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Enters Bihar at</div><div class="river-fact-value"><strong>Kishanganj</strong> district</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Joins Ganga</div><div class="river-fact-value"><strong>Manihari</strong>, Katihar district</div></div>
+<div class="river-fact-item"><div class="river-fact-label">BPSC Trick</div><div class="river-fact-value">Only major N. Bihar river originating from <strong>India</strong> (WB), not Nepal</div></div>
+</div>
+</div>
+</div>
+
+<!-- GHAGHRA -->
+<div class="river-card">
+<div class="river-card-header">
+<span class="river-name">Ghaghra (Saryu)</span>
+<span class="river-alias">Karnali (Nepal origin) · Sharda (UP) · Saryu (Ayodhya)</span>
+<span class="river-tag">WEST BOUNDARY</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Role in Bihar</div><div class="river-fact-value">Forms Bihar–UP boundary in western stretch</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Joins Ganga at</div><div class="river-fact-value">Near <strong>Chhapra</strong>, Saran district</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Significance</div><div class="river-fact-value">Himalayan snowmelt; causes floods in Saran, Gopalganj districts</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Tributaries in Bihar</div><div class="river-fact-value">Little Gandak (Chhoti Gandak)</div></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- SOUTH BIHAR RIVERS -->
+<div class="subsection" id="s3c">
+<div class="subsection-title"><div class="bullet"></div>South Bihar Rivers — Peninsular Tributaries</div>
+<p>These rivers originate from <strong>Chota Nagpur Plateau</strong> (Jharkhand) or central Indian highlands. They are shorter, mostly seasonal, flow northward, and join Ganga from the south bank.</p>
+
+<!-- SON -->
+<div class="river-card" style="border-color:rgba(106,158,96,.3);">
+<div class="river-card-header" style="background:rgba(106,158,96,.08);border-bottom-color:rgba(106,158,96,.3);">
+<span class="river-name" style="color:#8ec480;">Son River</span>
+<span class="river-alias" style="color:#70a060;">Sona Nadi · "Golden River" · Son Bhadra</span>
+<span class="river-tag" style="color:#8ec480;background:rgba(106,158,96,.12);border-color:rgba(106,158,96,.3);">LONGEST SOUTH BIHAR RIVER</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Origin</div><div class="river-fact-value"><strong>Amarkantak Plateau</strong>, Madhya Pradesh (Maikal Hills)</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Enters Bihar at</div><div class="river-fact-value"><strong>Dehri-on-Son</strong>, Rohtas district</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Joins Ganga at</div><div class="river-fact-value"><strong>Maner / Danapur</strong>, near Patna</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Length in Bihar</div><div class="river-fact-value">~202 km within Bihar</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Why "golden"?</div><div class="river-fact-value">Golden-yellow sandy bed; rich in <strong>silica sand</strong></div></div>
+<div class="river-fact-item"><div class="river-fact-label">Key project</div><div class="river-fact-value"><strong>Indrapuri Barrage</strong> (1968) — irrigation for Patna, Arwal, Rohtas</div></div>
+</div>
+</div>
+</div>
+
+<!-- PUNPUN -->
+<div class="river-card">
+<div class="river-card-header">
+<span class="river-name">Punpun</span>
+<span class="river-alias">Panchanan · causes urban floods in Patna</span>
+<span class="river-tag">SOUTH BIHAR</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Origin</div><div class="river-fact-value">Palamu Plateau, Jharkhand</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Joins Ganga at</div><div class="river-fact-value"><strong>Fatwa/Fatuha</strong>, near Patna</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Districts</div><div class="river-fact-value">Gaya, Jehanabad, Arwal, Patna</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Current affairs</div><div class="river-fact-value">Causes <strong>Patna city waterlogging</strong> during heavy monsoon</div></div>
+</div>
+</div>
+</div>
+
+<!-- PHALGU -->
+<div class="river-card">
+<div class="river-card-header">
+<span class="river-name">Phalgu</span>
+<span class="river-alias">Niranjana + Mohane → merge at Gaya city</span>
+<span class="river-tag">SOUTH BIHAR</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Formation</div><div class="river-fact-value"><strong>Niranjana + Mohane</strong> rivers merge at Gaya city to form Phalgu</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Religious significance</div><div class="river-fact-value">Pitra-moksha (ancestral rites) at <strong>Vishnupad Temple, Gaya</strong></div></div>
+<div class="river-fact-item"><div class="river-fact-label">Character</div><div class="river-fact-value"><strong>Seasonal / underground</strong> — often completely dry in summer</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Buddhist connection</div><div class="river-fact-value">Buddha attained enlightenment on banks of <strong>Niranjana</strong> (tributary) at Bodh Gaya</div></div>
+</div>
+</div>
+</div>
+
+<!-- KARMNASA -->
+<div class="river-card" style="border-color:rgba(200,80,64,.2);">
+<div class="river-card-header" style="background:rgba(200,80,64,.06);border-bottom-color:rgba(200,80,64,.2);">
+<span class="river-name">Karmnasa</span>
+<span class="river-alias">"Destroyer of deeds" — considered inauspicious in Hindu tradition</span>
+<span class="river-tag" style="color:#e09080;background:rgba(200,80,64,.1);">⚠ TRICK QUESTION</span>
+</div>
+<div class="river-card-body">
+<div class="river-facts">
+<div class="river-fact-item"><div class="river-fact-label">Flow direction</div><div class="river-fact-value"><strong>WESTWARD</strong> — opposite to virtually all Bihar rivers</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Boundary</div><div class="river-fact-value">Forms <strong>Bihar–UP border</strong> in Rohtas/Kaimur region</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Joins</div><div class="river-fact-value">Ganga in UP (near Varanasi region)</div></div>
+<div class="river-fact-item"><div class="river-fact-label">Why asked frequently</div><div class="river-fact-value">Flows <strong>opposite direction</strong> + forms state boundary + inauspicious legend</div></div>
+</div>
+</div>
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">North vs South Bihar Rivers — Quick Comparison</div>
+<table class="fact-table" style="margin:8px 0 0;">
+<tr><th>Feature</th><th>North Bihar Rivers</th><th>South Bihar Rivers</th></tr>
+<tr><td class="key">Source</td><td>Nepal Himalayas</td><td>Chota Nagpur / Central India</td></tr>
+<tr><td class="key">Flow direction</td><td>Southward → Ganga</td><td>Northward → Ganga</td></tr>
+<tr><td class="key">Nature</td><td>Perennial, flood-prone, high silt</td><td>Mostly seasonal, lower volume</td></tr>
+<tr><td class="key">Primary issue</td><td><strong>Floods</strong></td><td><strong>Droughts</strong></td></tr>
+<tr><td class="key">Examples</td><td>Gandak, Kosi, Bagmati, Kamla, Burhi Gandak</td><td>Son, Punpun, Phalgu, Karmnasa</td></tr>
+</table>
+</div>
+</div>
+
+<!-- LAKES -->
+<div class="subsection" id="s3d">
+<div class="subsection-title"><div class="bullet"></div>Lakes, Wetlands & Water Bodies</div>
+<table class="fact-table">
+<tr><th>Name</th><th>District</th><th>Significance</th></tr>
+<tr><td class="key">Kanwar Lake (Kabar Tal)</td><td>Begusarai</td><td><strong>Asia's largest freshwater oxbow lake</strong> · Ramsar Wetland (2020) · 60+ migratory bird species from Siberia</td></tr>
+<tr><td class="key">Udantas Lake</td><td>Nawada</td><td>Natural lake, scenic tourist spot</td></tr>
+<tr><td class="key">Anupam Lake</td><td>Nalanda</td><td>Near Rajgir hills; tourist attraction</td></tr>
+<tr><td class="key">Chaurs (multiple)</td><td>Saharsa, Darbhanga, Muzaffarpur</td><td>Seasonal wetlands; <strong>makhana cultivation</strong>; makhana belt is world's largest producer</td></tr>
+<tr><td class="key">Manjhar Kund</td><td>Rohtas</td><td>Waterfall + natural pool; Son river catchment area; tourist spot</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Kanwar Lake — Appears in Every 3rd BPSC Paper</div>
+<ul>
+<li><strong>Location:</strong> Begusarai district (North Bihar)</li>
+<li><strong>Type:</strong> Oxbow lake (Ganga/Burhi Gandak changed course → cut off meander)</li>
+<li><strong>Status:</strong> Asia's largest freshwater oxbow lake + Ramsar Wetland Site (declared 2020)</li>
+<li><strong>Ecology:</strong> Winter home to migratory birds — Siberian Crane, Bar-headed Goose, Pintail Duck</li>
+<li><strong>Makhana connection:</strong> Similar chaur wetlands in Darbhanga–Madhubani–Sitamarhi belt = world's 90% makhana production</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- S4: CLIMATE -->
+<section class="section" id="s4">
+<span class="section-number">Section 04</span>
+<h2 class="section-title">Climate of Bihar</h2>
+<div class="section-desc">5–6 direct questions per paper — rainfall distribution and seasonal patterns are most tested</div>
+
+<p>Bihar has a <strong>humid subtropical climate</strong> (Köppen: Cwa type) — hot summers, monsoon rains, cool dry winters. The Tropic of Cancer passing through the south brings significant temperature variation between north and south Bihar.</p>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Three Seasons</div>
+<table class="fact-table">
+<tr><th>Season</th><th>Period</th><th>Key Features for BPSC</th></tr>
+<tr><td class="key">Summer (Grishma)</td><td>March – June</td><td>35–45°C; <strong>Loo</strong> (hot dry wind) from W → E; Gaya reaches 45–48°C; drought risk in South Bihar</td></tr>
+<tr><td class="key">Monsoon (Varsha)</td><td>June/July – October</td><td>SW monsoon from <strong>Bay of Bengal branch</strong>; NE Bihar gets rain first; 80–90% of annual rain in these months</td></tr>
+<tr><td class="key">Winter (Shita)</td><td>November – February</td><td>5–15°C; cold waves from NW; January coldest; dense fog in Patna corridor; some rain from western disturbances</td></tr>
+</table>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Rainfall Distribution</div>
+<div class="grid-2">
+<div class="grid-card">
+<div class="grid-card-title">Highest Rainfall Zones</div>
+<ul>
+<li><strong>Kishanganj</strong> — ~1800–2000mm/yr (Bihar's maximum) — Sub-Himalayan + Bay of Bengal proximity</li>
+<li><strong>Purnia, Araria, Katihar</strong> — ~1400–1600mm</li>
+<li><strong>Champaran, Sitamarhi</strong> — ~1200–1400mm</li>
+</ul>
+</div>
+<div class="grid-card">
+<div class="grid-card-title">Lowest Rainfall Zones</div>
+<ul>
+<li><strong>Rohtas, Kaimur, Aurangabad</strong> — ~900–1000mm/yr (Bihar's minimum)</li>
+<li>South Bihar generally drier than North Bihar</li>
+<li>Gaya — high heat + moderate rain = driest conditions</li>
+</ul>
+</div>
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">Climate Numbers — BPSC Tests These Directly</div>
+<ul>
+<li><strong>Average annual rainfall of Bihar:</strong> ~1200 mm</li>
+<li><strong>Maximum rainfall district:</strong> Kishanganj (~1800–2000mm)</li>
+<li><strong>Minimum rainfall district:</strong> Rohtas / Kaimur (~900–1000mm)</li>
+<li><strong>Monsoon source:</strong> Bay of Bengal branch (not Arabian Sea)</li>
+<li><strong>Monsoon arrival:</strong> ~June 10–15 in NE Bihar (Kishanganj first)</li>
+<li><strong>Highest temperature:</strong> Gaya — 45–48°C (May–June)</li>
+<li><strong>Lowest temperature:</strong> West Champaran — 0–3°C (January)</li>
+</ul>
+</div>
+
+<div class="warn-box">
+<div class="warn-box-label">⚠ Classic BPSC Paradox Question</div>
+<p><strong>Why does North Bihar flood while South Bihar droughts simultaneously?</strong> North Bihar: heavy Himalayan rainfall + river overflow from Nepal → floods. South Bihar: less rainfall + no perennial rivers → drought. Both occur <em>simultaneously in the same season</em>. This Bihar paradox appears regularly in prelims MCQs and mains short answers.</p>
+</div>
+</div>
+</section>
+
+<!-- S5: SOILS -->
+<section class="section" id="s5">
+<span class="section-number">Section 05</span>
+<h2 class="section-title">Soils of Bihar</h2>
+<div class="section-desc">3–4 questions per paper — match soil type to district, crop, and characteristics</div>
+
+<table class="fact-table">
+<tr><th>Soil Type</th><th>Location in Bihar</th><th>Characteristics</th><th>Key Crops</th></tr>
+<tr><td class="key">Alluvial — Khadar (Newer)</td><td>Ganga floodplains, N. Bihar river belts</td><td>Fine, renewed by floods, very fertile, light colour</td><td>Rice, Wheat, Maize, Sugarcane</td></tr>
+<tr><td class="key">Alluvial — Bhangar (Older)</td><td>Elevated areas, South Bihar</td><td>Contains <strong>Kankars</strong> (calcium nodules), less fertile, darker</td><td>Wheat, Pulses, Barley</td></tr>
+<tr><td class="key">Sandy Loam</td><td>Diara land, river banks</td><td>Coarser particles, low water retention</td><td>Watermelon, Vegetables, Pulses</td></tr>
+<tr><td class="key">Clayey / Clay Loam</td><td>Chaur areas — Darbhanga, Madhubani, Begusarai</td><td>High water retention, waterlogged, heavy</td><td><strong>Makhana</strong> (in flooded chaurs), Rice</td></tr>
+<tr><td class="key">Laterite (Red Soil)</td><td>Southern fringe — Jamui, Banka, Nawada, Munger</td><td>Iron/aluminium-rich, porous, acidic, low fertility</td><td>Millets, Groundnut, Maize</td></tr>
+<tr><td class="key">Terai / Forest Soil</td><td>West Champaran (Valmiki area)</td><td>Humus-rich, under dense forest, dark</td><td>Forest uses; paddy on fringes</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">BPSC Soil Quick Facts</div>
+<ul>
+<li><strong>Most dominant soil:</strong> Alluvial soil (~80% of Bihar's area)</li>
+<li><strong>Makhana grows in:</strong> Clayey waterlogged chaur soils — Darbhanga-Madhubani-Sitamarhi belt</li>
+<li><strong>Laterite found in:</strong> Jamui, Banka, Nawada, Munger — southern Bihar (Chota Nagpur fringe)</li>
+<li><strong>Kankar:</strong> Calcium carbonate nodules found in Bhangar soil — hardens the subsoil</li>
+<li><strong>Problem soils:</strong> Acidic laterite (south Bihar, needs lime), Waterlogged clayey (north Bihar chaurs)</li>
+</ul>
+</div>
+</section>
+
+<!-- S6: FORESTS -->
+<section class="section" id="s6">
+<span class="section-number">Section 06</span>
+<h2 class="section-title">Forests & Vegetation</h2>
+<div class="section-desc">Forest cover, types, and state symbols — 2–3 questions per paper</div>
+
+<div class="highlight-row">
+<div class="highlight-row-icon">🌲</div>
+<div class="highlight-row-text">
+Bihar's forest cover: <strong>~7,288 sq km (~7.7% of state area)</strong>
+<small>National average = ~24%. Bihar is significantly below. A frequently asked comparative fact.</small>
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Forest Types</div>
+<table class="fact-table">
+<tr><th>Forest Type</th><th>Region in Bihar</th><th>Key Species</th></tr>
+<tr><td class="key">Tropical Moist Deciduous</td><td>North Bihar — West Champaran (Terai)</td><td><strong>Sal, Shisham, Teak, Bamboo, Sagon</strong></td></tr>
+<tr><td class="key">Tropical Dry Deciduous</td><td>South Bihar — Rohtas, Kaimur, Gaya, Nawada, Jamui</td><td>Tendu, Mahua, Sal (secondary), Kher</td></tr>
+<tr><td class="key">Riverine / Gallery Forest</td><td>River banks — Ganga, Gandak, Son</td><td>Shisham, Bamboo, reeds, riverside shrubs</td></tr>
+<tr><td class="key">Terai Grassland</td><td>West Champaran (Valmiki area)</td><td>Tall elephant grass, scattered Sal, reeds</td></tr>
+</table>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Key Tree Species</div>
+<table class="fact-table">
+<tr><th>Tree</th><th>Significance</th></tr>
+<tr><td class="key">Sal (Shorea robusta)</td><td>Most dominant; timber; Buddha born under Sal trees (Lumbini); most commercial value</td></tr>
+<tr><td class="key">Mahua</td><td>Tribal communities — edible flowers, oil, traditional liquor; Champaran, Rohtas, Kaimur</td></tr>
+<tr><td class="key">Tendu (Diospyros)</td><td>Leaves wrap <strong>bidis</strong> — major forest revenue source; South Bihar forests</td></tr>
+<tr><td class="key">Peepal (Ficus religiosa)</td><td><strong>Bihar's State Tree</strong>; Buddha's enlightenment at Bodh Gaya under Peepal</td></tr>
+<tr><td class="key">Bamboo</td><td>Craft, construction; Champaran, Purnia region</td></tr>
+</table>
+</div>
+
+<div class="memo">
+<strong>Bihar State Symbols (Geography-linked):</strong><br>
+🌳 State Tree: <strong>Peepal</strong> (Ficus religiosa)<br>
+🐬 State Animal: <strong>Gaur (Indian Bison)</strong> — officially; Gangetic Dolphin (Susu) is National Aquatic Animal<br>
+🐦 State Bird: <strong>House Sparrow</strong> (Passer domesticus / Gauriya Chidiya)<br>
+🌸 State Fish: <strong>Maghur (Clarias batrachus)</strong> — Catfish<br>
+🌺 State Flower: <strong>Kachnar</strong> (Bauhinia variegata)
+</div>
+</section>
+
+<!-- S7: HILLS -->
+<section class="section" id="s7">
+<span class="section-number">Section 07</span>
+<h2 class="section-title">Hills & Highlands of Bihar</h2>
+<div class="section-desc">Post-Jharkhand, Bihar has limited hills — but these are extremely high-frequency in BPSC</div>
+
+<table class="fact-table">
+<tr><th>Hill / Range</th><th>Location</th><th>Key Facts</th></tr>
+<tr><td class="key">Someshwar Hills</td><td>West Champaran</td><td><strong>Highest point in Bihar (~880m)</strong>; part of Shivalik foothills; Valmiki National Park here; Nepal border</td></tr>
+<tr><td class="key">Kaimur Plateau</td><td>Rohtas &amp; Kaimur districts</td><td>Extension of <strong>Vindhya Range</strong>; avg 300–500m; Son river at base; Pyrite deposits; Durgawati Wildlife Sanctuary; Karmnasa river here</td></tr>
+<tr><td class="key">Rajgir Hills</td><td>Nalanda district</td><td>5 surrounding hills; <strong>Brahma Kund</strong> hot spring (~45°C); Buddhist First Council site; Saptaparni Cave; Griddhakuta (Vulture's Peak)</td></tr>
+<tr><td class="key">Kharagpur Hills</td><td>Munger district</td><td>Rocky terrain; source of small streams; Bhimbandh hot springs nearby</td></tr>
+<tr><td class="key">Barabar Hills</td><td>Gaya / Jehanabad</td><td><strong>Oldest rock-cut caves in India</strong> (Ashokan era, 3rd century BC); Lomas Rishi Cave; Sudama Cave</td></tr>
+<tr><td class="key">Gurpa Hills</td><td>Gaya district</td><td>Buddhist pilgrimage; ruins of ancient monasteries</td></tr>
+<tr><td class="key">Giddhaur Hills</td><td>Jamui district</td><td>Laterite zone; Sonajori river catchment; tribal area</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">Rajgir Hills — BPSC Asks Multiple Sub-Questions</div>
+<ul>
+<li>5 hills surrounding Rajgir: <strong>Vaibhava Giri, Ratnagiri, Udayagiri, Sona Giri, Vipulachal</strong></li>
+<li><strong>Brahma Kund</strong> hot spring: ~45°C year-round; first Buddhist Council delegates bathed here</li>
+<li><strong>First Buddhist Council</strong> held in Saptaparni Cave (Rajgir) — after Buddha's Mahaparinirvana</li>
+<li><strong>Griddhakuta (Vulture's Peak)</strong> — Buddha delivered important teachings (Prajnaparamita sutras) here</li>
+<li>Ajatshatru's city walls and fortifications — visible stone remains around Rajgir even today</li>
+</ul>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — 68th BPSC</div><div class="bpsc-q-text">"The Kaimur Plateau is the eastern extension of which mountain range?"</div><div class="bpsc-q-ans">Vindhya Range (Vindhyan system)</div></div>
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — 66th BPSC</div><div class="bpsc-q-text">"Where is the highest point of present-day Bihar?"</div><div class="bpsc-q-ans">Someshwar Hills, West Champaran (~880m) — Shivalik foothills near Nepal border</div></div>
+</section>
+
+<!-- S8: WILDLIFE -->
+<section class="section" id="s8">
+<span class="section-number">Section 08</span>
+<h2 class="section-title">Wildlife Sanctuaries & Protected Areas</h2>
+<div class="section-desc">Every sanctuary's district, special status, and key animal must be memorised — appears every paper</div>
+
+<table class="fact-table">
+<tr><th>Protected Area</th><th>District</th><th>Type</th><th>Significance</th></tr>
+<tr><td class="key">Valmiki Tiger Reserve</td><td><strong>West Champaran</strong></td><td>Tiger Reserve + National Park</td><td><strong>Only Tiger Reserve in Bihar</strong>; Bengal Tiger, Elephant, Leopard, One-horned Rhino (reintroduced); Someshwar Hills; Nepal border; est. 1978</td></tr>
+<tr><td class="key">Vikramshila Gangetic Dolphin Sanctuary</td><td><strong>Bhagalpur</strong></td><td>Wildlife Sanctuary</td><td><strong>Gangetic Dolphin (Susu)</strong> = India's National Aquatic Animal; 60 km Ganga stretch; Gharial also found</td></tr>
+<tr><td class="key">Gautam Buddha Wildlife Sanctuary</td><td><strong>Gaya</strong></td><td>Wildlife Sanctuary</td><td>Near Bodh Gaya; Deer, Nilgai, Wild Boar, Leopard</td></tr>
+<tr><td class="key">Rajgir Wildlife Sanctuary</td><td><strong>Nalanda</strong></td><td>Wildlife Sanctuary</td><td>Deer, Wolf, Leopard; Rajgir hill forests</td></tr>
+<tr><td class="key">Kanwar Lake Bird Sanctuary</td><td><strong>Begusarai</strong></td><td>Bird Sanctuary + Ramsar (2020)</td><td>Migratory birds (Siberian Crane, Bar-headed Goose); Asia's largest oxbow lake</td></tr>
+<tr><td class="key">Kaimur Wildlife Sanctuary</td><td><strong>Rohtas &amp; Kaimur</strong></td><td>Wildlife Sanctuary</td><td>Gharial, Wolf, Chinkara, Sloth Bear; Karmnasa river zone</td></tr>
+<tr><td class="key">Bhimbandh Wildlife Sanctuary</td><td><strong>Munger</strong></td><td>Wildlife Sanctuary</td><td><strong>Hot springs at Bhimbandh</strong>; Tiger, Elephant; Kharagpur Hills</td></tr>
+<tr><td class="key">Barela Salim Ali Bird Sanctuary</td><td><strong>Muzaffarpur</strong></td><td>Bird Sanctuary</td><td>Named after ornithologist <strong>Salim Ali</strong>; migratory birds wintering here</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Wildlife Quick Facts — Must Know All</div>
+<ul>
+<li><strong>Only Tiger Reserve in Bihar:</strong> Valmiki Tiger Reserve, West Champaran (1978)</li>
+<li><strong>India's National Aquatic Animal:</strong> Gangetic Dolphin (Susu) — Vikramshila Sanctuary, Bhagalpur</li>
+<li><strong>Ramsar Wetland in Bihar:</strong> Kanwar Lake (Kabar Tal), Begusarai — declared 2020</li>
+<li><strong>Bhimbandh Hot Springs:</strong> Natural mineral springs, Munger — similar to Rajgir hot springs</li>
+<li><strong>Gharial:</strong> Found in both Vikramshila Sanctuary (Ganga) and Kaimur Sanctuary (Karmnasa)</li>
+<li><strong>One-horned Rhino:</strong> Reintroduced in Valmiki National Park — appears in current affairs questions</li>
+<li><strong>Bird named after person:</strong> Barela Salim Ali Bird Sanctuary, Muzaffarpur — only such sanctuary in Bihar</li>
+</ul>
+</div>
+</section>
+
+<!-- S9: PYQ DRILLS -->
+<section class="section" id="s9">
+<span class="section-number">Section 09</span>
+<h2 class="section-title">High-Frequency PYQ Drills</h2>
+<div class="section-desc">Exact question patterns from 63rd–70th BPSC papers. Self-test before moving to Part 2.</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Rivers — 65th BPSC</div><div class="bpsc-q-text">"Which river is known as the 'Sorrow of Bihar'?"</div><div class="bpsc-q-ans">Kosi river — due to its frequent course changes (120km westward shift) and catastrophic flooding</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Rivers — 67th BPSC</div><div class="bpsc-q-text">"The Karmnasa river flows in which direction — making it unusual among Bihar rivers?"</div><div class="bpsc-q-ans">Westward — opposite to virtually all Bihar rivers; also forms Bihar-UP boundary and considered inauspicious</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Confluence — 68th BPSC</div><div class="bpsc-q-text">"Where does the Gandak river meet the Ganga? What famous fair is held there?"</div><div class="bpsc-q-ans">Hajipur (Sonepur), Vaishali district — Sonepur Mela (Asia's largest animal fair) held at this confluence</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Rivers — 70th BPSC</div><div class="bpsc-q-text">"At which point does the Kosi river enter Bihar? What is the barrage located here?"</div><div class="bpsc-q-ans">Bhimnagar, Supaul district — Bhimnagar Barrage (Indo-Nepal joint project, 1959)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Rivers — 63rd BPSC</div><div class="bpsc-q-text">"The Son river originates from which plateau?"</div><div class="bpsc-q-ans">Amarkantak Plateau, Madhya Pradesh (Maikal Hills)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Rivers — 64th BPSC</div><div class="bpsc-q-text">"Phalgu river is formed by the confluence of which two rivers and where?"</div><div class="bpsc-q-ans">Niranjana + Mohane rivers merge at Gaya city to form Phalgu</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Wildlife — 66th BPSC</div><div class="bpsc-q-text">"Which is the only Tiger Reserve in Bihar and in which district is it located?"</div><div class="bpsc-q-ans">Valmiki Tiger Reserve, West Champaran district (established 1978)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Wetlands — 69th BPSC</div><div class="bpsc-q-text">"Kanwar Lake is significant for which two reasons?"</div><div class="bpsc-q-ans">Asia's largest freshwater oxbow lake AND a Ramsar Wetland Site (declared 2020) — located in Begusarai</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Climate — 64th BPSC</div><div class="bpsc-q-text">"Which district of Bihar receives the maximum annual rainfall?"</div><div class="bpsc-q-ans">Kishanganj (~1800–2000mm) — located in NE Bihar; receives Bihar's maximum rainfall</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Ganga — 65th BPSC</div><div class="bpsc-q-text">"At which point does the Ganga enter Bihar from Uttar Pradesh?"</div><div class="bpsc-q-ans">Chausa, Buxar district (the same Chausa where Battle of Chausa 1539 was fought)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Soil — 65th BPSC</div><div class="bpsc-q-text">"Which type of soil dominates Bihar and approximately what percentage of the state does it cover?"</div><div class="bpsc-q-ans">Alluvial soil — covers approximately 80% of Bihar's total area</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Hills — 67th BPSC</div><div class="bpsc-q-text">"Brahma Kund hot spring is located in which district and hills?"</div><div class="bpsc-q-ans">Nalanda district; Rajgir Hills (temperature stays ~45°C year-round; First Buddhist Council held nearby)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Fauna — 70th BPSC</div><div class="bpsc-q-text">"The Gangetic Dolphin sanctuary in Bihar is named after which ancient university?"</div><div class="bpsc-q-ans">Vikramshila — Vikramshila Gangetic Dolphin Sanctuary, Bhagalpur</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Rivers — 68th BPSC</div><div class="bpsc-q-text">"Which North Bihar river originates within India (not Nepal)?"</div><div class="bpsc-q-ans">Burhi Gandak — originates from Chautarwa Chaur (swamp), Sheohar district, Bihar itself</div></div>
+
+<div class="divider"></div>
+
+<div class="exam-box">
+<div class="exam-box-label">Part 1 Complete — What's Coming in Parts 2 & 3</div>
+<ul>
+<li><strong>Part 2 — Economic Geography:</strong> Agriculture (all crops + district mapping), GI-tagged products (Makhana, Litchi, Muzaffarpur etc.), Minerals, Irrigation Projects (Gandak, Son, Kosi, Sone Canal), Industries, Major Dams &amp; Barrages</li>
+<li><strong>Part 3 — Administrative Geography:</strong> All 38 districts (individual facts), 9 divisions (headquarters + districts), Major cities &amp; their geographic identity, Transport, Demographics, Natural disaster zones (flood + drought maps)</li>
+</ul>
+</div>
+
+</section>
+</div>
+</main>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const d=document.documentElement;
+  document.getElementById('pf').style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%';
+});
+const sections=document.querySelectorAll('section[id]');
+const navItems=document.querySelectorAll('.nav-item');
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navItems.forEach(n=>{
+        n.classList.remove('active');
+        if(n.getAttribute('href')==='#'+e.target.id) n.classList.add('active');
+      });
+    }
+  });
+},{rootMargin:'-20% 0px -70% 0px'});
+sections.forEach(s=>obs.observe(s));
+navItems.forEach(item=>{
+  item.addEventListener('click',(e)=>{
+    e.preventDefault();
+    document.getElementById(item.getAttribute('href').replace('#',''))?.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+</body>
+</html>
