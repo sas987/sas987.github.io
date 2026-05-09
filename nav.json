@@ -1,42 +1,44 @@
 {
-  "subjects": [
+  "topics": [
 
     {
-      "title": "Geography Mastery",
+      "name": "Geography",
       "icon": "🌍",
+
       "pages": [
 
         {
-          "name": "Rivers of Bihar",
-          "path": "subjects/geography/rivers.html"
+          "title": "Core-1",
+          "file": "pages/geography/core-1.html"
         },
 
         {
-          "name": "Indian Climate",
-          "path": "subjects/geography/climate.html"
+          "title": "Core-2",
+          "file": "pages/geography/core-2.html"
         },
 
         {
-          "name": "Soil of Bihar",
-          "path": "subjects/geography/soil.html"
+          "title": "Rivers of Bihar",
+          "file": "pages/geography/rivers.html"
         }
 
       ]
     },
 
     {
-      "title": "History Mastery",
+      "name": "History",
       "icon": "🏛",
+
       "pages": [
 
         {
-          "name": "Buddhism in Bihar",
-          "path": "subjects/history/buddhism.html"
+          "title": "Buddhism in Bihar",
+          "file": "pages/history/buddhism.html"
         },
 
         {
-          "name": "Mauryan Empire",
-          "path": "subjects/history/mauryan.html"
+          "title": "Mauryan Empire",
+          "file": "pages/history/maurya.html"
         }
 
       ]
