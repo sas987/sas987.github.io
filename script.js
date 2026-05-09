@@ -2,40 +2,49 @@ fetch("nav.json")
 .then(response => response.json())
 .then(data => {
 
-    const content = document.getElementById("content");
+    const nav = document.getElementById("nav");
+    const viewer = document.getElementById("viewer");
 
-    data.subjects.forEach(subject => {
+    data.topics.forEach(topic => {
 
-        let subjectHTML = `
-            <div class="subject">
+        let html = `
+            <div class="topic">
 
-                <div class="subject-title">
-                    ${subject.icon} ${subject.title}
+                <div class="topic-title">
+                    ${topic.icon} ${topic.name}
                 </div>
-
-                <div class="card-grid">
         `;
 
-        subject.pages.forEach(page => {
+        topic.pages.forEach(page => {
 
-            subjectHTML += `
-                <a href="${page.path}" class="card">
+            html += `
+                <a class="page-link"
+                   href="#"
+                   onclick="loadPage('${page.file}')">
 
-                    <h2>${page.name}</h2>
+                    ${page.title}
 
                 </a>
             `;
 
         });
 
-        subjectHTML += `
-                </div>
+        html += `</div>`;
 
-            </div>
-        `;
-
-        content.innerHTML += subjectHTML;
+        nav.innerHTML += html;
 
     });
 
+    if(data.topics.length > 0 &&
+       data.topics[0].pages.length > 0){
+
+        viewer.src = data.topics[0].pages[0].file;
+    }
+
 });
+
+function loadPage(file){
+
+    document.getElementById("viewer").src = file;
+
+}
