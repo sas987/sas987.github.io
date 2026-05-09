@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0f172a;
+    color:white;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:50px;
+}
+
+.subject{
+    margin-bottom:50px;
+}
+
+.subject-title{
+    font-size:30px;
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:#334155;
+    transform:translateY(-5px);
+}
