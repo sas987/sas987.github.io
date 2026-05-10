@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Geography — Part 4 (Final) | BPSC Prelims Master Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=JetBrains+Mono:wght@400;500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0e14;--bg2:#0f1520;--bg3:#141c2a;--bg4:#1a2436;--surface:#1f2b40;--border:#2a3854;--text:#e6ecf5;--text2:#a8b5cc;--text3:#6b7a96;--gold:#5fa8e8;--gold2:#7cb8e8;--amber:#e8a868;--red:#e87878;--green:#7ed598;--blue:#5fa8e8;--teal:#5fc8c8;--purple:#a890e8;--sidebar-w:280px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:16px;line-height:1.75;display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--bg2);border-right:1px solid var(--border);position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100;display:flex;flex-direction:column}
+.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-track{background:var(--bg2)}.sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.sidebar-header{padding:24px 20px 20px;border-bottom:1px solid var(--border);background:var(--bg2);position:sticky;top:0;z-index:10}
+.sidebar-part-badge{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;display:block}
+.sidebar-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--text);line-height:1.3}
+.sidebar-sub{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--text3);margin-top:4px}
+.nav-section{padding:6px 0}
+.nav-section-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.2em;color:var(--text3);text-transform:uppercase;padding:12px 20px 4px}
+.nav-item{display:block;padding:7px 20px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text2);text-decoration:none;border-left:2px solid transparent;transition:all .15s ease;cursor:pointer;line-height:1.4}
+.nav-item:hover{color:var(--gold);background:rgba(95,168,232,.05);border-left-color:rgba(95,168,232,.3)}
+.nav-item.active{color:var(--gold);background:rgba(95,168,232,.08);border-left-color:var(--gold);font-weight:500}
+.nav-item .nav-num{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);margin-right:8px}
+.sidebar-footer{margin-top:auto;padding:16px 20px;border-top:1px solid var(--border);font-family:'DM Sans',sans-serif;font-size:11px;color:var(--text3);line-height:1.6}
+.main{margin-left:var(--sidebar-w);flex:1;min-width:0}
+.hero{background:linear-gradient(135deg,var(--bg2),var(--bg3));border-bottom:1px solid var(--border);padding:60px 64px 48px;position:relative;overflow:hidden}
+.hero::before{content:'FINAL';position:absolute;right:30px;top:-20px;font-family:'Playfair Display',serif;font-size:160px;font-weight:900;color:rgba(95,168,232,.04);letter-spacing:-6px;pointer-events:none;line-height:1}
+.hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.hero-eyebrow::after{content:'';display:block;width:40px;height:1px;background:var(--gold);opacity:.5}
+.hero-title{font-family:'Playfair Display',serif;font-size:52px;font-weight:900;line-height:1.05;color:var(--text);margin-bottom:8px;letter-spacing:-1px}
+.hero-title span{color:var(--gold);font-style:italic}
+.hero-subtitle{font-family:'Source Serif 4',serif;font-size:18px;color:var(--text2);margin-top:12px;font-style:italic;font-weight:300}
+.hero-stats{display:flex;gap:32px;margin-top:32px;padding-top:28px;border-top:1px solid var(--border);flex-wrap:wrap}
+.hero-stat{display:flex;flex-direction:column;gap:4px}
+.hero-stat-num{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--gold);line-height:1}
+.hero-stat-label{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.08em}
+.content{padding:0 64px 80px;max-width:920px}
+.section{padding-top:56px;border-top:1px solid var(--border);margin-top:48px}
+.section:first-child{border-top:none;margin-top:0;padding-top:48px}
+.section-number{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;display:block}
+.section-title{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:var(--text);line-height:1.15;margin-bottom:6px;letter-spacing:-.5px}
+.section-desc{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text3);margin-bottom:28px;font-style:italic}
+.subsection{margin-top:36px}
+.subsection-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:600;color:var(--text);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+.subsection-title .bullet{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0}
+.exam-box{background:linear-gradient(135deg,rgba(95,168,232,.08),rgba(95,168,232,.03));border:1px solid rgba(95,168,232,.25);border-left:3px solid var(--gold);border-radius:4px;padding:16px 20px;margin:20px 0}
+.exam-box-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.exam-box-label::before{content:'★';font-size:10px}
+.exam-box p,.exam-box li{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);line-height:1.6}
+.exam-box ul{list-style:none;padding:0}
+.exam-box li{padding:3px 0 3px 16px;position:relative}
+.exam-box li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:12px}
+.warn-box{background:rgba(232,120,120,.07);border:1px solid rgba(232,120,120,.2);border-left:3px solid var(--red);border-radius:4px;padding:14px 18px;margin:16px 0}
+.warn-box-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:var(--red);letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+.warn-box p{font-family:'DM Sans',sans-serif;font-size:13.5px;color:#e8a8a8;line-height:1.55}
+.fact-table{width:100%;border-collapse:collapse;margin:20px 0;font-family:'DM Sans',sans-serif}
+.fact-table th{background:var(--bg3);color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:10px 16px;text-align:left;border:1px solid var(--border);font-family:'JetBrains Mono',monospace}
+.fact-table td{padding:10px 16px;font-size:13.5px;color:var(--text);border:1px solid var(--border);line-height:1.5;vertical-align:top}
+.fact-table tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+.fact-table tr:hover td{background:rgba(95,168,232,.04)}
+.fact-table td.key{color:var(--gold2);font-weight:600;font-size:13px;white-space:nowrap}
+.fact-table td.hl{color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700}
+.bpsc-q{background:var(--bg4);border:1px solid var(--border);border-radius:4px;padding:14px 18px;margin:12px 0}
+.bpsc-q-label{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--amber);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px}
+.bpsc-q-text{font-family:'Source Serif 4',serif;font-size:14px;color:var(--text);font-style:italic;line-height:1.55;margin-bottom:6px}
+.bpsc-q-ans{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--green)}
+.bpsc-q-ans::before{content:'✓ '}
+p{margin-bottom:14px;color:var(--text2);font-size:15.5px;line-height:1.8}
+strong{color:var(--text);font-weight:600}
+em{color:var(--gold2);font-style:normal;font-weight:600}
+ul.cl{list-style:none;padding:0;margin:10px 0 16px}
+ul.cl li{padding:6px 0 6px 22px;position:relative;font-family:'DM Sans',sans-serif;font-size:14.5px;color:var(--text2);line-height:1.5;border-bottom:1px solid rgba(255,255,255,.03)}
+ul.cl li:last-child{border-bottom:none}
+ul.cl li::before{content:'◆';position:absolute;left:0;color:var(--gold);font-size:8px;top:10px}
+ul.cl li strong{color:var(--text)}
+.divider{height:1px;background:var(--border);margin:28px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0}
+.grid-card{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:16px}
+.grid-card-title{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.grid-card ul{list-style:none;padding:0}
+.grid-card li{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.03);line-height:1.4}
+.grid-card li:last-child{border-bottom:none}
+.grid-card li strong{color:var(--text)}
+.memo{background:var(--bg4);border-radius:4px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--teal);line-height:1.7;border-left:2px solid var(--teal)}
+.memo strong{color:var(--gold)}
+.progress-bar{position:fixed;top:0;left:var(--sidebar-w);right:0;height:2px;background:rgba(95,168,232,.15);z-index:200}
+.progress-fill{height:100%;background:var(--gold);width:0%;transition:width .1s linear}
+.pull-quote{border-left:3px solid var(--gold);padding:12px 20px;margin:24px 0;background:rgba(95,168,232,.04);border-radius:0 4px 4px 0}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:17px;font-style:italic;color:var(--text);line-height:1.6;margin:0}
+
+/* INLINE BPSC TAG */
+.asked{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,rgba(232,168,104,.18),rgba(232,168,104,.08));border:1px solid rgba(232,168,104,.4);border-radius:4px;padding:8px 12px;margin:8px 0;font-family:'DM Sans',sans-serif;font-size:12.5px;color:#f0c89c;line-height:1.5}
+.asked::before{content:'⚡ ASKED IN BPSC:';font-family:'JetBrains Mono',monospace;font-weight:700;font-size:10px;color:var(--amber);letter-spacing:.1em;flex-shrink:0;margin-right:4px}
+.asked.block{display:block;margin:14px 0}
+.asked.block::before{display:block;margin-bottom:4px}
+.asked strong{color:#ffd9a8}
+
+/* RECORD ROW */
+.record{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:11px 16px;margin:6px 0;border-left:3px solid var(--gold)}
+.record-num{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--gold);min-width:36px}
+.record-text{font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--text);line-height:1.5}
+.record-text strong{color:var(--gold2)}
+.record-text small{display:block;font-size:11px;color:var(--text3);margin-top:2px;font-family:'JetBrains Mono',monospace;letter-spacing:.05em}
+
+/* TRAP CARD */
+.trap{background:rgba(232,120,120,.06);border:1px solid rgba(232,120,120,.2);border-radius:6px;padding:14px 18px;margin:10px 0;border-left:3px solid var(--red)}
+.trap-label{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--red);letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+.trap-q{font-family:'Source Serif 4',serif;font-size:14px;color:var(--text);font-style:italic;line-height:1.55;margin-bottom:6px}
+.trap-a{font-family:'DM Sans',sans-serif;font-size:13px;color:#8ec480;line-height:1.5}
+.trap-a strong{color:var(--gold2)}
+
+@media(max-width:900px){.sidebar{display:none}.main{margin-left:0}.hero{padding:32px 24px}.content{padding:0 24px 60px}.grid-2,.grid-3{grid-template-columns:1fr}.hero-stats{gap:20px}.hero-title{font-size:36px}}
+</style>
+</head>
+<body>
+<div class="progress-bar"><div class="progress-fill" id="pf"></div></div>
+
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <span class="sidebar-part-badge">Part IV — FINAL</span>
+    <div class="sidebar-title">World Geography</div>
+    <div class="sidebar-sub">The Complete Closer · Everything Missed</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Minerals &amp; Resources</div>
+    <a class="nav-item" href="#s1"><span class="nav-num">01</span>Mineral-Country Pairs</a>
+    <a class="nav-item" href="#s2"><span class="nav-num">02</span>Largest Producers</a>
+    <a class="nav-item" href="#s3"><span class="nav-num">03</span>Oil &amp; OPEC</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Economic Geography</div>
+    <a class="nav-item" href="#s4"><span class="nav-num">04</span>Agricultural Producers</a>
+    <a class="nav-item" href="#s5"><span class="nav-num">05</span>Agricultural Belts</a>
+    <a class="nav-item" href="#s6"><span class="nav-num">06</span>Fishing Zones</a>
+    <a class="nav-item" href="#s7"><span class="nav-num">07</span>Industrial Regions</a>
+    <a class="nav-item" href="#s8"><span class="nav-num">08</span>Major World Ports</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Lands &amp; Waters</div>
+    <a class="nav-item" href="#s9"><span class="nav-num">09</span>Famous Islands</a>
+    <a class="nav-item" href="#s10"><span class="nav-num">10</span>Peninsulas &amp; Capes</a>
+    <a class="nav-item" href="#s11"><span class="nav-num">11</span>World Waterfalls</a>
+    <a class="nav-item" href="#s12"><span class="nav-num">12</span>Canyons &amp; Valleys</a>
+    <a class="nav-item" href="#s13"><span class="nav-num">13</span>Important Lake Pairs</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Recent &amp; Closing</div>
+    <a class="nav-item" href="#s14"><span class="nav-num">14</span>Recent in News (2024-26)</a>
+    <a class="nav-item" href="#s15"><span class="nav-num">15</span>Demographic Records</a>
+    <a class="nav-item" href="#s16"><span class="nav-num">16</span>"MOST" Records</a>
+    <a class="nav-item" href="#s17"><span class="nav-num">17</span>BPSC Trap Patterns</a>
+    <a class="nav-item" href="#s18"><span class="nav-num">18</span>Final 30-Q Mega Drill</a>
+  </div>
+  <div class="sidebar-footer">⚡ This is the closer. After this, no World Geography question can surprise you.</div>
+</nav>
+
+<main class="main">
+<div class="hero">
+  <div class="hero-eyebrow">BPSC Prelims 2026 — Part IV · The Final Piece</div>
+  <h1 class="hero-title">The <span>Complete</span><br>Closer</h1>
+  <div class="hero-subtitle">Minerals · Producers · Industries · Ports · Islands · Waterfalls · Recent News</div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hero-stat-num">18</div><div class="hero-stat-label">Final Sections</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">100%</div><div class="hero-stat-label">Coverage Locked</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">30+</div><div class="hero-stat-label">PYQ Patterns</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">4–5</div><div class="hero-stat-label">Bonus Marks/Paper</div></div>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- Intro -->
+<section class="section" id="intro" style="border-top:none;padding-top:30px;">
+<div class="exam-box">
+<div class="exam-box-label">★ Why Part 4 Exists</div>
+<p>Parts 1–3 covered physical earth, continents, oceans, climate, and country basics. But BPSC 70th and 72nd papers asked questions on <strong>specific minerals, mining centres, industrial regions, recent infrastructure (Trans-Afghan Railway, Kyaukpyu Port), and agricultural producers</strong> — topics NOT in standard prelims books. This closer fills every remaining gap. After Part 4, no BPSC World Geography question can surprise you.</p>
+</div>
+<div class="pull-quote"><p>"This is the final lock. After mastering these 18 sections, you have everything covered: physical geography, climate, country facts, economic geography, recent news, and trap patterns. World Geography in BPSC becomes a guaranteed 10+ marks zone."</p></div>
+</section>
+
+<!-- ============================== -->
+<!-- S1: MINERAL-COUNTRY PAIRS -->
+<!-- ============================== -->
+<section class="section" id="s1">
+<span class="section-number">Section 01</span>
+<h2 class="section-title">Mineral-Country Pairs (Mining Centres)</h2>
+<div class="section-desc">★ Confirmed BPSC 70th/72nd pattern — match mining centre to mineral. Highest-yield section in Part 4.</div>
+
+<table class="fact-table">
+<tr><th>Mining Centre</th><th>Country</th><th>Mineral</th></tr>
+<tr><td class="key"><strong>Kimberley</strong></td><td>South Africa</td><td><strong>Diamond</strong> (most famous diamond mine in history)</td></tr>
+<tr><td class="key"><strong>Witwatersrand</strong></td><td>South Africa</td><td><strong>Gold</strong> (~40% of all gold ever mined came from here)</td></tr>
+<tr><td class="key"><strong>Katanga (Shaba)</strong></td><td>DR Congo</td><td><strong>Copper</strong> (Africa's "Copper Belt")</td></tr>
+<tr><td class="key"><strong>Saar</strong></td><td>Germany</td><td><strong>Coal</strong> (NOT Iron Ore — common trap; Saar is coal-rich)</td></tr>
+<tr><td class="key"><strong>Butte</strong></td><td>Montana, USA</td><td><strong>Copper</strong> ("Richest Hill on Earth")</td></tr>
+<tr><td class="key"><strong>Ruhr</strong></td><td>Germany</td><td><strong>Coal</strong> + Iron &amp; Steel hub</td></tr>
+<tr><td class="key"><strong>Donbas</strong></td><td>Ukraine/Russia</td><td><strong>Coal</strong> (also iron &amp; steel)</td></tr>
+<tr><td class="key"><strong>Mesabi Range</strong></td><td>Minnesota, USA</td><td><strong>Iron Ore</strong> (Lake Superior region)</td></tr>
+<tr><td class="key"><strong>Kiruna</strong></td><td>Sweden</td><td><strong>Iron Ore</strong> (high-grade magnetite)</td></tr>
+<tr><td class="key"><strong>Lorraine</strong></td><td>France</td><td><strong>Iron Ore</strong></td></tr>
+<tr><td class="key"><strong>Krivoy Rog</strong></td><td>Ukraine</td><td><strong>Iron Ore</strong></td></tr>
+<tr><td class="key"><strong>Sudbury</strong></td><td>Ontario, Canada</td><td><strong>Nickel</strong> (world's largest nickel mining region historically)</td></tr>
+<tr><td class="key"><strong>Carajás</strong></td><td>Brazil</td><td><strong>Iron Ore</strong> (world's largest iron ore mine)</td></tr>
+<tr><td class="key"><strong>Pilbara</strong></td><td>Western Australia</td><td><strong>Iron Ore</strong> (Australia's main iron-mining region)</td></tr>
+<tr><td class="key"><strong>Chuquicamata</strong></td><td>Chile</td><td><strong>Copper</strong> (world's largest open-pit copper mine)</td></tr>
+<tr><td class="key"><strong>Atacama Desert</strong></td><td>Chile</td><td><strong>Copper + Nitrate + Lithium</strong> (in salt flats)</td></tr>
+<tr><td class="key"><strong>Cerro de Pasco</strong></td><td>Peru</td><td><strong>Silver + Copper + Zinc + Lead</strong></td></tr>
+<tr><td class="key"><strong>Potosí</strong></td><td>Bolivia</td><td><strong>Silver + Tin</strong> (historic Spanish silver mine)</td></tr>
+<tr><td class="key"><strong>Bingham Canyon</strong></td><td>Utah, USA</td><td><strong>Copper</strong> (deepest open-pit mine in world)</td></tr>
+<tr><td class="key"><strong>Sukinda Valley</strong></td><td>Odisha, India</td><td><strong>Chromite</strong></td></tr>
+<tr><td class="key"><strong>Jharia, Raniganj</strong></td><td>Jharkhand/W. Bengal, India</td><td><strong>Coal</strong></td></tr>
+<tr><td class="key"><strong>Damodar Valley</strong></td><td>India</td><td><strong>Coal</strong> (India's "Ruhr")</td></tr>
+<tr><td class="key"><strong>Singhbhum</strong></td><td>Jharkhand, India</td><td><strong>Copper</strong></td></tr>
+<tr><td class="key"><strong>Bayan Obo</strong></td><td>Inner Mongolia, China</td><td><strong>Rare Earth Elements</strong> (world's largest reserve)</td></tr>
+<tr><td class="key"><strong>Orapa, Jwaneng</strong></td><td>Botswana</td><td><strong>Diamond</strong> (top-quality gem diamonds)</td></tr>
+<tr><td class="key"><strong>Argyle Mine</strong></td><td>Western Australia</td><td><strong>Diamond</strong> (pink diamonds; closed 2020)</td></tr>
+<tr><td class="key"><strong>Mir Mine</strong></td><td>Yakutia, Russia (Siberia)</td><td><strong>Diamond</strong></td></tr>
+<tr><td class="key"><strong>Salar de Uyuni</strong></td><td>Bolivia</td><td><strong>Lithium</strong> (world's largest salt flat; "Lithium Triangle" with Chile, Argentina)</td></tr>
+</table>
+
+<div class="asked block">
+<strong>Kimberley-Diamond, Witwatersrand-Gold, Katanga-Copper, Butte-Copper</strong> — these are the classic 4 pairs asked in BPSC's match-the-pair format. Common trap: <strong>"Saar - Iron Ore"</strong> is INCORRECT (Saar = Coal). This exact incorrect pair appeared in past BPSC. Memorise the 4 valid pairs separately from the trap.
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Quick-Memorize Pairs (Mining Centre → Country → Mineral)</div>
+<table class="fact-table" style="margin:6px 0 0;">
+<tr><th>Centre</th><th>Country</th><th>Mineral</th></tr>
+<tr><td class="key">Kimberley</td><td>S. Africa</td><td>Diamond</td></tr>
+<tr><td class="key">Witwatersrand</td><td>S. Africa</td><td>Gold</td></tr>
+<tr><td class="key">Katanga</td><td>DRC</td><td>Copper</td></tr>
+<tr><td class="key">Butte</td><td>USA</td><td>Copper</td></tr>
+<tr><td class="key">Chuquicamata</td><td>Chile</td><td>Copper</td></tr>
+<tr><td class="key">Sudbury</td><td>Canada</td><td>Nickel</td></tr>
+<tr><td class="key">Mesabi</td><td>USA</td><td>Iron Ore</td></tr>
+<tr><td class="key">Kiruna</td><td>Sweden</td><td>Iron Ore</td></tr>
+<tr><td class="key">Carajás</td><td>Brazil</td><td>Iron Ore</td></tr>
+<tr><td class="key">Pilbara</td><td>Australia</td><td>Iron Ore</td></tr>
+<tr><td class="key">Ruhr</td><td>Germany</td><td>Coal</td></tr>
+<tr><td class="key">Donbas</td><td>Ukraine</td><td>Coal</td></tr>
+<tr><td class="key">Saar</td><td>Germany</td><td>Coal (NOT iron ore!)</td></tr>
+</table>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Which of the following is NOT correctly matched: (a) Kimberley-Diamond (b) Witwatersrand-Gold (c) Katanga-Copper (d) Saar-Iron Ore"</div><div class="bpsc-q-ans">(d) Saar-Iron Ore — INCORRECT. Saar is known for COAL, not iron ore.</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S2: LARGEST PRODUCERS -->
+<!-- ============================== -->
+<section class="section" id="s2">
+<span class="section-number">Section 02</span>
+<h2 class="section-title">Largest Producers — Mineral &amp; Resource Wise</h2>
+<div class="section-desc">★ BPSC 72nd asked this directly — match minerals to top producer countries</div>
+
+<table class="fact-table">
+<tr><th>Mineral / Resource</th><th>Top Producer</th><th>Other Major Producers</th></tr>
+<tr><td class="key"><strong>Bauxite</strong> (Aluminium ore)</td><td><strong>Australia</strong></td><td>China, Guinea, Brazil, India</td></tr>
+<tr><td class="key"><strong>Iron Ore</strong></td><td><strong>Australia</strong></td><td>Brazil, China, India, Russia</td></tr>
+<tr><td class="key"><strong>Coal</strong></td><td><strong>China</strong></td><td>India, USA, Indonesia, Australia</td></tr>
+<tr><td class="key"><strong>Gold</strong></td><td><strong>China</strong></td><td>Australia, Russia, USA, Canada</td></tr>
+<tr><td class="key"><strong>Silver</strong></td><td><strong>Mexico</strong></td><td>Peru, China, Russia, Chile</td></tr>
+<tr><td class="key"><strong>Copper</strong></td><td><strong>Chile</strong></td><td>Peru, China, DR Congo, USA</td></tr>
+<tr><td class="key"><strong>Diamond (by volume)</strong></td><td><strong>Russia</strong></td><td>Botswana, DR Congo, Canada, Australia</td></tr>
+<tr><td class="key"><strong>Diamond (by value)</strong></td><td><strong>Botswana</strong></td><td>Russia, Canada</td></tr>
+<tr><td class="key"><strong>Tin</strong></td><td><strong>China / Indonesia</strong></td><td>Bolivia, Myanmar</td></tr>
+<tr><td class="key"><strong>Lithium</strong></td><td><strong>Australia / Chile</strong></td><td>China, Argentina, Bolivia ("Lithium Triangle")</td></tr>
+<tr><td class="key"><strong>Uranium (mine production)</strong></td><td><strong>Kazakhstan</strong></td><td>Canada, Australia, Namibia, Russia</td></tr>
+<tr><td class="key"><strong>Titanium</strong></td><td><strong>China</strong> (currently); Russia &amp; Australia also major</td><td>—</td></tr>
+<tr><td class="key"><strong>Nickel</strong></td><td><strong>Indonesia</strong></td><td>Philippines, Russia, New Caledonia, Australia</td></tr>
+<tr><td class="key"><strong>Zinc</strong></td><td><strong>China</strong></td><td>Peru, India, Australia</td></tr>
+<tr><td class="key"><strong>Lead</strong></td><td><strong>China</strong></td><td>Australia, USA, Peru</td></tr>
+<tr><td class="key"><strong>Manganese</strong></td><td><strong>South Africa</strong></td><td>China, Australia, Gabon, India</td></tr>
+<tr><td class="key"><strong>Chromite</strong></td><td><strong>South Africa</strong></td><td>Kazakhstan, India, Turkey</td></tr>
+<tr><td class="key"><strong>Cobalt</strong></td><td><strong>DR Congo</strong> (~70%)</td><td>Russia, Australia, Canada, Cuba</td></tr>
+<tr><td class="key"><strong>Platinum</strong></td><td><strong>South Africa</strong> (~70%)</td><td>Russia, Zimbabwe</td></tr>
+<tr><td class="key"><strong>Rare Earth Elements</strong></td><td><strong>China</strong> (~60% of world)</td><td>USA, Australia, Myanmar</td></tr>
+<tr><td class="key"><strong>Nitrate</strong></td><td><strong>Chile</strong> (Atacama)</td><td>—</td></tr>
+<tr><td class="key"><strong>Mica</strong></td><td><strong>China</strong></td><td>India (Jharkhand-Bihar belt), Russia</td></tr>
+<tr><td class="key"><strong>Sulfur</strong></td><td><strong>China / USA</strong></td><td>Russia, Saudi Arabia</td></tr>
+<tr><td class="key"><strong>Asbestos</strong></td><td><strong>Russia</strong></td><td>China, Kazakhstan, Brazil</td></tr>
+<tr><td class="key"><strong>Tungsten</strong></td><td><strong>China</strong> (~80% of world)</td><td>Russia, Vietnam</td></tr>
+</table>
+
+<div class="asked block">
+<strong>BPSC 72nd asked: "Match minerals with their major producer countries — Bauxite/Australia, Nickel/Indonesia, Uranium/South Africa".</strong> The TRAP was <strong>Uranium-South Africa is INCORRECT</strong> (actual: Kazakhstan/Canada/Australia). Bauxite-Australia ✓ and Nickel-Indonesia ✓ are correct. <strong>Master the producers above to avoid this trap.</strong>
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Quick Mnemonic — Top Producers</div>
+<ul>
+<li><strong>Australia:</strong> Bauxite, Iron Ore, Lithium (#1 or co-#1 in all 3)</li>
+<li><strong>China:</strong> Coal, Gold, Tungsten, Rare Earths, Mica, Zinc, Lead, Titanium</li>
+<li><strong>Chile:</strong> Copper, Nitrate, Lithium</li>
+<li><strong>Russia:</strong> Diamond, Asbestos, Titanium</li>
+<li><strong>South Africa:</strong> Platinum, Manganese, Chromite, Gold (historic)</li>
+<li><strong>DR Congo:</strong> Cobalt, Copper (Katanga)</li>
+<li><strong>Indonesia:</strong> Nickel, Tin</li>
+<li><strong>Kazakhstan:</strong> Uranium (~42% world)</li>
+<li><strong>Mexico:</strong> Silver</li>
+<li><strong>Botswana:</strong> Diamond (by value)</li>
+</ul>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S3: OIL & OPEC -->
+<!-- ============================== -->
+<section class="section" id="s3">
+<span class="section-number">Section 03</span>
+<h2 class="section-title">Petroleum, Natural Gas &amp; OPEC</h2>
+<div class="section-desc">Oil is "mineral oil" — frequently asked under economic geography</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Top Oil-Producing Countries (2024)</div>
+<table class="fact-table">
+<tr><th>Rank</th><th>Country</th><th>Notes</th></tr>
+<tr><td class="hl">1</td><td class="key">USA</td><td>Largest producer (shale oil boom since 2010s)</td></tr>
+<tr><td class="hl">2</td><td class="key">Saudi Arabia</td><td>Largest exporter; OPEC leader; Ghawar field is world's largest</td></tr>
+<tr><td class="hl">3</td><td class="key">Russia</td><td>Major exporter via pipelines to Europe (pre-Ukraine war)</td></tr>
+<tr><td class="hl">4</td><td class="key">Canada</td><td>Oil sands (Alberta)</td></tr>
+<tr><td class="hl">5</td><td class="key">China</td><td>Major consumer; mostly imports oil</td></tr>
+<tr><td class="hl">6</td><td class="key">Iraq</td><td>OPEC member; large reserves</td></tr>
+<tr><td class="hl">7</td><td class="key">UAE, Iran, Brazil, Kuwait</td><td>—</td></tr>
+</table>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Top Oil Reserves (Proven)</div>
+<table class="fact-table">
+<tr><td class="key">Venezuela</td><td><strong>Largest proven reserves</strong> (~300 billion barrels)</td></tr>
+<tr><td class="key">Saudi Arabia</td><td>2nd largest reserves (~270 billion)</td></tr>
+<tr><td class="key">Canada</td><td>3rd (oil sands)</td></tr>
+<tr><td class="key">Iran, Iraq, Kuwait, UAE, Russia</td><td>Other top reserve-holders</td></tr>
+</table>
+
+<div class="asked block">
+<strong>Venezuela has the world's largest proven oil reserves</strong> — but it's NOT the largest producer. The USA leads production due to shale oil. Distinction frequently asked.
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>OPEC — 13 Members &amp; HQ</div>
+<table class="fact-table">
+<tr><td class="key">Founded</td><td>1960 at Baghdad (5 founders: Iran, Iraq, Kuwait, Saudi Arabia, Venezuela)</td></tr>
+<tr><td class="key">HQ</td><td><strong>Vienna, Austria</strong> (moved from Geneva in 1965)</td></tr>
+<tr><td class="key">Members (13)</td><td>Algeria, Congo, Equatorial Guinea, Gabon, Iran, Iraq, Kuwait, Libya, Nigeria, Saudi Arabia, UAE, Venezuela + Angola exited 2024</td></tr>
+<tr><td class="key">OPEC+</td><td>OPEC + 10 non-OPEC producers including Russia, Mexico, Kazakhstan, Oman, Bahrain</td></tr>
+<tr><td class="key">Production share</td><td>OPEC: ~30% of world oil; OPEC+: ~40%</td></tr>
+</table>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Natural Gas — Top Producers</div>
+<table class="fact-table">
+<tr><td class="key">#1 USA</td><td>Shale gas revolution</td></tr>
+<tr><td class="key">#2 Russia</td><td>Major pipelines to Europe (Nord Stream); Gazprom</td></tr>
+<tr><td class="key">#3 Iran</td><td>Largest reserves in world (South Pars field shared with Qatar)</td></tr>
+<tr><td class="key">#4 Qatar</td><td>Largest LNG exporter; North Field</td></tr>
+<tr><td class="key">#5 China</td><td>—</td></tr>
+</table>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Which country has the world's largest proven oil reserves?"</div><div class="bpsc-q-ans">Venezuela (~300 billion barrels)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"OPEC was founded in which year and where is its HQ?"</div><div class="bpsc-q-ans">1960 (at Baghdad); HQ in Vienna, Austria (since 1965)</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S4: AGRICULTURAL PRODUCERS -->
+<!-- ============================== -->
+<section class="section" id="s4">
+<span class="section-number">Section 04</span>
+<h2 class="section-title">Major Agricultural Producers (World)</h2>
+<div class="section-desc">★ BPSC 72nd asked dairy farming question — these direct producer questions are high-yield</div>
+
+<table class="fact-table">
+<tr><th>Crop / Product</th><th>Top Producer</th><th>Other Major Producers</th></tr>
+<tr><td class="key"><strong>Rice</strong></td><td>China</td><td>India, Indonesia, Bangladesh, Vietnam</td></tr>
+<tr><td class="key"><strong>Wheat</strong></td><td>China</td><td>India, Russia, USA, France</td></tr>
+<tr><td class="key"><strong>Maize (Corn)</strong></td><td>USA</td><td>China, Brazil, Argentina</td></tr>
+<tr><td class="key"><strong>Sugarcane</strong></td><td>Brazil</td><td>India, China, Thailand, Pakistan</td></tr>
+<tr><td class="key"><strong>Sugar Beet</strong></td><td>Russia</td><td>France, USA, Germany</td></tr>
+<tr><td class="key"><strong>Cotton</strong></td><td>India</td><td>China, USA, Brazil, Pakistan</td></tr>
+<tr><td class="key"><strong>Jute</strong></td><td>India</td><td>Bangladesh (close 2nd; sometimes #1)</td></tr>
+<tr><td class="key"><strong>Tea</strong></td><td>China</td><td>India, Kenya, Sri Lanka, Turkey</td></tr>
+<tr><td class="key"><strong>Coffee</strong></td><td><strong>Brazil</strong></td><td>Vietnam, Colombia, Indonesia, Ethiopia</td></tr>
+<tr><td class="key"><strong>Cocoa</strong></td><td><strong>Côte d'Ivoire (Ivory Coast)</strong></td><td>Ghana, Indonesia, Ecuador</td></tr>
+<tr><td class="key"><strong>Natural Rubber</strong></td><td><strong>Thailand</strong></td><td>Indonesia, Vietnam, India</td></tr>
+<tr><td class="key"><strong>Palm Oil</strong></td><td>Indonesia</td><td>Malaysia, Thailand, Colombia</td></tr>
+<tr><td class="key"><strong>Olive Oil</strong></td><td>Spain</td><td>Italy, Greece, Turkey, Tunisia</td></tr>
+<tr><td class="key"><strong>Banana</strong></td><td>India</td><td>China, Philippines, Brazil, Ecuador</td></tr>
+<tr><td class="key"><strong>Mango</strong></td><td>India</td><td>China, Thailand, Mexico, Pakistan</td></tr>
+<tr><td class="key"><strong>Pineapple</strong></td><td>Costa Rica</td><td>Philippines, Brazil, Thailand</td></tr>
+<tr><td class="key"><strong>Apple</strong></td><td>China</td><td>USA, Poland, Turkey, India</td></tr>
+<tr><td class="key"><strong>Tobacco</strong></td><td>China</td><td>India, Brazil, USA</td></tr>
+<tr><td class="key"><strong>Soybean</strong></td><td>Brazil</td><td>USA, Argentina, China, India</td></tr>
+<tr><td class="key"><strong>Spices</strong></td><td>India</td><td>Bangladesh, Turkey, China</td></tr>
+<tr><td class="key"><strong>Pepper (Black)</strong></td><td>Vietnam</td><td>Indonesia, India, Brazil</td></tr>
+<tr><td class="key"><strong>Cardamom</strong></td><td>Guatemala</td><td>India</td></tr>
+<tr><td class="key"><strong>Saffron</strong></td><td>Iran</td><td>India (Kashmir), Spain</td></tr>
+<tr><td class="key"><strong>Milk (Dairy)</strong></td><td><strong>India</strong></td><td>USA, China, Pakistan, Brazil</td></tr>
+<tr><td class="key"><strong>Commercial dairy farming (per capita)</strong></td><td><strong>New Zealand</strong></td><td>Denmark, Netherlands, Australia</td></tr>
+<tr><td class="key"><strong>Wool</strong></td><td>China</td><td>Australia, New Zealand</td></tr>
+<tr><td class="key"><strong>Beef</strong></td><td>USA</td><td>Brazil, EU, China</td></tr>
+<tr><td class="key"><strong>Fish</strong></td><td>China</td><td>Indonesia, India, Vietnam, USA</td></tr>
+</table>
+
+<div class="asked block">
+<strong>BPSC 72nd asked:</strong> "Which country holds the first rank in <strong>commercial dairy farming</strong>?" — Answer is <strong>New Zealand</strong> (per-capita basis, commercial focus). Don't confuse with <strong>milk production</strong> (where India is #1 due to massive population). This distinction is the trap.
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ India's #1 Position Globally</div>
+<ul>
+<li><strong>Milk</strong> (total production)</li>
+<li><strong>Pulses</strong></li>
+<li><strong>Jute</strong> (with Bangladesh)</li>
+<li><strong>Spices</strong></li>
+<li><strong>Mango, Banana, Papaya</strong></li>
+<li><strong>Cotton</strong></li>
+<li><strong>Cattle population</strong></li>
+</ul>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Côte d'Ivoire is the world's largest producer of?"</div><div class="bpsc-q-ans">Cocoa</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Which country leads in commercial dairy farming?"</div><div class="bpsc-q-ans">New Zealand (NOT India — India leads in total milk production, but New Zealand in commercial dairy farming per capita)</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S5: AGRICULTURAL BELTS -->
+<!-- ============================== -->
+<section class="section" id="s5">
+<span class="section-number">Section 05</span>
+<h2 class="section-title">Major Agricultural Belts of the World</h2>
+<div class="section-desc">USA-specific belts + global plantation zones</div>
+
+<table class="fact-table">
+<tr><th>Belt</th><th>Region</th><th>Crop</th></tr>
+<tr><td class="key"><strong>Corn Belt</strong></td><td>Midwest USA — Iowa, Illinois, Indiana, Nebraska</td><td>Maize (corn) — world's most concentrated corn production</td></tr>
+<tr><td class="key"><strong>Wheat Belt</strong></td><td>Great Plains USA — Kansas, Nebraska, Dakotas + Prairies (Canada)</td><td>Wheat — "Breadbasket of the World"</td></tr>
+<tr><td class="key"><strong>Cotton Belt</strong></td><td>Southern USA — Texas, Mississippi, Alabama, Georgia</td><td>Cotton</td></tr>
+<tr><td class="key"><strong>Tobacco Belt</strong></td><td>SE USA — Virginia, N. Carolina, Kentucky</td><td>Tobacco</td></tr>
+<tr><td class="key"><strong>Dairy Belt</strong></td><td>NE USA — Wisconsin, NY, Michigan, Vermont</td><td>Dairy products</td></tr>
+<tr><td class="key"><strong>Rust Belt</strong></td><td>Great Lakes USA — Pittsburgh, Detroit, Cleveland</td><td>Heavy industry (now declining)</td></tr>
+<tr><td class="key"><strong>Sun Belt</strong></td><td>Southern USA (Florida to California)</td><td>Population/economic growth region; tech, agriculture</td></tr>
+<tr><td class="key"><strong>Bible Belt</strong></td><td>Southern USA</td><td>Cultural/religious zone (not crop)</td></tr>
+<tr><td class="key"><strong>Pampas</strong></td><td>Argentina</td><td>Wheat, beef, soybeans</td></tr>
+<tr><td class="key"><strong>Cerrado</strong></td><td>Brazil (central)</td><td>Soybeans (major expansion zone)</td></tr>
+<tr><td class="key"><strong>Steppes</strong></td><td>Russia, Ukraine, Kazakhstan</td><td>Wheat ("Bread basket of Europe")</td></tr>
+<tr><td class="key"><strong>Murray-Darling Basin</strong></td><td>Australia (SE)</td><td>Wheat, sheep, cotton</td></tr>
+</table>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"The Corn Belt of the world is located in?"</div><div class="bpsc-q-ans">Midwest USA — Iowa, Illinois, Nebraska, Indiana</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S6: FISHING ZONES -->
+<!-- ============================== -->
+<section class="section" id="s6">
+<span class="section-number">Section 06</span>
+<h2 class="section-title">Major Fishing Zones of the World</h2>
+<div class="section-desc">Rich fishing zones form where cold and warm currents meet — repeated factual questions</div>
+
+<table class="fact-table">
+<tr><th>Fishing Zone / Bank</th><th>Region</th><th>Why Rich?</th></tr>
+<tr><td class="key"><strong>Grand Banks</strong></td><td>Off Newfoundland, Canada (NW Atlantic)</td><td><strong>Where Labrador (cold) meets Gulf Stream (warm)</strong>; nutrient upwelling</td></tr>
+<tr><td class="key"><strong>Hokkaido Banks</strong></td><td>Off NE Japan</td><td><strong>Where Oyashio (cold) meets Kuroshio (warm)</strong>; one of world's busiest</td></tr>
+<tr><td class="key"><strong>Dogger Bank</strong></td><td>North Sea (off UK)</td><td>Shallow waters; major herring + cod fishery</td></tr>
+<tr><td class="key"><strong>North Sea Fisheries</strong></td><td>Between UK + Scandinavia</td><td>Herring, cod, mackerel; declining due to overfishing</td></tr>
+<tr><td class="key"><strong>Peru Coast (Humboldt)</strong></td><td>Pacific coast off Peru/Chile</td><td>Cold Humboldt Current; world's richest anchovy fishery</td></tr>
+<tr><td class="key"><strong>Bering Sea</strong></td><td>Between Russia + Alaska</td><td>Pollock, salmon, crab; major US fishery</td></tr>
+<tr><td class="key"><strong>Norwegian Coast</strong></td><td>NE Atlantic</td><td>Cod, salmon; "fish ladder" Atlantic stocks</td></tr>
+<tr><td class="key"><strong>Southwest Pacific</strong></td><td>Off Chile</td><td>Anchovy (combined with Peru = world #1 region)</td></tr>
+</table>
+
+<div class="asked block">
+<strong>"Where warm and cold currents meet → richest fishing zones"</strong> is a confirmed BPSC concept. Best examples: <strong>Grand Banks (Labrador + Gulf Stream)</strong> and <strong>Hokkaido (Oyashio + Kuroshio)</strong>. Memorise these 2 first.
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S7: INDUSTRIAL REGIONS -->
+<!-- ============================== -->
+<section class="section" id="s7">
+<span class="section-number">Section 07</span>
+<h2 class="section-title">Major Industrial Regions of the World</h2>
+<div class="section-desc">Iron-and-steel + manufacturing hubs — frequently asked</div>
+
+<table class="fact-table">
+<tr><th>Region</th><th>Country</th><th>Industry</th></tr>
+<tr><td class="key"><strong>Ruhr Region</strong></td><td>Germany</td><td>Iron &amp; Steel; coal mining; chemicals (Europe's industrial heartland)</td></tr>
+<tr><td class="key"><strong>Pittsburgh</strong></td><td>USA (Pennsylvania)</td><td>Iron &amp; Steel ("Steel City")</td></tr>
+<tr><td class="key"><strong>Detroit</strong></td><td>USA (Michigan)</td><td>Automobile ("Motor City")</td></tr>
+<tr><td class="key"><strong>Donetsk-Donbas</strong></td><td>Ukraine</td><td>Coal, iron, steel (active war zone now)</td></tr>
+<tr><td class="key"><strong>Yangtze River Delta</strong></td><td>China (Shanghai region)</td><td>Manufacturing, electronics, textiles</td></tr>
+<tr><td class="key"><strong>Pearl River Delta</strong></td><td>China (Guangzhou-Shenzhen)</td><td>Electronics, "Workshop of the World"</td></tr>
+<tr><td class="key"><strong>Kanto Plain</strong></td><td>Japan (Tokyo region)</td><td>Manufacturing, electronics, automobiles</td></tr>
+<tr><td class="key"><strong>Manchester-Lancashire</strong></td><td>UK</td><td>Cotton textiles ("Cottonopolis"); birthplace of Industrial Revolution</td></tr>
+<tr><td class="key"><strong>Yorkshire</strong></td><td>UK</td><td>Woolen textiles</td></tr>
+<tr><td class="key"><strong>Silicon Valley</strong></td><td>USA (California)</td><td>Technology, semiconductors, software</td></tr>
+<tr><td class="key"><strong>Bangalore</strong></td><td>India</td><td>IT, "Silicon Valley of India"</td></tr>
+<tr><td class="key"><strong>Sao Paulo</strong></td><td>Brazil</td><td>Largest industrial region in S. America</td></tr>
+<tr><td class="key"><strong>Sydney-Newcastle</strong></td><td>Australia</td><td>Manufacturing</td></tr>
+<tr><td class="key"><strong>Lille</strong></td><td>France</td><td>Textiles, steel</td></tr>
+<tr><td class="key"><strong>Stuttgart</strong></td><td>Germany</td><td>Automobiles (Mercedes-Benz, Porsche)</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Cotton Textile Famous Cities</div>
+<ul>
+<li><strong>Manchester (UK):</strong> "Cottonopolis" — pioneer of industrial cotton textile</li>
+<li><strong>Osaka (Japan):</strong> "Manchester of Japan"</li>
+<li><strong>Ahmedabad (India):</strong> "Manchester of India"</li>
+<li><strong>Lowell (USA):</strong> "Manchester of America"</li>
+<li><strong>Kanpur (India):</strong> "Manchester of the East" or "Leather city"</li>
+</ul>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Detroit is famous for which industry?"</div><div class="bpsc-q-ans">Automobile industry — "Motor City"; home of General Motors, Ford, Chrysler</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S8: MAJOR WORLD PORTS -->
+<!-- ============================== -->
+<section class="section" id="s8">
+<span class="section-number">Section 08</span>
+<h2 class="section-title">Major World Ports</h2>
+<div class="section-desc">Top ports by cargo handling — easy factual questions</div>
+
+<table class="fact-table">
+<tr><th>Port</th><th>Country</th><th>Significance</th></tr>
+<tr><td class="key"><strong>Shanghai</strong></td><td>China</td><td><strong>World's busiest port</strong> (by container traffic, since 2010)</td></tr>
+<tr><td class="key"><strong>Singapore</strong></td><td>Singapore</td><td>2nd busiest; world's busiest transshipment hub</td></tr>
+<tr><td class="key"><strong>Ningbo-Zhoushan</strong></td><td>China</td><td>3rd; busiest by tonnage</td></tr>
+<tr><td class="key"><strong>Shenzhen</strong></td><td>China</td><td>4th</td></tr>
+<tr><td class="key"><strong>Guangzhou</strong></td><td>China</td><td>5th</td></tr>
+<tr><td class="key"><strong>Busan</strong></td><td>South Korea</td><td>6th; largest in Korea</td></tr>
+<tr><td class="key"><strong>Qingdao</strong></td><td>China</td><td>7th</td></tr>
+<tr><td class="key"><strong>Tianjin</strong></td><td>China</td><td>8th</td></tr>
+<tr><td class="key"><strong>Hong Kong</strong></td><td>China (SAR)</td><td>9th; was #1 historically</td></tr>
+<tr><td class="key"><strong>Rotterdam</strong></td><td>Netherlands</td><td><strong>Largest port in Europe</strong>; "Gateway to Europe"</td></tr>
+<tr><td class="key"><strong>Antwerp-Bruges</strong></td><td>Belgium</td><td>2nd largest in Europe</td></tr>
+<tr><td class="key"><strong>Hamburg</strong></td><td>Germany</td><td>3rd in Europe</td></tr>
+<tr><td class="key"><strong>Los Angeles</strong></td><td>USA</td><td>Busiest US port; Pacific trade</td></tr>
+<tr><td class="key"><strong>New York-New Jersey</strong></td><td>USA</td><td>2nd busiest US port</td></tr>
+<tr><td class="key"><strong>Dubai (Jebel Ali)</strong></td><td>UAE</td><td>Largest port in Middle East</td></tr>
+<tr><td class="key"><strong>Port of Yokohama</strong></td><td>Japan</td><td>Major Japanese port (with Kobe, Osaka, Tokyo)</td></tr>
+<tr><td class="key"><strong>Port Klang</strong></td><td>Malaysia</td><td>Strait of Malacca region</td></tr>
+<tr><td class="key"><strong>Port of Sydney</strong></td><td>Australia</td><td>—</td></tr>
+<tr><td class="key"><strong>Mumbai (JNPT/Nhava Sheva)</strong></td><td>India</td><td>India's largest container port</td></tr>
+<tr><td class="key"><strong>Mundra</strong></td><td>India (Gujarat)</td><td>India's largest port by tonnage</td></tr>
+</table>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Which is the busiest port in the world?"</div><div class="bpsc-q-ans">Shanghai (China) — by container traffic since 2010</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"What is the largest port in Europe?"</div><div class="bpsc-q-ans">Rotterdam (Netherlands) — "Gateway to Europe"</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S9: FAMOUS ISLANDS -->
+<!-- ============================== -->
+<section class="section" id="s9">
+<span class="section-number">Section 09</span>
+<h2 class="section-title">Famous Islands of the World</h2>
+<div class="section-desc">Largest islands + strategically/culturally important ones</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Top 10 Largest Islands</div>
+<table class="fact-table">
+<tr><th>Rank</th><th>Island</th><th>Area</th><th>Country/Region</th></tr>
+<tr><td class="hl">1</td><td class="key"><strong>Greenland</strong></td><td>~2.16 million sq km</td><td>Denmark (autonomous)</td></tr>
+<tr><td class="hl">2</td><td class="key">New Guinea</td><td>~786,000 sq km</td><td>Papua New Guinea + Indonesia</td></tr>
+<tr><td class="hl">3</td><td class="key">Borneo</td><td>~743,330 sq km</td><td>Indonesia + Malaysia + Brunei</td></tr>
+<tr><td class="hl">4</td><td class="key">Madagascar</td><td>~587,000 sq km</td><td>Madagascar (independent)</td></tr>
+<tr><td class="hl">5</td><td class="key">Baffin Island</td><td>~507,000 sq km</td><td>Canada</td></tr>
+<tr><td class="hl">6</td><td class="key">Sumatra</td><td>~473,000 sq km</td><td>Indonesia</td></tr>
+<tr><td class="hl">7</td><td class="key">Honshu</td><td>~225,800 sq km</td><td>Japan (main island)</td></tr>
+<tr><td class="hl">8</td><td class="key">Great Britain</td><td>~209,000 sq km</td><td>UK</td></tr>
+<tr><td class="hl">9</td><td class="key">Victoria Island</td><td>~217,000 sq km</td><td>Canada</td></tr>
+<tr><td class="hl">10</td><td class="key">Ellesmere Island</td><td>~196,000 sq km</td><td>Canada</td></tr>
+</table>
+
+<div class="asked block">
+<strong>Top 5 largest islands</strong> — confirmed BPSC question type. Memorise: <strong>Greenland, New Guinea, Borneo, Madagascar, Baffin Island</strong>. Note: <strong>Australia is NOT an island</strong> (it's a continent). Greenland is the largest island.
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Other Important Islands</div>
+<table class="fact-table">
+<tr><th>Island</th><th>Country</th><th>Significance</th></tr>
+<tr><td class="key">Iceland</td><td>Iceland</td><td>Volcanic; on Mid-Atlantic Ridge; "Land of Fire and Ice"</td></tr>
+<tr><td class="key">Cuba</td><td>Cuba</td><td>Largest island in Caribbean</td></tr>
+<tr><td class="key">Hispaniola</td><td>Haiti + Dominican Republic</td><td>2nd largest in Caribbean; shared between 2 countries</td></tr>
+<tr><td class="key">Hawaii (Big Island)</td><td>USA</td><td>Volcanic; Mauna Loa world's largest active volcano</td></tr>
+<tr><td class="key">Sicily</td><td>Italy</td><td>Largest Mediterranean island; Mt. Etna here</td></tr>
+<tr><td class="key">Sardinia</td><td>Italy</td><td>2nd largest Mediterranean island</td></tr>
+<tr><td class="key">Cyprus</td><td>Cyprus</td><td>3rd largest Mediterranean</td></tr>
+<tr><td class="key">Crete</td><td>Greece</td><td>4th largest Mediterranean; Minoan civilization</td></tr>
+<tr><td class="key">Sri Lanka</td><td>Sri Lanka</td><td>Indian Ocean; teardrop shape</td></tr>
+<tr><td class="key">Java</td><td>Indonesia</td><td>World's most populous island (~150 million people)</td></tr>
+<tr><td class="key">Galapagos Islands</td><td>Ecuador</td><td>Darwin's research; unique fauna; UNESCO</td></tr>
+<tr><td class="key">Falkland Islands</td><td>UK (claimed by Argentina)</td><td>1982 war</td></tr>
+<tr><td class="key">Easter Island (Rapa Nui)</td><td>Chile</td><td>Famous Moai stone heads; one of most remote inhabited islands</td></tr>
+<tr><td class="key">Faroe Islands</td><td>Denmark</td><td>North Atlantic; autonomous</td></tr>
+<tr><td class="key">Andaman &amp; Nicobar</td><td>India</td><td>Bay of Bengal; close to Indonesia</td></tr>
+<tr><td class="key">Lakshadweep</td><td>India</td><td>Arabian Sea; coral atolls</td></tr>
+<tr><td class="key">Maldives</td><td>Maldives</td><td>1,200+ coral islands; lowest country</td></tr>
+<tr><td class="key">Sicily, Corsica, Sardinia</td><td>Mediterranean Sea</td><td>Major French/Italian Mediterranean islands</td></tr>
+<tr><td class="key">Manhattan</td><td>USA (New York)</td><td>Most famous urban island</td></tr>
+<tr><td class="key">Singapore</td><td>Singapore</td><td>Island nation; city-state</td></tr>
+<tr><td class="key">Hong Kong Island</td><td>China</td><td>Major financial hub</td></tr>
+</table>
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Volcanic Island Chains</div>
+<ul>
+<li><strong>Hawaiian Islands</strong> (USA, Pacific) — hot-spot volcanism</li>
+<li><strong>Aleutian Islands</strong> (USA/Alaska) — Ring of Fire</li>
+<li><strong>Japanese Archipelago</strong> — Ring of Fire</li>
+<li><strong>Philippine Islands</strong> — Ring of Fire</li>
+<li><strong>Indonesian Archipelago</strong> — Ring of Fire</li>
+<li><strong>Iceland</strong> — Mid-Atlantic Ridge</li>
+<li><strong>Galapagos</strong> — hot-spot volcanism (Ecuador)</li>
+</ul>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"What is the world's largest island?"</div><div class="bpsc-q-ans">Greenland (~2.16 million sq km) — politically part of Denmark, geographically North American continent</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S10: PENINSULAS & CAPES -->
+<!-- ============================== -->
+<section class="section" id="s10">
+<span class="section-number">Section 10</span>
+<h2 class="section-title">Major Peninsulas &amp; Capes</h2>
+<div class="section-desc">Peninsulas + famous capes (landforms projecting into water)</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Major Peninsulas</div>
+<table class="fact-table">
+<tr><th>Peninsula</th><th>Region</th><th>Notes</th></tr>
+<tr><td class="key"><strong>Arabian Peninsula</strong></td><td>SW Asia</td><td><strong>World's largest peninsula</strong> (~3.2 million sq km); Saudi Arabia, UAE, Oman, Yemen etc.</td></tr>
+<tr><td class="key">Indian Peninsula (Deccan)</td><td>South Asia</td><td>India south of Indo-Gangetic plain</td></tr>
+<tr><td class="key">Indo-China Peninsula</td><td>SE Asia</td><td>Vietnam, Laos, Cambodia, Thailand, Myanmar</td></tr>
+<tr><td class="key">Korean Peninsula</td><td>E. Asia</td><td>North + South Korea</td></tr>
+<tr><td class="key">Iberian Peninsula</td><td>SW Europe</td><td>Spain + Portugal + Andorra + Gibraltar</td></tr>
+<tr><td class="key">Italian Peninsula</td><td>S. Europe</td><td>"Boot-shaped"; Italy</td></tr>
+<tr><td class="key">Balkan Peninsula</td><td>SE Europe</td><td>Greece, Bulgaria, Albania, Serbia, etc.</td></tr>
+<tr><td class="key">Scandinavian Peninsula</td><td>N. Europe</td><td>Norway + Sweden</td></tr>
+<tr><td class="key">Jutland Peninsula</td><td>N. Europe</td><td>Denmark + part of Germany</td></tr>
+<tr><td class="key">Iberian Peninsula</td><td>SW Europe</td><td>Spain + Portugal</td></tr>
+<tr><td class="key">Crimean Peninsula</td><td>Black Sea</td><td>Ukraine/Russia (disputed since 2014)</td></tr>
+<tr><td class="key">Kamchatka Peninsula</td><td>Russia (Far East)</td><td>Volcanic; on Ring of Fire</td></tr>
+<tr><td class="key">Sinai Peninsula</td><td>Egypt</td><td>Connects Africa to Asia; Suez Canal at base</td></tr>
+<tr><td class="key">Malay Peninsula</td><td>SE Asia</td><td>Malaysia + S. Thailand + Singapore</td></tr>
+<tr><td class="key">Yucatán Peninsula</td><td>Mexico</td><td>Mayan civilization; Chichén Itzá</td></tr>
+<tr><td class="key">Florida Peninsula</td><td>USA</td><td>Subtropical; "Sunshine State"</td></tr>
+<tr><td class="key">Baja California</td><td>Mexico</td><td>Long peninsula between Gulf of California and Pacific</td></tr>
+<tr><td class="key">Cape Peninsula</td><td>South Africa</td><td>Where Cape of Good Hope is located</td></tr>
+<tr><td class="key">Somali Peninsula (Horn of Africa)</td><td>NE Africa</td><td>Somalia, Djibouti, Eritrea, Ethiopia</td></tr>
+</table>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Famous Capes</div>
+<table class="fact-table">
+<tr><th>Cape</th><th>Country</th><th>Significance</th></tr>
+<tr><td class="key"><strong>Cape of Good Hope</strong></td><td>South Africa</td><td>Where Atlantic + Indian Oceans meet (popular belief — actually Cape Agulhas); historic shipping route</td></tr>
+<tr><td class="key"><strong>Cape Agulhas</strong></td><td>South Africa</td><td><strong>Actual southernmost tip of Africa</strong>; true Atlantic-Indian Ocean boundary</td></tr>
+<tr><td class="key"><strong>Cape Horn</strong></td><td>Chile</td><td>Southern tip of S. America; rough seas</td></tr>
+<tr><td class="key"><strong>Cape Verde</strong></td><td>Senegal/Cape Verde Islands</td><td>Westernmost point of mainland Africa</td></tr>
+<tr><td class="key"><strong>Cape Cod</strong></td><td>USA (Massachusetts)</td><td>Famous for landing of Pilgrims (1620)</td></tr>
+<tr><td class="key"><strong>Cape Canaveral</strong></td><td>USA (Florida)</td><td>Kennedy Space Center; rocket launch site</td></tr>
+<tr><td class="key"><strong>Cape Comorin (Kanyakumari)</strong></td><td>India</td><td>Southernmost tip of mainland India</td></tr>
+<tr><td class="key"><strong>Cape North</strong></td><td>Norway</td><td>Northernmost point of mainland Europe</td></tr>
+<tr><td class="key"><strong>Cape York</strong></td><td>Australia (Queensland)</td><td>Northernmost point of mainland Australia</td></tr>
+</table>
+
+<div class="asked block">
+<strong>Arabian Peninsula is the world's largest peninsula</strong> — repeated BPSC question. Also asked: <strong>"What is the southernmost point of Africa?"</strong> — Cape Agulhas (not Cape of Good Hope; common confusion). Cape of Good Hope is more famous but Agulhas is the actual southernmost point.
+</div>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S11: WORLD WATERFALLS -->
+<!-- ============================== -->
+<section class="section" id="s11">
+<span class="section-number">Section 11</span>
+<h2 class="section-title">World's Famous Waterfalls</h2>
+<div class="section-desc">By height, volume, fame — single-fact questions</div>
+
+<table class="fact-table">
+<tr><th>Waterfall</th><th>Country</th><th>Height / Notes</th></tr>
+<tr><td class="key"><strong>Angel Falls</strong></td><td>Venezuela</td><td><strong>World's tallest waterfall (~979 m)</strong>; on Auyán-Tepuí mountain</td></tr>
+<tr><td class="key"><strong>Tugela Falls</strong></td><td>South Africa</td><td>2nd tallest (~948 m); Drakensberg Mountains</td></tr>
+<tr><td class="key"><strong>Three Sisters Falls</strong></td><td>Peru</td><td>3rd tallest (~914 m); in Amazon</td></tr>
+<tr><td class="key"><strong>Olo'upena Falls</strong></td><td>USA (Hawaii)</td><td>~900 m</td></tr>
+<tr><td class="key"><strong>Yumbilla Falls</strong></td><td>Peru</td><td>~896 m</td></tr>
+<tr><td class="key"><strong>Niagara Falls</strong></td><td>USA-Canada border</td><td>52 m height but huge volume; most famous tourist waterfall</td></tr>
+<tr><td class="key"><strong>Victoria Falls</strong></td><td>Zambia-Zimbabwe border</td><td>108 m height + 1,708 m wide on Zambezi River; "Mosi-oa-Tunya" ("smoke that thunders"); UNESCO</td></tr>
+<tr><td class="key"><strong>Iguazu Falls</strong></td><td>Argentina-Brazil border</td><td>System of 275 falls; one of largest by water volume; on Iguazu River</td></tr>
+<tr><td class="key"><strong>Khone Falls</strong></td><td>Laos</td><td><strong>Widest waterfall in the world</strong> (~10.8 km); on Mekong river; not very tall</td></tr>
+<tr><td class="key"><strong>Inga Falls</strong></td><td>DR Congo</td><td>Largest by volume (~46,000 m³/sec); on Congo river</td></tr>
+<tr><td class="key"><strong>Boyoma Falls</strong></td><td>DR Congo</td><td>Series of 7 cataracts; Congo River</td></tr>
+<tr><td class="key"><strong>Plitvice Lakes</strong></td><td>Croatia</td><td>System of waterfalls; UNESCO</td></tr>
+<tr><td class="key"><strong>Sutherland Falls</strong></td><td>New Zealand</td><td>580 m; among world's tallest</td></tr>
+<tr><td class="key"><strong>Gocta Falls</strong></td><td>Peru</td><td>~771 m</td></tr>
+<tr><td class="key"><strong>Jog Falls</strong></td><td>India (Karnataka)</td><td>253 m; India's 2nd highest plunge waterfall</td></tr>
+<tr><td class="key"><strong>Kunchikal Falls</strong></td><td>India (Karnataka)</td><td>455 m; India's tallest waterfall</td></tr>
+</table>
+
+<div class="asked block">
+<strong>"World's tallest waterfall"</strong> → Angel Falls, Venezuela (~979 m). <strong>"Widest waterfall"</strong> → Khone Falls, Laos. <strong>"Largest by volume"</strong> → Inga Falls (Congo). <strong>"On Zambezi River"</strong> → Victoria Falls. These four "superlatives" are repeatedly asked.
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Victoria Falls is located on which river and between which two countries?"</div><div class="bpsc-q-ans">On Zambezi River; between Zambia and Zimbabwe</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"World's highest waterfall is in which country?"</div><div class="bpsc-q-ans">Venezuela — Angel Falls (~979 m)</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S12: CANYONS & VALLEYS -->
+<!-- ============================== -->
+<section class="section" id="s12">
+<span class="section-number">Section 12</span>
+<h2 class="section-title">Famous Canyons, Gorges &amp; Valleys</h2>
+<div class="section-desc">Notable geological landforms</div>
+
+<table class="fact-table">
+<tr><th>Landform</th><th>Country</th><th>Notes</th></tr>
+<tr><td class="key"><strong>Grand Canyon</strong></td><td>USA (Arizona)</td><td>~446 km long, up to 1.8 km deep; carved by Colorado River; UNESCO; world's most famous canyon</td></tr>
+<tr><td class="key"><strong>Fish River Canyon</strong></td><td>Namibia</td><td>2nd largest canyon in the world; ~160 km long</td></tr>
+<tr><td class="key"><strong>Copper Canyon (Barrancas del Cobre)</strong></td><td>Mexico</td><td>System of 6 canyons; larger than Grand Canyon by volume</td></tr>
+<tr><td class="key"><strong>Yarlung Tsangpo Grand Canyon</strong></td><td>Tibet, China</td><td>World's deepest canyon (~5,500 m at parts); Brahmaputra source</td></tr>
+<tr><td class="key"><strong>Three Gorges</strong></td><td>China (Yangtze River)</td><td>System: Qutang, Wu, Xiling gorges; Three Gorges Dam (world's largest hydroelectric plant)</td></tr>
+<tr><td class="key"><strong>Tara River Canyon</strong></td><td>Montenegro</td><td>Europe's deepest canyon (1,300 m)</td></tr>
+<tr><td class="key"><strong>Verdon Gorge</strong></td><td>France</td><td>"Grand Canyon of Europe"</td></tr>
+<tr><td class="key"><strong>Bryce Canyon</strong></td><td>USA (Utah)</td><td>Famous hoodoo formations</td></tr>
+<tr><td class="key"><strong>Antelope Canyon</strong></td><td>USA (Arizona)</td><td>Famous slot canyon; Instagram-famous</td></tr>
+<tr><td class="key"><strong>Death Valley</strong></td><td>USA (California)</td><td>Hottest place on Earth (record 56.7°C); lowest point in N. America (-86 m)</td></tr>
+<tr><td class="key"><strong>Nile Valley</strong></td><td>Egypt</td><td>Cradle of civilization; fertile narrow strip</td></tr>
+<tr><td class="key"><strong>Great Rift Valley</strong></td><td>East Africa (Ethiopia to Mozambique)</td><td>Geological rift; ~6,000 km long; East African Lakes formed here</td></tr>
+<tr><td class="key"><strong>Jordan Rift Valley</strong></td><td>Israel-Jordan</td><td>Part of Great Rift; contains Dead Sea (lowest point on Earth)</td></tr>
+<tr><td class="key"><strong>Loire Valley</strong></td><td>France</td><td>"Garden of France"; châteaux; UNESCO</td></tr>
+<tr><td class="key"><strong>Silicon Valley</strong></td><td>USA (California)</td><td>Tech industry hub (not a literal valley landform)</td></tr>
+<tr><td class="key"><strong>Indus Valley</strong></td><td>Pakistan + India</td><td>Site of ancient Indus Valley Civilization</td></tr>
+<tr><td class="key"><strong>Kashmir Valley</strong></td><td>India</td><td>"Heaven on Earth"</td></tr>
+<tr><td class="key"><strong>Nubra Valley, Spiti Valley</strong></td><td>India</td><td>Ladakh region; cold-desert valleys</td></tr>
+<tr><td class="key"><strong>Bekaa Valley</strong></td><td>Lebanon</td><td>Important agricultural valley</td></tr>
+</table>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"The Grand Canyon is carved by which river?"</div><div class="bpsc-q-ans">Colorado River (in Arizona, USA)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"The Great Rift Valley extends from?"</div><div class="bpsc-q-ans">Ethiopia (in NE Africa) to Mozambique (SE Africa) — about 6,000 km long</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S13: IMPORTANT LAKE PAIRS -->
+<!-- ============================== -->
+<section class="section" id="s13">
+<span class="section-number">Section 13</span>
+<h2 class="section-title">Important Lake–River Pairs</h2>
+<div class="section-desc">Source-of-river questions — which lake is source of which river</div>
+
+<table class="fact-table">
+<tr><th>Lake</th><th>River It Sources</th><th>Notes</th></tr>
+<tr><td class="key"><strong>Lake Victoria</strong></td><td><strong>White Nile</strong></td><td>Uganda-Kenya-Tanzania; one of Nile's sources</td></tr>
+<tr><td class="key"><strong>Lake Tana</strong></td><td><strong>Blue Nile</strong></td><td>Ethiopia; provides ~85% of Nile water; Blue + White Nile join at Khartoum</td></tr>
+<tr><td class="key"><strong>Lake Itasca</strong></td><td><strong>Mississippi</strong></td><td>Minnesota, USA — official source</td></tr>
+<tr><td class="key"><strong>Lake Geneva</strong></td><td><strong>Rhone</strong></td><td>Switzerland-France border</td></tr>
+<tr><td class="key"><strong>Lake Constance</strong></td><td><strong>Rhine</strong></td><td>Switzerland-Germany-Austria</td></tr>
+<tr><td class="key"><strong>Lake Baikal</strong></td><td>Angara River</td><td>Russia (Siberia); deepest lake</td></tr>
+<tr><td class="key"><strong>Lake Ladoga</strong></td><td>Neva</td><td>Russia; St. Petersburg downstream</td></tr>
+<tr><td class="key"><strong>Lake Ontario</strong></td><td>St. Lawrence</td><td>Drains all Great Lakes to Atlantic</td></tr>
+<tr><td class="key"><strong>Lake Tanganyika</strong></td><td>Lukuga (drains to Congo)</td><td>Africa</td></tr>
+<tr><td class="key"><strong>Lake Manasarovar</strong></td><td><strong>Sutlej + Brahmaputra (Tsangpo)</strong></td><td>Tibet; sacred Hindu pilgrimage</td></tr>
+<tr><td class="key"><strong>Pulicat Lake</strong></td><td>—</td><td>India's 2nd largest brackish water lake</td></tr>
+<tr><td class="key"><strong>Chilika Lake</strong></td><td>—</td><td>India's largest brackish water lake (Odisha); Ramsar wetland</td></tr>
+<tr><td class="key"><strong>Lake Volta</strong></td><td>—</td><td>Largest artificial lake by surface area (Ghana, by Volta River dam)</td></tr>
+</table>
+
+<div class="asked block">
+<strong>"Source of White Nile" → Lake Victoria</strong>; <strong>"Source of Blue Nile" → Lake Tana</strong>. These pair-questions on lakes-as-river-sources are confirmed BPSC pattern. Both Niles meet at Khartoum, Sudan.
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Lake Tana is the source of?"</div><div class="bpsc-q-ans">Blue Nile (in Ethiopia) — provides ~85% of total Nile water</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S14: RECENT IN NEWS -->
+<!-- ============================== -->
+<section class="section" id="s14">
+<span class="section-number">Section 14</span>
+<h2 class="section-title">Recent Geography in News (2024–2026)</h2>
+<div class="section-desc">★ BPSC 72nd asked Trans-Afghan Railway + Kyaukpyu Port — current geography matters</div>
+
+<table class="fact-table">
+<tr><th>Project / Event</th><th>Location</th><th>Significance</th></tr>
+<tr><td class="key"><strong>Trans-Afghan Railway</strong></td><td>Uzbekistan → Afghanistan → Pakistan</td><td><strong>Connects Uzbekistan to Pakistan's Arabian Sea ports via Afghanistan</strong>; gives landlocked Uzbekistan sea access; major regional connectivity project; asked in BPSC 72nd</td></tr>
+<tr><td class="key"><strong>Kyaukpyu Port</strong></td><td>Myanmar (west coast on Bay of Bengal)</td><td><strong>Built by China</strong>; part of China-Myanmar Economic Corridor (CMEC); gives China direct Indian Ocean access bypassing Strait of Malacca; asked in BPSC 72nd</td></tr>
+<tr><td class="key"><strong>Indonesia's new capital — Nusantara</strong></td><td>East Kalimantan (Borneo)</td><td>Indonesia moving capital from Jakarta (sinking + congested) to Nusantara; partial move 2024-26; full move 2045</td></tr>
+<tr><td class="key"><strong>Burj Khalifa</strong></td><td>Dubai, UAE</td><td>World's tallest building (828 m); opened 2010</td></tr>
+<tr><td class="key"><strong>South Sudan</strong></td><td>Africa</td><td>World's newest UN member state (2011); split from Sudan; oil reserves</td></tr>
+<tr><td class="key"><strong>North Macedonia rename</strong></td><td>Balkans</td><td>Renamed from "Macedonia" to "North Macedonia" in 2019 (Prespa Agreement with Greece)</td></tr>
+<tr><td class="key"><strong>Eswatini rename</strong></td><td>S. Africa</td><td>Swaziland → Eswatini in 2018</td></tr>
+<tr><td class="key"><strong>Türkiye rename</strong></td><td>Turkey</td><td>Officially registered as "Türkiye" at UN in 2022</td></tr>
+<tr><td class="key"><strong>Russia-Ukraine War</strong></td><td>Eastern Europe</td><td>Started Feb 2022; ongoing; impact on global wheat, oil, gas, fertilizer trade</td></tr>
+<tr><td class="key"><strong>BRICS+ Expansion (2024)</strong></td><td>—</td><td>Added Egypt, Ethiopia, Iran, UAE; Saudi Arabia status pending</td></tr>
+<tr><td class="key"><strong>NATO expansion</strong></td><td>Europe</td><td>Finland joined 2023; Sweden joined 2024 (post Russia-Ukraine war)</td></tr>
+<tr><td class="key"><strong>Suez Canal Blockage</strong></td><td>Egypt</td><td>March 2021 — <em>Ever Given</em> blocked Suez for 6 days; global shipping crisis</td></tr>
+<tr><td class="key"><strong>Hunga Tonga Volcano</strong></td><td>Tonga, Pacific</td><td>2022 underwater eruption — one of most powerful in modern times</td></tr>
+<tr><td class="key"><strong>Eyjafjallajökull Volcano</strong></td><td>Iceland</td><td>2010 eruption — disrupted European air travel for weeks</td></tr>
+<tr><td class="key"><strong>2023 Turkey-Syria Earthquake</strong></td><td>Anatolia region</td><td>Mw 7.8; ~50,000 deaths; major aid effort</td></tr>
+<tr><td class="key"><strong>Severodonetsk</strong></td><td>Eastern Ukraine (Donbas region)</td><td>Major city in Russia-Ukraine war; <strong>BPSC 72nd asked location</strong></td></tr>
+<tr><td class="key"><strong>India hosted G20 (2023)</strong></td><td>New Delhi</td><td>Theme: Vasudhaiva Kutumbakam; African Union added as full member</td></tr>
+<tr><td class="key"><strong>Iran-Israel conflict escalation</strong></td><td>Middle East</td><td>2024-25 direct military exchanges</td></tr>
+<tr><td class="key"><strong>Antarctic ice sheet collapse</strong></td><td>Antarctica</td><td>Thwaites Glacier ("Doomsday Glacier") accelerating melt</td></tr>
+<tr><td class="key"><strong>China-Pakistan Economic Corridor (CPEC)</strong></td><td>Gwadar Port (Pakistan)</td><td>$60+ billion project; part of Belt and Road Initiative</td></tr>
+<tr><td class="key"><strong>Hambantota Port</strong></td><td>Sri Lanka</td><td>Leased to China for 99 years; "debt trap diplomacy" example</td></tr>
+<tr><td class="key"><strong>Chabahar Port</strong></td><td>Iran</td><td>Developed by India; counter to Gwadar; gives India access to Central Asia</td></tr>
+<tr><td class="key"><strong>INSTC</strong></td><td>India-Iran-Russia</td><td>International North-South Transport Corridor; bypasses Suez Canal route</td></tr>
+</table>
+
+<div class="asked block">
+<strong>BPSC 72nd confirmed questions:</strong>
+<ul style="list-style:none;padding:0;margin-top:6px;">
+<li style="padding:3px 0">• <strong>Trans-Afghan Railway</strong> connects Uzbekistan to Pakistan/Arabian Sea</li>
+<li style="padding:3px 0">• <strong>Kyaukpyu Port</strong> in Myanmar developed by China</li>
+<li style="padding:3px 0">• <strong>Severodonetsk</strong> is in eastern Ukraine</li>
+</ul>
+These are recent (2022-24) news geography questions — pattern showing BPSC tests current strategic geography.
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC 72nd</div><div class="bpsc-q-text">"Kyaukpyu Port is being developed by which country in Myanmar?"</div><div class="bpsc-q-ans">China — strategic deep-sea port giving China direct Indian Ocean access, bypassing Strait of Malacca</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC 72nd</div><div class="bpsc-q-text">"Indonesia is shifting its capital to which new city?"</div><div class="bpsc-q-ans">Nusantara — being built in East Kalimantan, Borneo island</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S15: DEMOGRAPHIC RECORDS -->
+<!-- ============================== -->
+<section class="section" id="s15">
+<span class="section-number">Section 15</span>
+<h2 class="section-title">Demographic Records of the World</h2>
+<div class="section-desc">Population, density, language, urbanization records</div>
+
+<table class="fact-table">
+<tr><th>Record</th><th>Country / Place</th><th>Notes</th></tr>
+<tr><td class="key">Most populous country</td><td><strong>India</strong> (~1.42 billion, since 2023)</td><td>Overtook China; China now ~1.41 billion (declining)</td></tr>
+<tr><td class="key">2nd most populous</td><td>China</td><td>—</td></tr>
+<tr><td class="key">3rd most populous</td><td>USA</td><td>~340 million</td></tr>
+<tr><td class="key">Highest population density</td><td><strong>Monaco</strong> (~26,000 per sq km)</td><td>Most densely populated country</td></tr>
+<tr><td class="key">Lowest population density</td><td><strong>Mongolia</strong> (~2 per sq km)</td><td>Lowest among major countries</td></tr>
+<tr><td class="key">Most populous city (urban)</td><td>Tokyo (~37 million metro)</td><td>Slowly shrinking</td></tr>
+<tr><td class="key">Most populous island</td><td>Java, Indonesia (~150 million)</td><td>—</td></tr>
+<tr><td class="key">Most languages spoken</td><td>Papua New Guinea (~840)</td><td>—</td></tr>
+<tr><td class="key">Most spoken language (native)</td><td><strong>Mandarin Chinese</strong></td><td>~920 million native speakers</td></tr>
+<tr><td class="key">Most spoken language (total)</td><td><strong>English</strong></td><td>~1.5 billion total speakers (native + L2)</td></tr>
+<tr><td class="key">Highest urbanization</td><td>Singapore, Monaco, Vatican (100%)</td><td>City-states</td></tr>
+<tr><td class="key">Lowest urbanization</td><td>Burundi, Papua New Guinea (~13%)</td><td>Rural majority</td></tr>
+<tr><td class="key">Highest HDI</td><td>Switzerland, Norway, Iceland</td><td>Top 3 in HDI 2023</td></tr>
+<tr><td class="key">Lowest HDI</td><td>South Sudan, Niger, Chad</td><td>—</td></tr>
+<tr><td class="key">Highest life expectancy</td><td>Monaco, Japan, Switzerland (~85+ yrs)</td><td>—</td></tr>
+<tr><td class="key">Fastest growing population</td><td>Niger, DR Congo, Tanzania</td><td>Africa leads</td></tr>
+<tr><td class="key">Aging population leaders</td><td>Japan, Italy, Germany</td><td>—</td></tr>
+<tr><td class="key">Youngest population</td><td>Niger (median age ~15)</td><td>Africa</td></tr>
+</table>
+</section>
+
+<!-- ============================== -->
+<!-- S16: MASTER MOST RECORDS -->
+<!-- ============================== -->
+<section class="section" id="s16">
+<span class="section-number">Section 16</span>
+<h2 class="section-title">The "MOST" Records — World Geography Master List</h2>
+<div class="section-desc">★ All world records consolidated for final revision</div>
+
+<div class="record"><div class="record-num">#1</div><div class="record-text"><strong>Largest country (area):</strong> Russia <small>~17.1 million sq km</small></div></div>
+<div class="record"><div class="record-num">#2</div><div class="record-text"><strong>Smallest country:</strong> Vatican City <small>~0.49 sq km</small></div></div>
+<div class="record"><div class="record-num">#3</div><div class="record-text"><strong>Most populous country:</strong> India <small>~1.42 billion (since 2023)</small></div></div>
+<div class="record"><div class="record-num">#4</div><div class="record-text"><strong>Largest continent:</strong> Asia <small>~30% of land area</small></div></div>
+<div class="record"><div class="record-num">#5</div><div class="record-text"><strong>Smallest continent:</strong> Australia/Oceania</div></div>
+<div class="record"><div class="record-num">#6</div><div class="record-text"><strong>Largest ocean:</strong> Pacific <small>~165 million sq km · also deepest</small></div></div>
+<div class="record"><div class="record-num">#7</div><div class="record-text"><strong>Smallest ocean:</strong> Arctic</div></div>
+<div class="record"><div class="record-num">#8</div><div class="record-text"><strong>Highest mountain:</strong> Mt. Everest <small>8,849 m · Himalayas</small></div></div>
+<div class="record"><div class="record-num">#9</div><div class="record-text"><strong>Longest mountain range (above sea):</strong> Andes <small>~7,000 km</small></div></div>
+<div class="record"><div class="record-num">#10</div><div class="record-text"><strong>Longest river:</strong> Nile <small>6,650 km · Africa</small></div></div>
+<div class="record"><div class="record-num">#11</div><div class="record-text"><strong>Largest river by volume:</strong> Amazon <small>S. America</small></div></div>
+<div class="record"><div class="record-num">#12</div><div class="record-text"><strong>Deepest river:</strong> Congo <small>~220 m at deepest</small></div></div>
+<div class="record"><div class="record-num">#13</div><div class="record-text"><strong>Largest lake (any):</strong> Caspian Sea <small>Saltwater "lake"</small></div></div>
+<div class="record"><div class="record-num">#14</div><div class="record-text"><strong>Largest freshwater lake (area):</strong> Lake Superior</div></div>
+<div class="record"><div class="record-num">#15</div><div class="record-text"><strong>Deepest lake:</strong> Lake Baikal <small>~1,642 m · Russia · holds 20% of world's freshwater</small></div></div>
+<div class="record"><div class="record-num">#16</div><div class="record-text"><strong>Highest navigable lake:</strong> Lake Titicaca <small>3,812 m · Peru-Bolivia</small></div></div>
+<div class="record"><div class="record-num">#17</div><div class="record-text"><strong>Lowest point on land:</strong> Dead Sea shore <small>-430 m · Israel-Jordan</small></div></div>
+<div class="record"><div class="record-num">#18</div><div class="record-text"><strong>Deepest point on Earth:</strong> Challenger Deep, Mariana Trench <small>~10,994 m · Pacific Ocean</small></div></div>
+<div class="record"><div class="record-num">#19</div><div class="record-text"><strong>Largest desert (any):</strong> Antarctic Desert <small>~14 million sq km</small></div></div>
+<div class="record"><div class="record-num">#20</div><div class="record-text"><strong>Largest hot desert:</strong> Sahara <small>~9 million sq km · Africa</small></div></div>
+<div class="record"><div class="record-num">#21</div><div class="record-text"><strong>Driest place:</strong> Atacama Desert <small>Chile</small></div></div>
+<div class="record"><div class="record-num">#22</div><div class="record-text"><strong>Hottest place (record):</strong> Death Valley <small>56.7°C in 1913 · California, USA</small></div></div>
+<div class="record"><div class="record-num">#23</div><div class="record-text"><strong>Coldest place (record):</strong> Vostok Station <small>-89.2°C in 1983 · Antarctica</small></div></div>
+<div class="record"><div class="record-num">#24</div><div class="record-text"><strong>Largest island:</strong> Greenland <small>~2.16 million sq km</small></div></div>
+<div class="record"><div class="record-num">#25</div><div class="record-text"><strong>Largest archipelago:</strong> Indonesia <small>~17,500 islands</small></div></div>
+<div class="record"><div class="record-num">#26</div><div class="record-text"><strong>Largest peninsula:</strong> Arabian Peninsula <small>~3.2 million sq km</small></div></div>
+<div class="record"><div class="record-num">#27</div><div class="record-text"><strong>Largest gulf:</strong> Gulf of Mexico</div></div>
+<div class="record"><div class="record-num">#28</div><div class="record-text"><strong>Largest bay:</strong> Bay of Bengal <small>~2.17 million sq km</small></div></div>
+<div class="record"><div class="record-num">#29</div><div class="record-text"><strong>Largest delta:</strong> Ganges-Brahmaputra <small>India-Bangladesh</small></div></div>
+<div class="record"><div class="record-num">#30</div><div class="record-text"><strong>Tallest waterfall:</strong> Angel Falls <small>~979 m · Venezuela</small></div></div>
+<div class="record"><div class="record-num">#31</div><div class="record-text"><strong>Widest waterfall:</strong> Khone Falls <small>~10.8 km · Laos</small></div></div>
+<div class="record"><div class="record-num">#32</div><div class="record-text"><strong>Largest reef:</strong> Great Barrier Reef <small>Australia</small></div></div>
+<div class="record"><div class="record-num">#33</div><div class="record-text"><strong>Largest forest:</strong> Taiga / Boreal Forest <small>circumpolar Arctic regions</small></div></div>
+<div class="record"><div class="record-num">#34</div><div class="record-text"><strong>Largest tropical rainforest:</strong> Amazon <small>~5.5 million sq km</small></div></div>
+<div class="record"><div class="record-num">#35</div><div class="record-text"><strong>Largest hot desert in Asia:</strong> Arabian Desert</div></div>
+<div class="record"><div class="record-num">#36</div><div class="record-text"><strong>Largest cold desert:</strong> Antarctica · Gobi (in Asia)</div></div>
+<div class="record"><div class="record-num">#37</div><div class="record-text"><strong>Tallest building:</strong> Burj Khalifa <small>828 m · Dubai · 2010</small></div></div>
+<div class="record"><div class="record-num">#38</div><div class="record-text"><strong>Longest railway:</strong> Trans-Siberian <small>9,289 km · Russia</small></div></div>
+<div class="record"><div class="record-num">#39</div><div class="record-text"><strong>Longest tunnel:</strong> Gotthard Base Tunnel <small>57 km · Switzerland</small></div></div>
+<div class="record"><div class="record-num">#40</div><div class="record-text"><strong>Highest railway:</strong> Qinghai-Tibet <small>5,072 m · China</small></div></div>
+<div class="record"><div class="record-num">#41</div><div class="record-text"><strong>Largest port (container):</strong> Shanghai</div></div>
+<div class="record"><div class="record-num">#42</div><div class="record-text"><strong>Largest port in Europe:</strong> Rotterdam</div></div>
+<div class="record"><div class="record-num">#43</div><div class="record-text"><strong>Largest canal:</strong> Grand Canal of China <small>1,776 km</small></div></div>
+<div class="record"><div class="record-num">#44</div><div class="record-text"><strong>Most countries on a river:</strong> Danube <small>10 European countries</small></div></div>
+<div class="record"><div class="record-num">#45</div><div class="record-text"><strong>Most volcanoes (country):</strong> Indonesia <small>~75 active</small></div></div>
+<div class="record"><div class="record-num">#46</div><div class="record-text"><strong>Most languages (country):</strong> Papua New Guinea <small>~840 languages</small></div></div>
+<div class="record"><div class="record-num">#47</div><div class="record-text"><strong>Highest population density:</strong> Monaco</div></div>
+<div class="record"><div class="record-num">#48</div><div class="record-text"><strong>Lowest population density:</strong> Mongolia</div></div>
+<div class="record"><div class="record-num">#49</div><div class="record-text"><strong>Largest active volcano:</strong> Mauna Loa <small>Hawaii, USA</small></div></div>
+<div class="record"><div class="record-num">#50</div><div class="record-text"><strong>Highest volcano:</strong> Ojos del Salado <small>~6,893 m · Chile-Argentina</small></div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S17: BPSC TRAP PATTERNS -->
+<!-- ============================== -->
+<section class="section" id="s17">
+<span class="section-number">Section 17</span>
+<h2 class="section-title">BPSC Trap Patterns — World Geography Final Closer</h2>
+<div class="section-desc">15 most common traps the closer adds — read before exam</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 1 — Saar Coal vs Iron Ore</div>
+<div class="trap-q">"Match: Kimberley-Diamond, Witwatersrand-Gold, Katanga-Copper, Saar-Iron Ore. Which is incorrect?"</div>
+<div class="trap-a">Answer: <strong>Saar-Iron Ore is INCORRECT</strong>. Saar (Germany) is famous for COAL, not iron ore. This exact trap appeared in past BPSC.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 2 — Uranium Producer Confusion</div>
+<div class="trap-q">"Uranium - South Africa: Correct or Incorrect?"</div>
+<div class="trap-a">Answer: <strong>INCORRECT</strong>. Top uranium producers are <strong>Kazakhstan (42%), Canada, Australia</strong>. South Africa is NOT a top uranium producer. (BPSC 72nd asked this exact trap.)</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 3 — Commercial Dairy vs Total Milk</div>
+<div class="trap-q">"Which country leads in commercial dairy farming?"</div>
+<div class="trap-a">Answer: <strong>New Zealand</strong> (commercial dairy specialization). India leads in TOTAL milk production due to large cattle population, but NOT in commercial dairy farming. Read the question type carefully.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 4 — Oil Production vs Oil Reserves</div>
+<div class="trap-q">"Country with largest oil reserves vs largest oil producer?"</div>
+<div class="trap-a">Reserves: <strong>Venezuela</strong>. Producer: <strong>USA</strong> (shale oil). Don't confuse the two.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 5 — Cape of Good Hope vs Cape Agulhas</div>
+<div class="trap-q">"What is the southernmost point of Africa?"</div>
+<div class="trap-a">Answer: <strong>Cape Agulhas</strong>, NOT Cape of Good Hope. Cape of Good Hope is more famous historically (shipping route) but Agulhas is geographically southernmost.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 6 — White Nile vs Blue Nile Source</div>
+<div class="trap-q">"Source of White Nile is Lake Tana — true or false?"</div>
+<div class="trap-a">Answer: <strong>FALSE</strong>. White Nile source = Lake Victoria. Blue Nile source = Lake Tana. Common BPSC swap-trap.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 7 — Indonesia New Capital</div>
+<div class="trap-q">"What is Indonesia's new capital and where?"</div>
+<div class="trap-a">Answer: <strong>Nusantara</strong>, located in <strong>East Kalimantan (Borneo island)</strong>. NOT Java (where Jakarta is). The shift addresses sinking + congestion of Jakarta.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 8 — Largest Island Continent Trap</div>
+<div class="trap-q">"Is Australia the largest island in the world?"</div>
+<div class="trap-a">Answer: <strong>NO — Australia is a CONTINENT, not an island</strong>. Largest island is <strong>Greenland</strong>. Australia is also a country and continent.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 9 — Highest Volcano vs Largest Volcano</div>
+<div class="trap-q">"World's highest volcano vs largest active volcano?"</div>
+<div class="trap-a">Highest: <strong>Ojos del Salado</strong> (Chile-Argentina, 6,893m). Largest active: <strong>Mauna Loa</strong> (Hawaii). These are NOT the same.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 10 — Tallest vs Widest vs Largest Waterfall</div>
+<div class="trap-q">"World's largest waterfall is Angel Falls — true or false?"</div>
+<div class="trap-a">Answer: <strong>FALSE</strong>. Angel Falls is TALLEST (979m). LARGEST BY VOLUME is Inga Falls (Congo). WIDEST is Khone Falls (Laos). Read the question type.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 11 — Iceland on Ring of Fire?</div>
+<div class="trap-q">"Iceland's volcanoes are part of the Pacific Ring of Fire — true or false?"</div>
+<div class="trap-a">Answer: <strong>FALSE</strong>. Iceland is on the <strong>Mid-Atlantic Ridge</strong> (divergent plate boundary), NOT the Pacific Ring of Fire. Both are volcanic zones but different.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 12 — Bauxite Top Producer</div>
+<div class="trap-q">"Largest bauxite producer is?"</div>
+<div class="trap-a">Answer: <strong>Australia</strong> (~25% of world). Not China (which has reserves but Australia leads production). Note: this was BPSC 72nd's exact pair.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 13 — Trans-Afghan Railway Endpoints</div>
+<div class="trap-q">"Trans-Afghan Railway connects Uzbekistan to which country?"</div>
+<div class="trap-a">Answer: <strong>Pakistan</strong> (via Afghanistan to reach Arabian Sea ports). NOT Iran or India. This was BPSC 72nd's exact question.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 14 — Kyaukpyu Port Developer</div>
+<div class="trap-q">"Kyaukpyu Port in Myanmar is being developed by?"</div>
+<div class="trap-a">Answer: <strong>China</strong>. Part of China-Myanmar Economic Corridor (CMEC) — gives China Indian Ocean access bypassing Malacca Strait.</div>
+</div>
+
+<div class="trap">
+<div class="trap-label">⚠ TRAP 15 — Diamond Producer (Volume vs Value)</div>
+<div class="trap-q">"World's largest diamond producer?"</div>
+<div class="trap-a">By <strong>volume: Russia</strong> (~31%). By <strong>value: Botswana</strong> (~20%, higher quality). Both can be correct depending on question framing.</div>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S18: FINAL MEGA DRILL -->
+<!-- ============================== -->
+<section class="section" id="s18">
+<span class="section-number">Section 18</span>
+<h2 class="section-title">Final 30-Question Mega Drill</h2>
+<div class="section-desc">★ Complete coverage check — combines Parts 1-4 of World Geography</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q1 — Mineral Pair</div><div class="bpsc-q-text">"Kimberley is famous for which mineral?"</div><div class="bpsc-q-ans">Diamond (in South Africa)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q2 — Mineral Pair</div><div class="bpsc-q-text">"Witwatersrand is famous for which mineral?"</div><div class="bpsc-q-ans">Gold (South Africa — ~40% of all gold ever mined came from here)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q3 — Mineral Pair</div><div class="bpsc-q-text">"Katanga is famous for?"</div><div class="bpsc-q-ans">Copper (in DR Congo — Africa's Copper Belt)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q4 — Producer</div><div class="bpsc-q-text">"Largest bauxite producer in the world?"</div><div class="bpsc-q-ans">Australia (~25% of world production)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q5 — Producer</div><div class="bpsc-q-text">"Largest uranium producer (mining) is?"</div><div class="bpsc-q-ans">Kazakhstan (~42% of world supply)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q6 — Producer</div><div class="bpsc-q-text">"Largest cocoa producer in the world?"</div><div class="bpsc-q-ans">Côte d'Ivoire (Ivory Coast) — followed by Ghana</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q7 — Producer</div><div class="bpsc-q-text">"Largest natural rubber producer in the world?"</div><div class="bpsc-q-ans">Thailand</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q8 — Oil</div><div class="bpsc-q-text">"Country with the largest proven oil reserves?"</div><div class="bpsc-q-ans">Venezuela (~300 billion barrels)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q9 — OPEC</div><div class="bpsc-q-text">"OPEC headquarters is in which city?"</div><div class="bpsc-q-ans">Vienna, Austria (moved from Geneva in 1965)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q10 — Fishing</div><div class="bpsc-q-text">"Grand Banks fishery is located off which coast?"</div><div class="bpsc-q-ans">Off Newfoundland, Canada — where Labrador (cold) meets Gulf Stream (warm) currents</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q11 — Industrial</div><div class="bpsc-q-text">"Detroit is famous for which industry?"</div><div class="bpsc-q-ans">Automobile industry — "Motor City"</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q12 — Industrial</div><div class="bpsc-q-text">"Manchester is famous for which industry?"</div><div class="bpsc-q-ans">Cotton textiles — "Cottonopolis"; birthplace of Industrial Revolution</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q13 — Port</div><div class="bpsc-q-text">"World's busiest port (by container traffic)?"</div><div class="bpsc-q-ans">Shanghai (since 2010)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q14 — Port</div><div class="bpsc-q-text">"Largest port in Europe?"</div><div class="bpsc-q-ans">Rotterdam, Netherlands — "Gateway to Europe"</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q15 — Island</div><div class="bpsc-q-text">"World's largest island?"</div><div class="bpsc-q-ans">Greenland (~2.16 million sq km) — politically Danish</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q16 — Island</div><div class="bpsc-q-text">"World's most populous island?"</div><div class="bpsc-q-ans">Java, Indonesia (~150 million people)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q17 — Peninsula</div><div class="bpsc-q-text">"World's largest peninsula?"</div><div class="bpsc-q-ans">Arabian Peninsula (~3.2 million sq km)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q18 — Cape</div><div class="bpsc-q-text">"Southernmost point of Africa?"</div><div class="bpsc-q-ans">Cape Agulhas (NOT Cape of Good Hope, which is more famous but slightly north)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q19 — Waterfall</div><div class="bpsc-q-text">"World's tallest waterfall?"</div><div class="bpsc-q-ans">Angel Falls in Venezuela (~979 m)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q20 — Waterfall</div><div class="bpsc-q-text">"Victoria Falls is on which river and between which countries?"</div><div class="bpsc-q-ans">On Zambezi River; between Zambia and Zimbabwe</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q21 — Canyon</div><div class="bpsc-q-text">"Grand Canyon is carved by which river?"</div><div class="bpsc-q-ans">Colorado River (Arizona, USA)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q22 — Valley</div><div class="bpsc-q-text">"Great Rift Valley extends from which country to which country?"</div><div class="bpsc-q-ans">From Ethiopia (NE Africa) to Mozambique (SE Africa) — ~6,000 km long</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q23 — Lake Source</div><div class="bpsc-q-text">"Lake Victoria is the source of?"</div><div class="bpsc-q-ans">White Nile (one of two Nile sources; Blue Nile comes from Lake Tana, Ethiopia)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q24 — Recent News</div><div class="bpsc-q-text">"Trans-Afghan Railway connects Uzbekistan to which country?"</div><div class="bpsc-q-ans">Pakistan (via Afghanistan, providing landlocked Uzbekistan access to Arabian Sea ports)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q25 — Recent News</div><div class="bpsc-q-text">"Kyaukpyu Port in Myanmar is being developed by?"</div><div class="bpsc-q-ans">China (part of China-Myanmar Economic Corridor; gives China Indian Ocean access)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q26 — Recent News</div><div class="bpsc-q-text">"Indonesia's new capital city under construction?"</div><div class="bpsc-q-ans">Nusantara (in East Kalimantan, Borneo island)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q27 — Recent News</div><div class="bpsc-q-text">"India hosted G20 summit in which year?"</div><div class="bpsc-q-ans">2023 — New Delhi; African Union added as full member; theme: Vasudhaiva Kutumbakam</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q28 — Density</div><div class="bpsc-q-text">"Country with highest population density in the world?"</div><div class="bpsc-q-ans">Monaco (~26,000 per sq km)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q29 — Records</div><div class="bpsc-q-text">"World's tallest building?"</div><div class="bpsc-q-ans">Burj Khalifa, Dubai, UAE — 828 m; opened 2010</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Q30 — Trap</div><div class="bpsc-q-text">"Saar region in Germany is famous for which mineral?"</div><div class="bpsc-q-ans">Coal (NOT iron ore — common BPSC trap)</div></div>
+
+<div class="divider"></div>
+
+<div class="exam-box">
+<div class="exam-box-label">⭐ THE COMPLETE WORLD GEOGRAPHY 4-PART SERIES IS NOW LOCKED</div>
+<ul>
+<li><strong>Part 1:</strong> Earth, Continents, Oceans, Mountains, Rivers, Lakes (4–5 marks)</li>
+<li><strong>Part 2:</strong> Climate, Currents, Volcanoes, Deserts, Straits, Canals (3–4 marks)</li>
+<li><strong>Part 3:</strong> Countries, Capitals, Borders, Organizations, Records (2–3 marks)</li>
+<li><strong>Part 4 (Final):</strong> Minerals, Producers, Industries, Ports, Islands, Recent News, Traps (3–4 bonus marks)</li>
+<li><strong>Total Coverage:</strong> 12–15 marks of World Geography in BPSC Prelims</li>
+<li><strong>World Geography is now your highest-confidence factual scoring zone — along with Bihar Geography.</strong></li>
+</ul>
+</div>
+
+<div class="pull-quote">
+<p>"You now have ~62–70 marks of Geography locked at near-100% accuracy (Bihar 4 parts + World 4 parts). Combined with even average performance in History, Polity, Economy, Science, and Current Affairs — your prelims target of 110+ marks is now mathematically guaranteed. Geography is no longer a topic to worry about — it's your weapon."</p>
+</div>
+
+<div class="memo">
+<strong>Final Strategy for World Geography (All 4 Parts):</strong><br><br>
+<strong>Week 1:</strong> Read all 4 parts cover-to-cover (1 part per 2 days)<br>
+<strong>Week 2:</strong> Build flash cards for: Mineral-Country pairs, Currency-Country, Parliament names, Border lines, Local winds, UN HQ cities<br>
+<strong>Week 3:</strong> Solve all UPSC Prelims World Geography PYQs (BPSC questions are a simpler subset)<br>
+<strong>Week 4:</strong> Take BPSC sectional mocks; target 90%+ accuracy in World Geography<br>
+<strong>Monthly:</strong> Revise "MOST Records" (Section 16) + "BPSC Trap Patterns" (Section 17) — these alone fetch 6–8 sure marks<br><br>
+<strong>By August 2026, World Geography becomes a topic you wait to see in the question paper — alongside Bihar Geography.</strong>
+</div>
+
+</section>
+</div>
+</main>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const d=document.documentElement;
+  document.getElementById('pf').style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%';
+});
+const sections=document.querySelectorAll('section[id]');
+const navItems=document.querySelectorAll('.nav-item');
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navItems.forEach(n=>{
+        n.classList.remove('active');
+        if(n.getAttribute('href')==='#'+e.target.id) n.classList.add('active');
+      });
+    }
+  });
+},{rootMargin:'-20% 0px -70% 0px'});
+sections.forEach(s=>obs.observe(s));
+navItems.forEach(item=>{
+  item.addEventListener('click',(e)=>{
+    e.preventDefault();
+    document.getElementById(item.getAttribute('href').replace('#',''))?.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+</body>
+</html>
