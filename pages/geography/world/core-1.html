@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International Geography — Part 1 | BPSC Prelims Master Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=JetBrains+Mono:wght@400;500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0e14;--bg2:#0f1520;--bg3:#141c2a;--bg4:#1a2436;--surface:#1f2b40;--border:#2a3854;--text:#e6ecf5;--text2:#a8b5cc;--text3:#6b7a96;--gold:#5fa8e8;--gold2:#7cb8e8;--amber:#e8a868;--red:#e87878;--green:#7ed598;--blue:#5fa8e8;--teal:#5fc8c8;--purple:#a890e8;--sidebar-w:280px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:16px;line-height:1.75;display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--bg2);border-right:1px solid var(--border);position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100;display:flex;flex-direction:column}
+.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-track{background:var(--bg2)}.sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.sidebar-header{padding:24px 20px 20px;border-bottom:1px solid var(--border);background:var(--bg2);position:sticky;top:0;z-index:10}
+.sidebar-part-badge{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;display:block}
+.sidebar-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--text);line-height:1.3}
+.sidebar-sub{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--text3);margin-top:4px}
+.nav-section{padding:6px 0}
+.nav-section-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.2em;color:var(--text3);text-transform:uppercase;padding:12px 20px 4px}
+.nav-item{display:block;padding:7px 20px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text2);text-decoration:none;border-left:2px solid transparent;transition:all .15s ease;cursor:pointer;line-height:1.4}
+.nav-item:hover{color:var(--gold);background:rgba(95,168,232,.05);border-left-color:rgba(95,168,232,.3)}
+.nav-item.active{color:var(--gold);background:rgba(95,168,232,.08);border-left-color:var(--gold);font-weight:500}
+.nav-item .nav-num{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);margin-right:8px}
+.sidebar-footer{margin-top:auto;padding:16px 20px;border-top:1px solid var(--border);font-family:'DM Sans',sans-serif;font-size:11px;color:var(--text3);line-height:1.6}
+.main{margin-left:var(--sidebar-w);flex:1;min-width:0}
+.hero{background:linear-gradient(135deg,var(--bg2),var(--bg3));border-bottom:1px solid var(--border);padding:60px 64px 48px;position:relative;overflow:hidden}
+.hero::before{content:'WORLD';position:absolute;right:-30px;top:-30px;font-family:'Playfair Display',serif;font-size:160px;font-weight:900;color:rgba(95,168,232,.05);letter-spacing:-6px;pointer-events:none;line-height:1}
+.hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.hero-eyebrow::after{content:'';display:block;width:40px;height:1px;background:var(--gold);opacity:.5}
+.hero-title{font-family:'Playfair Display',serif;font-size:52px;font-weight:900;line-height:1.05;color:var(--text);margin-bottom:8px;letter-spacing:-1px}
+.hero-title span{color:var(--gold);font-style:italic}
+.hero-subtitle{font-family:'Source Serif 4',serif;font-size:18px;color:var(--text2);margin-top:12px;font-style:italic;font-weight:300}
+.hero-stats{display:flex;gap:32px;margin-top:32px;padding-top:28px;border-top:1px solid var(--border);flex-wrap:wrap}
+.hero-stat{display:flex;flex-direction:column;gap:4px}
+.hero-stat-num{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--gold);line-height:1}
+.hero-stat-label{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.08em}
+.content{padding:0 64px 80px;max-width:920px}
+.section{padding-top:56px;border-top:1px solid var(--border);margin-top:48px}
+.section:first-child{border-top:none;margin-top:0;padding-top:48px}
+.section-number{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;display:block}
+.section-title{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:var(--text);line-height:1.15;margin-bottom:6px;letter-spacing:-.5px}
+.section-desc{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text3);margin-bottom:28px;font-style:italic}
+.subsection{margin-top:36px}
+.subsection-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:600;color:var(--text);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+.subsection-title .bullet{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0}
+.exam-box{background:linear-gradient(135deg,rgba(95,168,232,.08),rgba(95,168,232,.03));border:1px solid rgba(95,168,232,.25);border-left:3px solid var(--gold);border-radius:4px;padding:16px 20px;margin:20px 0}
+.exam-box-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.exam-box-label::before{content:'★';font-size:10px}
+.exam-box p,.exam-box li{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);line-height:1.6}
+.exam-box ul{list-style:none;padding:0}
+.exam-box li{padding:3px 0 3px 16px;position:relative}
+.exam-box li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:12px}
+.warn-box{background:rgba(232,120,120,.07);border:1px solid rgba(232,120,120,.2);border-left:3px solid var(--red);border-radius:4px;padding:14px 18px;margin:16px 0}
+.warn-box-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:var(--red);letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+.warn-box p{font-family:'DM Sans',sans-serif;font-size:13.5px;color:#e8a8a8;line-height:1.55}
+.fact-table{width:100%;border-collapse:collapse;margin:20px 0;font-family:'DM Sans',sans-serif}
+.fact-table th{background:var(--bg3);color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:10px 16px;text-align:left;border:1px solid var(--border);font-family:'JetBrains Mono',monospace}
+.fact-table td{padding:10px 16px;font-size:13.5px;color:var(--text);border:1px solid var(--border);line-height:1.5;vertical-align:top}
+.fact-table tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+.fact-table tr:hover td{background:rgba(95,168,232,.04)}
+.fact-table td.key{color:var(--gold2);font-weight:600;font-size:13px;white-space:nowrap}
+.fact-table td.hl{color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700}
+.bpsc-q{background:var(--bg4);border:1px solid var(--border);border-radius:4px;padding:14px 18px;margin:12px 0}
+.bpsc-q-label{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--amber);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px}
+.bpsc-q-text{font-family:'Source Serif 4',serif;font-size:14px;color:var(--text);font-style:italic;line-height:1.55;margin-bottom:6px}
+.bpsc-q-ans{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--green)}
+.bpsc-q-ans::before{content:'✓ '}
+p{margin-bottom:14px;color:var(--text2);font-size:15.5px;line-height:1.8}
+strong{color:var(--text);font-weight:600}
+em{color:var(--gold2);font-style:normal;font-weight:600}
+ul.cl{list-style:none;padding:0;margin:10px 0 16px}
+ul.cl li{padding:6px 0 6px 22px;position:relative;font-family:'DM Sans',sans-serif;font-size:14.5px;color:var(--text2);line-height:1.5;border-bottom:1px solid rgba(255,255,255,.03)}
+ul.cl li:last-child{border-bottom:none}
+ul.cl li::before{content:'◆';position:absolute;left:0;color:var(--gold);font-size:8px;top:10px}
+ul.cl li strong{color:var(--text)}
+.divider{height:1px;background:var(--border);margin:28px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0}
+.grid-card{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:16px}
+.grid-card-title{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.grid-card ul{list-style:none;padding:0}
+.grid-card li{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.03);line-height:1.4}
+.grid-card li:last-child{border-bottom:none}
+.grid-card li strong{color:var(--text)}
+.memo{background:var(--bg4);border-radius:4px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--teal);line-height:1.7;border-left:2px solid var(--teal)}
+.memo strong{color:var(--gold)}
+.progress-bar{position:fixed;top:0;left:var(--sidebar-w);right:0;height:2px;background:rgba(95,168,232,.15);z-index:200}
+.progress-fill{height:100%;background:var(--gold);width:0%;transition:width .1s linear}
+.pull-quote{border-left:3px solid var(--gold);padding:12px 20px;margin:24px 0;background:rgba(95,168,232,.04);border-radius:0 4px 4px 0}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:17px;font-style:italic;color:var(--text);line-height:1.6;margin:0}
+
+/* CONTINENT CARD */
+.continent-card{background:linear-gradient(135deg,var(--bg3),var(--bg4));border:1px solid var(--border);border-radius:8px;margin:16px 0;overflow:hidden;border-left:4px solid var(--gold)}
+.continent-header{padding:14px 20px;background:var(--surface);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--border)}
+.continent-name{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold)}
+.continent-rank{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);background:var(--bg4);padding:3px 10px;border-radius:20px;letter-spacing:.1em}
+.continent-tagline{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text3);font-style:italic;margin-left:auto}
+.continent-body{padding:16px 20px}
+.continent-facts{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--text2);line-height:1.5;margin-bottom:12px}
+.continent-facts strong{color:var(--text3);font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:1px}
+.continent-facts span strong + span,
+.continent-facts span:not(:has(strong)){color:var(--text)}
+
+/* OCEAN CARD */
+.ocean-card{background:linear-gradient(135deg,rgba(95,168,232,.06),rgba(95,168,232,.02));border:1px solid rgba(95,168,232,.2);border-radius:8px;margin:14px 0;overflow:hidden}
+.ocean-header{padding:13px 18px;background:rgba(95,168,232,.05);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid rgba(95,168,232,.15)}
+.ocean-name{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--gold)}
+.ocean-rank{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--blue);background:rgba(95,168,232,.15);padding:3px 10px;border-radius:20px;letter-spacing:.1em;font-weight:600}
+.ocean-body{padding:14px 18px;font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--text2);line-height:1.6}
+.ocean-body strong{color:var(--gold2)}
+
+/* RECORD ROW */
+.record{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:11px 16px;margin:6px 0;border-left:3px solid var(--gold)}
+.record-num{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--gold);min-width:36px}
+.record-text{font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--text);line-height:1.5}
+.record-text strong{color:var(--gold2)}
+.record-text small{display:block;font-size:11px;color:var(--text3);margin-top:2px;font-family:'JetBrains Mono',monospace;letter-spacing:.05em}
+
+@media(max-width:900px){.sidebar{display:none}.main{margin-left:0}.hero{padding:32px 24px}.content{padding:0 24px 60px}.grid-2,.grid-3{grid-template-columns:1fr}.hero-stats{gap:20px}.hero-title{font-size:36px}.continent-facts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="progress-bar"><div class="progress-fill" id="pf"></div></div>
+
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <span class="sidebar-part-badge">Part I of III</span>
+    <div class="sidebar-title">International Geography</div>
+    <div class="sidebar-sub">BPSC Prelims Master Guide</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Earth Foundation</div>
+    <a class="nav-item" href="#s1"><span class="nav-num">01</span>Earth — Solar System</a>
+    <a class="nav-item" href="#s2"><span class="nav-num">02</span>Earth's Motions &amp; Time</a>
+    <a class="nav-item" href="#s3"><span class="nav-num">03</span>Latitudes &amp; Longitudes</a>
+    <a class="nav-item" href="#s4"><span class="nav-num">04</span>Earth's Interior</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Continents</div>
+    <a class="nav-item" href="#s5"><span class="nav-num">05</span>7 Continents Overview</a>
+    <a class="nav-item" href="#s6"><span class="nav-num">06</span>Asia · Africa</a>
+    <a class="nav-item" href="#s7"><span class="nav-num">07</span>Europe · Americas</a>
+    <a class="nav-item" href="#s8"><span class="nav-num">08</span>Australia · Antarctica</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Oceans &amp; Seas</div>
+    <a class="nav-item" href="#s9"><span class="nav-num">09</span>5 Oceans</a>
+    <a class="nav-item" href="#s10"><span class="nav-num">10</span>Major Seas</a>
+    <a class="nav-item" href="#s11"><span class="nav-num">11</span>Gulfs &amp; Bays</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Mountains &amp; Rivers</div>
+    <a class="nav-item" href="#s12"><span class="nav-num">12</span>Major Mountain Ranges</a>
+    <a class="nav-item" href="#s13"><span class="nav-num">13</span>Highest Peaks</a>
+    <a class="nav-item" href="#s14"><span class="nav-num">14</span>Major Rivers of World</a>
+    <a class="nav-item" href="#s15"><span class="nav-num">15</span>Major Lakes of World</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Master Records</div>
+    <a class="nav-item" href="#s16"><span class="nav-num">16</span>"Largest" Records</a>
+    <a class="nav-item" href="#s17"><span class="nav-num">17</span>PYQ Drills</a>
+  </div>
+  <div class="sidebar-footer">🌍 BPSC asks 4–6 world geography Qs/paper. Master continents, oceans, rivers, peaks, straits — all factual.</div>
+</nav>
+
+<main class="main">
+<div class="hero">
+  <div class="hero-eyebrow">BPSC Prelims 2026 — World Geography Locked</div>
+  <h1 class="hero-title">International <span>Geography</span><br>Master Guide</h1>
+  <div class="hero-subtitle">Part I · Earth · Continents · Oceans · Mountains · Rivers · Records</div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hero-stat-num">4–6</div><div class="hero-stat-label">Questions Per Paper</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">7</div><div class="hero-stat-label">Continents Covered</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">5</div><div class="hero-stat-label">Oceans Mapped</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">3</div><div class="hero-stat-label">Guide Parts Total</div></div>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- ============================== -->
+<!-- BPSC PATTERN INTRO -->
+<!-- ============================== -->
+<section class="section" id="intro" style="border-top:none;padding-top:30px;">
+<div class="exam-box">
+<div class="exam-box-label">★ How BPSC Tests World Geography (Last 10 Years)</div>
+<p style="margin-bottom:8px;">Analysis of 63rd–70th BPSC papers reveals BPSC's world-geography pattern is <strong>different from UPSC</strong>. BPSC asks:</p>
+<ul style="margin-top:6px;">
+<li><strong>Direct factual questions:</strong> "Which is the largest desert?", "Tropic of Cancer passes through which countries?", "Largest ocean?"</li>
+<li><strong>Map-location questions:</strong> "Strait of Hormuz separates which two regions?", "Suez Canal connects which two seas?"</li>
+<li><strong>NCERT-aligned content:</strong> Class 6–11 NCERT level — NOT UPSC-level analytical depth</li>
+<li><strong>Country-fact questions:</strong> Capitals, currencies, recent name changes (Burma → Myanmar, Ceylon → Sri Lanka)</li>
+<li><strong>NO trick questions or multi-statement format</strong> typical of UPSC — BPSC is straightforward</li>
+</ul>
+</div>
+<div class="pull-quote"><p>"BPSC's world geography is simpler than UPSC's — but you must cover all factual ground completely. Skipping a single continent or ocean = 1–2 marks lost. Master every fact in this guide and no question can surprise you."</p></div>
+</section>
+
+<!-- ============================== -->
+<!-- S1: EARTH IN SOLAR SYSTEM -->
+<!-- ============================== -->
+<section class="section" id="s1">
+<span class="section-number">Section 01</span>
+<h2 class="section-title">Earth in the Solar System</h2>
+<div class="section-desc">Foundational planetary facts — 1 question per paper guaranteed</div>
+
+<table class="fact-table">
+<tr><td class="key">Position from Sun</td><td><strong>3rd planet</strong> (after Mercury, Venus)</td></tr>
+<tr><td class="key">Type</td><td>Terrestrial / Inner / Rocky planet (with Mercury, Venus, Mars)</td></tr>
+<tr><td class="key">Equatorial diameter</td><td><strong>~12,756 km</strong></td></tr>
+<tr><td class="key">Polar diameter</td><td>~12,714 km <span style="color:var(--text3)">(Earth is slightly oblate spheroid — flattened at poles)</span></td></tr>
+<tr><td class="key">Equatorial circumference</td><td>~40,075 km</td></tr>
+<tr><td class="key">Surface area</td><td>~510 million sq km <span style="color:var(--text3)">(70.8% water, 29.2% land)</span></td></tr>
+<tr><td class="key">Distance from Sun</td><td>~149.6 million km <span style="color:var(--text3)">(1 Astronomical Unit, AU)</span></td></tr>
+<tr><td class="key">Sun's light reaches Earth in</td><td><strong>~8 minutes 20 seconds</strong></td></tr>
+<tr><td class="key">Only natural satellite</td><td><strong>Moon</strong> — distance ~3,84,400 km; Moon's light reaches Earth in ~1.3 seconds</td></tr>
+<tr><td class="key">Earth's nicknames</td><td><strong>"Blue Planet"</strong> (water), <strong>"Goldilocks Planet"</strong> (just-right zone for life)</td></tr>
+<tr><td class="key">Age of Earth</td><td>~4.54 billion years</td></tr>
+<tr><td class="key">Solar System bodies</td><td>1 Sun + 8 planets + 5 dwarf planets + 200+ moons + asteroids/comets</td></tr>
+<tr><td class="key">8 planets in order</td><td>Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune <em>("My Very Educated Mother Just Served Us Noodles")</em></td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">Planet-Specific Facts BPSC Tests</div>
+<ul>
+<li><strong>Mercury</strong> — closest to Sun; smallest planet; no atmosphere; no satellites</li>
+<li><strong>Venus</strong> — hottest planet; "Earth's twin" (similar size); rotates clockwise (retrograde); "Morning/Evening Star"</li>
+<li><strong>Mars</strong> — "Red Planet" (iron oxide); 2 moons (Phobos, Deimos); Mt. Olympus = solar system's tallest mountain</li>
+<li><strong>Jupiter</strong> — largest planet; "Failed Star"; Great Red Spot (giant storm); 95+ moons; Ganymede largest moon</li>
+<li><strong>Saturn</strong> — most prominent rings; least dense (would float in water); Titan (largest moon) has thick atmosphere</li>
+<li><strong>Uranus</strong> — rotates on its side (98° tilt); discovered 1781</li>
+<li><strong>Neptune</strong> — farthest from Sun; coldest planet's atmosphere; discovered 1846</li>
+<li><strong>Pluto</strong> — reclassified as dwarf planet in 2006 by IAU; now part of Kuiper Belt</li>
+</ul>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Which planet is known as the 'morning star' as well as the 'evening star'?"</div><div class="bpsc-q-ans">Venus — visible just before sunrise (morning star) or just after sunset (evening star)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"How many planets does our solar system have, after Pluto's reclassification?"</div><div class="bpsc-q-ans">8 planets — Pluto reclassified as dwarf planet by IAU in 2006</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S2: EARTH'S MOTIONS -->
+<!-- ============================== -->
+<section class="section" id="s2">
+<span class="section-number">Section 02</span>
+<h2 class="section-title">Earth's Motions, Seasons &amp; Time Concepts</h2>
+<div class="section-desc">Rotation, revolution, equinoxes, solstices, time zones — high-frequency in BPSC</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Two Motions of Earth</div>
+<table class="fact-table">
+<tr><th>Motion</th><th>Description</th><th>Duration</th><th>Effect</th></tr>
+<tr><td class="key">Rotation</td><td>Earth spins on its axis (West to East)</td><td><strong>23 hr 56 min 4 sec</strong> (sidereal day) — "1 day"</td><td>Day &amp; night, deflection of winds (Coriolis), tides</td></tr>
+<tr><td class="key">Revolution</td><td>Earth orbits the Sun (elliptical path)</td><td><strong>365 days 5 hr 48 min 46 sec</strong> = "1 year"</td><td>Seasons, leap year (every 4 years to adjust extra ~6 hours)</td></tr>
+</table>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Equinoxes &amp; Solstices</div>
+<table class="fact-table">
+<tr><th>Event</th><th>Date</th><th>Sun is overhead at</th><th>Significance</th></tr>
+<tr><td class="key">Vernal (Spring) Equinox</td><td><strong>March 21</strong></td><td>Equator</td><td>Day = Night across world; spring in N. Hemisphere</td></tr>
+<tr><td class="key">Summer Solstice</td><td><strong>June 21</strong></td><td>Tropic of Cancer (23.5° N)</td><td><strong>Longest day in N. Hemisphere</strong>; shortest in S. Hemisphere</td></tr>
+<tr><td class="key">Autumnal Equinox</td><td><strong>September 23</strong></td><td>Equator</td><td>Day = Night again; autumn in N. Hemisphere</td></tr>
+<tr><td class="key">Winter Solstice</td><td><strong>December 22</strong></td><td>Tropic of Capricorn (23.5° S)</td><td><strong>Shortest day in N. Hemisphere</strong>; longest in S. Hemisphere</td></tr>
+</table>
+
+<div class="memo">
+<strong>Memorise dates: 21–23–21–22</strong> → Mar 21, Sept 23 = equinoxes (equal day-night); Jun 21, Dec 22 = solstices (extreme day-night). At equinoxes, Sun is overhead at <strong>Equator</strong>. At June solstice, overhead at <strong>Tropic of Cancer</strong>. At December solstice, overhead at <strong>Tropic of Capricorn</strong>.
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Aphelion &amp; Perihelion</div>
+<table class="fact-table">
+<tr><td class="key">Aphelion</td><td><strong>Earth farthest from Sun (~152 million km)</strong> — around <strong>July 4</strong></td></tr>
+<tr><td class="key">Perihelion</td><td><strong>Earth nearest to Sun (~147 million km)</strong> — around <strong>January 3</strong></td></tr>
+</table>
+<div class="warn-box">
+<div class="warn-box-label">⚠ Common Trap</div>
+<p>Earth is <strong>nearest</strong> to Sun in <strong>January</strong> (during N. Hemisphere winter), and <strong>farthest</strong> in <strong>July</strong> (during N. Hemisphere summer). Seasons are caused by <strong>Earth's axial tilt (23.5°)</strong>, NOT by distance from Sun. Frequently asked as a misconception trap.</p>
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Time Zones &amp; International Date Line</div>
+<table class="fact-table">
+<tr><td class="key">Total time zones</td><td><strong>24</strong> — Earth divided every 15° longitude (360° ÷ 24)</td></tr>
+<tr><td class="key">Time per longitude</td><td>4 minutes per 1° of longitude (15° × 4 min = 60 min)</td></tr>
+<tr><td class="key">Prime Meridian (0°)</td><td><strong>Greenwich, London</strong> — passes through Royal Observatory; reference for GMT/UTC</td></tr>
+<tr><td class="key">International Date Line (IDL)</td><td><strong>180° meridian</strong> — runs through Pacific Ocean; bends to avoid land (Russia, Aleutian Islands, Fiji, Kiribati)</td></tr>
+<tr><td class="key">Crossing IDL westward (Asia → America)</td><td>Gain 1 day (date moves backward)</td></tr>
+<tr><td class="key">Crossing IDL eastward (America → Asia)</td><td>Lose 1 day (date moves forward)</td></tr>
+<tr><td class="key">India's Standard Time (IST)</td><td>UTC + 5:30 hours; based on <strong>82.5° E longitude</strong> (passing through Mirzapur, UP)</td></tr>
+</table>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"On which date does the Sun shine vertically over the Tropic of Cancer?"</div><div class="bpsc-q-ans">June 21 (Summer Solstice) — longest day in Northern Hemisphere</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"The Prime Meridian passes through which city?"</div><div class="bpsc-q-ans">Greenwich, London (Royal Observatory) — reference for GMT</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S3: LATITUDES & LONGITUDES -->
+<!-- ============================== -->
+<section class="section" id="s3">
+<span class="section-number">Section 03</span>
+<h2 class="section-title">Latitudes &amp; Longitudes — Important Lines</h2>
+<div class="section-desc">Critical for "passes through which countries" type questions — extremely high BPSC frequency</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>The 5 Major Latitudes</div>
+<table class="fact-table">
+<tr><th>Latitude</th><th>Position</th><th>Significance</th></tr>
+<tr><td class="key">Equator</td><td><strong>0°</strong></td><td>Divides Earth into N. &amp; S. Hemispheres; longest latitude (~40,075 km); equal day &amp; night year-round</td></tr>
+<tr><td class="key">Tropic of Cancer</td><td><strong>23.5° N</strong></td><td>Northern limit of direct sunlight; Sun overhead on June 21</td></tr>
+<tr><td class="key">Tropic of Capricorn</td><td><strong>23.5° S</strong></td><td>Southern limit of direct sunlight; Sun overhead on December 22</td></tr>
+<tr><td class="key">Arctic Circle</td><td><strong>66.5° N</strong></td><td>Region of midnight sun (continuous daylight in summer); polar night in winter</td></tr>
+<tr><td class="key">Antarctic Circle</td><td><strong>66.5° S</strong></td><td>Same as Arctic Circle but in S. Hemisphere</td></tr>
+</table>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Tropic of Cancer — Countries It Passes Through</div>
+<p>The Tropic of Cancer (23.5° N) passes through <strong>17 countries</strong>. Memorise these by region — VERY frequently asked.</p>
+<div class="grid-3">
+<div class="grid-card">
+<div class="grid-card-title">Americas</div>
+<ul>
+<li>Bahamas</li>
+<li>Mexico</li>
+</ul>
+</div>
+<div class="grid-card">
+<div class="grid-card-title">Africa</div>
+<ul>
+<li>Western Sahara</li>
+<li>Mauritania</li>
+<li>Mali</li>
+<li>Algeria</li>
+<li>Niger</li>
+<li>Libya</li>
+<li>Chad</li>
+<li>Egypt</li>
+</ul>
+</div>
+<div class="grid-card">
+<div class="grid-card-title">Asia</div>
+<ul>
+<li>Saudi Arabia</li>
+<li>UAE</li>
+<li>Oman</li>
+<li><strong>India</strong></li>
+<li>Bangladesh</li>
+<li>Myanmar</li>
+<li>China (south)</li>
+<li>Taiwan</li>
+</ul>
+</div>
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Tropic of Cancer in India</div>
+<ul>
+<li>Passes through <strong>8 Indian states</strong>: Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram</li>
+<li><strong>Mnemonic:</strong> "GuRaMP-CJWT-Mi" or remember as the central belt of India</li>
+<li>In Bihar, the Tropic of Cancer passes through <strong>Gaya and Bhagalpur</strong> districts (Part 1 reference)</li>
+<li><strong>Note:</strong> It does NOT pass through Bihar's full state — only southern districts. UP, Maharashtra, Punjab, Haryana, Bihar (most) are NORTH of Tropic of Cancer.</li>
+</ul>
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Equator — Countries It Passes Through</div>
+<p>The Equator passes through <strong>13 countries</strong>:</p>
+<ul class="cl">
+<li><strong>South America (3):</strong> Ecuador, Colombia, Brazil</li>
+<li><strong>Africa (7):</strong> São Tomé and Príncipe, Gabon, Republic of Congo, Democratic Republic of Congo, Uganda, Kenya, Somalia</li>
+<li><strong>Asia/Maritime (3):</strong> Indonesia, Maldives (just south), Kiribati</li>
+</ul>
+<div class="memo">
+<strong>Mnemonic:</strong> Ecuador is named after the Equator! — Ecuador, Brazil, Colombia in S. America. Then through Africa's center (Congo, Uganda, Kenya), then to Indonesia.<br>
+<strong>BPSC favorite:</strong> "Equator passes through Lake Victoria" — TRUE (in Africa, between Uganda-Kenya-Tanzania).
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Tropic of Capricorn — Countries It Passes Through</div>
+<p>The Tropic of Capricorn passes through <strong>10 countries</strong> (mostly Southern Hemisphere):</p>
+<ul class="cl">
+<li><strong>South America (4):</strong> Chile, Argentina, Paraguay, Brazil</li>
+<li><strong>Africa (5):</strong> Namibia, Botswana, South Africa (just south), Mozambique, Madagascar</li>
+<li><strong>Australia (1):</strong> Australia</li>
+</ul>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC Frequent</div><div class="bpsc-q-text">"Through how many Indian states does the Tropic of Cancer pass?"</div><div class="bpsc-q-ans">8 states — Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"The Equator passes through which African lake?"</div><div class="bpsc-q-ans">Lake Victoria — at the borders of Uganda, Kenya, Tanzania</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S4: EARTH'S INTERIOR -->
+<!-- ============================== -->
+<section class="section" id="s4">
+<span class="section-number">Section 04</span>
+<h2 class="section-title">Earth's Interior Structure</h2>
+<div class="section-desc">Crust, mantle, core — basic earth science from NCERT; 1 question per paper</div>
+
+<table class="fact-table">
+<tr><th>Layer</th><th>Depth</th><th>Composition / State</th><th>Density</th></tr>
+<tr><td class="key">Crust</td><td>0–35 km (continental); 5–10 km (oceanic)</td><td>Solid; <strong>Continental crust = SiAl</strong> (Silica + Aluminium); <strong>Oceanic crust = SiMa</strong> (Silica + Magnesium)</td><td>2.7–3.0 g/cm³</td></tr>
+<tr><td class="key">Mantle</td><td>35 km – 2,900 km</td><td>Solid (upper) → Plastic (asthenosphere, ~100–200 km) → Solid (lower); composed of silicates rich in iron &amp; magnesium</td><td>3.4–5.6 g/cm³</td></tr>
+<tr><td class="key">Outer Core</td><td>2,900 – 5,150 km</td><td><strong>Liquid</strong>; mostly Iron + Nickel (Nife); generates Earth's magnetic field</td><td>9.9–12.2 g/cm³</td></tr>
+<tr><td class="key">Inner Core</td><td>5,150 – 6,371 km (center)</td><td><strong>Solid</strong> due to immense pressure; Iron + Nickel; temperature ~5,500°C</td><td>12.6–13.0 g/cm³</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">Key Discontinuities (Boundaries)</div>
+<ul>
+<li><strong>Mohorovičić Discontinuity (Moho)</strong> — between Crust and Mantle</li>
+<li><strong>Gutenberg Discontinuity</strong> — between Mantle and Outer Core (~2,900 km)</li>
+<li><strong>Lehmann Discontinuity</strong> — between Outer Core and Inner Core (~5,150 km)</li>
+<li><strong>Conrad Discontinuity</strong> — within continental crust (between SiAl and SiMa layers)</li>
+<li><strong>Repetti Discontinuity</strong> — between upper and lower mantle</li>
+</ul>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Plate Tectonics — Foundation</div>
+<p>Earth's <strong>lithosphere</strong> (crust + uppermost mantle) is broken into ~7 major plates and several minor plates that move slowly over the asthenosphere.</p>
+<div class="grid-2">
+<div class="grid-card">
+<div class="grid-card-title">7 Major Tectonic Plates</div>
+<ul>
+<li>Pacific Plate (largest)</li>
+<li>African Plate</li>
+<li>Eurasian Plate</li>
+<li>North American Plate</li>
+<li>South American Plate</li>
+<li>Indo-Australian Plate</li>
+<li>Antarctic Plate</li>
+</ul>
+</div>
+<div class="grid-card">
+<div class="grid-card-title">Plate Boundary Types</div>
+<ul>
+<li><strong>Convergent:</strong> plates collide → Himalayas, Andes, ocean trenches</li>
+<li><strong>Divergent:</strong> plates separate → Mid-Atlantic Ridge, East African Rift</li>
+<li><strong>Transform:</strong> plates slide past → San Andreas Fault (California)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"The boundary between the Earth's crust and mantle is known as?"</div><div class="bpsc-q-ans">Mohorovičić Discontinuity (Moho)</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S5: 7 CONTINENTS -->
+<!-- ============================== -->
+<section class="section" id="s5">
+<span class="section-number">Section 05</span>
+<h2 class="section-title">The 7 Continents — Overview</h2>
+<div class="section-desc">Memorise sizes, populations, and "extreme" facts for each — single highest-yield section</div>
+
+<table class="fact-table">
+<tr><th>Continent</th><th>Area Rank</th><th>Population Rank</th><th>Area (sq km)</th><th>Notable</th></tr>
+<tr><td class="key">Asia</td><td class="hl">#1</td><td class="hl">#1</td><td>~44.6 million</td><td>Largest continent; ~30% land; ~60% world population</td></tr>
+<tr><td class="key">Africa</td><td>#2</td><td>#2</td><td>~30.4 million</td><td>2nd largest; "Cradle of Humanity"; 54 countries</td></tr>
+<tr><td class="key">North America</td><td>#3</td><td>#4</td><td>~24.7 million</td><td>23 countries; includes Greenland (largest island)</td></tr>
+<tr><td class="key">South America</td><td>#4</td><td>#5</td><td>~17.8 million</td><td>12 countries; Amazon rainforest; Andes mountains</td></tr>
+<tr><td class="key">Antarctica</td><td>#5</td><td class="hl">#7 (uninhabited permanently)</td><td>~14.0 million</td><td>Coldest, driest, windiest; covered in ice; no countries</td></tr>
+<tr><td class="key">Europe</td><td>#6</td><td>#3</td><td>~10.2 million</td><td>~50 countries; densely populated</td></tr>
+<tr><td class="key">Australia/Oceania</td><td class="hl">#7 (smallest)</td><td>#6</td><td>~8.5 million</td><td>Smallest continent; only continent that's also a country</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Quick "Asia is #1 in Everything" Drill</div>
+<ul>
+<li><strong>Largest continent</strong> by area &amp; population: Asia</li>
+<li><strong>Smallest continent</strong> by area: Australia/Oceania</li>
+<li><strong>Highest population density:</strong> Asia</li>
+<li><strong>Smallest population:</strong> Antarctica (no permanent residents — only research station personnel)</li>
+<li><strong>Most countries:</strong> Africa (54)</li>
+<li><strong>Continent with no countries:</strong> Antarctica (governed by Antarctic Treaty 1959)</li>
+<li><strong>Continent that's a country:</strong> Australia (only one)</li>
+<li><strong>Crossing 4 hemispheres:</strong> Africa (only continent in all 4 — N, S, E, W of equator and prime meridian)</li>
+</ul>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Continent Highest/Lowest Points</div>
+<table class="fact-table">
+<tr><th>Continent</th><th>Highest Point</th><th>Lowest Point</th></tr>
+<tr><td class="key">Asia</td><td><strong>Mt. Everest</strong> (8,849 m) — Nepal/Tibet</td><td><strong>Dead Sea</strong> (-430 m) — Israel/Jordan</td></tr>
+<tr><td class="key">South America</td><td><strong>Mt. Aconcagua</strong> (6,961 m) — Argentina (Andes)</td><td><strong>Laguna del Carbón</strong> (-105 m) — Argentina</td></tr>
+<tr><td class="key">North America</td><td><strong>Mt. Denali</strong> (6,190 m) — Alaska, USA</td><td><strong>Death Valley</strong> (-86 m) — California, USA</td></tr>
+<tr><td class="key">Africa</td><td><strong>Mt. Kilimanjaro</strong> (5,895 m) — Tanzania</td><td><strong>Lake Assal</strong> (-155 m) — Djibouti</td></tr>
+<tr><td class="key">Europe</td><td><strong>Mt. Elbrus</strong> (5,642 m) — Russia (Caucasus)</td><td><strong>Caspian Sea</strong> (-28 m) — Russia/Kazakhstan</td></tr>
+<tr><td class="key">Antarctica</td><td><strong>Vinson Massif</strong> (4,892 m)</td><td><strong>Bentley Subglacial Trench</strong> (-2,540 m, sub-ice)</td></tr>
+<tr><td class="key">Australia/Oceania</td><td><strong>Mt. Kosciuszko</strong> (2,228 m) — Australia (or Puncak Jaya 4,884 m if including Oceania)</td><td><strong>Lake Eyre</strong> (-15 m) — Australia</td></tr>
+</table>
+
+<div class="memo">
+<strong>The "Seven Summits" challenge</strong> (climbing highest peak of each continent) — Everest, Aconcagua, Denali, Kilimanjaro, Elbrus, Vinson, Kosciuszko/Puncak Jaya. Frequently asked individually in BPSC.
+</div>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S6: ASIA & AFRICA -->
+<!-- ============================== -->
+<section class="section" id="s6">
+<span class="section-number">Section 06</span>
+<h2 class="section-title">Asia &amp; Africa — Detailed</h2>
+<div class="section-desc">Two largest continents; most BPSC questions on these</div>
+
+<div class="continent-card">
+<div class="continent-header">
+<span class="continent-name">Asia</span>
+<span class="continent-rank">LARGEST CONTINENT</span>
+<span class="continent-tagline">~30% of land · 60% of world population · 49 countries</span>
+</div>
+<div class="continent-body">
+<div class="continent-facts">
+<span><strong>Area</strong>~44.6 million sq km</span>
+<span><strong>Population</strong>~4.7 billion (60% of world)</span>
+<span><strong>Highest point</strong>Mt. Everest, 8,849 m</span>
+<span><strong>Lowest point</strong>Dead Sea, -430 m</span>
+<span><strong>Longest river</strong>Yangtze (China), 6,300 km</span>
+<span><strong>Largest country</strong>Russia (transcontinental — partly Europe)</span>
+<span><strong>Smallest country</strong>Maldives</span>
+<span><strong>Most populous country</strong>India (1.42+ billion, since 2023)</span>
+</div>
+<ul class="cl">
+<li><strong>Major regions:</strong> South Asia (India, Pak, BD), East Asia (China, Japan, Koreas), Southeast Asia (ASEAN), Central Asia (Stans), West Asia/Middle East, Russia (transcontinental)</li>
+<li><strong>Major mountain ranges:</strong> Himalayas, Hindu Kush, Karakoram, Tien Shan, Altai, Caucasus, Zagros, Ural (Asia-Europe boundary)</li>
+<li><strong>Major rivers:</strong> Yangtze, Yellow (Huang He), Mekong, Brahmaputra, Indus, Ganges, Tigris, Euphrates, Ob, Yenisei, Lena</li>
+<li><strong>Major deserts:</strong> Gobi (Mongolia/China), Thar (India/Pakistan), Kara Kum (Turkmenistan), Kyzyl Kum (Uzbekistan), Arabian Desert</li>
+<li><strong>Asia is on:</strong> 4 oceans — Pacific (east), Indian (south), Arctic (north), Atlantic (west via Mediterranean)</li>
+<li><strong>Asia-Europe boundary:</strong> Ural Mountains, Ural River, Caspian Sea, Caucasus Mountains, Black Sea</li>
+</ul>
+</div>
+</div>
+
+<div class="continent-card">
+<div class="continent-header">
+<span class="continent-name">Africa</span>
+<span class="continent-rank">2ND LARGEST</span>
+<span class="continent-tagline">"Cradle of Humanity" · 54 countries · only continent in all 4 hemispheres</span>
+</div>
+<div class="continent-body">
+<div class="continent-facts">
+<span><strong>Area</strong>~30.4 million sq km</span>
+<span><strong>Population</strong>~1.4 billion (~17%)</span>
+<span><strong>Highest point</strong>Mt. Kilimanjaro, 5,895 m (Tanzania)</span>
+<span><strong>Lowest point</strong>Lake Assal (Djibouti), -155 m</span>
+<span><strong>Longest river</strong><strong>Nile</strong> — world's longest, 6,650 km</span>
+<span><strong>Largest country</strong>Algeria (by area)</span>
+<span><strong>Smallest country</strong>Seychelles (island nation)</span>
+<span><strong>Most populous country</strong>Nigeria</span>
+</div>
+<ul class="cl">
+<li><strong>Geographic features:</strong> Sahara Desert (largest hot desert), Kalahari Desert, Namib Desert, Atlas Mountains (NW), Drakensberg (S), East African Rift Valley, Ethiopian Highlands</li>
+<li><strong>Major rivers:</strong> Nile (longest in world), Congo (deepest in Africa), Niger, Zambezi (Victoria Falls), Limpopo, Orange</li>
+<li><strong>Major lakes:</strong> Victoria (largest in Africa, 2nd in world), Tanganyika (deepest in Africa), Malawi, Chad, Turkana</li>
+<li><strong>Strategic locations:</strong> Cape of Good Hope (S. Africa), Suez Canal (Egypt — connects Red Sea &amp; Mediterranean), Bab-el-Mandeb Strait (Red Sea entrance)</li>
+<li><strong>Africa is in all 4 hemispheres</strong> — only continent that crosses Equator AND Prime Meridian</li>
+<li><strong>Africa-Asia boundary:</strong> Suez Canal / Sinai Peninsula</li>
+<li><strong>Sahara Desert:</strong> Spans 11 countries; world's largest hot desert (~9 million sq km)</li>
+</ul>
+</div>
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Africa Country Facts BPSC Tests</div>
+<ul>
+<li><strong>"Sugar Bowl of the World":</strong> Cuba (note: Caribbean, not Africa) — but for Africa, sugar belt is in Sudan/Egypt</li>
+<li><strong>Coffee origin:</strong> Ethiopia</li>
+<li><strong>Diamonds:</strong> South Africa, Botswana, DRC; Kimberley (S. Africa) is famous diamond mining town</li>
+<li><strong>Gold mining:</strong> South Africa (Witwatersrand)</li>
+<li><strong>Oil:</strong> Nigeria (Africa's biggest), Angola, Algeria, Libya</li>
+<li><strong>Cocoa:</strong> Côte d'Ivoire (world #1), Ghana</li>
+<li><strong>"Roof of Africa":</strong> Ethiopia (highlands at avg 2,000m+)</li>
+</ul>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S7: EUROPE & AMERICAS -->
+<!-- ============================== -->
+<section class="section" id="s7">
+<span class="section-number">Section 07</span>
+<h2 class="section-title">Europe &amp; the Americas</h2>
+<div class="section-desc">Three continents — densely tested in capitals, rivers, and mountain questions</div>
+
+<div class="continent-card">
+<div class="continent-header">
+<span class="continent-name">Europe</span>
+<span class="continent-rank">2nd SMALLEST</span>
+<span class="continent-tagline">"Peninsula of peninsulas" · ~50 countries · most densely countries-packed</span>
+</div>
+<div class="continent-body">
+<div class="continent-facts">
+<span><strong>Area</strong>~10.2 million sq km</span>
+<span><strong>Population</strong>~750 million</span>
+<span><strong>Highest point</strong>Mt. Elbrus, 5,642 m (Russia, Caucasus)</span>
+<span><strong>Lowest point</strong>Caspian Sea, -28 m</span>
+<span><strong>Longest river</strong>Volga (3,690 km) — Russia</span>
+<span><strong>Largest country</strong>Russia (transcontinental)</span>
+<span><strong>Smallest country</strong>Vatican City (~0.49 sq km)</span>
+<span><strong>Most populous country</strong>Russia (Europe portion); else Germany</span>
+</div>
+<ul class="cl">
+<li><strong>Major mountain ranges:</strong> Alps (S Europe), Pyrenees (Spain-France), Apennines (Italy), Carpathians, Balkans, Caucasus, Urals (Asia border), Scandinavian Mts</li>
+<li><strong>Major rivers:</strong> Volga (longest), Danube (passes through 10 countries — most of any river), Rhine, Thames, Seine, Po, Loire</li>
+<li><strong>Major peninsulas:</strong> Iberian (Spain, Portugal), Italian, Balkan, Scandinavian, Jutland</li>
+<li><strong>Major seas:</strong> Mediterranean, Baltic, North Sea, Black Sea, Caspian Sea (largest enclosed sea)</li>
+<li><strong>Strategic features:</strong> English Channel (UK-France), Strait of Gibraltar (Mediterranean entrance), Bosphorus &amp; Dardanelles (Black Sea entrances)</li>
+<li><strong>Europe-Asia boundary:</strong> Ural Mts → Ural River → Caspian → Caucasus → Black Sea</li>
+<li><strong>European Union:</strong> 27 member countries (post-Brexit 2020)</li>
+</ul>
+</div>
+</div>
+
+<div class="continent-card">
+<div class="continent-header">
+<span class="continent-name">North America</span>
+<span class="continent-rank">3RD LARGEST</span>
+<span class="continent-tagline">From Arctic to Caribbean · 23 countries · USA, Canada, Mexico dominant</span>
+</div>
+<div class="continent-body">
+<div class="continent-facts">
+<span><strong>Area</strong>~24.7 million sq km</span>
+<span><strong>Population</strong>~600 million</span>
+<span><strong>Highest point</strong>Mt. Denali, 6,190 m (Alaska)</span>
+<span><strong>Lowest point</strong>Death Valley, -86 m (California)</span>
+<span><strong>Longest river</strong>Mississippi-Missouri (~6,275 km)</span>
+<span><strong>Largest country</strong>Canada (#2 in world, after Russia)</span>
+<span><strong>Smallest country</strong>St. Kitts and Nevis</span>
+<span><strong>Most populous country</strong>USA (~340 million)</span>
+</div>
+<ul class="cl">
+<li><strong>Major mountain ranges:</strong> Rocky Mountains (W from Alaska to New Mexico), Appalachian Mountains (E), Sierra Madre (Mexico)</li>
+<li><strong>Major rivers:</strong> Mississippi-Missouri (longest), Yukon, Rio Grande, Colorado, St. Lawrence (drains Great Lakes)</li>
+<li><strong>5 Great Lakes:</strong> Superior (largest freshwater lake by area in the world), Michigan, Huron, Erie, Ontario — mnemonic <strong>"HOMES"</strong> in reverse: Huron, Ontario, Michigan, Erie, Superior</li>
+<li><strong>Largest island in world:</strong> Greenland (~2.16 million sq km) — politically Danish but geographically N. America</li>
+<li><strong>Major canyon:</strong> Grand Canyon (Arizona, USA) — Colorado River carved over 6 million years</li>
+<li><strong>Strategic location:</strong> Panama Canal — connects Atlantic &amp; Pacific oceans (cuts across Central America)</li>
+<li><strong>USA's iconic features:</strong> Yellowstone (1st National Park 1872), Niagara Falls (US-Canada border), Mt. Rushmore, Death Valley</li>
+</ul>
+</div>
+</div>
+
+<div class="continent-card">
+<div class="continent-header">
+<span class="continent-name">South America</span>
+<span class="continent-rank">4TH LARGEST</span>
+<span class="continent-tagline">Amazon · Andes · 12 countries · most biodiverse continent</span>
+</div>
+<div class="continent-body">
+<div class="continent-facts">
+<span><strong>Area</strong>~17.8 million sq km</span>
+<span><strong>Population</strong>~430 million</span>
+<span><strong>Highest point</strong>Mt. Aconcagua, 6,961 m (Argentina)</span>
+<span><strong>Lowest point</strong>Laguna del Carbón, -105 m (Argentina)</span>
+<span><strong>Longest river</strong><strong>Amazon</strong> — 2nd longest world; <strong>largest by volume</strong></span>
+<span><strong>Largest country</strong>Brazil (5th in world)</span>
+<span><strong>Smallest country</strong>Suriname</span>
+<span><strong>Most populous country</strong>Brazil (~216 million)</span>
+</div>
+<ul class="cl">
+<li><strong>Andes Mountains</strong> — <strong>longest mountain range in the world</strong> (~7,000 km along entire west coast); passes through 7 countries (Venezuela, Colombia, Ecuador, Peru, Bolivia, Chile, Argentina)</li>
+<li><strong>Amazon River &amp; Basin</strong> — Amazon is 2nd longest river but #1 by water volume (largest discharge); Amazon rainforest = "Lungs of Earth", largest tropical rainforest</li>
+<li><strong>Atacama Desert</strong> (Chile) — driest desert in the world (some areas no rainfall in centuries)</li>
+<li><strong>Other features:</strong> Pampas (Argentina grasslands), Patagonia (S. Argentina/Chile), Lake Titicaca (highest navigable lake, on Peru-Bolivia border)</li>
+<li><strong>Angel Falls (Venezuela)</strong> — world's tallest waterfall (~979 m), on Auyán-Tepuí mountain</li>
+<li><strong>Iguazu Falls</strong> — Argentina-Brazil border; system of 275 waterfalls</li>
+<li><strong>Galapagos Islands</strong> (Ecuador) — Darwin's evolutionary research site</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S8: AUSTRALIA & ANTARCTICA -->
+<!-- ============================== -->
+<section class="section" id="s8">
+<span class="section-number">Section 08</span>
+<h2 class="section-title">Australia/Oceania &amp; Antarctica</h2>
+<div class="section-desc">Two unique continents — Australia is a country-continent; Antarctica is uninhabited</div>
+
+<div class="continent-card">
+<div class="continent-header">
+<span class="continent-name">Australia / Oceania</span>
+<span class="continent-rank">SMALLEST CONTINENT</span>
+<span class="continent-tagline">"Continent and country" · 14 countries (Oceania)</span>
+</div>
+<div class="continent-body">
+<div class="continent-facts">
+<span><strong>Area</strong>~8.5 million sq km</span>
+<span><strong>Population</strong>~45 million</span>
+<span><strong>Highest point</strong>Puncak Jaya, 4,884 m (New Guinea/Indonesia) — or Mt. Kosciuszko 2,228 m (Australia)</span>
+<span><strong>Lowest point</strong>Lake Eyre, -15 m (Australia)</span>
+<span><strong>Longest river</strong>Murray-Darling (~3,672 km) — Australia</span>
+<span><strong>Largest country</strong>Australia</span>
+<span><strong>Smallest country (world's)</strong>Vatican is smallest; in Oceania, <strong>Nauru &amp; Tuvalu</strong> are tiny</span>
+<span><strong>Most populous</strong>Australia (~26 million)</span>
+</div>
+<ul class="cl">
+<li><strong>Australia</strong> is the only continent that's also a single country</li>
+<li><strong>Great Barrier Reef</strong> — world's largest coral reef system (off NE Australia coast); UNESCO World Heritage</li>
+<li><strong>Great Dividing Range</strong> — Australia's main mountain system (eastern coast)</li>
+<li><strong>Outback</strong> — vast inland arid region; ~70% of Australia is arid/semi-arid</li>
+<li><strong>Major cities:</strong> Sydney, Melbourne, Brisbane, Perth, Adelaide; <strong>Canberra is the capital</strong> (NOT Sydney — common trap)</li>
+<li><strong>Oceania regions:</strong> Melanesia (Papua, Fiji, Solomon Islands), Polynesia (Hawaii, Samoa, Tonga, Tuvalu), Micronesia (Kiribati, Nauru, Marshall)</li>
+<li><strong>Indigenous people:</strong> Aboriginals (Australia), Maoris (New Zealand)</li>
+<li><strong>Unique fauna:</strong> Kangaroos, Koalas, Platypus, Wombats, Tasmanian Devils — marsupial-rich</li>
+</ul>
+</div>
+</div>
+
+<div class="continent-card">
+<div class="continent-header">
+<span class="continent-name">Antarctica</span>
+<span class="continent-rank">5TH LARGEST · UNINHABITED</span>
+<span class="continent-tagline">"White Continent" · governed by Antarctic Treaty 1959</span>
+</div>
+<div class="continent-body">
+<div class="continent-facts">
+<span><strong>Area</strong>~14.0 million sq km</span>
+<span><strong>Population</strong>0 permanent (~1,000–4,000 researchers)</span>
+<span><strong>Highest point</strong>Vinson Massif, 4,892 m</span>
+<span><strong>Lowest point</strong>Bentley Subglacial Trench, -2,540 m (under ice)</span>
+<span><strong>Ice cover</strong>~98% — holds 70% of world's freshwater (as ice)</span>
+<span><strong>Coldest temperature ever</strong>-89.2°C (Vostok Station, 1983)</span>
+</div>
+<ul class="cl">
+<li><strong>Antarctic Treaty 1959</strong> — signed by 12 countries; reserves Antarctica for peaceful, scientific use; bans military activity, mining, nuclear testing</li>
+<li><strong>South Pole</strong> located here — first reached by Roald Amundsen (Norway) in 1911</li>
+<li><strong>India's Antarctic stations:</strong> <strong>Dakshin Gangotri</strong> (1983, abandoned), <strong>Maitri</strong> (1989, active), <strong>Bharati</strong> (2012, active), <strong>Dakshin Gangotri-2</strong> (planned)</li>
+<li><strong>Antarctica = coldest, driest, windiest continent</strong> — but technically a desert (very little precipitation)</li>
+<li><strong>Surrounded by Southern Ocean</strong> (5th ocean, recognized 2000)</li>
+<li><strong>Animal life:</strong> Penguins (Emperor, Adélie), seals, whales — confined to coastline</li>
+<li><strong>Ozone hole</strong> over Antarctica — discovered 1985; reason for Montreal Protocol (1987)</li>
+</ul>
+</div>
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ India in Antarctica — BPSC's Favorite</div>
+<ul>
+<li><strong>India's first Antarctic expedition:</strong> 1981, led by Dr. Syed Zahoor Qasim</li>
+<li><strong>Dakshin Gangotri (1983)</strong> — India's first permanent station; abandoned in 1990 due to ice burial</li>
+<li><strong>Maitri (1989)</strong> — currently operational; in Schirmacher Oasis</li>
+<li><strong>Bharati (2012)</strong> — most recent active station; in Larsemann Hills</li>
+<li><strong>India became consultative member</strong> of Antarctic Treaty in 1983</li>
+<li><strong>NCPOR</strong> (National Centre for Polar &amp; Ocean Research, Goa) — manages Indian Antarctic missions</li>
+</ul>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S9: 5 OCEANS -->
+<!-- ============================== -->
+<section class="section" id="s9">
+<span class="section-number">Section 09</span>
+<h2 class="section-title">The 5 Oceans of the World</h2>
+<div class="section-desc">Sizes, depths, and bordering continents — guaranteed 1–2 questions per paper</div>
+
+<div class="ocean-card">
+<div class="ocean-header">
+<span class="ocean-name">Pacific Ocean</span>
+<span class="ocean-rank">★ #1 LARGEST · DEEPEST</span>
+</div>
+<div class="ocean-body">
+<strong>Area:</strong> ~165 million sq km (largest — covers ~30% of Earth's surface; almost as big as all other oceans combined).<br>
+<strong>Average depth:</strong> ~4,280 m. <strong>Deepest point:</strong> <strong>Challenger Deep</strong> in the <strong>Mariana Trench</strong> (~10,994 m — deepest point on Earth).<br>
+<strong>Bordering continents:</strong> North America, South America (east); Asia, Australia (west); Antarctica (south).<br>
+<strong>Major features:</strong> "Ring of Fire" (Pacific volcanic belt — 75% of world's volcanoes &amp; 90% earthquakes); islands of Indonesia, Philippines, Japan; Hawaiian Islands.<br>
+<strong>Named by:</strong> Ferdinand Magellan (1520) — "Mar Pacifico" (peaceful sea).
+</div>
+</div>
+
+<div class="ocean-card">
+<div class="ocean-header">
+<span class="ocean-name">Atlantic Ocean</span>
+<span class="ocean-rank">#2 LARGEST</span>
+</div>
+<div class="ocean-body">
+<strong>Area:</strong> ~106 million sq km (~20% of Earth's surface).<br>
+<strong>Average depth:</strong> ~3,646 m. <strong>Deepest point:</strong> <strong>Puerto Rico Trench</strong> (~8,605 m — Milwaukee Deep).<br>
+<strong>Bordering continents:</strong> N. America, S. America (west); Europe, Africa (east); Antarctica (south).<br>
+<strong>Major features:</strong> <strong>Mid-Atlantic Ridge</strong> (longest underwater mountain range, divergent plate boundary); Sargasso Sea (only sea without coastline — "sea within an ocean"); Bermuda Triangle.<br>
+<strong>Shape:</strong> "S-shaped"; separates "Old World" (Europe-Africa-Asia) from "New World" (Americas).<br>
+<strong>Iceland</strong> sits on the Mid-Atlantic Ridge (volcanic island).
+</div>
+</div>
+
+<div class="ocean-card">
+<div class="ocean-header">
+<span class="ocean-name">Indian Ocean</span>
+<span class="ocean-rank">#3 LARGEST</span>
+</div>
+<div class="ocean-body">
+<strong>Area:</strong> ~70.5 million sq km (~14% of Earth's surface).<br>
+<strong>Average depth:</strong> ~3,741 m. <strong>Deepest point:</strong> <strong>Java Trench / Sunda Trench</strong> (~7,725 m, off Indonesia).<br>
+<strong>Bordering continents:</strong> Africa (west); Asia (north); Australia (east); Antarctica (south).<br>
+<strong>Major features:</strong> Only ocean named after a country (India); <strong>monsoon system</strong> (seasonal wind reversal); chokepoints — Strait of Hormuz, Strait of Malacca, Bab-el-Mandeb.<br>
+<strong>Maritime trade:</strong> ~80% of world's seaborne oil trade passes through Indian Ocean.<br>
+<strong>Major islands:</strong> Madagascar (4th largest island in world), Sri Lanka, Maldives, Seychelles, Mauritius, Indonesia.<br>
+<strong>2004 Indian Ocean Tsunami:</strong> ~230,000 deaths — caused by 9.1 magnitude earthquake near Sumatra.
+</div>
+</div>
+
+<div class="ocean-card">
+<div class="ocean-header">
+<span class="ocean-name">Southern Ocean (Antarctic Ocean)</span>
+<span class="ocean-rank">#4 · NEWEST RECOGNITION</span>
+</div>
+<div class="ocean-body">
+<strong>Area:</strong> ~21.96 million sq km. <strong>Surrounds Antarctica.</strong><br>
+<strong>Boundary:</strong> 60° South latitude.<br>
+<strong>Recognition:</strong> Officially recognized by IHO (International Hydrographic Organization) in 2000; <strong>National Geographic recognized it in June 2021</strong> (frequently asked!).<br>
+<strong>Special feature:</strong> Antarctic Circumpolar Current — the only ocean current that flows around the entire globe uninterrupted.<br>
+<strong>Climate impact:</strong> Influences global weather patterns; massive heat sink.<br>
+<strong>Iceberg source:</strong> Most of world's icebergs originate from Antarctic ice shelves here.
+</div>
+</div>
+
+<div class="ocean-card">
+<div class="ocean-header">
+<span class="ocean-name">Arctic Ocean</span>
+<span class="ocean-rank">#5 SMALLEST · SHALLOWEST</span>
+</div>
+<div class="ocean-body">
+<strong>Area:</strong> ~14.06 million sq km (smallest ocean).<br>
+<strong>Average depth:</strong> ~1,038 m (shallowest of 5 oceans).<br>
+<strong>Bordering continents:</strong> N. America, Asia, Europe (Greenland, Russia, Canada coastlines).<br>
+<strong>Frozen surface:</strong> Mostly covered by sea ice year-round; ice extent decreasing due to climate change.<br>
+<strong>North Pole</strong> located here — beneath the ice, in international waters.<br>
+<strong>Major features:</strong> Lomonosov Ridge (underwater mountain range); seasonal Northern Sea Route opening as ice melts.<br>
+<strong>Bering Strait</strong> (Russia-Alaska) connects Arctic with Pacific Ocean.
+</div>
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Quick Ocean Records (Memorise All)</div>
+<ul>
+<li><strong>Largest ocean:</strong> Pacific (~165 million sq km)</li>
+<li><strong>Smallest ocean:</strong> Arctic (~14 million sq km)</li>
+<li><strong>Deepest ocean:</strong> Pacific (Mariana Trench, ~10,994 m)</li>
+<li><strong>Shallowest ocean:</strong> Arctic (~1,038 m avg)</li>
+<li><strong>Most saline ocean:</strong> Atlantic (avg ~37 ppt)</li>
+<li><strong>Least saline ocean:</strong> Arctic (~28-32 ppt — freshwater inflow)</li>
+<li><strong>Newest ocean (recognized):</strong> Southern Ocean (2000)</li>
+<li><strong>Only ocean named after a country:</strong> Indian Ocean</li>
+<li><strong>Ocean with no coastline:</strong> N/A — but Sargasso Sea (in Atlantic) has no coastline</li>
+</ul>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"The deepest point on Earth is located in which ocean?"</div><div class="bpsc-q-ans">Pacific Ocean — Challenger Deep in Mariana Trench (~10,994 m)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Which is the only ocean named after a country?"</div><div class="bpsc-q-ans">Indian Ocean</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S10: MAJOR SEAS -->
+<!-- ============================== -->
+<section class="section" id="s10">
+<span class="section-number">Section 10</span>
+<h2 class="section-title">Major Seas of the World</h2>
+<div class="section-desc">Seas vs Oceans, location facts — frequently tested in BPSC factual style</div>
+
+<table class="fact-table">
+<tr><th>Sea</th><th>Location</th><th>Notable Facts</th></tr>
+<tr><td class="key">Mediterranean Sea</td><td>Europe-Africa-Asia (between)</td><td>Largest "inland" sea; connects to Atlantic via Strait of Gibraltar; "cradle of civilization"</td></tr>
+<tr><td class="key">Caribbean Sea</td><td>Between Central America &amp; West Indies</td><td>Part of Atlantic Ocean; major cruise destination; Cuba, Jamaica, Dominican Republic</td></tr>
+<tr><td class="key">South China Sea</td><td>SE Asia (between China &amp; Indonesia/Philippines)</td><td>Disputed waters; major shipping route; oil-rich</td></tr>
+<tr><td class="key">Bering Sea</td><td>Between Alaska &amp; Russia</td><td>Connects Arctic &amp; Pacific via Bering Strait</td></tr>
+<tr><td class="key">Sea of Okhotsk</td><td>NE Russia coast</td><td>Sea of Pacific; off Russian Far East</td></tr>
+<tr><td class="key">Sea of Japan</td><td>Between Japan &amp; Korea/Russia</td><td>Marginal sea of Pacific</td></tr>
+<tr><td class="key">North Sea</td><td>Between UK &amp; Scandinavia</td><td>Major oil reserves; surrounded by UK, Norway, Denmark, Germany, Netherlands</td></tr>
+<tr><td class="key">Baltic Sea</td><td>Northern Europe (between Sweden &amp; Russia)</td><td>Brackish water; connects to North Sea via Danish straits; surrounded by 9 countries</td></tr>
+<tr><td class="key">Black Sea</td><td>Between Europe &amp; Asia (Turkey, Russia, Ukraine)</td><td>Connected to Mediterranean via Bosphorus &amp; Dardanelles straits</td></tr>
+<tr><td class="key">Caspian Sea</td><td>Between Asia &amp; Europe (Russia, Iran, Kazakhstan, Turkmenistan, Azerbaijan)</td><td><strong>Largest enclosed water body in the world</strong> (lake-sea); ~371,000 sq km</td></tr>
+<tr><td class="key">Red Sea</td><td>Between Africa &amp; Arabia</td><td>Connects to Mediterranean via Suez Canal; saltiest open sea; volcanic rift origin</td></tr>
+<tr><td class="key">Arabian Sea</td><td>Between Arabia &amp; India</td><td>Part of Indian Ocean; trade route since ancient times</td></tr>
+<tr><td class="key">Bay of Bengal</td><td>Between India &amp; SE Asia</td><td>World's largest bay; part of Indian Ocean</td></tr>
+<tr><td class="key">Yellow Sea</td><td>Between China &amp; Korea</td><td>Named after yellow silt from Yellow River</td></tr>
+<tr><td class="key">Coral Sea</td><td>NE Australia</td><td>Contains Great Barrier Reef</td></tr>
+<tr><td class="key">Tasman Sea</td><td>Between Australia &amp; New Zealand</td><td>Named after Abel Tasman</td></tr>
+<tr><td class="key">Aral Sea</td><td>Central Asia (Kazakhstan-Uzbekistan)</td><td>Once 4th largest lake; <strong>shrunk to ~10%</strong> due to Soviet irrigation diversions; ecological disaster</td></tr>
+<tr><td class="key">Dead Sea</td><td>Israel-Jordan border</td><td><strong>Lowest point on Earth's surface</strong> (-430 m); world's saltiest water body (~34% salinity); no marine life</td></tr>
+</table>
+
+<div class="warn-box">
+<div class="warn-box-label">⚠ Sea Trap — Asked Repeatedly</div>
+<p><strong>Caspian Sea</strong> is technically a <strong>lake</strong> (largest enclosed water body), not a sea. <strong>Dead Sea</strong> is also a lake. <strong>Aral Sea</strong> is a lake. Despite "Sea" in their names, these are saltwater lakes. BPSC frequently tests this distinction.</p>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Which sea is the saltiest in the world?"</div><div class="bpsc-q-ans">Dead Sea (~34% salinity) — though technically a lake; Red Sea is the saltiest open sea</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S11: GULFS & BAYS -->
+<!-- ============================== -->
+<section class="section" id="s11">
+<span class="section-number">Section 11</span>
+<h2 class="section-title">Major Gulfs &amp; Bays</h2>
+<div class="section-desc">Strategic locations for trade questions — high BPSC frequency</div>
+
+<table class="fact-table">
+<tr><th>Gulf / Bay</th><th>Location</th><th>Significance</th></tr>
+<tr><td class="key">Persian Gulf</td><td>Between Iran &amp; Arabian Peninsula</td><td><strong>World's most strategic — ~30% global oil ships through here</strong>; bordering UAE, Qatar, Kuwait, Iran, Saudi Arabia</td></tr>
+<tr><td class="key">Gulf of Mexico</td><td>South of USA</td><td>Bordered by USA, Mexico, Cuba; major oil reserves; hurricane-prone</td></tr>
+<tr><td class="key">Gulf of Guinea</td><td>West coast of Africa</td><td>Equator passes through; major oil region (Nigeria, Angola)</td></tr>
+<tr><td class="key">Gulf of Aden</td><td>Between Yemen &amp; Somalia</td><td>Connects Red Sea to Arabian Sea via Bab-el-Mandeb; pirate-prone historically</td></tr>
+<tr><td class="key">Gulf of Oman</td><td>NW Indian Ocean</td><td>Connects Persian Gulf to Arabian Sea via Strait of Hormuz</td></tr>
+<tr><td class="key">Gulf of Carpentaria</td><td>Northern Australia</td><td>Large bay between Cape York Peninsula &amp; Arnhem Land</td></tr>
+<tr><td class="key">Bay of Bengal</td><td>Between India &amp; SE Asia</td><td><strong>World's largest bay (~2.17 million sq km)</strong>; part of Indian Ocean</td></tr>
+<tr><td class="key">Hudson Bay</td><td>Northeast Canada</td><td>Large inland sea of Arctic Ocean; named after Henry Hudson</td></tr>
+<tr><td class="key">Bay of Biscay</td><td>Between France &amp; Spain</td><td>Atlantic; rough waters historically dangerous for shipping</td></tr>
+<tr><td class="key">Gulf of Tonkin</td><td>NE Vietnam coast</td><td>Famous for "Gulf of Tonkin Incident" (1964) leading to US Vietnam War involvement</td></tr>
+<tr><td class="key">Gulf of California</td><td>Between Baja California &amp; Mexican mainland</td><td>Also called "Sea of Cortez"</td></tr>
+<tr><td class="key">Persian Gulf "GCC" countries</td><td>—</td><td>Saudi Arabia, UAE, Kuwait, Qatar, Bahrain, Oman (6 Gulf Cooperation Council countries)</td></tr>
+</table>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"What is the largest bay in the world?"</div><div class="bpsc-q-ans">Bay of Bengal (~2.17 million sq km) — bordered by India, Bangladesh, Myanmar, Thailand, Sri Lanka</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S12: MOUNTAIN RANGES -->
+<!-- ============================== -->
+<section class="section" id="s12">
+<span class="section-number">Section 12</span>
+<h2 class="section-title">Major Mountain Ranges of the World</h2>
+<div class="section-desc">Map-based questions — match range to continent/countries</div>
+
+<table class="fact-table">
+<tr><th>Mountain Range</th><th>Continent / Countries</th><th>Length / Notable Peak</th></tr>
+<tr><td class="key">Andes</td><td><strong>South America</strong> — Venezuela, Colombia, Ecuador, Peru, Bolivia, Chile, Argentina</td><td><strong>World's longest mountain range</strong> (~7,000 km); Mt. Aconcagua (6,961 m) — highest peak outside Asia</td></tr>
+<tr><td class="key">Rocky Mountains</td><td><strong>North America</strong> — Canada, USA, Mexico</td><td>~4,800 km; Mt. Elbert (4,401 m) — highest peak</td></tr>
+<tr><td class="key">Himalayas</td><td><strong>Asia</strong> — Pakistan, India, Nepal, Bhutan, China</td><td>~2,400 km; <strong>Mt. Everest (8,849 m) — world's highest</strong></td></tr>
+<tr><td class="key">Karakoram</td><td>Asia — Pakistan, India, China</td><td>K2 (8,611 m) — 2nd highest peak</td></tr>
+<tr><td class="key">Hindu Kush</td><td>Asia — Afghanistan, Pakistan</td><td>Tirich Mir (7,708 m); historically separates Indian subcontinent from Central Asia</td></tr>
+<tr><td class="key">Tien Shan</td><td>Asia — Kyrgyzstan, China, Kazakhstan</td><td>"Heavenly Mountains"</td></tr>
+<tr><td class="key">Pamir Mountains</td><td>Tajikistan, Afghanistan, China</td><td>"Roof of the World"</td></tr>
+<tr><td class="key">Caucasus Mountains</td><td>Between Black &amp; Caspian Seas — Russia, Georgia, Azerbaijan</td><td>Mt. Elbrus (5,642 m) — Europe's highest peak</td></tr>
+<tr><td class="key">Ural Mountains</td><td>Russia</td><td><strong>Forms boundary between Europe and Asia</strong>; ~2,500 km; relatively low (avg 1,500 m)</td></tr>
+<tr><td class="key">Alps</td><td>Europe — France, Switzerland, Italy, Austria, Germany, Slovenia</td><td>Mont Blanc (4,809 m) — highest in W. Europe</td></tr>
+<tr><td class="key">Pyrenees</td><td>Spain-France boundary; small parts in Andorra</td><td>Aneto (3,404 m)</td></tr>
+<tr><td class="key">Apennines</td><td>Italy (spine of peninsula)</td><td>~1,200 km along Italy's length</td></tr>
+<tr><td class="key">Carpathians</td><td>Central/Eastern Europe — Slovakia, Poland, Ukraine, Romania</td><td>Gerlachovský štít (2,655 m)</td></tr>
+<tr><td class="key">Atlas Mountains</td><td>NW Africa — Morocco, Algeria, Tunisia</td><td>Toubkal (4,167 m, Morocco)</td></tr>
+<tr><td class="key">Drakensberg</td><td>S. Africa, Lesotho</td><td>Thabana Ntlenyana (3,482 m); separates Highveld from Lowveld</td></tr>
+<tr><td class="key">Ethiopian Highlands</td><td>Ethiopia, Eritrea</td><td>"Roof of Africa"; source of Blue Nile</td></tr>
+<tr><td class="key">Mt. Kilimanjaro</td><td>Tanzania (single mountain)</td><td>5,895 m — Africa's highest peak; dormant volcano</td></tr>
+<tr><td class="key">Great Dividing Range</td><td>E. Australia</td><td>Mt. Kosciuszko (2,228 m)</td></tr>
+<tr><td class="key">Southern Alps</td><td>New Zealand</td><td>Aoraki / Mt. Cook (3,724 m)</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Mountain Range Records</div>
+<ul>
+<li><strong>Longest mountain range (above sea level):</strong> Andes (~7,000 km)</li>
+<li><strong>Longest mountain range overall:</strong> Mid-Atlantic Ridge (underwater, ~16,000 km)</li>
+<li><strong>Highest mountain range (avg elevation):</strong> Himalayas</li>
+<li><strong>Youngest fold mountains:</strong> Himalayas, Andes, Rockies, Alps (Tertiary period)</li>
+<li><strong>Oldest mountains:</strong> Aravallis (India) — Pre-Cambrian</li>
+<li><strong>"Roof of the World":</strong> Pamir Mountains</li>
+<li><strong>"Roof of Africa":</strong> Ethiopian Highlands</li>
+</ul>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S13: HIGHEST PEAKS -->
+<!-- ============================== -->
+<section class="section" id="s13">
+<span class="section-number">Section 13</span>
+<h2 class="section-title">Highest Peaks &amp; "Eight-Thousanders"</h2>
+<div class="section-desc">All 14 peaks above 8,000m are in Himalaya-Karakoram — Asia dominates</div>
+
+<table class="fact-table">
+<tr><th>Rank</th><th>Peak</th><th>Height</th><th>Range</th><th>Country</th></tr>
+<tr><td class="hl">1</td><td class="key"><strong>Mt. Everest</strong></td><td>8,849 m</td><td>Himalayas</td><td>Nepal-China (Tibet)</td></tr>
+<tr><td class="hl">2</td><td class="key"><strong>K2 (Godwin-Austen)</strong></td><td>8,611 m</td><td>Karakoram</td><td>Pakistan-China</td></tr>
+<tr><td class="hl">3</td><td class="key">Kangchenjunga</td><td>8,586 m</td><td>Himalayas</td><td><strong>India-Nepal</strong> (highest in India)</td></tr>
+<tr><td class="hl">4</td><td class="key">Lhotse</td><td>8,516 m</td><td>Himalayas</td><td>Nepal-China</td></tr>
+<tr><td class="hl">5</td><td class="key">Makalu</td><td>8,485 m</td><td>Himalayas</td><td>Nepal-China</td></tr>
+<tr><td class="hl">6</td><td class="key">Cho Oyu</td><td>8,188 m</td><td>Himalayas</td><td>Nepal-China</td></tr>
+<tr><td class="hl">7</td><td class="key">Dhaulagiri</td><td>8,167 m</td><td>Himalayas</td><td>Nepal</td></tr>
+<tr><td class="hl">8</td><td class="key">Manaslu</td><td>8,163 m</td><td>Himalayas</td><td>Nepal</td></tr>
+<tr><td class="hl">9</td><td class="key">Nanga Parbat</td><td>8,126 m</td><td>Himalayas (W. end)</td><td>Pakistan</td></tr>
+<tr><td class="hl">10</td><td class="key">Annapurna</td><td>8,091 m</td><td>Himalayas</td><td>Nepal</td></tr>
+<tr><td class="hl">11–14</td><td class="key">Gasherbrum I, Broad Peak, Gasherbrum II, Shishapangma</td><td>8,000+ m each</td><td>Karakoram/Himalaya</td><td>Pak/China</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">★ "Eight-Thousanders" — Critical Facts</div>
+<ul>
+<li><strong>Total of 14 peaks above 8,000m</strong> in the world — ALL in Asia (Himalaya-Karakoram)</li>
+<li><strong>Highest peak in India:</strong> Kangchenjunga (8,586 m) — on India-Nepal border</li>
+<li><strong>Highest peak entirely in India:</strong> Nanda Devi (7,816 m), Uttarakhand</li>
+<li><strong>Mt. Everest:</strong> Called "Sagarmatha" in Nepal, "Chomolungma" in Tibet</li>
+<li><strong>K2:</strong> Most dangerous to climb (~25% fatality rate); also called "Savage Mountain"</li>
+<li><strong>First Everest summit:</strong> Edmund Hillary (NZ) + Tenzing Norgay (Nepal/India), May 29, 1953</li>
+<li><strong>Highest peaks in other continents:</strong> See Section 5 (Aconcagua, Denali, Kilimanjaro, Elbrus, Vinson, Kosciuszko)</li>
+</ul>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC Frequent</div><div class="bpsc-q-text">"K2, the second-highest peak in the world, lies in which mountain range?"</div><div class="bpsc-q-ans">Karakoram Range — between Pakistan and China; height 8,611 m</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S14: MAJOR RIVERS -->
+<!-- ============================== -->
+<section class="section" id="s14">
+<span class="section-number">Section 14</span>
+<h2 class="section-title">Major Rivers of the World</h2>
+<div class="section-desc">Length, source, mouth — frequently asked single-fact questions</div>
+
+<table class="fact-table">
+<tr><th>Rank by Length</th><th>River</th><th>Length</th><th>Source / Mouth</th><th>Continent</th></tr>
+<tr><td class="hl">1</td><td class="key"><strong>Nile</strong></td><td>6,650 km</td><td>L. Victoria → Mediterranean Sea (Egypt delta)</td><td>Africa</td></tr>
+<tr><td class="hl">2</td><td class="key"><strong>Amazon</strong></td><td>6,400 km</td><td>Andes (Peru) → Atlantic Ocean (Brazil); largest by volume</td><td>S. America</td></tr>
+<tr><td class="hl">3</td><td class="key">Yangtze (Chang Jiang)</td><td>6,300 km</td><td>Tibetan Plateau → East China Sea (Shanghai)</td><td>Asia (China)</td></tr>
+<tr><td class="hl">4</td><td class="key">Mississippi-Missouri</td><td>6,275 km</td><td>USA — flows to Gulf of Mexico</td><td>N. America</td></tr>
+<tr><td class="hl">5</td><td class="key">Yenisei</td><td>5,539 km</td><td>Mongolia → Arctic Ocean (Russia)</td><td>Asia (Russia)</td></tr>
+<tr><td class="hl">6</td><td class="key">Yellow (Huang He)</td><td>5,464 km</td><td>Tibetan Plateau → Bohai Sea</td><td>Asia (China); "Sorrow of China"</td></tr>
+<tr><td class="hl">7</td><td class="key">Ob-Irtysh</td><td>5,410 km</td><td>Altai Mts → Arctic Ocean</td><td>Asia (Russia)</td></tr>
+<tr><td class="hl">8</td><td class="key">Paraná</td><td>4,880 km</td><td>Brazil → La Plata Estuary</td><td>S. America</td></tr>
+<tr><td class="hl">9</td><td class="key">Congo</td><td>4,700 km</td><td>Lake Tanganyika area → Atlantic Ocean</td><td>Africa; <strong>deepest river</strong> (~220m)</td></tr>
+<tr><td class="hl">10</td><td class="key">Lena</td><td>4,294 km</td><td>Russia → Arctic Ocean</td><td>Asia (Russia)</td></tr>
+<tr><td class="hl">—</td><td class="key">Mekong</td><td>4,350 km</td><td>Tibetan Plateau → S. China Sea</td><td>Asia; through 6 countries</td></tr>
+<tr><td class="hl">—</td><td class="key">Niger</td><td>4,180 km</td><td>Guinea Highlands → Gulf of Guinea</td><td>Africa</td></tr>
+<tr><td class="hl">—</td><td class="key">Volga</td><td>3,690 km</td><td>Valdai Hills (Russia) → Caspian Sea</td><td>Europe; <strong>longest river in Europe</strong></td></tr>
+<tr><td class="hl">—</td><td class="key">Danube</td><td>2,860 km</td><td>Germany → Black Sea</td><td>Europe; flows through <strong>10 countries</strong> (most of any river)</td></tr>
+<tr><td class="hl">—</td><td class="key">Murray-Darling</td><td>3,672 km</td><td>Australian Alps → Indian Ocean (S. Australia)</td><td>Australia (longest)</td></tr>
+<tr><td class="hl">—</td><td class="key">Tigris</td><td>1,950 km</td><td>Turkey → Persian Gulf (joins Euphrates)</td><td>Asia (Mesopotamia)</td></tr>
+<tr><td class="hl">—</td><td class="key">Euphrates</td><td>2,800 km</td><td>Turkey → Persian Gulf</td><td>Asia (Mesopotamia)</td></tr>
+<tr><td class="hl">—</td><td class="key">Rhine</td><td>1,233 km</td><td>Swiss Alps → North Sea</td><td>Europe; through Switzerland, Germany, Netherlands</td></tr>
+<tr><td class="hl">—</td><td class="key">Thames</td><td>346 km</td><td>England → North Sea</td><td>Europe (UK); flows through London</td></tr>
+<tr><td class="hl">—</td><td class="key">Seine</td><td>776 km</td><td>France → English Channel</td><td>Europe; flows through Paris</td></tr>
+<tr><td class="hl">—</td><td class="key">Po</td><td>652 km</td><td>Alps → Adriatic Sea</td><td>Europe; longest in Italy</td></tr>
+<tr><td class="hl">—</td><td class="key">Indus</td><td>3,180 km</td><td>Tibet → Arabian Sea (Pakistan)</td><td>Asia; sacred to Hinduism</td></tr>
+<tr><td class="hl">—</td><td class="key">Ganges</td><td>2,525 km</td><td>Gangotri → Bay of Bengal</td><td>Asia; sacred river of Hindus</td></tr>
+<tr><td class="hl">—</td><td class="key">Brahmaputra</td><td>2,900 km</td><td>Tibet (Tsangpo) → Bay of Bengal</td><td>Asia</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">★ River Records — All BPSC-Asked</div>
+<ul>
+<li><strong>World's longest river:</strong> Nile (6,650 km)</li>
+<li><strong>World's largest river by volume:</strong> Amazon (~209,000 m³/sec average discharge)</li>
+<li><strong>World's deepest river:</strong> Congo (~220 m at deepest)</li>
+<li><strong>Longest river in Europe:</strong> Volga</li>
+<li><strong>Longest river through most countries:</strong> Danube (10 countries)</li>
+<li><strong>"Sorrow of China":</strong> Huang He (Yellow River) — frequent floods</li>
+<li><strong>"Sorrow of Bengal":</strong> Damodar (in India)</li>
+<li><strong>River that crosses Equator twice:</strong> Congo</li>
+<li><strong>Largest river basin:</strong> Amazon</li>
+<li><strong>River with largest delta:</strong> Ganges-Brahmaputra (Sundarbans)</li>
+</ul>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Famous Cities on Rivers</div>
+<table class="fact-table">
+<tr><th>City</th><th>River</th><th>Country</th></tr>
+<tr><td class="key">London</td><td>Thames</td><td>UK</td></tr>
+<tr><td class="key">Paris</td><td>Seine</td><td>France</td></tr>
+<tr><td class="key">Rome</td><td>Tiber</td><td>Italy</td></tr>
+<tr><td class="key">Vienna</td><td>Danube</td><td>Austria</td></tr>
+<tr><td class="key">Budapest</td><td>Danube</td><td>Hungary</td></tr>
+<tr><td class="key">Cairo</td><td>Nile</td><td>Egypt</td></tr>
+<tr><td class="key">Khartoum</td><td>Nile (Blue + White Nile junction)</td><td>Sudan</td></tr>
+<tr><td class="key">Baghdad</td><td>Tigris</td><td>Iraq</td></tr>
+<tr><td class="key">Moscow</td><td>Moskva</td><td>Russia</td></tr>
+<tr><td class="key">St. Petersburg</td><td>Neva</td><td>Russia</td></tr>
+<tr><td class="key">New York</td><td>Hudson</td><td>USA</td></tr>
+<tr><td class="key">Washington DC</td><td>Potomac</td><td>USA</td></tr>
+<tr><td class="key">Buenos Aires</td><td>Río de la Plata</td><td>Argentina</td></tr>
+<tr><td class="key">Shanghai</td><td>Yangtze</td><td>China</td></tr>
+<tr><td class="key">Beijing</td><td>(no major river — uses canal/Hai)</td><td>China</td></tr>
+<tr><td class="key">Tokyo</td><td>Sumida</td><td>Japan</td></tr>
+<tr><td class="key">Bangkok</td><td>Chao Phraya</td><td>Thailand</td></tr>
+<tr><td class="key">Berlin</td><td>Spree</td><td>Germany</td></tr>
+<tr><td class="key">Lisbon</td><td>Tagus</td><td>Portugal</td></tr>
+</table>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S15: MAJOR LAKES -->
+<!-- ============================== -->
+<section class="section" id="s15">
+<span class="section-number">Section 15</span>
+<h2 class="section-title">Major Lakes of the World</h2>
+<div class="section-desc">By area, depth, salinity — common BPSC factual questions</div>
+
+<table class="fact-table">
+<tr><th>Lake</th><th>Country/Region</th><th>Notable Fact</th></tr>
+<tr><td class="key"><strong>Caspian Sea</strong></td><td>Central Asia (5 countries)</td><td><strong>World's largest lake</strong> (~371,000 sq km); saltwater; technically a lake despite "Sea" name</td></tr>
+<tr><td class="key">Lake Superior</td><td>USA-Canada (Great Lakes)</td><td><strong>World's largest freshwater lake by area</strong></td></tr>
+<tr><td class="key">Lake Victoria</td><td>Tanzania-Uganda-Kenya</td><td><strong>Africa's largest lake; 2nd largest freshwater lake</strong> in world by area</td></tr>
+<tr><td class="key">Lake Huron</td><td>USA-Canada</td><td>2nd largest of Great Lakes</td></tr>
+<tr><td class="key">Lake Michigan</td><td>USA only</td><td>Only Great Lake entirely within USA</td></tr>
+<tr><td class="key">Lake Tanganyika</td><td>DRC-Tanzania-Burundi-Zambia</td><td><strong>2nd deepest lake in world (~1,470m)</strong>; longest freshwater lake</td></tr>
+<tr><td class="key"><strong>Lake Baikal</strong></td><td>Russia (Siberia)</td><td><strong>World's deepest lake (~1,642 m)</strong>; oldest lake (~25 million yrs); contains <strong>20% of world's freshwater</strong></td></tr>
+<tr><td class="key">Lake Malawi</td><td>Malawi-Tanzania-Mozambique</td><td>Africa's 3rd largest; high biodiversity</td></tr>
+<tr><td class="key">Great Slave Lake</td><td>Canada</td><td>Deepest lake in N. America</td></tr>
+<tr><td class="key">Great Bear Lake</td><td>Canada</td><td>Largest lake entirely in Canada</td></tr>
+<tr><td class="key">Lake Erie</td><td>USA-Canada</td><td>Shallowest of Great Lakes</td></tr>
+<tr><td class="key">Lake Ontario</td><td>USA-Canada</td><td>Smallest of Great Lakes by area</td></tr>
+<tr><td class="key">Lake Ladoga</td><td>Russia</td><td>Largest lake in Europe</td></tr>
+<tr><td class="key"><strong>Dead Sea</strong></td><td>Israel-Jordan</td><td><strong>Lowest point on Earth's surface (-430 m)</strong>; world's saltiest</td></tr>
+<tr><td class="key"><strong>Lake Titicaca</strong></td><td>Peru-Bolivia</td><td><strong>Highest navigable lake in world (~3,812 m)</strong>; in Andes</td></tr>
+<tr><td class="key">Lake Eyre</td><td>Australia</td><td>Largest lake in Australia; usually dry — fills only after rain</td></tr>
+<tr><td class="key">Aral Sea</td><td>Kazakhstan-Uzbekistan</td><td>Once 4th largest lake; <strong>shrunk to ~10%</strong> due to Soviet irrigation diversions</td></tr>
+<tr><td class="key">Great Salt Lake</td><td>USA (Utah)</td><td>Largest saltwater lake in N. America</td></tr>
+<tr><td class="key">Lake Vostok</td><td>Antarctica</td><td>World's largest subglacial lake (under ice)</td></tr>
+</table>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Which is the world's deepest lake?"</div><div class="bpsc-q-ans">Lake Baikal (Russia) — ~1,642 m deep; also oldest and largest by volume of freshwater</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Lake Titicaca is located between which two countries?"</div><div class="bpsc-q-ans">Peru and Bolivia — world's highest navigable lake (~3,812 m altitude)</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S16: MASTER RECORDS -->
+<!-- ============================== -->
+<section class="section" id="s16">
+<span class="section-number">Section 16</span>
+<h2 class="section-title">The "LARGEST" Records of World Geography</h2>
+<div class="section-desc">★ Single-shot reference for all "largest/longest/deepest" type questions</div>
+
+<div class="record"><div class="record-num">#1</div><div class="record-text"><strong>Largest continent:</strong> Asia <small>~44.6 million sq km</small></div></div>
+<div class="record"><div class="record-num">#2</div><div class="record-text"><strong>Smallest continent:</strong> Australia/Oceania <small>~8.5 million sq km</small></div></div>
+<div class="record"><div class="record-num">#3</div><div class="record-text"><strong>Largest country (area):</strong> Russia <small>~17.1 million sq km — spans 11 time zones</small></div></div>
+<div class="record"><div class="record-num">#4</div><div class="record-text"><strong>Smallest country:</strong> Vatican City <small>~0.49 sq km</small></div></div>
+<div class="record"><div class="record-num">#5</div><div class="record-text"><strong>Most populous country:</strong> India <small>~1.42+ billion (overtook China in 2023)</small></div></div>
+<div class="record"><div class="record-num">#6</div><div class="record-text"><strong>Largest ocean:</strong> Pacific <small>~165 million sq km</small></div></div>
+<div class="record"><div class="record-num">#7</div><div class="record-text"><strong>Smallest ocean:</strong> Arctic <small>~14 million sq km</small></div></div>
+<div class="record"><div class="record-num">#8</div><div class="record-text"><strong>Deepest point on Earth:</strong> Challenger Deep, Mariana Trench, Pacific <small>~10,994 m below sea level</small></div></div>
+<div class="record"><div class="record-num">#9</div><div class="record-text"><strong>Highest mountain:</strong> Mt. Everest <small>8,849 m · Himalayas · Nepal-China</small></div></div>
+<div class="record"><div class="record-num">#10</div><div class="record-text"><strong>Longest mountain range (above sea):</strong> Andes <small>~7,000 km · S. America</small></div></div>
+<div class="record"><div class="record-num">#11</div><div class="record-text"><strong>Longest underwater range:</strong> Mid-Atlantic Ridge <small>~16,000 km</small></div></div>
+<div class="record"><div class="record-num">#12</div><div class="record-text"><strong>Longest river:</strong> Nile <small>6,650 km · Africa</small></div></div>
+<div class="record"><div class="record-num">#13</div><div class="record-text"><strong>Largest river by volume:</strong> Amazon <small>~209,000 m³/sec discharge</small></div></div>
+<div class="record"><div class="record-num">#14</div><div class="record-text"><strong>Largest lake (any):</strong> Caspian Sea <small>~371,000 sq km · saltwater</small></div></div>
+<div class="record"><div class="record-num">#15</div><div class="record-text"><strong>Largest freshwater lake (area):</strong> Lake Superior <small>USA-Canada</small></div></div>
+<div class="record"><div class="record-num">#16</div><div class="record-text"><strong>Deepest lake:</strong> Lake Baikal <small>~1,642 m · Russia</small></div></div>
+<div class="record"><div class="record-num">#17</div><div class="record-text"><strong>Highest lake (navigable):</strong> Lake Titicaca <small>~3,812 m · Peru-Bolivia</small></div></div>
+<div class="record"><div class="record-num">#18</div><div class="record-text"><strong>Lowest point on land:</strong> Dead Sea shore <small>-430 m · Israel-Jordan</small></div></div>
+<div class="record"><div class="record-num">#19</div><div class="record-text"><strong>Largest desert (any):</strong> Antarctic Desert <small>~14 million sq km · cold desert</small></div></div>
+<div class="record"><div class="record-num">#20</div><div class="record-text"><strong>Largest hot desert:</strong> Sahara <small>~9 million sq km · Africa</small></div></div>
+<div class="record"><div class="record-num">#21</div><div class="record-text"><strong>Driest place:</strong> Atacama Desert <small>Chile · some parts no rain in centuries</small></div></div>
+<div class="record"><div class="record-num">#22</div><div class="record-text"><strong>Largest island:</strong> Greenland <small>~2.16 million sq km · Denmark</small></div></div>
+<div class="record"><div class="record-num">#23</div><div class="record-text"><strong>Largest archipelago:</strong> Indonesia <small>~17,500 islands</small></div></div>
+<div class="record"><div class="record-num">#24</div><div class="record-text"><strong>Largest peninsula:</strong> Arabian Peninsula <small>~3.2 million sq km</small></div></div>
+<div class="record"><div class="record-num">#25</div><div class="record-text"><strong>Largest gulf:</strong> Gulf of Mexico <small>~1.6 million sq km</small></div></div>
+<div class="record"><div class="record-num">#26</div><div class="record-text"><strong>Largest bay:</strong> Bay of Bengal <small>~2.17 million sq km</small></div></div>
+<div class="record"><div class="record-num">#27</div><div class="record-text"><strong>Tallest waterfall:</strong> Angel Falls <small>~979 m · Venezuela</small></div></div>
+<div class="record"><div class="record-num">#28</div><div class="record-text"><strong>Widest waterfall:</strong> Khone Falls <small>Laos · width ~10.8 km</small></div></div>
+<div class="record"><div class="record-num">#29</div><div class="record-text"><strong>Largest waterfall by volume:</strong> Iguazu / Niagara <small>(varies by season)</small></div></div>
+<div class="record"><div class="record-num">#30</div><div class="record-text"><strong>Largest reef:</strong> Great Barrier Reef <small>~344,400 sq km · Australia</small></div></div>
+<div class="record"><div class="record-num">#31</div><div class="record-text"><strong>Largest forest:</strong> Taiga (Boreal Forest) <small>circumpolar Arctic regions</small></div></div>
+<div class="record"><div class="record-num">#32</div><div class="record-text"><strong>Largest tropical rainforest:</strong> Amazon Rainforest <small>~5.5 million sq km</small></div></div>
+<div class="record"><div class="record-num">#33</div><div class="record-text"><strong>Largest river delta:</strong> Ganges-Brahmaputra <small>~105,000 sq km · India-Bangladesh</small></div></div>
+<div class="record"><div class="record-num">#34</div><div class="record-text"><strong>Largest enclosed sea:</strong> Mediterranean Sea <small>~2.5 million sq km</small></div></div>
+<div class="record"><div class="record-num">#35</div><div class="record-text"><strong>Saltiest open sea:</strong> Red Sea <small>~4.0% salinity</small></div></div>
+<div class="record"><div class="record-num">#36</div><div class="record-text"><strong>Saltiest water body:</strong> Dead Sea <small>~34% salinity (lake)</small></div></div>
+<div class="record"><div class="record-num">#37</div><div class="record-text"><strong>Highest country (avg elevation):</strong> Bhutan/Nepal <small>~3,280 m+</small></div></div>
+<div class="record"><div class="record-num">#38</div><div class="record-text"><strong>Lowest country (avg elevation):</strong> Maldives <small>avg ~1.5 m above sea level</small></div></div>
+<div class="record"><div class="record-num">#39</div><div class="record-text"><strong>Country with most neighbors:</strong> China &amp; Russia <small>14 each</small></div></div>
+<div class="record"><div class="record-num">#40</div><div class="record-text"><strong>Country with most time zones:</strong> France <small>12 (overseas territories); Russia 11 contiguous</small></div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S17: PYQ DRILLS -->
+<!-- ============================== -->
+<section class="section" id="s17">
+<span class="section-number">Section 17</span>
+<h2 class="section-title">High-Frequency PYQ Drills</h2>
+<div class="section-desc">Self-test before moving to Part 2 (Climate, Currents, Straits, Volcanoes, Deserts)</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Earth Basics</div><div class="bpsc-q-text">"Earth is the ___ planet from the Sun."</div><div class="bpsc-q-ans">3rd (after Mercury and Venus)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Solar System</div><div class="bpsc-q-text">"Which planet is called Earth's Twin?"</div><div class="bpsc-q-ans">Venus — similar size, mass, density to Earth</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Time Concepts</div><div class="bpsc-q-text">"How long does sunlight take to reach Earth?"</div><div class="bpsc-q-ans">~8 minutes 20 seconds</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Latitudes</div><div class="bpsc-q-text">"Which latitude divides Earth into Northern and Southern Hemispheres?"</div><div class="bpsc-q-ans">Equator (0°)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Tropic of Cancer</div><div class="bpsc-q-text">"The Tropic of Cancer passes through how many continents?"</div><div class="bpsc-q-ans">3 continents — Asia, Africa, North America (Mexico, Bahamas)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Continents</div><div class="bpsc-q-text">"Which continent has the most countries?"</div><div class="bpsc-q-ans">Africa — 54 countries</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Continents</div><div class="bpsc-q-text">"Which is the only continent that lies in all four hemispheres?"</div><div class="bpsc-q-ans">Africa — crosses both Equator and Prime Meridian</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Oceans</div><div class="bpsc-q-text">"Which is the smallest and shallowest ocean?"</div><div class="bpsc-q-ans">Arctic Ocean</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Oceans</div><div class="bpsc-q-text">"In which year was the Southern Ocean officially recognized?"</div><div class="bpsc-q-ans">2000 by IHO; National Geographic recognized in 2021</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Mountains</div><div class="bpsc-q-text">"Which mountain range is called 'Roof of the World'?"</div><div class="bpsc-q-ans">Pamir Mountains</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Mountains</div><div class="bpsc-q-text">"Mt. Kilimanjaro is the highest peak of which continent?"</div><div class="bpsc-q-ans">Africa — 5,895 m, located in Tanzania</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Rivers</div><div class="bpsc-q-text">"Which river forms the largest delta in the world?"</div><div class="bpsc-q-ans">Ganges-Brahmaputra delta (Sundarbans, India-Bangladesh)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Rivers</div><div class="bpsc-q-text">"Which is the deepest river in the world?"</div><div class="bpsc-q-ans">Congo (~220 m)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Lakes</div><div class="bpsc-q-text">"Lake Baikal is famous for which two records?"</div><div class="bpsc-q-ans">World's deepest lake (~1,642 m); contains ~20% of world's freshwater; also oldest lake (~25 million years)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Lakes</div><div class="bpsc-q-text">"The Caspian Sea is technically a lake. It is bordered by how many countries?"</div><div class="bpsc-q-ans">5 countries — Russia, Iran, Kazakhstan, Turkmenistan, Azerbaijan</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Records</div><div class="bpsc-q-text">"The Atacama Desert, the driest place on Earth, is in which country?"</div><div class="bpsc-q-ans">Chile (South America)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Antarctica</div><div class="bpsc-q-text">"Which is India's currently active research station in Antarctica?"</div><div class="bpsc-q-ans">Maitri (1989) and Bharati (2012) — Dakshin Gangotri abandoned in 1990</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Equator</div><div class="bpsc-q-text">"Through how many countries does the Equator pass?"</div><div class="bpsc-q-ans">13 countries — including Ecuador, Brazil, Colombia, DRC, Uganda, Kenya, Indonesia</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Highest in India</div><div class="bpsc-q-text">"Which is the highest peak in India?"</div><div class="bpsc-q-ans">Kangchenjunga (8,586 m) — on India-Nepal border; 3rd highest peak in world; highest entirely in India is Nanda Devi (7,816 m)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Continents</div><div class="bpsc-q-text">"Australia's capital city is?"</div><div class="bpsc-q-ans">Canberra (NOT Sydney — common confusion)</div></div>
+
+<div class="divider"></div>
+
+<div class="exam-box">
+<div class="exam-box-label">⭐ Part 1 Complete · What's in Parts 2 &amp; 3</div>
+<ul>
+<li><strong>Part 2:</strong> Climate of the World — Climate types (Tropical, Temperate, Polar, Mediterranean, Monsoon), Ocean Currents (Gulf Stream, Kuroshio, Humboldt etc.), Winds (Trade, Westerlies, Polar), Volcanoes &amp; Earthquakes (Ring of Fire), Major Deserts of the world, Important Straits and Canals (Hormuz, Malacca, Suez, Panama, Gibraltar)</li>
+<li><strong>Part 3:</strong> Country-Specific &amp; Economic Geography — All major countries with capitals, currencies, parliaments; Rivers and capital cities mapping; Major World Heritage Sites; Important Borders (38th parallel, Durand Line, Radcliffe Line, McMahon Line, Line of Control); Recent name changes (Burma → Myanmar, Ceylon → Sri Lanka, Persia → Iran, Holland → Netherlands etc.); Important Organizations (UN, ASEAN, EU, BRICS, G7, G20)</li>
+</ul>
+</div>
+
+<div class="pull-quote">
+<p>"World Geography in BPSC is factual not analytical. Master continents + oceans + mountains + rivers + records — and you'll answer 4 out of 5 world geography questions correctly. Combined with Bihar Geography (50 marks already locked), you'll have 70+ marks of geography on lockdown."</p>
+</div>
+
+</section>
+</div>
+</main>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const d=document.documentElement;
+  document.getElementById('pf').style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%';
+});
+const sections=document.querySelectorAll('section[id]');
+const navItems=document.querySelectorAll('.nav-item');
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navItems.forEach(n=>{
+        n.classList.remove('active');
+        if(n.getAttribute('href')==='#'+e.target.id) n.classList.add('active');
+      });
+    }
+  });
+},{rootMargin:'-20% 0px -70% 0px'});
+sections.forEach(s=>obs.observe(s));
+navItems.forEach(item=>{
+  item.addEventListener('click',(e)=>{
+    e.preventDefault();
+    document.getElementById(item.getAttribute('href').replace('#',''))?.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+</body>
+</html>
