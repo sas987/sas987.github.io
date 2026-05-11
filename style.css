@@ -54,3 +54,27 @@ iframe{
 .page-link:hover{
     background:#334155;
 }
+
+
+.nested{
+    display:none;
+    margin-left:15px;
+}
+
+.section{
+    margin-bottom:10px;
+}
+
+.section-header{
+
+    background:#162033;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-bottom:8px;
+    transition:0.3s;
+}
+
+.section-header:hover{
+    background:#22304d;
+}
