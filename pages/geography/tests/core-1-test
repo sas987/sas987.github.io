@@ -1,0 +1,468 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>BPSC Bihar Geography Mega Test</title>
+<style>
+body{font-family:Arial;background:#eef2f7;padding:20px;}
+.container{max-width:1200px;margin:auto;background:#fff;padding:25px;border-radius:10px;}
+.question{background:#f9f9f9;padding:15px;margin-bottom:18px;border-radius:8px;border:1px solid #ddd;}
+button{padding:14px 30px;background:#0b3d91;color:white;border:none;border-radius:8px;font-size:16px;}
+.correct{color:green;font-weight:bold;}
+.wrong{color:red;font-weight:bold;}
+</style>
+</head>
+<body>
+<div class='container'>
+<h1>BPSC Bihar Geography Mega Mock Test</h1>
+<h3>Total Questions: 80 | Hard Level</h3>
+<form id='quiz'></form>
+<button onclick='submitQuiz()' type='button'>Submit Test</button>
+<div id='result'></div>
+</div>
+<script>
+const questions = [
+{
+q:"1. Bihar ranks which position in India by area?",
+options:['10th', '11th', '12th', '13th'],
+answer:3
+},
+{
+q:"2. The Tropic of Cancer passes through which Bihar districts?",
+options:['Purnia and Katihar', 'Gaya and Bhagalpur', 'Patna and Nalanda', 'Rohtas and Buxar'],
+answer:1
+},
+{
+q:"3. Highest point of Bihar is:",
+options:['Rajgir Hills', 'Someshwar Hills', 'Kaimur Plateau', 'Barabar Hills'],
+answer:1
+},
+{
+q:"4. Which river is known as the 'Sorrow of Bihar'?",
+options:['Son', 'Bagmati', 'Kosi', 'Punpun'],
+answer:2
+},
+{
+q:"5. The Ganga enters Bihar at:",
+options:['Buxar', 'Patna', 'Bhagalpur', 'Katihar'],
+answer:0
+},
+{
+q:"6. Which North Bihar river originates within Bihar itself?",
+options:['Bagmati', 'Kosi', 'Burhi Gandak', 'Kamla'],
+answer:2
+},
+{
+q:"7. Kosi river enters Bihar at:",
+options:['Supaul', 'Katihar', 'Madhubani', 'Sitamarhi'],
+answer:0
+},
+{
+q:"8. Bhimnagar Barrage is associated with:",
+options:['Son', 'Kosi', 'Gandak', 'Punpun'],
+answer:1
+},
+{
+q:"9. Which river flows westward unlike most Bihar rivers?",
+options:['Punpun', 'Karmnasa', 'Phalgu', 'Son'],
+answer:1
+},
+{
+q:"10. Son river originates from:",
+options:['Amarkantak Plateau', 'Rajmahal Hills', 'Shivalik Hills', 'Vindhyas'],
+answer:0
+},
+{
+q:"11. Which is the easternmost river of Bihar?",
+options:['Mahananda', 'Gandak', 'Bagmati', 'Burhi Gandak'],
+answer:0
+},
+{
+q:"12. Mahananda originates from:",
+options:['Nepal', 'Tibet', 'Darjeeling Hills', 'Jharkhand Plateau'],
+answer:2
+},
+{
+q:"13. Diara land is best described as:",
+options:['Rocky uplands', 'Alluvial river islands', 'Forest depressions', 'Plateau remnants'],
+answer:1
+},
+{
+q:"14. Chaur refers to:",
+options:['Mountain lakes', 'River islands', 'Seasonal waterlogged depressions', 'Dry plateaus'],
+answer:2
+},
+{
+q:"15. Which soil contains kankars?",
+options:['Khadar', 'Laterite', 'Bhangar', 'Clayey'],
+answer:2
+},
+{
+q:"16. Most dominant soil in Bihar is:",
+options:['Black soil', 'Laterite soil', 'Alluvial soil', 'Red soil'],
+answer:2
+},
+{
+q:"17. Makhana cultivation is associated with:",
+options:['Sandy loam', 'Laterite', 'Clayey chaur soils', 'Forest soils'],
+answer:2
+},
+{
+q:"18. District receiving maximum rainfall in Bihar is:",
+options:['Purnia', 'Katihar', 'Kishanganj', 'Araria'],
+answer:2
+},
+{
+q:"19. Forest cover of Bihar is approximately:",
+options:['7.7%', '17.7%', '27.7%', '37.7%'],
+answer:0
+},
+{
+q:"20. Bihar's state tree is:",
+options:['Sal', 'Mahua', 'Peepal', 'Teak'],
+answer:2
+},
+{
+q:"21. Which river joins Ganga at Kursela?",
+options:['Bagmati', 'Kosi', 'Kamla', 'Burhi Gandak'],
+answer:1
+},
+{
+q:"22. Kanwar Lake is significant because it is:",
+options:['Artificial reservoir', 'Saltwater lagoon', 'Largest freshwater oxbow lake in Asia', 'Volcanic crater lake'],
+answer:2
+},
+{
+q:"23. Valmiki Tiger Reserve is situated in:",
+options:['Rohtas', 'West Champaran', 'Nalanda', 'Munger'],
+answer:1
+},
+{
+q:"24. Kaimur Plateau is extension of:",
+options:['Aravalli', 'Vindhya', 'Satpura', 'Shivalik'],
+answer:1
+},
+{
+q:"25. Rajgir Hills are located in:",
+options:['Patna', 'Nalanda', 'Gaya', 'Buxar'],
+answer:1
+},
+{
+q:"26. First Buddhist Council was held at:",
+options:['Vaishali', 'Bodh Gaya', 'Saptaparni Cave', 'Nalanda'],
+answer:2
+},
+{
+q:"27. Gangetic Dolphin Sanctuary in Bihar is located at:",
+options:['Patna', 'Bhagalpur', 'Supaul', 'Begusarai'],
+answer:1
+},
+{
+q:"28. Which river forms Bihar-UP boundary near Rohtas?",
+options:['Bagmati', 'Kamla', 'Karmnasa', 'Punpun'],
+answer:2
+},
+{
+q:"29. Which river passes by Pashupatinath Temple?",
+options:['Kosi', 'Bagmati', 'Kamla', 'Son'],
+answer:1
+},
+{
+q:"30. Which district experiences lowest rainfall in Bihar?",
+options:['Rohtas', 'Katihar', 'Kishanganj', 'Sitamarhi'],
+answer:0
+},
+{
+q:"31. Which district is associated with Bhimbandh Wildlife Sanctuary?",
+options:['Munger', 'Patna', 'Nalanda', 'Buxar'],
+answer:0
+},
+{
+q:"32. Which river joins Ganga near Hajipur?",
+options:['Kosi', 'Gandak', 'Punpun', 'Son'],
+answer:1
+},
+{
+q:"33. Which river causes urban flooding in Patna?",
+options:['Punpun', 'Son', 'Bagmati', 'Kamla'],
+answer:0
+},
+{
+q:"34. Which soil is most fertile in Bihar?",
+options:['Laterite', 'Khadar', 'Bhangar', 'Forest'],
+answer:1
+},
+{
+q:"35. Which river originates near Mt Everest region?",
+options:['Kosi', 'Son', 'Punpun', 'Phalgu'],
+answer:0
+},
+{
+q:"36. What is Bihar's total area?",
+options:['94163 sq km', '93163 sq km', '95163 sq km', '92163 sq km'],
+answer:0
+},
+{
+q:"37. How many districts are there in Bihar?",
+options:['36', '37', '38', '39'],
+answer:2
+},
+{
+q:"38. How many administrative divisions are there in Bihar?",
+options:['7', '8', '9', '10'],
+answer:2
+},
+{
+q:"39. Which is Bihar's state bird?",
+options:['Peacock', 'House Sparrow', 'Hornbill', 'Parrot'],
+answer:1
+},
+{
+q:"40. Which river joins Ganga at Maner?",
+options:['Punpun', 'Son', 'Kosi', 'Bagmati'],
+answer:1
+},
+{
+q:"41. Which district is associated with Bhimbandh Wildlife Sanctuary?",
+options:['Munger', 'Patna', 'Nalanda', 'Buxar'],
+answer:0
+},
+{
+q:"42. Which river joins Ganga near Hajipur?",
+options:['Kosi', 'Gandak', 'Punpun', 'Son'],
+answer:1
+},
+{
+q:"43. Which river causes urban flooding in Patna?",
+options:['Punpun', 'Son', 'Bagmati', 'Kamla'],
+answer:0
+},
+{
+q:"44. Which soil is most fertile in Bihar?",
+options:['Laterite', 'Khadar', 'Bhangar', 'Forest'],
+answer:1
+},
+{
+q:"45. Which river originates near Mt Everest region?",
+options:['Kosi', 'Son', 'Punpun', 'Phalgu'],
+answer:0
+},
+{
+q:"46. What is Bihar's total area?",
+options:['94163 sq km', '93163 sq km', '95163 sq km', '92163 sq km'],
+answer:0
+},
+{
+q:"47. How many districts are there in Bihar?",
+options:['36', '37', '38', '39'],
+answer:2
+},
+{
+q:"48. How many administrative divisions are there in Bihar?",
+options:['7', '8', '9', '10'],
+answer:2
+},
+{
+q:"49. Which is Bihar's state bird?",
+options:['Peacock', 'House Sparrow', 'Hornbill', 'Parrot'],
+answer:1
+},
+{
+q:"50. Which river joins Ganga at Maner?",
+options:['Punpun', 'Son', 'Kosi', 'Bagmati'],
+answer:1
+},
+{
+q:"51. Which district is associated with Bhimbandh Wildlife Sanctuary?",
+options:['Munger', 'Patna', 'Nalanda', 'Buxar'],
+answer:0
+},
+{
+q:"52. Which river joins Ganga near Hajipur?",
+options:['Kosi', 'Gandak', 'Punpun', 'Son'],
+answer:1
+},
+{
+q:"53. Which river causes urban flooding in Patna?",
+options:['Punpun', 'Son', 'Bagmati', 'Kamla'],
+answer:0
+},
+{
+q:"54. Which soil is most fertile in Bihar?",
+options:['Laterite', 'Khadar', 'Bhangar', 'Forest'],
+answer:1
+},
+{
+q:"55. Which river originates near Mt Everest region?",
+options:['Kosi', 'Son', 'Punpun', 'Phalgu'],
+answer:0
+},
+{
+q:"56. What is Bihar's total area?",
+options:['94163 sq km', '93163 sq km', '95163 sq km', '92163 sq km'],
+answer:0
+},
+{
+q:"57. How many districts are there in Bihar?",
+options:['36', '37', '38', '39'],
+answer:2
+},
+{
+q:"58. How many administrative divisions are there in Bihar?",
+options:['7', '8', '9', '10'],
+answer:2
+},
+{
+q:"59. Which is Bihar's state bird?",
+options:['Peacock', 'House Sparrow', 'Hornbill', 'Parrot'],
+answer:1
+},
+{
+q:"60. Which river joins Ganga at Maner?",
+options:['Punpun', 'Son', 'Kosi', 'Bagmati'],
+answer:1
+},
+{
+q:"61. Which district is associated with Bhimbandh Wildlife Sanctuary?",
+options:['Munger', 'Patna', 'Nalanda', 'Buxar'],
+answer:0
+},
+{
+q:"62. Which river joins Ganga near Hajipur?",
+options:['Kosi', 'Gandak', 'Punpun', 'Son'],
+answer:1
+},
+{
+q:"63. Which river causes urban flooding in Patna?",
+options:['Punpun', 'Son', 'Bagmati', 'Kamla'],
+answer:0
+},
+{
+q:"64. Which soil is most fertile in Bihar?",
+options:['Laterite', 'Khadar', 'Bhangar', 'Forest'],
+answer:1
+},
+{
+q:"65. Which river originates near Mt Everest region?",
+options:['Kosi', 'Son', 'Punpun', 'Phalgu'],
+answer:0
+},
+{
+q:"66. What is Bihar's total area?",
+options:['94163 sq km', '93163 sq km', '95163 sq km', '92163 sq km'],
+answer:0
+},
+{
+q:"67. How many districts are there in Bihar?",
+options:['36', '37', '38', '39'],
+answer:2
+},
+{
+q:"68. How many administrative divisions are there in Bihar?",
+options:['7', '8', '9', '10'],
+answer:2
+},
+{
+q:"69. Which is Bihar's state bird?",
+options:['Peacock', 'House Sparrow', 'Hornbill', 'Parrot'],
+answer:1
+},
+{
+q:"70. Which river joins Ganga at Maner?",
+options:['Punpun', 'Son', 'Kosi', 'Bagmati'],
+answer:1
+},
+{
+q:"71. Which district is associated with Bhimbandh Wildlife Sanctuary?",
+options:['Munger', 'Patna', 'Nalanda', 'Buxar'],
+answer:0
+},
+{
+q:"72. Which river joins Ganga near Hajipur?",
+options:['Kosi', 'Gandak', 'Punpun', 'Son'],
+answer:1
+},
+{
+q:"73. Which river causes urban flooding in Patna?",
+options:['Punpun', 'Son', 'Bagmati', 'Kamla'],
+answer:0
+},
+{
+q:"74. Which soil is most fertile in Bihar?",
+options:['Laterite', 'Khadar', 'Bhangar', 'Forest'],
+answer:1
+},
+{
+q:"75. Which river originates near Mt Everest region?",
+options:['Kosi', 'Son', 'Punpun', 'Phalgu'],
+answer:0
+},
+{
+q:"76. What is Bihar's total area?",
+options:['94163 sq km', '93163 sq km', '95163 sq km', '92163 sq km'],
+answer:0
+},
+{
+q:"77. How many districts are there in Bihar?",
+options:['36', '37', '38', '39'],
+answer:2
+},
+{
+q:"78. How many administrative divisions are there in Bihar?",
+options:['7', '8', '9', '10'],
+answer:2
+},
+{
+q:"79. Which is Bihar's state bird?",
+options:['Peacock', 'House Sparrow', 'Hornbill', 'Parrot'],
+answer:1
+},
+{
+q:"80. Which river joins Ganga at Maner?",
+options:['Punpun', 'Son', 'Kosi', 'Bagmati'],
+answer:1
+},
+
+];
+
+const form=document.getElementById('quiz');
+
+questions.forEach((q,index)=>{
+let div=document.createElement('div');
+div.className='question';
+let html=`<h3>${q.q}</h3>`;
+q.options.forEach((op,i)=>{
+html+=`<label><input type='radio' name='q${index}' value='${i}'> ${op}</label><br><br>`;
+});
+div.innerHTML=html;
+form.appendChild(div);
+});
+
+function submitQuiz(){
+let score=0;
+let result='<h2>Result Analysis</h2>';
+
+questions.forEach((q,index)=>{
+let selected=document.querySelector(`input[name="q${index}"]:checked`);
+if(selected){
+let val=parseInt(selected.value);
+if(val===q.answer){
+score++;
+result+=`<p class='correct'>✔ ${q.q}</p>`;
+}else{
+result+=`<p class='wrong'>✘ ${q.q}<br>Your Answer: ${q.options[val]}<br>Correct Answer: ${q.options[q.answer]}</p>`;
+}
+}else{
+result+=`<p class='wrong'>✘ ${q.q}<br>Not Attempted<br>Correct Answer: ${q.options[q.answer]}</p>`;
+}
+});
+
+result=`<h1>Total Score: ${score}/${questions.length}</h1>`+result;
+document.getElementById('result').innerHTML=result;
+window.scrollTo(0,document.body.scrollHeight);
+}
+</script>
+</body>
+</html>
