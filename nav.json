@@ -5,41 +5,150 @@
       "name": "Geography",
       "icon": "🌍",
 
-      "pages": [
+      "sections": [
 
         {
-          "title": "Core-1[Bihar]",
-          "file": "pages/geography/core-1.html"
-        },
+          "title": "Core-1 [Bihar]",
 
-        {
-          "title": "Core-2[Bihar]",
-          "file": "pages/geography/core-2.html"
-        },
-          {
-          "title": "Core-3[Bihar]",
-          "file": "pages/geography/core-3.html"
-        },
-         {
-          "title": "Core-4[bihar]",
-          "file": "pages/geography/core-4.html"
-        },
-         {
-          "title": "Core-1[World]",
-          "file": "pages/geography/world/core-1.html"
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/core-1.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/tests/core-1-test.html"
+            }
+
+          ]
         },
 
         {
-          "title": "Core-2[World]",
-          "file": "pages/geography/world/core-2.html"
+          "title": "Core-2 [Bihar]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/core-2.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/tests/core-2-test.html"
+            }
+
+          ]
         },
-          {
-          "title": "Core-3[World]",
-          "file": "pages/geography/world/core-3.html"
+
+        {
+          "title": "Core-3 [Bihar]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/core-3.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/tests/core-3-test.html"
+            }
+
+          ]
         },
-         {
-          "title": "Core-4[World]",
-          "file": "pages/geography/world/core-4.html"
+
+        {
+          "title": "Core-4 [Bihar]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/core-4.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/tests/core-4-test.html"
+            }
+
+          ]
+        },
+
+        {
+          "title": "Core-1 [World]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/world/core-1.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/world/tests/core-1-test.html"
+            }
+
+          ]
+        },
+
+        {
+          "title": "Core-2 [World]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/world/core-2.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/world/tests/core-2-test.html"
+            }
+
+          ]
+        },
+
+        {
+          "title": "Core-3 [World]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/world/core-3.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/world/tests/core-3-test.html"
+            }
+
+          ]
+        },
+
+        {
+          "title": "Core-4 [World]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/world/core-4.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/world/tests/core-4-test.html"
+            }
+
+          ]
         }
 
       ]
@@ -49,16 +158,42 @@
       "name": "History",
       "icon": "🏛",
 
-      "pages": [
+      "sections": [
 
         {
           "title": "Buddhism in Bihar",
-          "file": "pages/history/buddhism.html"
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/history/buddhism.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/history/tests/buddhism-test.html"
+            }
+
+          ]
         },
 
         {
           "title": "Mauryan Empire",
-          "file": "pages/history/maurya.html"
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/history/maurya.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/history/tests/maurya-test.html"
+            }
+
+          ]
         }
 
       ]
