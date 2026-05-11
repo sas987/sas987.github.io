@@ -5,43 +5,95 @@ fetch("nav.json")
     const nav = document.getElementById("nav");
     const viewer = document.getElementById("viewer");
 
-    data.topics.forEach(topic => {
+    data.topics.forEach((topic, topicIndex) => {
 
         let html = `
+
             <div class="topic">
 
-                <div class="topic-title">
-                    ${topic.icon} ${topic.name}
+                <div class="topic-header"
+                     onclick="toggleElement('topic-${topicIndex}')">
+
+                    <span>
+                        ${topic.icon} ${topic.name}
+                    </span>
+
                 </div>
+
+                <div class="nested"
+                     id="topic-${topicIndex}">
         `;
 
-        topic.pages.forEach(page => {
+        topic.sections.forEach((section, sectionIndex) => {
 
             html += `
-                <a class="page-link"
-                   href="#"
-                   onclick="loadPage('${page.file}')">
 
-                    ${page.title}
+                <div class="section">
 
-                </a>
+                    <div class="section-header"
+                         onclick="toggleElement(
+                         'section-${topicIndex}-${sectionIndex}'
+                         )">
+
+                        ${section.title}
+
+                    </div>
+
+                    <div class="nested"
+                         id="section-${topicIndex}-${sectionIndex}">
+            `;
+
+            section.items.forEach(item => {
+
+                html += `
+
+                    <a class="page-link"
+                       href="#"
+                       onclick="loadPage('${item.file}')">
+
+                        ${item.name}
+
+                    </a>
+
+                `;
+
+            });
+
+            html += `
+                    </div>
+
+                </div>
             `;
 
         });
 
-        html += `</div>`;
+        html += `
+                </div>
+
+            </div>
+        `;
 
         nav.innerHTML += html;
 
     });
 
-    if(data.topics.length > 0 &&
-       data.topics[0].pages.length > 0){
+});
 
-        viewer.src = data.topics[0].pages[0].file;
+function toggleElement(id){
+
+    const element = document.getElementById(id);
+
+    if(element.style.display === "block"){
+
+        element.style.display = "none";
+
+    }else{
+
+        element.style.display = "block";
+
     }
 
-});
+}
 
 function loadPage(file){
 
