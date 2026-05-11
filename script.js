@@ -3,7 +3,6 @@ fetch("nav.json")
 .then(data => {
 
     const nav = document.getElementById("nav");
-    const viewer = document.getElementById("viewer");
 
     data.topics.forEach((topic, topicIndex) => {
 
@@ -12,11 +11,16 @@ fetch("nav.json")
             <div class="topic">
 
                 <div class="topic-header"
-                     onclick="toggleElement('topic-${topicIndex}')">
+                     onclick="toggleTopic(${topicIndex})">
 
-                    <span>
+                    <div>
                         ${topic.icon} ${topic.name}
-                    </span>
+                    </div>
+
+                    <div class="arrow"
+                         id="topic-arrow-${topicIndex}">
+                        ▶
+                    </div>
 
                 </div>
 
@@ -31,15 +35,23 @@ fetch("nav.json")
                 <div class="section">
 
                     <div class="section-header"
-                         onclick="toggleElement(
-                         'section-${topicIndex}-${sectionIndex}'
+                         onclick="toggleSection(
+                         ${topicIndex},
+                         ${sectionIndex}
                          )">
 
-                        ${section.title}
+                        <div>
+                            ${section.title}
+                        </div>
+
+                        <div class="arrow"
+                             id="section-arrow-${topicIndex}-${sectionIndex}">
+                            ▶
+                        </div>
 
                     </div>
 
-                    <div class="nested"
+                    <div class="nested inner-nested"
                          id="section-${topicIndex}-${sectionIndex}">
             `;
 
@@ -79,24 +91,107 @@ fetch("nav.json")
 
 });
 
-function toggleElement(id){
+function loadPage(file){
 
-    const element = document.getElementById(id);
+    document.getElementById("viewer").src = file;
 
-    if(element.style.display === "block"){
+}
 
-        element.style.display = "none";
+function toggleTopic(index){
+
+    const current =
+        document.getElementById(`topic-${index}`);
+
+    const currentArrow =
+        document.getElementById(`topic-arrow-${index}`);
+
+    document.querySelectorAll(".nested").forEach(el => {
+
+        if(el.id.startsWith("topic-")){
+
+            if(el !== current){
+
+                el.style.display = "none";
+
+            }
+
+        }
+
+    });
+
+    document.querySelectorAll("[id^='topic-arrow-']")
+    .forEach(arrow => {
+
+        if(arrow !== currentArrow){
+
+            arrow.innerHTML = "▶";
+
+        }
+
+    });
+
+    if(current.style.display === "block"){
+
+        current.style.display = "none";
+
+        currentArrow.innerHTML = "▶";
 
     }else{
 
-        element.style.display = "block";
+        current.style.display = "block";
+
+        currentArrow.innerHTML = "▼";
 
     }
 
 }
 
-function loadPage(file){
+function toggleSection(topicIndex, sectionIndex){
 
-    document.getElementById("viewer").src = file;
+    const current =
+        document.getElementById(
+        `section-${topicIndex}-${sectionIndex}`
+        );
+
+    const currentArrow =
+        document.getElementById(
+        `section-arrow-${topicIndex}-${sectionIndex}`
+        );
+
+    document.querySelectorAll(".inner-nested")
+    .forEach(el => {
+
+        if(el !== current){
+
+            el.style.display = "none";
+
+        }
+
+    });
+
+    document.querySelectorAll("[id^='section-arrow-']")
+    .forEach(arrow => {
+
+        if(arrow !== currentArrow){
+
+            arrow.innerHTML = "▶";
+
+        }
+
+    });
+
+    if(current.style.display === "block"){
+
+        current.style.display = "none";
+
+        currentArrow.innerHTML = "▶";
+
+    }else{
+
+        current.style.display = "block";
+
+        currentArrow.innerHTML = "▼";
+
+    }
 
 }
