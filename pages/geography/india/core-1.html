@@ -1,1 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Geography — Part 1 | BPSC Prelims Master Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=JetBrains+Mono:wght@400;500;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0f14;--bg2:#13171f;--bg3:#1a1f2b;--bg4:#212737;--surface:#272e42;--border:#323a52;--text:#e8ecf2;--text2:#aab4c5;--text3:#6c7689;--gold:#6dc56d;--gold2:#8ad88a;--amber:#e8a868;--red:#e87878;--green:#7ed598;--blue:#5fa8e8;--teal:#5fc8c8;--saffron:#e8a868;--india-green:#5cb85c;--sidebar-w:280px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Source Serif 4',Georgia,serif;font-size:16px;line-height:1.75;display:flex;min-height:100vh}
+.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--bg2);border-right:1px solid var(--border);position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100;display:flex;flex-direction:column}
+.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-track{background:var(--bg2)}.sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.sidebar-header{padding:24px 20px 20px;border-bottom:1px solid var(--border);background:var(--bg2);position:sticky;top:0;z-index:10}
+.sidebar-part-badge{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:8px;display:block}
+.sidebar-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--text);line-height:1.3}
+.sidebar-sub{font-family:'DM Sans',sans-serif;font-size:11px;color:var(--text3);margin-top:4px}
+.nav-section{padding:6px 0}
+.nav-section-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.2em;color:var(--text3);text-transform:uppercase;padding:12px 20px 4px}
+.nav-item{display:block;padding:7px 20px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text2);text-decoration:none;border-left:2px solid transparent;transition:all .15s ease;cursor:pointer;line-height:1.4}
+.nav-item:hover{color:var(--gold);background:rgba(109,197,109,.05);border-left-color:rgba(109,197,109,.3)}
+.nav-item.active{color:var(--gold);background:rgba(109,197,109,.08);border-left-color:var(--gold);font-weight:500}
+.nav-item .nav-num{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text3);margin-right:8px}
+.sidebar-footer{margin-top:auto;padding:16px 20px;border-top:1px solid var(--border);font-family:'DM Sans',sans-serif;font-size:11px;color:var(--text3);line-height:1.6}
+.main{margin-left:var(--sidebar-w);flex:1;min-width:0}
+.hero{background:linear-gradient(135deg,var(--bg2),var(--bg3));border-bottom:1px solid var(--border);padding:60px 64px 48px;position:relative;overflow:hidden}
+.hero::before{content:'INDIA';position:absolute;right:-30px;top:-30px;font-family:'Playfair Display',serif;font-size:170px;font-weight:900;color:rgba(109,197,109,.05);letter-spacing:-6px;pointer-events:none;line-height:1}
+.hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.hero-eyebrow::after{content:'';display:block;width:40px;height:1px;background:var(--gold);opacity:.5}
+.hero-title{font-family:'Playfair Display',serif;font-size:52px;font-weight:900;line-height:1.05;color:var(--text);margin-bottom:8px;letter-spacing:-1px}
+.hero-title span{color:var(--gold);font-style:italic}
+.hero-subtitle{font-family:'Source Serif 4',serif;font-size:18px;color:var(--text2);margin-top:12px;font-style:italic;font-weight:300}
+.hero-stats{display:flex;gap:32px;margin-top:32px;padding-top:28px;border-top:1px solid var(--border);flex-wrap:wrap}
+.hero-stat{display:flex;flex-direction:column;gap:4px}
+.hero-stat-num{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--gold);line-height:1}
+.hero-stat-label{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text3);text-transform:uppercase;letter-spacing:.08em}
+.content{padding:0 64px 80px;max-width:920px}
+.section{padding-top:56px;border-top:1px solid var(--border);margin-top:48px}
+.section:first-child{border-top:none;margin-top:0;padding-top:48px}
+.section-number{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;display:block}
+.section-title{font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:var(--text);line-height:1.15;margin-bottom:6px;letter-spacing:-.5px}
+.section-desc{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text3);margin-bottom:28px;font-style:italic}
+.subsection{margin-top:36px}
+.subsection-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:600;color:var(--text);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}
+.subsection-title .bullet{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0}
+.exam-box{background:linear-gradient(135deg,rgba(109,197,109,.08),rgba(109,197,109,.03));border:1px solid rgba(109,197,109,.25);border-left:3px solid var(--gold);border-radius:4px;padding:16px 20px;margin:20px 0}
+.exam-box-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.exam-box-label::before{content:'★';font-size:10px}
+.exam-box p,.exam-box li{font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);line-height:1.6}
+.exam-box ul{list-style:none;padding:0}
+.exam-box li{padding:3px 0 3px 16px;position:relative}
+.exam-box li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:12px}
+.warn-box{background:rgba(232,120,120,.07);border:1px solid rgba(232,120,120,.2);border-left:3px solid var(--red);border-radius:4px;padding:14px 18px;margin:16px 0}
+.warn-box-label{font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:var(--red);letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+.warn-box p{font-family:'DM Sans',sans-serif;font-size:13.5px;color:#e8a8a8;line-height:1.55}
+.fact-table{width:100%;border-collapse:collapse;margin:20px 0;font-family:'DM Sans',sans-serif}
+.fact-table th{background:var(--bg3);color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:10px 16px;text-align:left;border:1px solid var(--border);font-family:'JetBrains Mono',monospace}
+.fact-table td{padding:10px 16px;font-size:13.5px;color:var(--text);border:1px solid var(--border);line-height:1.5;vertical-align:top}
+.fact-table tr:nth-child(even) td{background:rgba(255,255,255,.02)}
+.fact-table tr:hover td{background:rgba(109,197,109,.04)}
+.fact-table td.key{color:var(--gold2);font-weight:600;font-size:13px;white-space:nowrap}
+.fact-table td.hl{color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700}
+.bpsc-q{background:var(--bg4);border:1px solid var(--border);border-radius:4px;padding:14px 18px;margin:12px 0}
+.bpsc-q-label{font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--amber);letter-spacing:.15em;text-transform:uppercase;margin-bottom:6px}
+.bpsc-q-text{font-family:'Source Serif 4',serif;font-size:14px;color:var(--text);font-style:italic;line-height:1.55;margin-bottom:6px}
+.bpsc-q-ans{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--green)}
+.bpsc-q-ans::before{content:'✓ '}
+p{margin-bottom:14px;color:var(--text2);font-size:15.5px;line-height:1.8}
+strong{color:var(--text);font-weight:600}
+em{color:var(--gold2);font-style:normal;font-weight:600}
+ul.cl{list-style:none;padding:0;margin:10px 0 16px}
+ul.cl li{padding:6px 0 6px 22px;position:relative;font-family:'DM Sans',sans-serif;font-size:14.5px;color:var(--text2);line-height:1.5;border-bottom:1px solid rgba(255,255,255,.03)}
+ul.cl li:last-child{border-bottom:none}
+ul.cl li::before{content:'◆';position:absolute;left:0;color:var(--gold);font-size:8px;top:10px}
+ul.cl li strong{color:var(--text)}
+.divider{height:1px;background:var(--border);margin:28px 0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:16px 0}
+.grid-card{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:16px}
+.grid-card-title{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;color:var(--gold);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.grid-card ul{list-style:none;padding:0}
+.grid-card li{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--text2);padding:4px 0;border-bottom:1px solid rgba(255,255,255,.03);line-height:1.4}
+.grid-card li:last-child{border-bottom:none}
+.grid-card li strong{color:var(--text)}
+.memo{background:var(--bg4);border-radius:4px;padding:12px 16px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--teal);line-height:1.7;border-left:2px solid var(--teal)}
+.memo strong{color:var(--gold)}
+.progress-bar{position:fixed;top:0;left:var(--sidebar-w);right:0;height:2px;background:rgba(109,197,109,.15);z-index:200}
+.progress-fill{height:100%;background:var(--gold);width:0%;transition:width .1s linear}
+.pull-quote{border-left:3px solid var(--gold);padding:12px 20px;margin:24px 0;background:rgba(109,197,109,.04);border-radius:0 4px 4px 0}
+.pull-quote p{font-family:'Playfair Display',serif;font-size:17px;font-style:italic;color:var(--text);line-height:1.6;margin:0}
+
+/* INLINE BPSC TAG */
+.asked{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,rgba(232,168,104,.18),rgba(232,168,104,.08));border:1px solid rgba(232,168,104,.4);border-radius:4px;padding:8px 12px;margin:8px 0;font-family:'DM Sans',sans-serif;font-size:12.5px;color:#f0c89c;line-height:1.5}
+.asked::before{content:'⚡ ASKED IN BPSC:';font-family:'JetBrains Mono',monospace;font-weight:700;font-size:10px;color:var(--amber);letter-spacing:.1em;flex-shrink:0;margin-right:4px}
+.asked.block{display:block;margin:14px 0}
+.asked.block::before{display:block;margin-bottom:4px}
+.asked strong{color:#ffd9a8}
+
+/* FEATURE CARD */
+.feature-card{background:linear-gradient(135deg,var(--bg3),var(--bg4));border:1px solid var(--border);border-radius:8px;margin:14px 0;overflow:hidden;border-left:4px solid var(--gold)}
+.feature-header{padding:13px 20px;background:var(--surface);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--border)}
+.feature-name{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--gold)}
+.feature-tag{font-family:'JetBrains Mono',monospace;font-size:10px;background:rgba(109,197,109,.12);color:var(--gold);padding:3px 10px;border-radius:20px;letter-spacing:.1em;font-weight:600}
+.feature-tagline{font-family:'DM Sans',sans-serif;font-size:12px;color:var(--text3);font-style:italic;margin-left:auto}
+.feature-body{padding:14px 20px;font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--text2);line-height:1.65}
+.feature-body strong{color:var(--gold2)}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}
+.feature-grid > div{font-size:12.5px}
+.feature-grid strong{color:var(--text3);font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;display:block;margin-bottom:1px}
+
+/* RECORD ROW */
+.record{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:11px 16px;margin:6px 0;border-left:3px solid var(--gold)}
+.record-num{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--gold);min-width:36px}
+.record-text{font-family:'DM Sans',sans-serif;font-size:13.5px;color:var(--text);line-height:1.5}
+.record-text strong{color:var(--gold2)}
+.record-text small{display:block;font-size:11px;color:var(--text3);margin-top:2px;font-family:'JetBrains Mono',monospace;letter-spacing:.05em}
+
+@media(max-width:900px){.sidebar{display:none}.main{margin-left:0}.hero{padding:32px 24px}.content{padding:0 24px 60px}.grid-2,.grid-3,.feature-grid{grid-template-columns:1fr}.hero-stats{gap:20px}.hero-title{font-size:36px}}
+</style>
+</head>
+<body>
+<div class="progress-bar"><div class="progress-fill" id="pf"></div></div>
+
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <span class="sidebar-part-badge">Part I of III</span>
+    <div class="sidebar-title">Indian Geography</div>
+    <div class="sidebar-sub">Location · Physiography · Himalayas · Plains · Plateau · Coast</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Foundation</div>
+    <a class="nav-item" href="#s1"><span class="nav-num">01</span>Location &amp; Extent</a>
+    <a class="nav-item" href="#s2"><span class="nav-num">02</span>Indian Boundaries</a>
+    <a class="nav-item" href="#s3"><span class="nav-num">03</span>States &amp; Union Territories</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Himalayas</div>
+    <a class="nav-item" href="#s4"><span class="nav-num">04</span>The Himalayas — Overview</a>
+    <a class="nav-item" href="#s5"><span class="nav-num">05</span>Himalayan Divisions</a>
+    <a class="nav-item" href="#s6"><span class="nav-num">06</span>Himalayan Passes</a>
+    <a class="nav-item" href="#s7"><span class="nav-num">07</span>Himalayan Peaks</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Plains &amp; Plateau</div>
+    <a class="nav-item" href="#s8"><span class="nav-num">08</span>Northern Plains</a>
+    <a class="nav-item" href="#s9"><span class="nav-num">09</span>Peninsular Plateau</a>
+    <a class="nav-item" href="#s10"><span class="nav-num">10</span>Western &amp; Eastern Ghats</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Coastal &amp; Islands</div>
+    <a class="nav-item" href="#s11"><span class="nav-num">11</span>Coastal Plains</a>
+    <a class="nav-item" href="#s12"><span class="nav-num">12</span>Islands of India</a>
+    <a class="nav-item" href="#s13"><span class="nav-num">13</span>Thar Desert</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Master Records</div>
+    <a class="nav-item" href="#s14"><span class="nav-num">14</span>India's "MOST" Records</a>
+    <a class="nav-item" href="#s15"><span class="nav-num">15</span>PYQ Drills</a>
+  </div>
+  <div class="sidebar-footer">🇮🇳 BPSC asks 10–12 Indian Geography Qs/paper. Master physiography first — single highest yield section.</div>
+</nav>
+
+<main class="main">
+<div class="hero">
+  <div class="hero-eyebrow">BPSC Prelims 2026 — Indian Geography Locked</div>
+  <h1 class="hero-title">Indian <span>Geography</span><br>Master Guide</h1>
+  <div class="hero-subtitle">Part I · Location · Physiography · Himalayas · Plains · Plateau · Coast</div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hero-stat-num">10–12</div><div class="hero-stat-label">Questions Per Paper</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">29</div><div class="hero-stat-label">States Mapped</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">8</div><div class="hero-stat-label">Tropic of Cancer States</div></div>
+    <div class="hero-stat"><div class="hero-stat-num">3</div><div class="hero-stat-label">Guide Parts Total</div></div>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- ============================== -->
+<!-- BPSC PATTERN INTRO -->
+<!-- ============================== -->
+<section class="section" id="intro" style="border-top:none;padding-top:30px;">
+<div class="exam-box">
+<div class="exam-box-label">★ How BPSC Tests Indian Geography (Last 30 Years)</div>
+<p style="margin-bottom:8px;">Analysis of 39th–70th BPSC papers shows Indian Geography is the <strong>highest-weightage geography section</strong> (10–12 questions per paper). Confirmed BPSC pattern:</p>
+<ul style="margin-top:6px;">
+<li><strong>Direct factual:</strong> "Which is the highest peak in India?", "Tropic of Cancer passes through which states?"</li>
+<li><strong>River-region pairs:</strong> "Indravati &amp; Sabari are tributaries of which river?" (CDPO 2018: Godavari); "Chandra-Bhaga in which region?" (66th BPSC: Lahaul)</li>
+<li><strong>Climate factual:</strong> "Mango Shower is related to?" (43rd BPSC); "Maximum rainfall from which monsoon?" (52nd BPSC)</li>
+<li><strong>Comparative:</strong> "Amritsar-Shimla climate difference reason?" (53rd-55th BPSC: altitude)</li>
+<li><strong>NO complex multi-statement format</strong> like UPSC — BPSC keeps it factual</li>
+</ul>
+</div>
+<div class="pull-quote"><p>"Indian Geography is BPSC's highest-weightage geography section. Master it completely and you lock 10–12 marks. Combined with Bihar (50) and World Geography (12), your geography total crosses 70 marks alone."</p></div>
+</section>
+
+<!-- ============================== -->
+<!-- S1: LOCATION & EXTENT -->
+<!-- ============================== -->
+<section class="section" id="s1">
+<span class="section-number">Section 01</span>
+<h2 class="section-title">India — Location, Size &amp; Extent</h2>
+<div class="section-desc">Foundational facts that BPSC tests in nearly every paper</div>
+
+<table class="fact-table">
+<tr><td class="key">Total area</td><td><strong>3,287,263 sq km</strong> — 7th largest country in the world; ~2.4% of world's land area</td></tr>
+<tr><td class="key">Population</td><td><strong>~1.42+ billion</strong> (most populous country, overtook China in 2023); ~17.5% of world population</td></tr>
+<tr><td class="key">Latitudinal extent</td><td><strong>8°4'N to 37°6'N</strong> — about 30° of latitude</td></tr>
+<tr><td class="key">Longitudinal extent</td><td><strong>68°7'E to 97°25'E</strong> — about 30° of longitude</td></tr>
+<tr><td class="key">North-south distance</td><td>~3,214 km (Kashmir to Kanyakumari)</td></tr>
+<tr><td class="key">East-west distance</td><td>~2,933 km (Arunachal to Gujarat)</td></tr>
+<tr><td class="key">Land frontier</td><td><strong>15,200 km</strong></td></tr>
+<tr><td class="key">Coastline</td><td><strong>7,516.6 km</strong> (including island territories); 6,100 km mainland</td></tr>
+<tr><td class="key">Land neighbours</td><td><strong>7 countries</strong></td></tr>
+<tr><td class="key">Indian Standard Time (IST)</td><td><strong>UTC + 5:30</strong> hours — based on <strong>82°30'E longitude</strong>, passing through Mirzapur (UP)</td></tr>
+<tr><td class="key">India's southernmost point</td><td><strong>Indira Point</strong> (formerly Pygmalion Point) on Great Nicobar Island; submerged after 2004 tsunami</td></tr>
+<tr><td class="key">Southernmost point of mainland</td><td>Cape Comorin / <strong>Kanyakumari</strong>, Tamil Nadu</td></tr>
+<tr><td class="key">Northernmost point</td><td>Indira Col (in Siachen Glacier, Karakoram); civilian: Daha (Ladakh)</td></tr>
+<tr><td class="key">Westernmost point</td><td>Sir Creek, Gujarat (Guhar Moti area, Kutch)</td></tr>
+<tr><td class="key">Easternmost point</td><td>Kibithu, Arunachal Pradesh</td></tr>
+</table>
+
+<div class="asked block">
+"<strong>India's Standard Time is based on 82°30'E longitude passing through?</strong>" → Answer: Mirzapur (UP). Repeatedly asked in BPSC. Also: <strong>India lies entirely in the Northern Hemisphere and Eastern Hemisphere</strong>.
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>The Tropic of Cancer in India</div>
+<p>The Tropic of Cancer (23°30'N) passes through <strong>8 Indian states</strong>:</p>
+<table class="fact-table">
+<tr><th>Order (West → East)</th><th>State</th></tr>
+<tr><td class="hl">1</td><td class="key"><strong>Gujarat</strong></td></tr>
+<tr><td class="hl">2</td><td class="key">Rajasthan</td></tr>
+<tr><td class="hl">3</td><td class="key">Madhya Pradesh</td></tr>
+<tr><td class="hl">4</td><td class="key">Chhattisgarh</td></tr>
+<tr><td class="hl">5</td><td class="key">Jharkhand</td></tr>
+<tr><td class="hl">6</td><td class="key">West Bengal</td></tr>
+<tr><td class="hl">7</td><td class="key">Tripura</td></tr>
+<tr><td class="hl">8</td><td class="key"><strong>Mizoram</strong></td></tr>
+</table>
+
+<div class="memo">
+<strong>Mnemonic:</strong> "GuRaMP-CJ-WT-Mi" → <strong>Gu</strong>jarat, <strong>Ra</strong>jasthan, <strong>MP</strong>, <strong>C</strong>hhattisgarh, <strong>J</strong>harkhand, <strong>W</strong>est Bengal, <strong>T</strong>ripura, <strong>Mi</strong>zoram.<br>
+Tropic of Cancer divides India into roughly equal halves — tropical south + sub-tropical north.
+</div>
+
+<div class="asked block">
+"<strong>Tropic of Cancer passes through how many Indian states?</strong>" → 8 states. Also: "<strong>The state which lies westernmost on Tropic of Cancer?</strong>" → Gujarat. "<strong>Easternmost?</strong>" → Mizoram. Frequently asked in BPSC.
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>India's Position</div>
+<table class="fact-table">
+<tr><td class="key">Continent</td><td>Asia (Southern part)</td></tr>
+<tr><td class="key">Sub-continent</td><td>Indian Subcontinent — India + Pakistan + Bangladesh + Nepal + Bhutan + Sri Lanka + Maldives + Afghanistan (sometimes included)</td></tr>
+<tr><td class="key">Indian Ocean</td><td>Only ocean named after a country</td></tr>
+<tr><td class="key">Strategic location</td><td>At crossroads of West Asia (oil), East Asia (manufacturing), Africa, Europe</td></tr>
+</table>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Through how many Indian states does the Tropic of Cancer pass?"</div><div class="bpsc-q-ans">8 states — Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Through which Indian state does the Standard Meridian (82°30'E) pass?"</div><div class="bpsc-q-ans">Uttar Pradesh (specifically Mirzapur); also passes through MP, Chhattisgarh, Odisha, Andhra Pradesh</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S2: INDIAN BOUNDARIES -->
+<!-- ============================== -->
+<section class="section" id="s2">
+<span class="section-number">Section 02</span>
+<h2 class="section-title">India's Borders &amp; Neighbours</h2>
+<div class="section-desc">7 land neighbours + 2 sea neighbours — direction-wise mapping</div>
+
+<table class="fact-table">
+<tr><th>Country</th><th>Direction</th><th>Border Length</th><th>Indian States Bordering</th></tr>
+<tr><td class="key"><strong>Bangladesh</strong></td><td>East</td><td><strong>~4,096 km (LONGEST)</strong></td><td>West Bengal, Mizoram, Meghalaya, Tripura, Assam (5 states)</td></tr>
+<tr><td class="key"><strong>China</strong></td><td>North/NE</td><td>~3,488 km</td><td>Ladakh (UT), HP, Uttarakhand, Sikkim, Arunachal (5)</td></tr>
+<tr><td class="key"><strong>Pakistan</strong></td><td>West/NW</td><td>~3,323 km</td><td>Gujarat, Rajasthan, Punjab, J&amp;K, Ladakh (UT) (5)</td></tr>
+<tr><td class="key"><strong>Nepal</strong></td><td>North</td><td>~1,751 km</td><td><strong>Bihar</strong>, UP, Uttarakhand, Sikkim, West Bengal (5)</td></tr>
+<tr><td class="key"><strong>Myanmar</strong></td><td>East</td><td>~1,643 km</td><td>Arunachal, Nagaland, Manipur, Mizoram (4)</td></tr>
+<tr><td class="key"><strong>Bhutan</strong></td><td>North</td><td>~699 km</td><td>Sikkim, West Bengal, Assam, Arunachal (4)</td></tr>
+<tr><td class="key"><strong>Afghanistan</strong></td><td>NW</td><td>~106 km (SHORTEST)</td><td>Via PoK (claimed); Ladakh region</td></tr>
+<tr><td class="key"><strong>Sri Lanka</strong></td><td>South (sea)</td><td>—</td><td>Across Palk Strait + Gulf of Mannar (Tamil Nadu)</td></tr>
+<tr><td class="key"><strong>Maldives</strong></td><td>SW (sea)</td><td>—</td><td>Across Arabian Sea (Lakshadweep)</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Critical Border Facts</div>
+<ul>
+<li><strong>Longest border:</strong> Bangladesh (~4,096 km)</li>
+<li><strong>Shortest border:</strong> Afghanistan (~106 km — via PoK)</li>
+<li><strong>2nd longest:</strong> China (~3,488 km)</li>
+<li><strong>India shares border with 7 countries on land + 2 via sea (Sri Lanka, Maldives)</strong></li>
+<li><strong>Bihar shares border with Nepal</strong> — ~726 km long (Bihar's only international border)</li>
+<li><strong>Indo-Pakistan border:</strong> Radcliffe Line (1947)</li>
+<li><strong>Indo-China border:</strong> McMahon Line (1914, eastern); LAC (most other)</li>
+<li><strong>India-Bangladesh border</strong> includes Bangladeshi enclaves resolved in 2015 (Land Boundary Agreement)</li>
+</ul>
+</div>
+
+<div class="asked block">
+<strong>"India shares its longest land border with which country?"</strong> → Bangladesh (~4,096 km). Common confusion with China (~3,488 km — 2nd longest). Don't get this wrong.
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Indian States &amp; Their Foreign Borders</div>
+<table class="fact-table">
+<tr><th>Indian State</th><th>Foreign Neighbour</th></tr>
+<tr><td class="key">West Bengal</td><td>Bangladesh + Bhutan + Nepal (THREE!)</td></tr>
+<tr><td class="key">Sikkim</td><td>China + Bhutan + Nepal (THREE!)</td></tr>
+<tr><td class="key">Arunachal Pradesh</td><td>China + Myanmar + Bhutan (THREE!)</td></tr>
+<tr><td class="key">Bihar</td><td>Nepal (only)</td></tr>
+<tr><td class="key">Punjab</td><td>Pakistan</td></tr>
+<tr><td class="key">Rajasthan</td><td>Pakistan</td></tr>
+<tr><td class="key">Gujarat</td><td>Pakistan</td></tr>
+<tr><td class="key">J&amp;K</td><td>Pakistan + China</td></tr>
+<tr><td class="key">Ladakh (UT)</td><td>Pakistan + China + Afghanistan (via PoK)</td></tr>
+<tr><td class="key">Mizoram</td><td>Bangladesh + Myanmar</td></tr>
+<tr><td class="key">Tripura</td><td>Bangladesh</td></tr>
+<tr><td class="key">Meghalaya</td><td>Bangladesh</td></tr>
+<tr><td class="key">Assam</td><td>Bangladesh + Bhutan</td></tr>
+<tr><td class="key">Nagaland, Manipur</td><td>Myanmar</td></tr>
+<tr><td class="key">UP, Uttarakhand</td><td>Nepal</td></tr>
+<tr><td class="key">HP</td><td>China</td></tr>
+<tr><td class="key">Tamil Nadu</td><td>Sri Lanka (sea)</td></tr>
+<tr><td class="key">Lakshadweep (UT)</td><td>Maldives (sea)</td></tr>
+</table>
+
+<div class="memo">
+<strong>States with 3 foreign borders</strong> = West Bengal, Sikkim, Arunachal Pradesh.<br>
+<strong>Mnemonic: "WAS"</strong> → West Bengal, Arunachal, Sikkim.
+</div>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Which Indian states share their borders with Bangladesh?"</div><div class="bpsc-q-ans">5 states — West Bengal, Mizoram, Meghalaya, Tripura, Assam</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S3: STATES & UNION TERRITORIES -->
+<!-- ============================== -->
+<section class="section" id="s3">
+<span class="section-number">Section 03</span>
+<h2 class="section-title">States &amp; Union Territories</h2>
+<div class="section-desc">Current count + key facts about formation</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Current Count (Post-Aug 2019)</div>
+<ul>
+<li><strong>States:</strong> 28</li>
+<li><strong>Union Territories:</strong> 8</li>
+<li>Total = 36 entities</li>
+<li><strong>Major change in 2019:</strong> J&amp;K reorganized — became 2 UTs (J&amp;K UT and Ladakh UT)</li>
+<li>Telangana became 29th state in <strong>2014</strong> (carved from Andhra Pradesh); but after J&amp;K reorganization 2019, count is back to <strong>28 states</strong></li>
+</ul>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>The 8 Union Territories</div>
+<table class="fact-table">
+<tr><th>UT</th><th>Capital</th><th>Notes</th></tr>
+<tr><td class="key">Delhi (NCT)</td><td>New Delhi</td><td>National Capital Territory; has Legislative Assembly</td></tr>
+<tr><td class="key">Jammu &amp; Kashmir</td><td>Srinagar (summer); Jammu (winter)</td><td>Reorganized as UT in Aug 2019; has Legislative Assembly</td></tr>
+<tr><td class="key">Ladakh</td><td>Leh; Kargil</td><td>Created Aug 2019; no Legislative Assembly</td></tr>
+<tr><td class="key">Puducherry</td><td>Puducherry</td><td>Has Legislative Assembly</td></tr>
+<tr><td class="key">Chandigarh</td><td>Chandigarh (shared with Punjab + Haryana)</td><td>—</td></tr>
+<tr><td class="key">Andaman &amp; Nicobar Islands</td><td>Port Blair</td><td>India's only "tri-Service Command" location</td></tr>
+<tr><td class="key">Lakshadweep</td><td>Kavaratti</td><td>India's smallest UT by area</td></tr>
+<tr><td class="key">Dadra &amp; Nagar Haveli + Daman &amp; Diu</td><td>Daman</td><td>Merged into single UT in 2020</td></tr>
+</table>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>State Formation Timeline (Important)</div>
+<table class="fact-table">
+<tr><th>Year</th><th>Event</th></tr>
+<tr><td class="key">1956</td><td>States Reorganisation Act — major linguistic reorganization (14 states + 6 UTs)</td></tr>
+<tr><td class="key">1960</td><td><strong>Maharashtra + Gujarat</strong> separated from Bombay state</td></tr>
+<tr><td class="key">1963</td><td><strong>Nagaland</strong> created</td></tr>
+<tr><td class="key">1966</td><td><strong>Haryana + Himachal Pradesh</strong> separated from Punjab</td></tr>
+<tr><td class="key">1971</td><td>HP became a state</td></tr>
+<tr><td class="key">1972</td><td><strong>Meghalaya, Manipur, Tripura</strong> became states</td></tr>
+<tr><td class="key">1975</td><td><strong>Sikkim</strong> joined India as 22nd state</td></tr>
+<tr><td class="key">1987</td><td><strong>Mizoram, Arunachal Pradesh, Goa</strong> became states</td></tr>
+<tr><td class="key">2000</td><td><strong>3 states created simultaneously: Chhattisgarh (Nov 1, from MP), Uttarakhand (Nov 9, from UP), Jharkhand (Nov 15, from Bihar)</strong></td></tr>
+<tr><td class="key">2014</td><td><strong>Telangana</strong> created as 29th state (June 2; from AP)</td></tr>
+<tr><td class="key">2019</td><td><strong>J&amp;K bifurcated</strong> into 2 UTs (J&amp;K + Ladakh); states back to 28</td></tr>
+</table>
+
+<div class="asked block">
+<strong>"Jharkhand was carved out of which state and in which year?"</strong> → Bihar, on <strong>15 November 2000</strong> (date is birth anniversary of Birsa Munda). Repeated BPSC question.
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Largest, Smallest States</div>
+<table class="fact-table">
+<tr><th>Category</th><th>State / UT</th></tr>
+<tr><td class="key">Largest by area</td><td>Rajasthan (~3.42 lakh sq km)</td></tr>
+<tr><td class="key">Smallest by area</td><td>Goa (~3,702 sq km); UT smallest: Lakshadweep</td></tr>
+<tr><td class="key">Most populous</td><td>Uttar Pradesh (~24 crore)</td></tr>
+<tr><td class="key">Least populous</td><td>Sikkim (~6.5 lakh as per 2011)</td></tr>
+<tr><td class="key">Highest density</td><td>Bihar (1,106 per sq km, 2011)</td></tr>
+<tr><td class="key">Lowest density</td><td>Arunachal Pradesh (17 per sq km)</td></tr>
+<tr><td class="key">Highest literacy</td><td>Kerala (~94%)</td></tr>
+<tr><td class="key">Lowest literacy</td><td>Bihar (~63%)</td></tr>
+</table>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S4: HIMALAYAS OVERVIEW -->
+<!-- ============================== -->
+<section class="section" id="s4">
+<span class="section-number">Section 04</span>
+<h2 class="section-title">The Himalayas — Overview</h2>
+<div class="section-desc">★ HIGHEST-WEIGHTAGE TOPIC — every BPSC paper has 1-2 Himalayan questions</div>
+
+<table class="fact-table">
+<tr><td class="key">Type</td><td><strong>Young fold mountains</strong> (Tertiary period); still rising ~5mm/year</td></tr>
+<tr><td class="key">Formation</td><td>Caused by collision of <strong>Indian Plate with Eurasian Plate</strong> (started ~50 million years ago)</td></tr>
+<tr><td class="key">Length</td><td>~2,400 km — Indus gorge (west, Pakistan) to Brahmaputra bend (east, Arunachal)</td></tr>
+<tr><td class="key">Width</td><td>150-400 km (narrowest in east, widest in west — Kashmir region)</td></tr>
+<tr><td class="key">Countries</td><td>India, Pakistan, Nepal, Bhutan, China (Tibet)</td></tr>
+<tr><td class="key">Indian states covered</td><td>J&amp;K, Ladakh (UT), HP, Uttarakhand, Sikkim, West Bengal (Darjeeling), Arunachal Pradesh</td></tr>
+<tr><td class="key">Highest peak</td><td>Mt. Everest (8,849 m) — Nepal-China; India's: Kangchenjunga (8,586 m)</td></tr>
+<tr><td class="key">Indo-Burmese range</td><td>Eastern extension of Himalayas — through Nagaland, Manipur, Mizoram</td></tr>
+</table>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Significance of Himalayas to India</div>
+<ul class="cl">
+<li><strong>Climatic barrier:</strong> Blocks cold Siberian winds; intercepts SW monsoon → causes heavy rainfall</li>
+<li><strong>Source of rivers:</strong> Ganga, Brahmaputra, Indus and their tributaries originate here</li>
+<li><strong>Glaciers:</strong> Major glaciers like Siachen, Gangotri, Yamunotri — perennial water source</li>
+<li><strong>Biodiversity:</strong> Eastern Himalayas = one of 4 global biodiversity hotspots in India</li>
+<li><strong>Forests:</strong> Tropical evergreen → temperate → alpine zones</li>
+<li><strong>Mineral resources:</strong> Petroleum, coal, copper, lead, zinc</li>
+<li><strong>Tourism:</strong> Hill stations, religious pilgrimages, adventure tourism</li>
+<li><strong>Strategic:</strong> Forms India's natural northern frontier</li>
+</ul>
+</div>
+
+<div class="asked block">
+<strong>"The Himalayas are young fold mountains formed by collision of which two plates?"</strong> → Indian Plate and Eurasian Plate. Tested in nearly every BPSC paper. Also asked: <strong>"The Himalayas rise approximately ___ mm per year"</strong> → ~5mm.
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S5: HIMALAYAN DIVISIONS -->
+<!-- ============================== -->
+<section class="section" id="s5">
+<span class="section-number">Section 05</span>
+<h2 class="section-title">Himalayan Divisions — Longitudinal &amp; Regional</h2>
+<div class="section-desc">3 longitudinal ranges + 4 regional divisions — both formats tested</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Longitudinal Divisions (North to South) — 3 Parallel Ranges</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Greater Himalayas (Himadri)</span>
+<span class="feature-tag">★ HIGHEST</span>
+<span class="feature-tagline">Northernmost · Permanent snow</span>
+</div>
+<div class="feature-body">
+<strong>Average height:</strong> ~6,100 m. <strong>Width:</strong> ~25 km.<br>
+<strong>Features:</strong> Contains all major Himalayan peaks (Everest, K2, Kangchenjunga, Nanda Devi, Annapurna); permanently snow-covered; source of all major Himalayan rivers and glaciers.<br>
+<strong>Composition:</strong> Igneous + metamorphic rocks (granite, gneiss).<br>
+<strong>Major glaciers:</strong> Siachen, Gangotri, Yamunotri, Pindari, Zemu, Milam.<br>
+<strong>Asymmetry:</strong> Steeper on south side (Indian side); gentler northward (Tibetan plateau).
+</div>
+</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Lesser / Middle Himalayas (Himachal)</span>
+<span class="feature-tag">MID-RANGE</span>
+<span class="feature-tagline">Middle range · Hill stations</span>
+</div>
+<div class="feature-body">
+<strong>Average height:</strong> 3,700–4,500 m. <strong>Width:</strong> ~50 km.<br>
+<strong>Famous ranges:</strong> <strong>Pir Panjal</strong> (longest of Lesser Himalayas), Dhauladhar, Mussoorie, Mahabharat, Nag Tibba.<br>
+<strong>Famous valleys:</strong> Kashmir Valley, Kangra Valley, Kullu Valley.<br>
+<strong>Famous hill stations:</strong> Shimla, Mussoorie, Nainital, Darjeeling, Ranikhet, Almora, Chail — most located in Lesser Himalayas.<br>
+<strong>Composition:</strong> Compressed sedimentary + metamorphic rocks.
+</div>
+</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Shivalik / Outer Himalayas</span>
+<span class="feature-tag">YOUNGEST</span>
+<span class="feature-tagline">Southernmost · Lowest</span>
+</div>
+<div class="feature-body">
+<strong>Average height:</strong> 900–1,200 m. <strong>Width:</strong> ~50 km.<br>
+<strong>Significance:</strong> <strong>Youngest of the 3 ranges</strong>; composed of unconsolidated sediments brought down by Himalayan rivers.<br>
+<strong>Features:</strong> <strong>Duns</strong> — longitudinal valleys between Shivalik and Lesser Himalayas (e.g., Dehradun, Kotli Dun, Patli Dun).<br>
+<strong>Risk:</strong> Highly landslide-prone due to soft sedimentary composition + steep slopes.
+</div>
+</div>
+
+<div class="asked block">
+"<strong>Pir Panjal is part of which Himalayan division?</strong>" → Lesser Himalayas. "<strong>Which is the youngest Himalayan range?</strong>" → Shivalik. "<strong>The Duns are located between?</strong>" → Shivalik and Lesser Himalayas. All confirmed BPSC patterns.
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Regional Divisions (West to East) — 4 Regions</div>
+<table class="fact-table">
+<tr><th>Region</th><th>Extent</th><th>Features</th></tr>
+<tr><td class="key"><strong>Punjab/Kashmir Himalayas</strong></td><td>Indus to Sutlej (~560 km)</td><td>J&amp;K, Ladakh, HP; contains Karakoram, Ladakh range, Zaskar, Pir Panjal; Kashmir Valley</td></tr>
+<tr><td class="key"><strong>Kumaon Himalayas</strong></td><td>Sutlej to Kali (~320 km)</td><td>Uttarakhand; contains Nanda Devi (highest peak entirely in India), Kedarnath, Badrinath, Trishul; sources of Ganga (Gangotri), Yamuna (Yamunotri)</td></tr>
+<tr><td class="key"><strong>Nepal Himalayas</strong></td><td>Kali to Tista (~800 km)</td><td>Mostly in Nepal; contains Everest, Kanchenjunga, Annapurna, Dhaulagiri; longest stretch</td></tr>
+<tr><td class="key"><strong>Assam Himalayas</strong></td><td>Tista to Brahmaputra (~720 km)</td><td>Sikkim, North Bengal, Bhutan, Arunachal; contains Namcha Barwa; high rainfall (Cherrapunji-Mawsynram are in adjacent hills)</td></tr>
+</table>
+
+<div class="asked block">
+"<strong>Kanchenjunga is located in which regional division of Himalayas?</strong>" → Nepal Himalayas (technically on India-Nepal border in Sikkim). "<strong>Nanda Devi is in which region?</strong>" → Kumaon Himalayas. Tested in BPSC.
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Trans-Himalayan Ranges (North of Greater Himalayas)</div>
+<table class="fact-table">
+<tr><th>Range</th><th>Highest Peak / Notes</th></tr>
+<tr><td class="key"><strong>Karakoram Range</strong></td><td><strong>K2 / Godwin Austen (8,611 m)</strong> — world's 2nd highest peak; located on India-Pakistan border (in PoK)</td></tr>
+<tr><td class="key"><strong>Ladakh Range</strong></td><td>North of Indus; lies in Ladakh UT</td></tr>
+<tr><td class="key"><strong>Zaskar Range</strong></td><td>South of Ladakh range; lies between Indus &amp; Sutlej</td></tr>
+<tr><td class="key"><strong>Kailash Range</strong></td><td>Mt. Kailash (6,638 m) — sacred to Hindus + Buddhists; in Tibet</td></tr>
+</table>
+
+<div class="asked block">
+<strong>"K2 (Godwin Austen) lies in which mountain range?"</strong> → Karakoram (not Himalayas — common trap). Karakoram is part of <strong>Trans-Himalayan system</strong>, not the Himalayas proper.
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Purvanchal Hills (Eastern Hills/Indo-Burmese Range)</div>
+<table class="fact-table">
+<tr><th>Hill Range</th><th>Region</th></tr>
+<tr><td class="key">Patkai Bum</td><td>Northern part (Arunachal-Myanmar border)</td></tr>
+<tr><td class="key">Naga Hills</td><td>Nagaland; Mt. Saramati (3,826 m) highest</td></tr>
+<tr><td class="key">Manipur Hills</td><td>Manipur</td></tr>
+<tr><td class="key">Mizo Hills</td><td>Mizoram; Blue Mountain / Phawngpui highest</td></tr>
+</table>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S6: HIMALAYAN PASSES -->
+<!-- ============================== -->
+<section class="section" id="s6">
+<span class="section-number">Section 06</span>
+<h2 class="section-title">Important Himalayan Passes</h2>
+<div class="section-desc">★ Match pass to state — confirmed BPSC pattern</div>
+
+<table class="fact-table">
+<tr><th>Pass</th><th>State / Region</th><th>Connects</th></tr>
+<tr><td class="key"><strong>Karakoram Pass</strong></td><td>Ladakh</td><td>India ↔ China (Xinjiang); ancient Silk Route</td></tr>
+<tr><td class="key"><strong>Khardung La</strong></td><td>Ladakh</td><td>Leh ↔ Nubra Valley; once world's highest motorable pass (5,359 m)</td></tr>
+<tr><td class="key"><strong>Zoji La</strong></td><td>J&amp;K (Kashmir)</td><td>Srinagar ↔ Leh</td></tr>
+<tr><td class="key"><strong>Banihal Pass / Jawahar Tunnel</strong></td><td>J&amp;K</td><td>Jammu ↔ Srinagar</td></tr>
+<tr><td class="key"><strong>Pir Panjal Pass</strong></td><td>J&amp;K</td><td>Jammu ↔ Srinagar (alternative)</td></tr>
+<tr><td class="key"><strong>Rohtang Pass</strong></td><td>Himachal Pradesh</td><td>Kullu ↔ Lahaul-Spiti; now Atal Tunnel below</td></tr>
+<tr><td class="key"><strong>Shipki La</strong></td><td>Himachal Pradesh</td><td>HP ↔ Tibet (China); Sutlej river enters here</td></tr>
+<tr><td class="key"><strong>Bara Lacha La</strong></td><td>Himachal Pradesh</td><td>HP ↔ Ladakh</td></tr>
+<tr><td class="key"><strong>Lipulekh Pass</strong></td><td>Uttarakhand</td><td>India ↔ Tibet (China); Kailash Mansarovar route</td></tr>
+<tr><td class="key"><strong>Niti Pass</strong></td><td>Uttarakhand</td><td>India ↔ Tibet</td></tr>
+<tr><td class="key"><strong>Mana Pass</strong></td><td>Uttarakhand</td><td>India ↔ Tibet</td></tr>
+<tr><td class="key"><strong>Nathu La</strong></td><td>Sikkim</td><td>India ↔ China (Tibet); reopened in 2006; Kailash route</td></tr>
+<tr><td class="key"><strong>Jelep La</strong></td><td>Sikkim</td><td>India ↔ Bhutan</td></tr>
+<tr><td class="key"><strong>Bomdi La</strong></td><td>Arunachal Pradesh</td><td>India ↔ China (Tibet)</td></tr>
+<tr><td class="key"><strong>Diphu Pass</strong></td><td>Arunachal Pradesh</td><td>India ↔ Myanmar</td></tr>
+<tr><td class="key"><strong>Tuju Pass</strong></td><td>Manipur</td><td>India ↔ Myanmar</td></tr>
+</table>
+
+<div class="exam-box">
+<div class="exam-box-label">★ State-Wise Pass Memorize</div>
+<ul>
+<li><strong>Ladakh:</strong> Karakoram, Khardung La</li>
+<li><strong>J&amp;K (Kashmir):</strong> Zoji La, Banihal, Pir Panjal</li>
+<li><strong>HP:</strong> Rohtang, Shipki La, Bara Lacha</li>
+<li><strong>Uttarakhand:</strong> Lipulekh, Niti, Mana</li>
+<li><strong>Sikkim:</strong> Nathu La, Jelep La</li>
+<li><strong>Arunachal:</strong> Bomdi La, Diphu</li>
+</ul>
+</div>
+
+<div class="asked block">
+"<strong>Nathu La pass connects India with?</strong>" → China (Tibet); in Sikkim. "<strong>Lipulekh Pass is in which state?</strong>" → Uttarakhand. These are confirmed BPSC factual questions.
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Rohtang Pass is in which state?"</div><div class="bpsc-q-ans">Himachal Pradesh — connects Kullu Valley with Lahaul-Spiti</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S7: HIMALAYAN PEAKS -->
+<!-- ============================== -->
+<section class="section" id="s7">
+<span class="section-number">Section 07</span>
+<h2 class="section-title">Major Himalayan Peaks in India</h2>
+<div class="section-desc">Heights + locations — direct factual questions</div>
+
+<table class="fact-table">
+<tr><th>Peak</th><th>Height</th><th>State / Region</th></tr>
+<tr><td class="key"><strong>Kangchenjunga</strong></td><td>8,586 m</td><td><strong>India-Nepal border (Sikkim)</strong>; world's 3rd highest; <strong>highest peak in India</strong></td></tr>
+<tr><td class="key"><strong>K2 (Godwin Austen)</strong></td><td>8,611 m</td><td>Pakistan-China border (PoK — India claims); world's 2nd highest; Karakoram</td></tr>
+<tr><td class="key"><strong>Nanda Devi</strong></td><td>7,816 m</td><td>Uttarakhand — <strong>HIGHEST PEAK ENTIRELY WITHIN INDIA</strong></td></tr>
+<tr><td class="key">Kamet</td><td>7,756 m</td><td>Uttarakhand</td></tr>
+<tr><td class="key">Saltoro Kangri</td><td>7,742 m</td><td>Karakoram (PoK)</td></tr>
+<tr><td class="key">Trishul</td><td>7,120 m</td><td>Uttarakhand (Garhwal)</td></tr>
+<tr><td class="key">Nanda Kot</td><td>6,861 m</td><td>Uttarakhand</td></tr>
+<tr><td class="key">Mt. Kailash</td><td>6,638 m</td><td>Tibet (China) — sacred to Hindus, Buddhists, Jains</td></tr>
+<tr><td class="key">Badrinath / Kedarnath peaks</td><td>~7,000 m</td><td>Uttarakhand</td></tr>
+<tr><td class="key">Bandarpunch</td><td>6,316 m</td><td>Uttarakhand</td></tr>
+<tr><td class="key">Saramati</td><td>3,826 m</td><td>Nagaland (Purvanchal Hills)</td></tr>
+<tr><td class="key">Phawngpui (Blue Mountain)</td><td>2,157 m</td><td>Mizoram</td></tr>
+</table>
+
+<div class="asked block">
+"<strong>Which is the highest peak entirely within India?</strong>" → Nanda Devi (7,816 m) in Uttarakhand. (Kangchenjunga is technically on India-Nepal border, so Nanda Devi is "entirely in India".) This precise distinction is repeatedly tested.
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S8: NORTHERN PLAINS -->
+<!-- ============================== -->
+<section class="section" id="s8">
+<span class="section-number">Section 08</span>
+<h2 class="section-title">The Northern Plains (Indo-Gangetic Plain)</h2>
+<div class="section-desc">India's most fertile region — Bihar is part of this</div>
+
+<table class="fact-table">
+<tr><td class="key">Length</td><td>~2,400 km (west to east)</td></tr>
+<tr><td class="key">Width</td><td>240-320 km (narrowest in east — Bihar; widest in west — Punjab)</td></tr>
+<tr><td class="key">Area</td><td>~7 lakh sq km</td></tr>
+<tr><td class="key">Formation</td><td>Alluvium deposited by Indus, Ganga, Brahmaputra and their tributaries</td></tr>
+<tr><td class="key">States</td><td>Punjab, Haryana, Delhi, UP, Bihar, West Bengal (+ parts of Rajasthan, Jharkhand, Assam)</td></tr>
+</table>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>4 Divisions of Northern Plains</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Bhabar</span>
+<span class="feature-tag">FOOTHILLS</span>
+<span class="feature-tagline">Just south of Shivalik</span>
+</div>
+<div class="feature-body">
+<strong>Width:</strong> 8-16 km belt of <strong>boulders, gravels, pebbles</strong> at foothills of Shivalik.<br>
+<strong>Special feature:</strong> Rivers disappear underground here (porous coarse sediments); reappear in Terai.<br>
+<strong>Not suitable for agriculture</strong> due to coarse soil.
+</div>
+</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Terai</span>
+<span class="feature-tag">MARSHY</span>
+<span class="feature-tagline">South of Bhabar · wetlands</span>
+</div>
+<div class="feature-body">
+<strong>Width:</strong> 15-30 km. <strong>Marshy + swampy</strong> due to re-emergence of rivers from underground (Bhabar).<br>
+<strong>Forest cover:</strong> Dense forests historically; <strong>Tharu tribe</strong> lives here (especially in <strong>West Champaran, Bihar</strong>; UP; Nepal Terai).<br>
+<strong>Wildlife:</strong> Dudhwa Tiger Reserve (UP); Jim Corbett NP (Uttarakhand); Valmiki Tiger Reserve (Bihar Champaran).
+</div>
+</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Bhangar (Older Alluvium)</span>
+<span class="feature-tag">OLDER · UPLAND</span>
+<span class="feature-tagline">Higher ground · less fertile</span>
+</div>
+<div class="feature-body">
+<strong>Older alluvium</strong> on higher terraces; contains kankar (calcareous concretions).<br>
+<strong>Less fertile</strong> than Khadar; rarely flooded.
+</div>
+</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Khadar (Newer Alluvium)</span>
+<span class="feature-tag">NEWER · FERTILE</span>
+<span class="feature-tagline">Annual floodplains · most fertile</span>
+</div>
+<div class="feature-body">
+<strong>Newer alluvium</strong> deposited annually by river floods.<br>
+<strong>Most fertile</strong> soil in India; intensive agriculture; densely populated (Bihar's Khadar areas are highest density in India).
+</div>
+</div>
+
+<div class="asked block">
+"<strong>Bhabar belt is characterized by?</strong>" → Pebbles, gravel; rivers disappear underground. "<strong>Khadar vs Bhangar — which is newer and more fertile?</strong>" → Khadar (newer + more fertile). These are repeated BPSC concepts.
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Regional Sub-Divisions</div>
+<table class="fact-table">
+<tr><th>Sub-Region</th><th>Location</th></tr>
+<tr><td class="key">Punjab Plain</td><td>West (Punjab, Haryana); drained by Indus tributaries</td></tr>
+<tr><td class="key">Ganga Plain</td><td>UP, Bihar, West Bengal; drained by Ganga + tributaries</td></tr>
+<tr><td class="key">Upper Ganga Plain</td><td>Western UP</td></tr>
+<tr><td class="key">Middle Ganga Plain</td><td>Eastern UP + Bihar</td></tr>
+<tr><td class="key">Lower Ganga Plain</td><td>West Bengal</td></tr>
+<tr><td class="key">Brahmaputra Plain</td><td>Assam</td></tr>
+</table>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S9: PENINSULAR PLATEAU -->
+<!-- ============================== -->
+<section class="section" id="s9">
+<span class="section-number">Section 09</span>
+<h2 class="section-title">The Peninsular Plateau</h2>
+<div class="section-desc">India's oldest landform — Pre-Cambrian; rich in minerals</div>
+
+<table class="fact-table">
+<tr><td class="key">Area</td><td>~16 lakh sq km (largest physiographic unit of India)</td></tr>
+<tr><td class="key">Formation</td><td><strong>Part of Gondwanaland</strong>; among Earth's oldest landforms (Pre-Cambrian)</td></tr>
+<tr><td class="key">Composition</td><td>Igneous + metamorphic rocks (granite, gneiss, basalt)</td></tr>
+<tr><td class="key">Average elevation</td><td>600-900 m</td></tr>
+<tr><td class="key">Shape</td><td><strong>Triangular</strong> — apex at Kanyakumari; base along Indo-Gangetic plain</td></tr>
+<tr><td class="key">Sub-divisions</td><td><strong>Central Highlands</strong> (north of Narmada) + <strong>Deccan Plateau</strong> (south of Narmada)</td></tr>
+</table>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Central Highlands</div>
+<table class="fact-table">
+<tr><th>Region</th><th>Description</th></tr>
+<tr><td class="key">Aravalli Range</td><td>NW edge; <strong>oldest fold mountains in India</strong>; ~800 km (Gujarat to Delhi); highest peak: <strong>Guru Shikhar (1,722 m) on Mount Abu</strong>, Rajasthan</td></tr>
+<tr><td class="key">Malwa Plateau</td><td>MP; lava plateau; rich black soil</td></tr>
+<tr><td class="key">Bundelkhand</td><td>UP-MP border; arid; ravines</td></tr>
+<tr><td class="key">Vindhyan Range</td><td>Divides Indo-Gangetic plain from Deccan; oldest sedimentary rocks; goes through MP</td></tr>
+<tr><td class="key">Chhota Nagpur Plateau</td><td>Jharkhand mainly + parts of Odisha, WB, Bihar; <strong>India's mineral storehouse</strong> (coal, iron, mica, copper)</td></tr>
+<tr><td class="key">Mahadeo Hills, Maikal Range</td><td>MP, Chhattisgarh</td></tr>
+</table>
+
+<div class="asked block">
+"<strong>Oldest mountains in India?</strong>" → Aravalli (Pre-Cambrian). "<strong>Highest peak in Aravalli?</strong>" → Guru Shikhar on Mt. Abu (1,722 m). "<strong>India's mineral storehouse?</strong>" → Chhota Nagpur Plateau (especially Jharkhand). Frequently tested.
+</div>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Deccan Plateau</div>
+<table class="fact-table">
+<tr><th>Region</th><th>Description</th></tr>
+<tr><td class="key">Deccan Trap</td><td>Volcanic basalt plateau; <strong>black cotton soil (regur)</strong>; formed by Deccan volcanic eruptions ~65 million years ago</td></tr>
+<tr><td class="key">Maharashtra Plateau</td><td>Western Deccan; mostly basalt</td></tr>
+<tr><td class="key">Karnataka Plateau</td><td>Granite/gneiss; sloping south</td></tr>
+<tr><td class="key">Telangana Plateau</td><td>Eastern Deccan</td></tr>
+<tr><td class="key">Tamil Nadu Plateau</td><td>Southern Deccan</td></tr>
+<tr><td class="key">Western boundary</td><td>Western Ghats (Sahyadri)</td></tr>
+<tr><td class="key">Eastern boundary</td><td>Eastern Ghats</td></tr>
+<tr><td class="key">Northern boundary</td><td>Satpura Range (south of Narmada)</td></tr>
+<tr><td class="key">Drainage</td><td>Eastward to Bay of Bengal (Krishna, Godavari, Kaveri, Mahanadi)</td></tr>
+</table>
+
+<div class="asked block">
+<strong>"Deccan Trap"</strong> is a specific term — refers to <strong>basaltic lava plateau in Maharashtra/MP</strong> formed by volcanic eruptions ~65 million years ago at the end of Cretaceous period. Contains India's main reserve of black cotton soil. Tested in BPSC.
+</div>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S10: GHATS -->
+<!-- ============================== -->
+<section class="section" id="s10">
+<span class="section-number">Section 10</span>
+<h2 class="section-title">Western &amp; Eastern Ghats</h2>
+<div class="section-desc">Two parallel ranges flanking the Deccan</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Western Ghats (Sahyadri)</span>
+<span class="feature-tag">★ UNESCO HERITAGE</span>
+<span class="feature-tagline">~1,600 km · 6 states</span>
+</div>
+<div class="feature-body">
+<strong>Length:</strong> ~1,600 km from Tapi (Gujarat-Maharashtra border) to Kanyakumari.<br>
+<strong>States:</strong> Gujarat, Maharashtra, Goa, Karnataka, Kerala, Tamil Nadu.<br>
+<strong>Average height:</strong> 900-1,600 m; <strong>higher in south</strong>.<br>
+<strong>Composition:</strong> Continuous range; only broken by passes.<br>
+<strong>Highest peak:</strong> <strong>Anamudi (2,695 m)</strong> in Kerala — highest peak in South India.<br>
+<strong>Other peaks:</strong> Doddabetta (Nilgiris, 2,637 m); Mahabaleshwar (1,438 m).<br>
+<strong>Climate:</strong> Heavy rainfall on western side (windward); rain shadow on east.<br>
+<strong>UNESCO Heritage:</strong> Declared in 2012 — biodiversity hotspot; ~5,000 species of flowering plants.<br>
+<strong>Major passes:</strong> Thal Ghat, Bhor Ghat, Pal Ghat (3 famous passes connecting east-west).
+</div>
+</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Eastern Ghats</span>
+<span class="feature-tag">DISCONTINUOUS</span>
+<span class="feature-tagline">~1,400 km · 5 states</span>
+</div>
+<div class="feature-body">
+<strong>Length:</strong> ~1,400 km from Mahanadi delta (Odisha) to Vaigai river (Tamil Nadu).<br>
+<strong>States:</strong> Odisha, Andhra Pradesh, Tamil Nadu, Karnataka.<br>
+<strong>Average height:</strong> 600-900 m; <strong>much lower than Western Ghats</strong>.<br>
+<strong>Composition:</strong> <strong>Discontinuous</strong> (broken by river valleys); rivers Mahanadi, Godavari, Krishna, Kaveri cut through.<br>
+<strong>Highest peak:</strong> <strong>Arma Konda (1,680 m)</strong> in Andhra Pradesh's Visakhapatnam district. Earlier widely called "Jindhagada Peak" or "Mahendragiri".<br>
+<strong>Other peaks:</strong> Mahendragiri (Odisha, 1,501 m).<br>
+<strong>Where Western + Eastern Ghats meet:</strong> <strong>Nilgiri Hills</strong> (in TN-Karnataka-Kerala junction); Doddabetta is the highest peak.
+</div>
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Critical Differences — Western vs Eastern Ghats</div>
+<table class="fact-table" style="margin:6px 0 0;">
+<tr><th>Feature</th><th>Western Ghats</th><th>Eastern Ghats</th></tr>
+<tr><td class="key">Length</td><td>~1,600 km</td><td>~1,400 km</td></tr>
+<tr><td class="key">Continuity</td><td>Continuous</td><td>Discontinuous</td></tr>
+<tr><td class="key">Height</td><td>Higher (900-1,600m)</td><td>Lower (600-900m)</td></tr>
+<tr><td class="key">Highest peak</td><td>Anamudi (Kerala)</td><td>Arma Konda (AP)</td></tr>
+<tr><td class="key">Rainfall</td><td>Very heavy (windward)</td><td>Moderate</td></tr>
+<tr><td class="key">UNESCO Heritage</td><td>YES (2012)</td><td>No</td></tr>
+</table>
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Nilgiri Hills + Junction</div>
+<p>The <strong>Nilgiri Hills</strong> are where the Western and Eastern Ghats meet — in the <strong>Tamil Nadu-Karnataka-Kerala junction</strong>. <strong>Doddabetta (2,637 m)</strong> is the highest peak of Nilgiris. Famous tea-growing region. Nilgiri Tahr is the state animal of Tamil Nadu and endemic to these hills.</p>
+
+<div class="asked block">
+"<strong>Anamudi is the highest peak of?</strong>" → Western Ghats (and South India). "<strong>Where do Western and Eastern Ghats meet?</strong>" → Nilgiri Hills. "<strong>Highest peak in Eastern Ghats?</strong>" → Arma Konda (Andhra Pradesh). Confirmed BPSC patterns.
+</div>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Anamudi, the highest peak in South India, is located in which mountain range?"</div><div class="bpsc-q-ans">Western Ghats (Sahyadri) — in Kerala; height 2,695 m</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"The Western Ghats are also known as?"</div><div class="bpsc-q-ans">Sahyadri</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S11: COASTAL PLAINS -->
+<!-- ============================== -->
+<section class="section" id="s11">
+<span class="section-number">Section 11</span>
+<h2 class="section-title">Coastal Plains of India</h2>
+<div class="section-desc">Western + Eastern coastal plains — distinct features</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Western Coastal Plain</span>
+<span class="feature-tag">NARROW</span>
+<span class="feature-tagline">~1,500 km · narrow strip</span>
+</div>
+<div class="feature-body">
+<strong>Length:</strong> ~1,500 km from Gulf of Khambhat to Kanyakumari.<br>
+<strong>Width:</strong> 50-100 km (narrow due to Western Ghats).<br>
+<strong>States:</strong> Gujarat, Maharashtra, Goa, Karnataka, Kerala.<br>
+<strong>Sub-divisions:</strong>
+<ul style="list-style:none;padding-left:10px;margin-top:6px;">
+<li style="padding:2px 0">• <strong>Konkan Coast</strong> (Mumbai-Goa) — Maharashtra-Goa</li>
+<li style="padding:2px 0">• <strong>Kanara Coast</strong> (Goa-Mangalore) — Karnataka</li>
+<li style="padding:2px 0">• <strong>Malabar Coast</strong> (Mangalore-Kanyakumari) — Kerala</li>
+</ul>
+<strong>Special features:</strong> Backwaters (Kerala); estuaries — Narmada-Tapi (NOT deltas); ports — Mumbai, JNPT, Mormugao, New Mangalore, Kochi.<br>
+<strong>Rivers flowing west:</strong> Narmada, Tapi, Sabarmati, Mahi — all form estuaries (not deltas).
+</div>
+</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Eastern Coastal Plain</span>
+<span class="feature-tag">WIDE · DELTAIC</span>
+<span class="feature-tagline">~1,500 km · wide</span>
+</div>
+<div class="feature-body">
+<strong>Length:</strong> ~1,500 km from Ganga delta (West Bengal) to Kanyakumari.<br>
+<strong>Width:</strong> 100-200 km (wider than west).<br>
+<strong>States:</strong> West Bengal, Odisha, Andhra Pradesh, Tamil Nadu.<br>
+<strong>Sub-divisions:</strong>
+<ul style="list-style:none;padding-left:10px;margin-top:6px;">
+<li style="padding:2px 0">• <strong>Utkal Coast</strong> — Odisha; includes Chilika Lake</li>
+<li style="padding:2px 0">• <strong>Andhra Coast</strong> — Andhra Pradesh; includes Pulicat Lake</li>
+<li style="padding:2px 0">• <strong>Coromandel Coast</strong> — Tamil Nadu coast</li>
+</ul>
+<strong>Special features:</strong> Multiple river deltas (Mahanadi, Godavari, Krishna, Kaveri) — fertile; ports — Kolkata, Paradip, Visakhapatnam, Chennai, Tuticorin.<br>
+<strong>Climate:</strong> Coromandel coast receives rain from <strong>Northeast monsoon (Oct-Dec)</strong> — unique in India.
+</div>
+</div>
+
+<div class="asked block">
+"<strong>Coromandel coast receives heavy rainfall in which months?</strong>" → <strong>October-November</strong> from Northeast monsoon (52nd BPSC 2008 confirmed pattern). Coromandel is the only major coast that gets winter monsoon. Memorize this exception.
+</div>
+
+<div class="exam-box">
+<div class="exam-box-label">★ Coastal Plain — Critical Comparisons</div>
+<table class="fact-table" style="margin:6px 0 0;">
+<tr><th>Feature</th><th>Western</th><th>Eastern</th></tr>
+<tr><td class="key">Width</td><td>Narrow (50-100 km)</td><td>Wide (100-200 km)</td></tr>
+<tr><td class="key">Rivers form</td><td>Estuaries (Narmada, Tapi)</td><td>Deltas (Godavari, Krishna, Kaveri)</td></tr>
+<tr><td class="key">Climate</td><td>Heavy SW monsoon rain</td><td>SW monsoon + NE monsoon (Coromandel)</td></tr>
+<tr><td class="key">Backwaters</td><td>Yes (Kerala)</td><td>No</td></tr>
+<tr><td class="key">Ports</td><td>Mumbai, Kochi, Mormugao</td><td>Chennai, Visakhapatnam, Kolkata</td></tr>
+</table>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC 52nd 2008</div><div class="bpsc-q-text">"Which of the following coasts receives heavy rainfall in the months of October and November?"</div><div class="bpsc-q-ans">Coromandel Coast (from retreating NE monsoon)</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S12: ISLANDS OF INDIA -->
+<!-- ============================== -->
+<section class="section" id="s12">
+<span class="section-number">Section 12</span>
+<h2 class="section-title">Islands of India</h2>
+<div class="section-desc">Two island UTs + minor islands</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Andaman &amp; Nicobar Islands</span>
+<span class="feature-tag">BAY OF BENGAL</span>
+<span class="feature-tagline">572 islands · only ~38 inhabited</span>
+</div>
+<div class="feature-body">
+<strong>Location:</strong> Bay of Bengal; closer to Myanmar/Indonesia than mainland India.<br>
+<strong>Total islands:</strong> 572 (~38 inhabited).<br>
+<strong>Capital:</strong> Port Blair (in South Andaman).<br>
+<strong>Origin:</strong> <strong>Volcanic + Tectonic origin</strong>; extension of Arakan Yoma (Myanmar) mountains.<br>
+<strong>Highest peak:</strong> Saddle Peak (732 m) in North Andaman.<br>
+<strong>Active volcano:</strong> <strong>Barren Island</strong> — India's only active volcano (last erupted 2017).<br>
+<strong>Dormant volcano:</strong> Narcondam Island.<br>
+<strong>Indira Point</strong> — southernmost tip of India; on Great Nicobar Island; submerged after 2004 tsunami.<br>
+<strong>10° Channel</strong> — separates Andaman from Nicobar groups.<br>
+<strong>Tribes:</strong> Sentinelese (uncontacted), Jarwa, Onge, Shompen, Great Andamanese (PVTGs).
+</div>
+</div>
+
+<div class="feature-card">
+<div class="feature-header">
+<span class="feature-name">Lakshadweep Islands</span>
+<span class="feature-tag">ARABIAN SEA</span>
+<span class="feature-tagline">36 islands · only ~10 inhabited</span>
+</div>
+<div class="feature-body">
+<strong>Location:</strong> Arabian Sea; off Kerala coast.<br>
+<strong>Total islands:</strong> 36 (only ~10 inhabited).<br>
+<strong>Capital:</strong> <strong>Kavaratti</strong>.<br>
+<strong>Origin:</strong> <strong>Coral origin</strong> — atolls and reefs.<br>
+<strong>India's smallest UT</strong> by area (~32 sq km).<br>
+<strong>Major islands:</strong> Kavaratti, Agatti (has airport), Minicoy (southernmost), Bangaram, Kalpeni, Kadmat.<br>
+<strong>8° Channel</strong> — separates Lakshadweep from Maldives (south of Minicoy).<br>
+<strong>9° Channel</strong> — separates Lakshadweep main group from Minicoy.
+</div>
+</div>
+
+<div class="asked block">
+"<strong>India's only active volcano is on which island?</strong>" → Barren Island (in Andaman). "<strong>Indira Point is on which island?</strong>" → Great Nicobar (southernmost point of India). "<strong>Lakshadweep islands are made of?</strong>" → Coral. "<strong>10° Channel separates?</strong>" → Andaman and Nicobar. All confirmed BPSC patterns.
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>Other Important Islands</div>
+<table class="fact-table">
+<tr><td class="key">Sagar Island</td><td>West Bengal; Ganga Sagar mela; in Ganga delta</td></tr>
+<tr><td class="key">New Moore (Talpatti)</td><td>Submerged island in Bay of Bengal; was disputed with Bangladesh</td></tr>
+<tr><td class="key">Pamban Island</td><td>Off Tamil Nadu coast; connected to mainland by Pamban Bridge</td></tr>
+<tr><td class="key">Sriharikota</td><td>Andhra Pradesh; ISRO's main launch site (SDSC)</td></tr>
+<tr><td class="key">Salsette Island</td><td>Mumbai is on this island</td></tr>
+<tr><td class="key">Majuli</td><td>Assam; world's largest river island (in Brahmaputra)</td></tr>
+</table>
+</div>
+</section>
+
+<!-- ============================== -->
+<!-- S13: THAR DESERT -->
+<!-- ============================== -->
+<section class="section" id="s13">
+<span class="section-number">Section 13</span>
+<h2 class="section-title">Thar Desert (Great Indian Desert)</h2>
+<div class="section-desc">India's only major desert — frequently tested</div>
+
+<table class="fact-table">
+<tr><td class="key">Location</td><td>NW India — primarily <strong>Rajasthan</strong> (60%); extends into Gujarat, Punjab, Haryana, Pakistan (Sindh)</td></tr>
+<tr><td class="key">Area</td><td>~200,000 sq km in India (Thar's Indian portion); total ~250,000 sq km</td></tr>
+<tr><td class="key">Annual rainfall</td><td>&lt;150 mm</td></tr>
+<tr><td class="key">Temperature</td><td>Summer: 45-50°C; Winter: drops below 5°C; high diurnal range</td></tr>
+<tr><td class="key">Major rivers</td><td><strong>Luni</strong> (Rajasthan's main river; ends in Rann of Kutch); Ghaggar (lost river)</td></tr>
+<tr><td class="key">Salt lakes</td><td><strong>Sambhar Lake</strong> (India's largest inland salt lake); Pachpadra, Didwana</td></tr>
+<tr><td class="key">Indira Gandhi Canal</td><td>World's longest irrigation canal (~650 km); irrigates Thar from Sutlej-Beas</td></tr>
+<tr><td class="key">Major cities</td><td>Jaisalmer, Bikaner, Barmer, Jodhpur</td></tr>
+<tr><td class="key">"Western Disturbances"</td><td>Bring scant winter rainfall</td></tr>
+</table>
+
+<div class="asked block">
+"<strong>The Luni river ends in which area?</strong>" → Rann of Kutch (Gujarat) — disappears in marshy land. Confirmed BPSC question pattern (UPSC 2010 also asked this).
+</div>
+
+<div class="subsection">
+<div class="subsection-title"><div class="bullet"></div>The Rann of Kutch</div>
+<table class="fact-table">
+<tr><th>Feature</th><th>Description</th></tr>
+<tr><td class="key">Location</td><td>Gujarat (Kutch district)</td></tr>
+<tr><td class="key">Great Rann of Kutch</td><td>~7,505 sq km salt marsh (north); flooded in monsoon, dry rest of year</td></tr>
+<tr><td class="key">Little Rann of Kutch</td><td>~5,180 sq km; home to <strong>Indian Wild Ass Sanctuary</strong> (only place this species lives)</td></tr>
+<tr><td class="key">Rann Utsav</td><td>Annual cultural festival</td></tr>
+<tr><td class="key">Significance</td><td>Largest salt marsh in the world</td></tr>
+</table>
+</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"India's only desert is called?"</div><div class="bpsc-q-ans">Thar Desert (Great Indian Desert) — primarily in Rajasthan</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">PYQ Pattern — BPSC</div><div class="bpsc-q-text">"Where does the Luni river finally end?"</div><div class="bpsc-q-ans">Lost in the marshy land of Rann of Kutch (Gujarat)</div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S14: INDIA'S MOST RECORDS -->
+<!-- ============================== -->
+<section class="section" id="s14">
+<span class="section-number">Section 14</span>
+<h2 class="section-title">India's "MOST" Records — Physical Geography</h2>
+<div class="section-desc">★ Critical reference — every "highest/largest/longest" question in this list</div>
+
+<div class="record"><div class="record-num">#1</div><div class="record-text"><strong>Highest peak in India:</strong> Kangchenjunga <small>8,586 m · India-Nepal border (Sikkim)</small></div></div>
+<div class="record"><div class="record-num">#2</div><div class="record-text"><strong>Highest peak entirely in India:</strong> Nanda Devi <small>7,816 m · Uttarakhand</small></div></div>
+<div class="record"><div class="record-num">#3</div><div class="record-text"><strong>Highest peak in South India:</strong> Anamudi <small>2,695 m · Kerala (Western Ghats)</small></div></div>
+<div class="record"><div class="record-num">#4</div><div class="record-text"><strong>Highest peak in Eastern Ghats:</strong> Arma Konda <small>1,680 m · Andhra Pradesh</small></div></div>
+<div class="record"><div class="record-num">#5</div><div class="record-text"><strong>Highest peak in Aravalli:</strong> Guru Shikhar <small>1,722 m · Mt. Abu, Rajasthan</small></div></div>
+<div class="record"><div class="record-num">#6</div><div class="record-text"><strong>Highest peak in Nilgiris:</strong> Doddabetta <small>2,637 m · Tamil Nadu</small></div></div>
+<div class="record"><div class="record-num">#7</div><div class="record-text"><strong>Oldest mountain range:</strong> Aravalli <small>Pre-Cambrian; ~800 km long</small></div></div>
+<div class="record"><div class="record-num">#8</div><div class="record-text"><strong>Youngest mountain range:</strong> Shivalik / Outer Himalayas</div></div>
+<div class="record"><div class="record-num">#9</div><div class="record-text"><strong>Largest state by area:</strong> Rajasthan <small>~3.42 lakh sq km</small></div></div>
+<div class="record"><div class="record-num">#10</div><div class="record-text"><strong>Smallest state by area:</strong> Goa</div></div>
+<div class="record"><div class="record-num">#11</div><div class="record-text"><strong>Most populous state:</strong> Uttar Pradesh <small>~24 crore</small></div></div>
+<div class="record"><div class="record-num">#12</div><div class="record-text"><strong>Highest population density:</strong> Bihar <small>1,106 per sq km</small></div></div>
+<div class="record"><div class="record-num">#13</div><div class="record-text"><strong>Lowest population density:</strong> Arunachal Pradesh</div></div>
+<div class="record"><div class="record-num">#14</div><div class="record-text"><strong>Highest literacy:</strong> Kerala <small>~94%</small></div></div>
+<div class="record"><div class="record-num">#15</div><div class="record-text"><strong>Lowest literacy:</strong> Bihar</div></div>
+<div class="record"><div class="record-num">#16</div><div class="record-text"><strong>Highest sex ratio:</strong> Kerala</div></div>
+<div class="record"><div class="record-num">#17</div><div class="record-text"><strong>Lowest sex ratio:</strong> Haryana</div></div>
+<div class="record"><div class="record-num">#18</div><div class="record-text"><strong>Longest international border:</strong> Bangladesh <small>~4,096 km</small></div></div>
+<div class="record"><div class="record-num">#19</div><div class="record-text"><strong>Shortest international border:</strong> Afghanistan <small>~106 km (via PoK)</small></div></div>
+<div class="record"><div class="record-num">#20</div><div class="record-text"><strong>Largest coastline:</strong> Gujarat <small>among Indian states</small></div></div>
+<div class="record"><div class="record-num">#21</div><div class="record-text"><strong>Largest desert:</strong> Thar Desert <small>NW India · ~200,000 sq km</small></div></div>
+<div class="record"><div class="record-num">#22</div><div class="record-text"><strong>Largest salt lake (inland):</strong> Sambhar Lake <small>Rajasthan</small></div></div>
+<div class="record"><div class="record-num">#23</div><div class="record-text"><strong>Largest brackish water lake:</strong> Chilika Lake <small>Odisha</small></div></div>
+<div class="record"><div class="record-num">#24</div><div class="record-text"><strong>Largest freshwater lake:</strong> Wular Lake <small>J&amp;K (Kashmir)</small></div></div>
+<div class="record"><div class="record-num">#25</div><div class="record-text"><strong>Highest lake:</strong> Cholamu Lake <small>Sikkim</small></div></div>
+<div class="record"><div class="record-num">#26</div><div class="record-text"><strong>Largest river island:</strong> Majuli <small>Assam (in Brahmaputra)</small></div></div>
+<div class="record"><div class="record-num">#27</div><div class="record-text"><strong>Largest delta:</strong> Sundarbans <small>Ganga-Brahmaputra · West Bengal-Bangladesh</small></div></div>
+<div class="record"><div class="record-num">#28</div><div class="record-text"><strong>Highest waterfall:</strong> Kunchikal Falls <small>Karnataka · 455 m</small></div></div>
+<div class="record"><div class="record-num">#29</div><div class="record-text"><strong>Longest river entirely in India:</strong> Godavari <small>~1,465 km</small></div></div>
+<div class="record"><div class="record-num">#30</div><div class="record-text"><strong>Longest river (Indian portion):</strong> Ganga <small>~2,525 km</small></div></div>
+<div class="record"><div class="record-num">#31</div><div class="record-text"><strong>Longest irrigation canal:</strong> Indira Gandhi Canal <small>~650 km · Rajasthan</small></div></div>
+<div class="record"><div class="record-num">#32</div><div class="record-text"><strong>India's only active volcano:</strong> Barren Island <small>Andaman</small></div></div>
+<div class="record"><div class="record-num">#33</div><div class="record-text"><strong>Southernmost point of India:</strong> Indira Point <small>Great Nicobar</small></div></div>
+<div class="record"><div class="record-num">#34</div><div class="record-text"><strong>Southernmost point of mainland:</strong> Kanyakumari <small>Tamil Nadu</small></div></div>
+<div class="record"><div class="record-num">#35</div><div class="record-text"><strong>Largest UT:</strong> Ladakh</div></div>
+<div class="record"><div class="record-num">#36</div><div class="record-text"><strong>Smallest UT:</strong> Lakshadweep</div></div>
+<div class="record"><div class="record-num">#37</div><div class="record-text"><strong>India's first Smart City:</strong> Various claims; Bhubaneswar got highest score initially</div></div>
+<div class="record"><div class="record-num">#38</div><div class="record-text"><strong>Highest motorable road:</strong> Umling La Pass <small>5,883 m · Ladakh (2022)</small></div></div>
+<div class="record"><div class="record-num">#39</div><div class="record-text"><strong>Wettest place:</strong> Mawsynram <small>Meghalaya · ~11,872 mm/year</small></div></div>
+<div class="record"><div class="record-num">#40</div><div class="record-text"><strong>Driest place:</strong> Ramayampet <small>Telangana; also areas of Rajasthan</small></div></div>
+</section>
+
+<!-- ============================== -->
+<!-- S15: PYQ DRILLS -->
+<!-- ============================== -->
+<section class="section" id="s15">
+<span class="section-number">Section 15</span>
+<h2 class="section-title">High-Frequency PYQ Drills</h2>
+<div class="section-desc">Self-test before moving to Part 2 (Rivers, Climate, Monsoon, Soils, Vegetation)</div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Location</div><div class="bpsc-q-text">"India lies in which hemispheres?"</div><div class="bpsc-q-ans">Northern Hemisphere and Eastern Hemisphere — entirely</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">IST</div><div class="bpsc-q-text">"India's Standard Time is based on which longitude?"</div><div class="bpsc-q-ans">82°30'E — passes through Mirzapur, UP</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Tropic of Cancer</div><div class="bpsc-q-text">"Through how many Indian states does the Tropic of Cancer pass?"</div><div class="bpsc-q-ans">8 states — Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Borders</div><div class="bpsc-q-text">"India's longest international border is with?"</div><div class="bpsc-q-ans">Bangladesh (~4,096 km)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Borders</div><div class="bpsc-q-text">"How many countries does India share land border with?"</div><div class="bpsc-q-ans">7 countries — Bangladesh, China, Pakistan, Nepal, Myanmar, Bhutan, Afghanistan</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Himalayas</div><div class="bpsc-q-text">"The Himalayas were formed by the collision of which two tectonic plates?"</div><div class="bpsc-q-ans">Indian Plate and Eurasian Plate (~50 million years ago)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Peak</div><div class="bpsc-q-text">"Which is the highest peak entirely within Indian territory?"</div><div class="bpsc-q-ans">Nanda Devi (7,816 m) in Uttarakhand</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Peak</div><div class="bpsc-q-text">"K2 (Godwin Austen) is in which mountain range?"</div><div class="bpsc-q-ans">Karakoram Range (Trans-Himalayan, in PoK)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Passes</div><div class="bpsc-q-text">"Nathu La Pass connects India with which country?"</div><div class="bpsc-q-ans">China (Tibet) — through Sikkim</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Passes</div><div class="bpsc-q-text">"Rohtang Pass is located in which Indian state?"</div><div class="bpsc-q-ans">Himachal Pradesh — connects Kullu with Lahaul-Spiti</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Northern Plains</div><div class="bpsc-q-text">"Khadar and Bhangar are types of?"</div><div class="bpsc-q-ans">Alluvial soils of the Northern Plains — Khadar (newer, fertile); Bhangar (older, less fertile with kankar)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Plateau</div><div class="bpsc-q-text">"The oldest mountain range in India is?"</div><div class="bpsc-q-ans">Aravalli Range — Pre-Cambrian; highest peak Guru Shikhar (1,722 m) on Mt. Abu</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Plateau</div><div class="bpsc-q-text">"Deccan Trap is famous for which type of soil?"</div><div class="bpsc-q-ans">Black cotton soil (Regur) — derived from volcanic basalt</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Ghats</div><div class="bpsc-q-text">"Where do Western and Eastern Ghats meet?"</div><div class="bpsc-q-ans">Nilgiri Hills (Tamil Nadu-Karnataka-Kerala junction)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Ghats</div><div class="bpsc-q-text">"Western Ghats are also known as?"</div><div class="bpsc-q-ans">Sahyadri</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Coast</div><div class="bpsc-q-text">"Coromandel coast receives heavy rainfall in which season?"</div><div class="bpsc-q-ans">October-November — from retreating Northeast monsoon</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Coast</div><div class="bpsc-q-text">"Konkan Coast lies between?"</div><div class="bpsc-q-ans">Mumbai and Goa (Maharashtra-Goa coast)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Islands</div><div class="bpsc-q-text">"India's only active volcano is on which island?"</div><div class="bpsc-q-ans">Barren Island (Andaman); last erupted 2017</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Islands</div><div class="bpsc-q-text">"Indira Point — southernmost tip of India — is located on which island?"</div><div class="bpsc-q-ans">Great Nicobar (submerged after 2004 tsunami)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Islands</div><div class="bpsc-q-text">"Lakshadweep islands are formed by what process?"</div><div class="bpsc-q-ans">Coral atolls and reefs (coral origin)</div></div>
+
+<div class="bpsc-q"><div class="bpsc-q-label">Desert</div><div class="bpsc-q-text">"Luni river finally disappears in?"</div><div class="bpsc-q-ans">Marshy land of Rann of Kutch (Gujarat)</div></div>
+
+<div class="divider"></div>
+
+<div class="exam-box">
+<div class="exam-box-label">⭐ Part 1 Complete · What's in Parts 2 &amp; 3</div>
+<ul>
+<li><strong>Part 2:</strong> Drainage System — Himalayan vs Peninsular rivers, Ganga + tributaries, Brahmaputra, Indus, Peninsular rivers (Godavari, Krishna, Kaveri, Narmada, Tapi), Lakes, Waterfalls, Glaciers; Climate &amp; Monsoon — mechanism, branches, retreat, regional rainfall patterns, local winds (Loo, Mango Shower, Kalbaisakhi), Köppen India</li>
+<li><strong>Part 3:</strong> Economic Geography — Soils, Vegetation, Agriculture (kharif/rabi/zaid), Major crops, Minerals (with belts), Industries (Iron-Steel, Cotton, Sugar, IT), Power resources, Transport (Railways, NHs, Waterways, Airports), Wildlife &amp; Biosphere Reserves, Demographics</li>
+</ul>
+</div>
+
+<div class="pull-quote">
+<p>"With Bihar (50 marks) + World (12 marks) + Indian Geography Part 1 (4-5 marks), you've already locked ~67 marks of geography. Parts 2 and 3 will add another 5-7 marks. By the end, ~75 marks of geography on lockdown — exceeding the prelims cutoff by itself."</p>
+</div>
+
+</section>
+</div>
+</main>
+
+<script>
+window.addEventListener('scroll',()=>{
+  const d=document.documentElement;
+  document.getElementById('pf').style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%';
+});
+const sections=document.querySelectorAll('section[id]');
+const navItems=document.querySelectorAll('.nav-item');
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navItems.forEach(n=>{
+        n.classList.remove('active');
+        if(n.getAttribute('href')==='#'+e.target.id) n.classList.add('active');
+      });
+    }
+  });
+},{rootMargin:'-20% 0px -70% 0px'});
+sections.forEach(s=>obs.observe(s));
+navItems.forEach(item=>{
+  item.addEventListener('click',(e)=>{
+    e.preventDefault();
+    document.getElementById(item.getAttribute('href').replace('#',''))?.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+</script>
+</body>
+</html>
 
