@@ -153,6 +153,80 @@
 
       ]
     },
+     {
+          "title": "Core-1 [India]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/india/world/core-1.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/india/world/tests/core-1-test.html"
+            }
+
+          ]
+        },
+
+        {
+          "title": "Core-2 [India]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/india/core-2.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/india/tests/core-2-test.html"
+            }
+
+          ]
+        },
+
+        {
+          "title": "Core-3 [India]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/india/core-3.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/india/tests/core-3-test.html"
+            }
+
+          ]
+        },
+
+        {
+          "title": "Core-4 [India]",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/geography/india/core-4.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/geography/india/tests/core-4-test.html"
+            }
+
+          ]
+        }
+
+      ]
+    },
 
     {
       "name": "History",
