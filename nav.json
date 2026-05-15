@@ -149,23 +149,21 @@
             }
 
           ]
-        }
+        },
 
-      ]
-    },
-     {
+        {
           "title": "Core-1 [India]",
 
           "items": [
 
             {
               "name": "📘 Core",
-              "file": "pages/india/world/core-1.html"
+              "file": "pages/geography/india/core-1.html"
             },
 
             {
               "name": "📝 Test",
-              "file": "pages/india/world/tests/core-1-test.html"
+              "file": "pages/geography/india/tests/core-1-test.html"
             }
 
           ]
@@ -226,6 +224,7 @@
         }
 
       ]
+    },
 
     {
       "name": "History",
