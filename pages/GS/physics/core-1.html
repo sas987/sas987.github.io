@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BPSC Prelims 2026 — General Science · Part I — Physics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a1019;
+  --bg-card: #0e1623;
+  --bg-elevated: #131d2c;
+  --border: #1b2738;
+  --border-strong: #243348;
+  --green: #8acb6b;
+  --green-soft: #a8d98f;
+  --green-dim: #5f8e48;
+  --text: #e8ecf0;
+  --text-muted: #8a96a8;
+  --text-dim: #5a6678;
+  --warn: #d9a04a;
+  --red: #d96a6a;
+  --shadow: rgba(0,0,0,0.4);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  overflow-x: hidden;
+  font-weight: 300;
+}
+
+/* ===== LAYOUT ===== */
+.app {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  background: var(--bg);
+  border-right: 1px solid var(--border);
+  padding: 36px 28px 60px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+.sidebar::-webkit-scrollbar { width: 6px; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
+
+.sb-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--green);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.sb-title {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: 8px;
+  font-variation-settings: "opsz" 144;
+}
+
+.sb-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+
+.sb-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0 0 24px;
+}
+
+.sb-group { margin-bottom: 24px; }
+
+.sb-group-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.sb-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 0;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 13.5px;
+  transition: color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+
+.sb-item:hover {
+  color: var(--green);
+  transform: translateX(2px);
+}
+
+.sb-item .num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+  min-width: 16px;
+}
+
+.sb-item:hover .num { color: var(--green-dim); }
+
+/* ===== MAIN ===== */
+.main {
+  padding: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  padding: 60px 80px 60px;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.hero-watermark {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  font-family: 'Fraunces', serif;
+  font-size: 240px;
+  font-weight: 700;
+  color: var(--green);
+  opacity: 0.04;
+  letter-spacing: -0.05em;
+  pointer-events: none;
+  line-height: 1;
+  user-select: none;
+  font-variation-settings: "opsz" 144;
+}
+
+.hero-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--green);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.hero-eyebrow::after {
+  content: '';
+  flex: 1;
+  max-width: 120px;
+  height: 1px;
+  background: var(--green-dim);
+}
+
+.hero-title {
+  font-family: 'Fraunces', serif;
+  font-size: 78px;
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  margin-bottom: 24px;
+  font-variation-settings: "opsz" 144;
+}
+
+.hero-title .italic-green {
+  font-style: italic;
+  color: var(--green);
+  font-weight: 500;
+}
+
+.hero-tags {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-bottom: 48px;
+  font-variation-settings: "opsz" 144;
+}
+
+.hero-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0 0 36px;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  max-width: 780px;
+}
+
+.stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 56px;
+  font-weight: 600;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+  font-variation-settings: "opsz" 144;
+}
+
+.stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* ===== CONTENT BODY ===== */
+.body-wrap {
+  padding: 60px 80px 80px;
+  max-width: 1100px;
+}
+
+/* ===== CALLOUTS ===== */
+.callout {
+  border-left: 3px solid var(--green);
+  background: rgba(138, 203, 107, 0.04);
+  padding: 22px 28px;
+  margin: 28px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.callout-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--green);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.callout-title::before { content: '★★'; letter-spacing: 0.1em; }
+
+.callout-body {
+  font-size: 14.5px;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.callout-body strong { color: var(--green-soft); font-weight: 600; }
+
+.quote-block {
+  border-left: 3px solid var(--green);
+  padding: 22px 28px;
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--text);
+  line-height: 1.55;
+  margin: 28px 0;
+  font-weight: 400;
+  font-variation-settings: "opsz" 144;
+  background: rgba(138, 203, 107, 0.03);
+  border-radius: 0 6px 6px 0;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  margin-top: 80px;
+  scroll-margin-top: 20px;
+}
+
+.section-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--green);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+}
+
+.section-eyebrow::before {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--green);
+}
+
+.section-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-dim);
+  letter-spacing: 0.16em;
+  margin-right: 14px;
+}
+
+.section-title {
+  font-family: 'Fraunces', serif;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+  color: var(--text);
+  font-variation-settings: "opsz" 144;
+}
+
+.section-title .italic-green {
+  font-style: italic;
+  color: var(--green);
+}
+
+.section-sub {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-variation-settings: "opsz" 144;
+}
+
+/* ===== CONCEPT BLOCKS ===== */
+.concept {
+  margin: 32px 0;
+}
+
+.concept-head {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  font-variation-settings: "opsz" 144;
+}
+
+.concept-head .marker {
+  color: var(--green);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.concept-body {
+  font-size: 14.5px;
+  color: var(--text);
+  line-height: 1.75;
+}
+
+.concept-body p { margin-bottom: 12px; }
+.concept-body strong { color: var(--green-soft); font-weight: 600; }
+.concept-body em { color: var(--text-muted); font-style: italic; }
+
+/* ===== FACT GRID ===== */
+.fact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--border);
+  margin: 20px 0;
+}
+
+.fact {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  padding-right: 24px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.fact:nth-child(odd) { padding-right: 24px; }
+.fact:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--border); }
+
+.fact-label {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.fact-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: var(--green);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.fact-val.long { white-space: normal; text-align: right; max-width: 200px; }
+
+/* ===== TABLE ===== */
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 13.5px;
+}
+
+.tbl th {
+  text-align: left;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 12px 16px 12px 0;
+  border-bottom: 1px solid var(--border-strong);
+  font-weight: 500;
+}
+
+.tbl td {
+  padding: 14px 16px 14px 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  color: var(--text);
+}
+
+.tbl td:first-child {
+  color: var(--green);
+  font-weight: 500;
+  font-family: 'Fraunces', serif;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.tbl tr:hover td { background: rgba(138, 203, 107, 0.02); }
+
+/* ===== TRAP BOX ===== */
+.trap {
+  background: rgba(217, 106, 106, 0.04);
+  border-left: 3px solid var(--red);
+  padding: 20px 26px;
+  margin: 24px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.trap-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--red);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.trap-title::before { content: '⚠ '; }
+
+.trap-body { font-size: 14px; color: var(--text); line-height: 1.7; }
+.trap-body strong { color: var(--warn); }
+
+/* ===== MNEMONIC BOX ===== */
+.mnemonic {
+  background: rgba(217, 160, 74, 0.05);
+  border-left: 3px solid var(--warn);
+  padding: 18px 24px;
+  margin: 20px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.mnemonic-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--warn);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.mnemonic-title::before { content: '◈ '; }
+
+.mnemonic-body {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.6;
+  font-variation-settings: "opsz" 144;
+}
+
+/* ===== Q-PROBE ===== */
+.qprobe {
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  padding: 20px 26px;
+  margin: 24px 0;
+  border-radius: 6px;
+}
+
+.qprobe-q {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 15.5px;
+  color: var(--text);
+  margin-bottom: 10px;
+  font-variation-settings: "opsz" 144;
+}
+
+.qprobe-q::before { content: 'Q. '; color: var(--green); font-style: normal; font-weight: 600; }
+
+.qprobe-a {
+  font-size: 14px;
+  color: var(--text-muted);
+  padding-left: 24px;
+  border-left: 2px solid var(--green-dim);
+}
+
+.qprobe-a strong { color: var(--green); font-weight: 500; }
+
+/* ===== KV LIST ===== */
+.kv {
+  list-style: none;
+  margin: 12px 0;
+}
+
+.kv li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+}
+
+.kv li:last-child { border-bottom: none; }
+
+.kv .k {
+  color: var(--green);
+  font-family: 'Fraunces', serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.kv .v { color: var(--text); }
+.kv .v strong { color: var(--green-soft); }
+
+/* ===== INLINE FORMULA ===== */
+.formula {
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--bg-elevated);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: var(--green-soft);
+  border: 1px solid var(--border);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 60px 80px;
+  background: var(--bg);
+}
+
+.footer-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--green);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.footer-title {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 16px;
+  line-height: 1.15;
+  font-variation-settings: "opsz" 144;
+}
+
+.footer-title .italic-green { font-style: italic; color: var(--green); }
+
+.footer-text {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 760px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .app { grid-template-columns: 1fr; }
+  .sidebar { position: relative; height: auto; }
+  .hero { padding: 40px 28px; }
+  .hero-title { font-size: 52px; }
+  .hero-watermark { font-size: 140px; }
+  .body-wrap { padding: 40px 28px; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .section-title { font-size: 32px; }
+  .fact-grid { grid-template-columns: 1fr; }
+  .fact:nth-child(even) { padding-left: 0; border-left: none; }
+  .footer { padding: 40px 28px; }
+  .kv li { grid-template-columns: 1fr; gap: 4px; }
+}
+
+/* === SUBTLE INTRO ANIMATION === */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero > * { animation: fadeUp 0.8s ease-out backwards; }
+.hero-eyebrow { animation-delay: 0.05s; }
+.hero-title { animation-delay: 0.15s; }
+.hero-tags { animation-delay: 0.25s; }
+.hero-divider { animation-delay: 0.35s; }
+.hero-stats { animation-delay: 0.45s; }
+
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- =========== SIDEBAR =========== -->
+<aside class="sidebar">
+  <div class="sb-eyebrow">Part I — Physics</div>
+  <div class="sb-title">Physics Foundation</div>
+  <div class="sb-sub">Mechanics · Heat · Light · Sound · Electricity · Magnetism · Modern</div>
+
+  <div class="sb-divider"></div>
+
+  <div class="sb-group">
+    <div class="sb-group-title">Mechanics &amp; Motion</div>
+    <a class="sb-item" href="#s01"><span class="num">01</span>Units &amp; Measurements</a>
+    <a class="sb-item" href="#s02"><span class="num">02</span>Motion &amp; Newton's Laws</a>
+    <a class="sb-item" href="#s03"><span class="num">03</span>Work, Energy &amp; Power</a>
+    <a class="sb-item" href="#s04"><span class="num">04</span>Gravitation &amp; Satellites</a>
+    <a class="sb-item" href="#s05"><span class="num">05</span>Pressure, Buoyancy &amp; Fluids</a>
+  </div>
+
+  <div class="sb-group">
+    <div class="sb-group-title">Heat &amp; Thermodynamics</div>
+    <a class="sb-item" href="#s06"><span class="num">06</span>Heat &amp; Temperature</a>
+    <a class="sb-item" href="#s07"><span class="num">07</span>Modes of Heat Transfer</a>
+  </div>
+
+  <div class="sb-group">
+    <div class="sb-group-title">Waves &amp; Optics</div>
+    <a class="sb-item" href="#s08"><span class="num">08</span>Sound &amp; Acoustics</a>
+    <a class="sb-item" href="#s09"><span class="num">09</span>Light: Reflection &amp; Mirrors</a>
+    <a class="sb-item" href="#s10"><span class="num">10</span>Refraction, Lenses &amp; Eye</a>
+    <a class="sb-item" href="#s11"><span class="num">11</span>Atmospheric Optics</a>
+  </div>
+
+  <div class="sb-group">
+    <div class="sb-group-title">Electricity &amp; Magnetism</div>
+    <a class="sb-item" href="#s12"><span class="num">12</span>Current Electricity</a>
+    <a class="sb-item" href="#s13"><span class="num">13</span>Domestic Electricity</a>
+    <a class="sb-item" href="#s14"><span class="num">14</span>Magnetism &amp; EMI</a>
+  </div>
+
+  <div class="sb-group">
+    <div class="sb-group-title">Modern Physics</div>
+    <a class="sb-item" href="#s15"><span class="num">15</span>Atom &amp; Nucleus</a>
+    <a class="sb-item" href="#s16"><span class="num">16</span>Radioactivity</a>
+    <a class="sb-item" href="#s17"><span class="num">17</span>Semiconductors &amp; Lasers</a>
+  </div>
+
+  <div class="sb-group">
+    <div class="sb-group-title">Exam Armory</div>
+    <a class="sb-item" href="#s18"><span class="num">18</span>Indian Physicists</a>
+    <a class="sb-item" href="#s19"><span class="num">19</span>BPSC Trap Patterns</a>
+    <a class="sb-item" href="#s20"><span class="num">20</span>Last-Mile Revision</a>
+  </div>
+</aside>
+
+<!-- =========== MAIN =========== -->
+<main class="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-watermark">PHYSICS</div>
+    <div class="hero-eyebrow">BPSC Prelims 2026 — Part I · Physics Foundation</div>
+    <h1 class="hero-title">Motion, Light, Heat<br><span class="italic-green">&amp; Electricity</span></h1>
+    <div class="hero-tags">Mechanics · Optics · Sound · Current · Magnetism · Modern · Trap Patterns</div>
+    <div class="hero-divider"></div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Physics Coverage</div>
+      </div>
+      <div>
+        <div class="stat-num">20</div>
+        <div class="stat-label">Core Sections</div>
+      </div>
+      <div>
+        <div class="stat-num">250+</div>
+        <div class="stat-label">Prelims Facts</div>
+      </div>
+      <div>
+        <div class="stat-num">3–5</div>
+        <div class="stat-label">Marks / Paper</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <div class="body-wrap">
+
+    <div class="callout">
+      <div class="callout-title">Why Part I Exists</div>
+      <div class="callout-body">
+        BPSC Prelims General Science typically carries <strong>12–15 questions</strong>, of which <strong>3–5 are pure Physics</strong>. The pattern is repetitive: <em>"Speed of light in vacuum?"</em>, <em>"Mirror used in vehicles?"</em>, <em>"Audible range of human ear?"</em>, <em>"Father of Indian nuclear program?"</em>. This part locks every Physics fact ever asked in BPSC + Bihar/UPSC pre-cycles, organized so that no question — direct, twisted, or "match the following" — can blindside you. Your engineering background means concepts are not the bottleneck; <strong>recall under pressure</strong> is. This is built for that.
+      </div>
+    </div>
+
+    <div class="quote-block">
+      "Physics in BPSC is not tested for derivation — it is tested for the <strong style="color:var(--green); font-style:normal; font-weight:600;">one numeric, one inventor, one example</strong> that distinguishes the topic. Memorize the trio for every concept. That is the entire game."
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 01: UNITS -->
+    <!-- =========================== -->
+    <div class="section" id="s01">
+      <div class="section-eyebrow">Section 01 · Foundation</div>
+      <h2 class="section-title"><span class="section-num">01</span>Units &amp; <span class="italic-green">Measurements</span></h2>
+      <div class="section-sub">The 7 fundamentals you cannot afford to confuse.</div>
+
+      <div class="concept">
+        <div class="concept-head">SI Base Units <span class="marker">— The Sacred Seven</span></div>
+        <div class="concept-body">
+          The SI system defines 7 base units. Every other unit is <strong>derived</strong>. BPSC asks "Which is NOT a fundamental unit?" — the trick option is usually <em>Newton</em> or <em>Coulomb</em> (both derived).
+        </div>
+        <table class="tbl">
+          <thead><tr><th>Quantity</th><th>Unit</th><th>Symbol</th></tr></thead>
+          <tbody>
+            <tr><td>Length</td><td>Metre</td><td>m</td></tr>
+            <tr><td>Mass</td><td>Kilogram</td><td>kg</td></tr>
+            <tr><td>Time</td><td>Second</td><td>s</td></tr>
+            <tr><td>Electric Current</td><td>Ampere</td><td>A</td></tr>
+            <tr><td>Temperature</td><td>Kelvin</td><td>K</td></tr>
+            <tr><td>Amount of Substance</td><td>Mole</td><td>mol</td></tr>
+            <tr><td>Luminous Intensity</td><td>Candela</td><td>cd</td></tr>
+          </tbody>
+        </table>
+        <div class="mnemonic">
+          <div class="mnemonic-title">Mnemonic</div>
+          <div class="mnemonic-body">"My Kid Sister Always Knew Mom's Cooking" → Metre, Kg, Second, Ampere, Kelvin, Mole, Candela.</div>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Critical Derived Units &amp; Conversions</div>
+        <div class="fact-grid">
+          <div class="fact"><span class="fact-label">Force (Newton)</span><span class="fact-val">kg·m/s²</span></div>
+          <div class="fact"><span class="fact-label">Pressure (Pascal)</span><span class="fact-val">N/m²</span></div>
+          <div class="fact"><span class="fact-label">Energy (Joule)</span><span class="fact-val">N·m</span></div>
+          <div class="fact"><span class="fact-label">Power (Watt)</span><span class="fact-val">J/s</span></div>
+          <div class="fact"><span class="fact-label">Frequency (Hertz)</span><span class="fact-val">1/s</span></div>
+          <div class="fact"><span class="fact-label">Charge (Coulomb)</span><span class="fact-val">A·s</span></div>
+          <div class="fact"><span class="fact-label">1 Horsepower (HP)</span><span class="fact-val">746 W</span></div>
+          <div class="fact"><span class="fact-label">1 kWh (commercial unit)</span><span class="fact-val">3.6 × 10⁶ J</span></div>
+          <div class="fact"><span class="fact-label">1 Light Year</span><span class="fact-val long">9.46 × 10¹⁵ m</span></div>
+          <div class="fact"><span class="fact-label">1 Parsec</span><span class="fact-val">3.26 ly</span></div>
+          <div class="fact"><span class="fact-label">1 Angstrom (Å)</span><span class="fact-val">10⁻¹⁰ m</span></div>
+          <div class="fact"><span class="fact-label">1 Fermi</span><span class="fact-val">10⁻¹⁵ m</span></div>
+          <div class="fact"><span class="fact-label">1 Nautical Mile</span><span class="fact-val">1.852 km</span></div>
+          <div class="fact"><span class="fact-label">1 Calorie</span><span class="fact-val">4.184 J</span></div>
+        </div>
+      </div>
+
+      <div class="trap">
+        <div class="trap-title">Classic BPSC Trap</div>
+        <div class="trap-body">"Light year is a unit of <strong>distance</strong>, not time." Also: <strong>Parsec &gt; Light Year &gt; AU &gt; km</strong>. AU = average Earth-Sun distance ≈ 1.5 × 10¹¹ m.</div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 02: MOTION -->
+    <!-- =========================== -->
+    <div class="section" id="s02">
+      <div class="section-eyebrow">Section 02 · Mechanics</div>
+      <h2 class="section-title"><span class="section-num">02</span>Motion &amp; <span class="italic-green">Newton's Laws</span></h2>
+      <div class="section-sub">Three laws. Three real-world examples each. Done.</div>
+
+      <div class="concept">
+        <div class="concept-head">Newton's First Law <span class="marker">— Law of Inertia</span></div>
+        <div class="concept-body">
+          A body continues in its state of rest or uniform motion unless acted upon by an external force.
+          <ul class="kv">
+            <li><span class="k">Example 1</span><span class="v">Passenger jerks forward when bus stops suddenly (inertia of motion).</span></li>
+            <li><span class="k">Example 2</span><span class="v">Passenger jerks backward when bus starts (inertia of rest).</span></li>
+            <li><span class="k">Example 3</span><span class="v">Dust falls off a carpet when beaten (carpet moves, dust at rest).</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Newton's Second Law <span class="marker">— F = ma</span></div>
+        <div class="concept-body">
+          Rate of change of momentum is proportional to applied force. <span class="formula">F = dp/dt = ma</span>
+          <ul class="kv">
+            <li><span class="k">Momentum (p)</span><span class="v">p = mv · vector quantity · SI: kg·m/s</span></li>
+            <li><span class="k">Impulse</span><span class="v">F × t = change in momentum (catching ball, airbags work on this)</span></li>
+            <li><span class="k">Cricketer example</span><span class="v">Pulls hands back while catching → increases time → decreases force</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Newton's Third Law <span class="marker">— Action-Reaction</span></div>
+        <div class="concept-body">
+          To every action there is an equal and opposite reaction. Act on <strong>different bodies</strong>.
+          <ul class="kv">
+            <li><span class="k">Rocket propulsion</span><span class="v">Gases pushed down → rocket pushed up</span></li>
+            <li><span class="k">Recoil of gun</span><span class="v">Bullet forward → gun backward (momentum conservation)</span></li>
+            <li><span class="k">Walking</span><span class="v">Foot pushes ground backward → ground pushes you forward</span></li>
+            <li><span class="k">Boat &amp; jumping man</span><span class="v">Man jumps forward → boat moves backward</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Circular Motion <span class="marker">— Centripetal vs Centrifugal</span></div>
+        <div class="concept-body">
+          <strong>Centripetal force</strong> = real, acts toward center, <span class="formula">F = mv²/r</span>. Without it, body flies off tangentially.<br>
+          <strong>Centrifugal force</strong> = <em>pseudo (fictitious) force</em>, felt only in rotating frame, acts outward.
+          <ul class="kv">
+            <li><span class="k">Cream separator</span><span class="v">Uses centrifugal effect</span></li>
+            <li><span class="k">Mud flies off cycle tyre</span><span class="v">Tangential, due to inertia (not centrifugal!)</span></li>
+            <li><span class="k">Banking of roads</span><span class="v">Provides centripetal force on curves</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="qprobe">
+        <div class="qprobe-q">A man jumps out of a moving train and falls. Why?</div>
+        <div class="qprobe-a">His feet stop with the ground, but the <strong>upper body retains forward momentum</strong> (Newton's First Law) — he topples forward.</div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 03: WORK ENERGY POWER -->
+    <!-- =========================== -->
+    <div class="section" id="s03">
+      <div class="section-eyebrow">Section 03 · Mechanics</div>
+      <h2 class="section-title"><span class="section-num">03</span>Work, Energy &amp; <span class="italic-green">Power</span></h2>
+      <div class="section-sub">When is work zero? When does KE convert to PE? The asked questions.</div>
+
+      <div class="concept">
+        <div class="concept-head">Work — When Is It Zero?</div>
+        <div class="concept-body">
+          <span class="formula">W = F · d · cosθ</span>. Work is zero in three cases:
+          <ul class="kv">
+            <li><span class="k">F = 0</span><span class="v">No force applied</span></li>
+            <li><span class="k">d = 0</span><span class="v">Body doesn't move (pushing a wall — favorite trick option)</span></li>
+            <li><span class="k">θ = 90°</span><span class="v">Force ⊥ displacement (coolie carrying load on head walking horizontally; satellite in circular orbit)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Energy — Forms &amp; Conservation</div>
+        <div class="concept-body">
+          <strong>Law of Conservation of Energy:</strong> Energy can neither be created nor destroyed; only transformed.
+          <table class="tbl">
+            <thead><tr><th>Conversion</th><th>Device</th></tr></thead>
+            <tbody>
+              <tr><td>Electrical → Mechanical</td><td>Electric Motor</td></tr>
+              <tr><td>Mechanical → Electrical</td><td>Dynamo / Generator</td></tr>
+              <tr><td>Electrical → Heat</td><td>Heater, Iron, Geyser</td></tr>
+              <tr><td>Electrical → Light</td><td>Bulb, LED, Tubelight</td></tr>
+              <tr><td>Electrical → Sound</td><td>Loudspeaker, Microphone (reverse)</td></tr>
+              <tr><td>Chemical → Electrical</td><td>Battery, Cell</td></tr>
+              <tr><td>Chemical → Heat</td><td>Combustion, LPG burning</td></tr>
+              <tr><td>Solar → Electrical</td><td>Solar cell / Photovoltaic</td></tr>
+              <tr><td>Sound → Electrical</td><td>Microphone</td></tr>
+              <tr><td>Light → Electrical</td><td>Photocell</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Kinetic vs Potential Energy</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">KE</span><span class="v"><span class="formula">½mv²</span> · energy of motion · scalar · always positive</span></li>
+            <li><span class="k">PE (gravitational)</span><span class="v"><span class="formula">mgh</span> · stored energy due to position</span></li>
+            <li><span class="k">Free-falling body</span><span class="v">PE decreases, KE increases, total mechanical energy constant</span></li>
+            <li><span class="k">Pendulum</span><span class="v">At extreme: max PE, zero KE. At mean: max KE, zero PE.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="trap">
+        <div class="trap-title">Frequent Trap</div>
+        <div class="trap-body">Hydroelectric plants convert <strong>PE of water → KE → electrical</strong>, NOT directly PE to electrical. Two steps.</div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 04: GRAVITY -->
+    <!-- =========================== -->
+    <div class="section" id="s04">
+      <div class="section-eyebrow">Section 04 · Mechanics</div>
+      <h2 class="section-title"><span class="section-num">04</span>Gravitation &amp; <span class="italic-green">Satellites</span></h2>
+      <div class="section-sub">Where is g zero? Why doesn't a satellite fall? Pure prelims fodder.</div>
+
+      <div class="concept">
+        <div class="concept-head">Acceleration Due to Gravity (g)</div>
+        <div class="concept-body">
+          Average <span class="formula">g = 9.8 m/s²</span> on Earth's surface. But not constant:
+          <ul class="kv">
+            <li><span class="k">At Poles</span><span class="v"><strong>Maximum</strong> (≈9.83 m/s²) — Earth flattened at poles, smaller radius</span></li>
+            <li><span class="k">At Equator</span><span class="v"><strong>Minimum</strong> (≈9.78 m/s²) — bulge + rotation</span></li>
+            <li><span class="k">With Altitude (height)</span><span class="v"><strong>Decreases</strong> (inverse square of distance from center)</span></li>
+            <li><span class="k">With Depth</span><span class="v"><strong>Decreases linearly</strong></span></li>
+            <li><span class="k">At Earth's Center</span><span class="v"><strong>g = 0</strong> (mass pulls equally in all directions)</span></li>
+            <li><span class="k">Weight on Moon</span><span class="v">1/6th of weight on Earth (g_moon ≈ 1.62 m/s²)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Escape Velocity</div>
+        <div class="concept-body">
+          Minimum velocity to escape Earth's gravity permanently.
+          <ul class="kv">
+            <li><span class="k">Earth's escape velocity</span><span class="v"><strong>11.2 km/s</strong> (≈40,320 km/h)</span></li>
+            <li><span class="k">Moon's escape velocity</span><span class="v">≈2.4 km/s</span></li>
+            <li><span class="k">Jupiter's escape velocity</span><span class="v">≈60 km/s (largest in solar system)</span></li>
+            <li><span class="k">Independent of</span><span class="v">Mass of body, angle of projection</span></li>
+            <li><span class="k">Depends on</span><span class="v">Mass &amp; radius of planet</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Satellites</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Geostationary satellite</span><span class="v"><strong>36,000 km</strong> altitude · period 24 hrs · equatorial plane · appears stationary · used for communication (INSAT, GSAT)</span></li>
+            <li><span class="k">Polar (Sun-synchronous) sat</span><span class="v">800–900 km altitude · passes over poles · used for remote sensing (IRS, Cartosat)</span></li>
+            <li><span class="k">Astronaut weightlessness</span><span class="v"><em>NOT because there's no gravity</em> — because they are in <strong>free fall</strong> with the spacecraft</span></li>
+            <li><span class="k">First satellite</span><span class="v">Sputnik-1 (USSR, 1957)</span></li>
+            <li><span class="k">India's first satellite</span><span class="v">Aryabhata (1975, launched by USSR)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="qprobe">
+        <div class="qprobe-q">Why is escape velocity independent of body's mass?</div>
+        <div class="qprobe-a">In the derivation, mass of the body cancels out. <strong>v_esc = √(2GM/R)</strong> — depends only on the planet's M and R.</div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 05: PRESSURE -->
+    <!-- =========================== -->
+    <div class="section" id="s05">
+      <div class="section-eyebrow">Section 05 · Mechanics</div>
+      <h2 class="section-title"><span class="section-num">05</span>Pressure, Buoyancy &amp; <span class="italic-green">Fluids</span></h2>
+      <div class="section-sub">Why ice floats. Why pressure cooker cooks faster. Why iceberg sinks 8/9.</div>
+
+      <div class="concept">
+        <div class="concept-head">Pressure Basics</div>
+        <div class="concept-body">
+          <span class="formula">P = F/A</span>. SI unit: Pascal (N/m²).
+          <ul class="kv">
+            <li><span class="k">1 atm (atmosphere)</span><span class="v">1.013 × 10⁵ Pa = 760 mm Hg = 76 cm Hg</span></li>
+            <li><span class="k">Measured by</span><span class="v"><strong>Barometer</strong> (atmospheric); <strong>Manometer</strong> (gas/liquid); <strong>Sphygmomanometer</strong> (blood)</span></li>
+            <li><span class="k">Hg used in barometer</span><span class="v">High density (so column is short ~76cm); doesn't wet glass</span></li>
+            <li><span class="k">Sharp knife cuts better</span><span class="v">Small area → high pressure</span></li>
+            <li><span class="k">Camel's wide feet</span><span class="v">Large area → low pressure → won't sink in sand</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Pressure Cooker &amp; Altitude</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Pressure cooker</span><span class="v">Increased pressure → water boils at <strong>higher temp</strong> (~120°C) → food cooks faster</span></li>
+            <li><span class="k">At high altitude (hills)</span><span class="v">Atmospheric pressure low → water boils at <strong>lower temp</strong> (~90°C at Shimla) → food half-cooked</span></li>
+            <li><span class="k">Why airplane sealed</span><span class="v">Low pressure at altitude → cabin pressurized for breathing</span></li>
+            <li><span class="k">Nose bleeds at altitude</span><span class="v">Outside pressure low → internal blood pressure higher</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Archimedes' Principle <span class="marker">— The Floater</span></div>
+        <div class="concept-body">
+          A body immersed in fluid experiences upthrust = <strong>weight of fluid displaced</strong>.
+          <ul class="kv">
+            <li><span class="k">Floating condition</span><span class="v">Density of body ≤ Density of liquid</span></li>
+            <li><span class="k">Ice floats on water</span><span class="v">ρ_ice = 0.92 g/cc &lt; ρ_water = 1.0 g/cc</span></li>
+            <li><span class="k">Iceberg</span><span class="v"><strong>1/10 above water, 9/10 below</strong></span></li>
+            <li><span class="k">Why ice melting doesn't raise water level</span><span class="v">Submerged volume = volume after melting</span></li>
+            <li><span class="k">Ship floats despite iron</span><span class="v">Hollow design → average density &lt; water</span></li>
+            <li><span class="k">Hydrometer</span><span class="v">Measures density of liquids using Archimedes</span></li>
+            <li><span class="k">Lactometer</span><span class="v">Measures purity of milk (density-based)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Density Anomaly of Water</div>
+        <div class="concept-body">
+          Water has <strong>maximum density at 4°C</strong>. Below 4°C, it expands (anomalous).
+          <ul class="kv">
+            <li><span class="k">Why aquatic life survives in winter</span><span class="v">Surface freezes (less dense), water below 4°C stays liquid</span></li>
+            <li><span class="k">Pipes burst in winter</span><span class="v">Water expands on freezing</span></li>
+            <li><span class="k">Glass bottle of water cracks</span><span class="v">Same — ice has greater volume</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Surface Tension &amp; Capillarity</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Surface tension</span><span class="v">Minimizes surface area · why drops are spherical · why insects walk on water</span></li>
+            <li><span class="k">Detergents/soaps</span><span class="v"><strong>Reduce</strong> surface tension → better cleaning</span></li>
+            <li><span class="k">Capillarity</span><span class="v">Rise of liquid in narrow tubes · oil in lamp wick · ink rises in blotting paper · water in plants</span></li>
+            <li><span class="k">Mercury in glass tube</span><span class="v"><strong>Falls</strong> (depresses) — cohesion &gt; adhesion</span></li>
+            <li><span class="k">Water in glass tube</span><span class="v"><strong>Rises</strong> — adhesion &gt; cohesion</span></li>
+            <li><span class="k">Viscosity</span><span class="v">Internal friction in fluid · decreases with temperature (for liquids)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="trap">
+        <div class="trap-title">High-Frequency Trap</div>
+        <div class="trap-body">"A balloon filled with hydrogen rises because..." → Hydrogen is <strong>less dense</strong> than air → upthrust &gt; weight. NOT "lighter" — density is the term.</div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 06: HEAT -->
+    <!-- =========================== -->
+    <div class="section" id="s06">
+      <div class="section-eyebrow">Section 06 · Thermodynamics</div>
+      <h2 class="section-title"><span class="section-num">06</span>Heat &amp; <span class="italic-green">Temperature</span></h2>
+      <div class="section-sub">Three scales, latent heat traps, specific heat of water.</div>
+
+      <div class="concept">
+        <div class="concept-head">Temperature Scales</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Scale</th><th>Freeze</th><th>Boil</th><th>Formula</th></tr></thead>
+            <tbody>
+              <tr><td>Celsius (°C)</td><td>0°</td><td>100°</td><td>Base reference</td></tr>
+              <tr><td>Fahrenheit (°F)</td><td>32°</td><td>212°</td><td>F = (9/5)C + 32</td></tr>
+              <tr><td>Kelvin (K)</td><td>273.15</td><td>373.15</td><td>K = C + 273.15</td></tr>
+            </tbody>
+          </table>
+          <ul class="kv">
+            <li><span class="k">Same reading on °C &amp; °F</span><span class="v"><strong>−40°</strong> (memorize)</span></li>
+            <li><span class="k">Absolute zero</span><span class="v"><strong>0 K = −273.15°C</strong> · theoretically lowest possible</span></li>
+            <li><span class="k">Normal body temperature</span><span class="v">37°C = 98.6°F = 310 K</span></li>
+            <li><span class="k">Doctor's clinical thermometer</span><span class="v">Range 35°C to 42°C (35°F is wrong option)</span></li>
+            <li><span class="k">Mercury thermometer range</span><span class="v">−39°C to 357°C</span></li>
+            <li><span class="k">Alcohol thermometer</span><span class="v">Used for very low temp (alcohol freezes at −115°C)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Specific Heat &amp; Latent Heat</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Specific heat (s)</span><span class="v">Heat required to raise 1 g of substance by 1°C</span></li>
+            <li><span class="k">Specific heat of water</span><span class="v"><strong>1 cal/g·°C = 4186 J/kg·K</strong> · <em>highest among common substances</em></span></li>
+            <li><span class="k">Why water used as coolant</span><span class="v">High specific heat → absorbs lots of heat with small temp rise (car radiator, nuclear reactor)</span></li>
+            <li><span class="k">Coastal climate moderate</span><span class="v">Sea's high specific heat → small temp variation</span></li>
+            <li><span class="k">Latent heat of fusion (ice→water)</span><span class="v"><strong>80 cal/g</strong> (or 334 J/g)</span></li>
+            <li><span class="k">Latent heat of vaporization (water→steam)</span><span class="v"><strong>540 cal/g</strong> (or 2260 J/g)</span></li>
+            <li><span class="k">Steam burn worse than boiling water burn</span><span class="v">Steam releases extra 540 cal/g on condensing</span></li>
+            <li><span class="k">Sweating cools body</span><span class="v">Evaporation absorbs latent heat from skin</span></li>
+            <li><span class="k">Earthen pot keeps water cool</span><span class="v">Evaporation through pores</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="qprobe">
+        <div class="qprobe-q">A patient has fever — which thermometer?</div>
+        <div class="qprobe-a"><strong>Clinical thermometer</strong> (range 35–42°C). Has a kink/constriction so mercury doesn't fall back when removed from mouth.</div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 07: HEAT TRANSFER -->
+    <!-- =========================== -->
+    <div class="section" id="s07">
+      <div class="section-eyebrow">Section 07 · Thermodynamics</div>
+      <h2 class="section-title"><span class="section-num">07</span>Modes of <span class="italic-green">Heat Transfer</span></h2>
+      <div class="section-sub">Conduction, Convection, Radiation — and one absolutely-asked example each.</div>
+
+      <div class="concept">
+        <div class="concept-head">Conduction · Convection · Radiation</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Mode</th><th>Medium</th><th>Mechanism</th><th>Key Example</th></tr></thead>
+            <tbody>
+              <tr><td>Conduction</td><td>Solid (needs matter)</td><td>Vibration of molecules; no bulk movement</td><td>Iron rod heated at one end · cooking utensils</td></tr>
+              <tr><td>Convection</td><td>Liquid/Gas</td><td>Bulk movement of particles</td><td>Boiling water · sea breeze · winds · heating room by heater</td></tr>
+              <tr><td>Radiation</td><td>No medium needed</td><td>EM waves (infrared)</td><td>Sun → Earth · sitting near fire · thermos flask</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Applications &amp; Twists</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Best conductor of heat</span><span class="v"><strong>Silver</strong> &gt; Copper &gt; Gold &gt; Aluminium</span></li>
+            <li><span class="k">Worst conductor (best insulator)</span><span class="v"><strong>Vacuum</strong>; among solids — wood, asbestos; among gases — air</span></li>
+            <li><span class="k">Why woolen clothes warm</span><span class="v">Trap air → poor conductor → reduces heat loss from body</span></li>
+            <li><span class="k">Why two thin blankets warmer than one thick</span><span class="v">Extra air layer between blankets</span></li>
+            <li><span class="k">Thermos flask</span><span class="v"><strong>Double wall + vacuum</strong> stops conduction/convection · <strong>silvered</strong> walls stop radiation</span></li>
+            <li><span class="k">Black body</span><span class="v">Best absorber AND best emitter of radiation</span></li>
+            <li><span class="k">White/shiny surface</span><span class="v">Poor absorber, poor emitter, good reflector — white clothes in summer</span></li>
+            <li><span class="k">Newton's law of cooling</span><span class="v">Rate of cooling ∝ temp difference with surroundings</span></li>
+            <li><span class="k">Sea breeze (day)</span><span class="v">Land heats faster → air rises → breeze flows <em>sea→land</em></span></li>
+            <li><span class="k">Land breeze (night)</span><span class="v">Land cools faster → air over sea rises → breeze <em>land→sea</em></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="trap">
+        <div class="trap-title">Hot Tea Trap</div>
+        <div class="trap-body">"Why hot tea cools faster in saucer than cup?" → <strong>Larger surface area</strong> in saucer → faster radiation + evaporation. NOT "thinner walls".</div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 08: SOUND -->
+    <!-- =========================== -->
+    <div class="section" id="s08">
+      <div class="section-eyebrow">Section 08 · Waves</div>
+      <h2 class="section-title"><span class="section-num">08</span>Sound &amp; <span class="italic-green">Acoustics</span></h2>
+      <div class="section-sub">Audible range, SONAR, why sound is fastest in solids.</div>
+
+      <div class="concept">
+        <div class="concept-head">Sound — Fundamentals</div>
+        <div class="concept-body">
+          Sound is a <strong>mechanical, longitudinal wave</strong>. It needs a medium — cannot travel through vacuum.
+          <ul class="kv">
+            <li><span class="k">Speed in air (20°C)</span><span class="v"><strong>343 m/s</strong></span></li>
+            <li><span class="k">Speed in water</span><span class="v">≈1500 m/s</span></li>
+            <li><span class="k">Speed in steel/iron</span><span class="v">≈5000 m/s · <strong>fastest in solids</strong></span></li>
+            <li><span class="k">General rule</span><span class="v">Solid &gt; Liquid &gt; Gas (denser medium, faster)</span></li>
+            <li><span class="k">Speed depends on</span><span class="v"><strong>Increases</strong> with temperature, humidity · independent of pressure</span></li>
+            <li><span class="k">Speed of light vs sound</span><span class="v">Light: 3 × 10⁸ m/s · Sound: 343 m/s · <strong>~9 lakh times faster</strong></span></li>
+            <li><span class="k">Why lightning seen before thunder</span><span class="v">Light reaches first (much faster than sound)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Audible Range &amp; Ultra/Infra Sound</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Human audible range</span><span class="v"><strong>20 Hz to 20,000 Hz (20 kHz)</strong></span></li>
+            <li><span class="k">Infrasound (&lt;20 Hz)</span><span class="v">Elephants, whales, rhinos · detected before earthquakes</span></li>
+            <li><span class="k">Ultrasound (&gt;20,000 Hz)</span><span class="v">Bats, dolphins, dogs · medical (sonography), industrial (defect testing), SONAR</span></li>
+            <li><span class="k">Pitch / Shrillness</span><span class="v">Depends on <strong>frequency</strong> · female voice higher pitch</span></li>
+            <li><span class="k">Loudness</span><span class="v">Depends on <strong>amplitude</strong> · measured in <strong>decibel (dB)</strong></span></li>
+            <li><span class="k">Quality / Timbre</span><span class="v">Distinguishes two sources at same pitch &amp; loudness</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Echo, Reverberation, SONAR</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Echo</span><span class="v">Reflected sound · requires <strong>min distance 17 m</strong> (time gap ≥ 0.1 s)</span></li>
+            <li><span class="k">Reverberation</span><span class="v">Multiple reflections (in halls)</span></li>
+            <li><span class="k">SONAR</span><span class="v"><strong>Sound Navigation And Ranging</strong> · uses ultrasound · measures sea depth, submarines</span></li>
+            <li><span class="k">RADAR</span><span class="v">Radio Detection &amp; Ranging · uses radio waves (NOT sound)</span></li>
+            <li><span class="k">Doppler effect</span><span class="v">Apparent change in frequency due to relative motion · siren of approaching ambulance sounds higher pitch</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="trap">
+        <div class="trap-title">The Vacuum Trap</div>
+        <div class="trap-body">"Sound cannot travel through?" → <strong>Vacuum</strong> (not "air"). Bell jar experiment: bell stops being audible as air is pumped out.</div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 09: REFLECTION -->
+    <!-- =========================== -->
+    <div class="section" id="s09">
+      <div class="section-eyebrow">Section 09 · Optics</div>
+      <h2 class="section-title"><span class="section-num">09</span>Light: Reflection &amp; <span class="italic-green">Mirrors</span></h2>
+      <div class="section-sub">Plane, concave, convex — what is used WHERE.</div>
+
+      <div class="concept">
+        <div class="concept-head">Speed &amp; Spectrum of Light</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Speed of light in vacuum</span><span class="v"><strong>3 × 10⁸ m/s</strong> (exactly 299,792,458 m/s)</span></li>
+            <li><span class="k">Maximum speed in</span><span class="v">Vacuum (slows in denser medium)</span></li>
+            <li><span class="k">Visible spectrum</span><span class="v"><strong>VIBGYOR</strong> · 400 nm (violet) to 700 nm (red)</span></li>
+            <li><span class="k">Shortest wavelength</span><span class="v">Violet (highest frequency)</span></li>
+            <li><span class="k">Longest wavelength</span><span class="v">Red (lowest frequency)</span></li>
+            <li><span class="k">Beyond violet</span><span class="v"><strong>UV</strong> → X-rays → Gamma rays</span></li>
+            <li><span class="k">Beyond red</span><span class="v"><strong>Infrared</strong> → Microwaves → Radio waves</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Reflection &amp; Mirrors</div>
+        <div class="concept-body">
+          <strong>Laws:</strong> Angle of incidence = Angle of reflection. Both lie in same plane.
+          <table class="tbl">
+            <thead><tr><th>Mirror</th><th>Image</th><th>Use</th></tr></thead>
+            <tbody>
+              <tr><td>Plane</td><td>Virtual, erect, same size, laterally inverted</td><td>Common mirror, periscope</td></tr>
+              <tr><td>Concave (converging)</td><td>Real or virtual (depends on object position)</td><td><strong>Shaving, makeup, dentist, headlight of car, solar furnace, torch</strong></td></tr>
+              <tr><td>Convex (diverging)</td><td>Always virtual, erect, diminished</td><td><strong>Rear-view of vehicles</strong> (wider field of view), street light reflectors, security mirrors in shops</td></tr>
+            </tbody>
+          </table>
+          <ul class="kv">
+            <li><span class="k">Headlight of car uses</span><span class="v">Concave (parabolic) — sends parallel beam forward</span></li>
+            <li><span class="k">Rear-view of car uses</span><span class="v">Convex — wider field of view (objects appear smaller but cover more)</span></li>
+            <li><span class="k">Periscope uses</span><span class="v">Two plane mirrors at 45° (in submarines)</span></li>
+            <li><span class="k">Kaleidoscope uses</span><span class="v">Three plane mirrors at 60°</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="trap">
+        <div class="trap-title">The Mirror Mix-Up</div>
+        <div class="trap-body">Convex for <strong>rear-view</strong> · Concave for <strong>headlight</strong>. Students always swap these. Memorize: <em>"Outside diverging, inside converging."</em></div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 10: REFRACTION -->
+    <!-- =========================== -->
+    <div class="section" id="s10">
+      <div class="section-eyebrow">Section 10 · Optics</div>
+      <h2 class="section-title"><span class="section-num">10</span>Refraction, Lenses &amp; <span class="italic-green">The Eye</span></h2>
+      <div class="section-sub">Myopia vs hypermetropia — the most common BPSC eye question.</div>
+
+      <div class="concept">
+        <div class="concept-head">Refraction &amp; Total Internal Reflection</div>
+        <div class="concept-body">
+          Light bends when it enters a different medium. <span class="formula">n = c/v</span> (refractive index).
+          <ul class="kv">
+            <li><span class="k">Denser to rarer</span><span class="v">Bends <strong>away from</strong> normal</span></li>
+            <li><span class="k">Rarer to denser</span><span class="v">Bends <strong>towards</strong> normal</span></li>
+            <li><span class="k">TIR condition</span><span class="v">Light travels denser → rarer · angle &gt; critical angle</span></li>
+            <li><span class="k">Critical angle of glass</span><span class="v">≈42° (for air-glass)</span></li>
+            <li><span class="k">Critical angle of water</span><span class="v">≈48.6°</span></li>
+            <li><span class="k">Critical angle of diamond</span><span class="v"><strong>24°</strong> (smallest — that's why diamonds sparkle so much)</span></li>
+            <li><span class="k">Applications of TIR</span><span class="v"><strong>Optical fibre</strong> · mirage in deserts · sparkle of diamond · prismatic binoculars · endoscope</span></li>
+            <li><span class="k">Pencil in glass of water appears bent</span><span class="v">Refraction</span></li>
+            <li><span class="k">Pool appears shallower</span><span class="v">Refraction (rarer medium air to denser water)</span></li>
+            <li><span class="k">Stars twinkle, planets don't</span><span class="v">Stars are point sources — atmosphere refracts light variably. Planets have finite size → averages out.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Lenses — Convex &amp; Concave</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Lens</th><th>Type</th><th>Application</th></tr></thead>
+            <tbody>
+              <tr><td>Convex</td><td>Converging (+ve focal length)</td><td>Magnifying glass · camera · projector · <strong>corrects hypermetropia</strong></td></tr>
+              <tr><td>Concave</td><td>Diverging (−ve focal length)</td><td>Galilean telescope · <strong>corrects myopia</strong></td></tr>
+            </tbody>
+          </table>
+          <ul class="kv">
+            <li><span class="k">Power of lens</span><span class="v">P = 1/f (in metres) · unit: <strong>Dioptre (D)</strong></span></li>
+            <li><span class="k">Convex lens — power</span><span class="v">Positive</span></li>
+            <li><span class="k">Concave lens — power</span><span class="v">Negative</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">The Human Eye</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Retina</span><span class="v">Light-sensitive screen at back of eye · contains <strong>rods</strong> (dim light, B&amp;W) and <strong>cones</strong> (bright light, color)</span></li>
+            <li><span class="k">Yellow spot (Fovea/Macula)</span><span class="v">Most sensitive · all cones · sharpest vision</span></li>
+            <li><span class="k">Blind spot</span><span class="v">Where optic nerve enters · NO rods or cones</span></li>
+            <li><span class="k">Iris</span><span class="v">Controls amount of light (changes pupil size)</span></li>
+            <li><span class="k">Accommodation</span><span class="v">Ability of eye lens to change focal length (via ciliary muscles)</span></li>
+            <li><span class="k">Persistence of vision</span><span class="v"><strong>1/16 second</strong> · basis of cinema/movies</span></li>
+            <li><span class="k">Range of vision</span><span class="v">Near point (25 cm) to Far point (infinity)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Eye Defects &amp; Corrections</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Defect</th><th>What Happens</th><th>Image Forms</th><th>Correction</th></tr></thead>
+            <tbody>
+              <tr><td>Myopia (short-sight)</td><td>Can see near, not far</td><td><strong>Before retina</strong></td><td><strong>Concave lens</strong></td></tr>
+              <tr><td>Hypermetropia (long-sight)</td><td>Can see far, not near</td><td><strong>Behind retina</strong></td><td><strong>Convex lens</strong></td></tr>
+              <tr><td>Presbyopia (old age)</td><td>Both — loss of accommodation</td><td>—</td><td><strong>Bifocal lens</strong></td></tr>
+              <tr><td>Astigmatism</td><td>Cornea irregularly curved</td><td>—</td><td><strong>Cylindrical lens</strong></td></tr>
+              <tr><td>Cataract</td><td>Lens becomes opaque</td><td>—</td><td>Surgical (replace lens)</td></tr>
+              <tr><td>Color blindness</td><td>Cones malfunction</td><td>—</td><td>No optical cure (genetic, X-linked, more in males)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="qprobe">
+        <div class="qprobe-q">A person can read newspaper but cannot see distant board. What defect &amp; cure?</div>
+        <div class="qprobe-a"><strong>Myopia (short-sightedness)</strong> · corrected by <strong>concave lens</strong> (diverging).</div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 11: ATMOSPHERIC OPTICS -->
+    <!-- =========================== -->
+    <div class="section" id="s11">
+      <div class="section-eyebrow">Section 11 · Optics</div>
+      <h2 class="section-title"><span class="section-num">11</span>Atmospheric <span class="italic-green">Optics</span></h2>
+      <div class="section-sub">Why sky is blue, sun red at sunset, rainbow — all of it.</div>
+
+      <div class="concept">
+        <div class="concept-head">Scattering of Light <span class="marker">— Tyndall &amp; Rayleigh</span></div>
+        <div class="concept-body">
+          <strong>Rayleigh's law:</strong> Scattering ∝ 1/λ⁴ · <em>Shorter wavelength scatters more.</em>
+          <ul class="kv">
+            <li><span class="k">Why sky appears blue</span><span class="v">Blue (short λ) scatters most by air molecules</span></li>
+            <li><span class="k">Why sun appears red at sunrise/sunset</span><span class="v">Long path through atmosphere → blue scattered away → only red reaches us</span></li>
+            <li><span class="k">Why sun appears white at noon</span><span class="v">Shortest path → all colors reach</span></li>
+            <li><span class="k">Why danger signals are red</span><span class="v">Red scatters least → visible from farthest distance</span></li>
+            <li><span class="k">Sky on Moon appears black</span><span class="v">No atmosphere → no scattering</span></li>
+            <li><span class="k">Tyndall effect</span><span class="v">Scattering by colloidal particles · why beam of sunlight visible in dusty room · seen in fog/smoke</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Dispersion &amp; Rainbow</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Dispersion</span><span class="v">Splitting of white light into 7 colors via <strong>prism</strong> · proved by Newton</span></li>
+            <li><span class="k">Recombination</span><span class="v">Second prism inverted → recombines into white (Newton's experiment)</span></li>
+            <li><span class="k">Most bent</span><span class="v">Violet (smallest λ)</span></li>
+            <li><span class="k">Least bent</span><span class="v">Red (largest λ)</span></li>
+            <li><span class="k">Rainbow process</span><span class="v"><strong>Refraction + Dispersion + Total Internal Reflection + Refraction</strong> in water droplets</span></li>
+            <li><span class="k">Primary rainbow</span><span class="v">1 internal reflection · 42° angle · red outside, violet inside</span></li>
+            <li><span class="k">Secondary rainbow</span><span class="v">2 internal reflections · 51° · order reversed (violet outside, red inside) · fainter</span></li>
+            <li><span class="k">Sun position for rainbow</span><span class="v">Behind observer</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Other Phenomena</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Mirage</span><span class="v">TIR in hot desert air · layers of air at different temps act as different media</span></li>
+            <li><span class="k">Looming</span><span class="v">Opposite of mirage (in cold polar regions) · distant objects appear lifted</span></li>
+            <li><span class="k">Twinkling of stars</span><span class="v">Atmospheric refraction (continuously changing)</span></li>
+            <li><span class="k">Apparent flattening of sun at sunset</span><span class="v">Refraction in atmosphere</span></li>
+            <li><span class="k">Sun visible before actual sunrise</span><span class="v">Refraction · ~2 minutes earlier · same after sunset</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 12: CURRENT ELECTRICITY -->
+    <!-- =========================== -->
+    <div class="section" id="s12">
+      <div class="section-eyebrow">Section 12 · Electricity</div>
+      <h2 class="section-title"><span class="section-num">12</span>Current <span class="italic-green">Electricity</span></h2>
+      <div class="section-sub">Ohm's law, series/parallel, AC vs DC — direct questions, no derivations.</div>
+
+      <div class="concept">
+        <div class="concept-head">Ohm's Law &amp; Resistance</div>
+        <div class="concept-body">
+          <span class="formula">V = IR</span> · Voltage = Current × Resistance.
+          <ul class="kv">
+            <li><span class="k">Current (I)</span><span class="v">Rate of flow of charge · SI: <strong>Ampere (A) = C/s</strong></span></li>
+            <li><span class="k">Voltage / EMF</span><span class="v">SI: <strong>Volt (V) = J/C</strong></span></li>
+            <li><span class="k">Resistance (R)</span><span class="v">SI: <strong>Ohm (Ω)</strong> · R = ρL/A</span></li>
+            <li><span class="k">Best conductor</span><span class="v"><strong>Silver</strong> &gt; Copper &gt; Gold &gt; Aluminium</span></li>
+            <li><span class="k">Why copper used in wires</span><span class="v">Good conductivity + much cheaper than silver</span></li>
+            <li><span class="k">Tungsten in bulb</span><span class="v">Very high melting point (~3400°C); high resistance</span></li>
+            <li><span class="k">Nichrome in heaters/iron</span><span class="v">High resistance; doesn't oxidize easily at high temp</span></li>
+            <li><span class="k">Resistance of insulators</span><span class="v">Very high (rubber, glass, dry wood)</span></li>
+            <li><span class="k">Resistance of conductors with temp</span><span class="v"><strong>Increases</strong> with temperature</span></li>
+            <li><span class="k">Resistance of semiconductors with temp</span><span class="v"><strong>Decreases</strong> with temperature</span></li>
+            <li><span class="k">Superconductor</span><span class="v">Zero resistance at very low temp (near 0 K)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Series vs Parallel</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Property</th><th>Series</th><th>Parallel</th></tr></thead>
+            <tbody>
+              <tr><td>Current</td><td>Same in all</td><td>Different (divides)</td></tr>
+              <tr><td>Voltage</td><td>Divides</td><td>Same across all</td></tr>
+              <tr><td>Effective R</td><td>R = R₁ + R₂ + ...</td><td>1/R = 1/R₁ + 1/R₂ + ...</td></tr>
+              <tr><td>Failure of one</td><td>All stop (old Xmas lights)</td><td>Others keep working</td></tr>
+              <tr><td>Used in</td><td>—</td><td><strong>Home wiring</strong> (each appliance needs full voltage)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Power &amp; Energy</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Electric power</span><span class="v"><span class="formula">P = VI = I²R = V²/R</span> · SI: <strong>Watt (W)</strong></span></li>
+            <li><span class="k">Commercial unit of energy</span><span class="v"><strong>Kilowatt-hour (kWh) = 1 Unit</strong></span></li>
+            <li><span class="k">1 kWh in joules</span><span class="v">3.6 × 10⁶ J</span></li>
+            <li><span class="k">Energy bill calculation</span><span class="v">Units = Power (kW) × Time (hours)</span></li>
+            <li><span class="k">100 W bulb for 10 hours</span><span class="v">= 1 kWh = 1 unit</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">AC vs DC</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Property</th><th>AC</th><th>DC</th></tr></thead>
+            <tbody>
+              <tr><td>Direction</td><td>Alternates</td><td>One direction</td></tr>
+              <tr><td>Sources</td><td>Generator, power plant</td><td>Battery, cell, solar panel</td></tr>
+              <tr><td>Transformer works on</td><td><strong>AC only</strong></td><td>No</td></tr>
+              <tr><td>India domestic supply</td><td><strong>220 V, 50 Hz</strong></td><td>—</td></tr>
+              <tr><td>USA domestic supply</td><td>110 V, 60 Hz</td><td>—</td></tr>
+              <tr><td>Long-distance transmission</td><td><strong>AC (easier to step up)</strong></td><td>Less efficient</td></tr>
+              <tr><td>More dangerous</td><td><strong>AC</strong> (causes muscle contraction at 50 Hz)</td><td>DC of same V less harmful</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 13: DOMESTIC ELECTRICITY -->
+    <!-- =========================== -->
+    <div class="section" id="s13">
+      <div class="section-eyebrow">Section 13 · Electricity</div>
+      <h2 class="section-title"><span class="section-num">13</span>Domestic <span class="italic-green">Electricity</span></h2>
+      <div class="section-sub">Fuse, MCB, Earthing — questions framed around safety.</div>
+
+      <div class="concept">
+        <div class="concept-head">Fuse · MCB · Earthing</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Fuse</span><span class="v">Thin wire of <strong>tin-lead alloy</strong> · low melting point · placed in <strong>live wire</strong> · melts on overload/short-circuit, breaking circuit</span></li>
+            <li><span class="k">MCB</span><span class="v"><strong>Miniature Circuit Breaker</strong> · reusable replacement for fuse · switches off on overload</span></li>
+            <li><span class="k">Earthing (Grounding)</span><span class="v"><strong>Green wire</strong> · connects metallic body of appliance to ground · in case of leakage, current flows to earth (not through user)</span></li>
+            <li><span class="k">Live wire</span><span class="v">Red/Brown · brings current from supply</span></li>
+            <li><span class="k">Neutral wire</span><span class="v">Black/Blue · return path</span></li>
+            <li><span class="k">Earth wire</span><span class="v">Green/Yellow-green</span></li>
+            <li><span class="k">Refrigerator/AC has 3-pin plug</span><span class="v">3rd pin (largest) = earth pin</span></li>
+            <li><span class="k">Birds sit on wires safely</span><span class="v">Both feet on same wire → no potential difference → no current</span></li>
+            <li><span class="k">Domestic wiring is</span><span class="v"><strong>Parallel</strong> (each device gets full 220V)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 14: MAGNETISM -->
+    <!-- =========================== -->
+    <div class="section" id="s14">
+      <div class="section-eyebrow">Section 14 · Electromagnetism</div>
+      <h2 class="section-title"><span class="section-num">14</span>Magnetism &amp; <span class="italic-green">EMI</span></h2>
+      <div class="section-sub">Oersted, Faraday, transformer — the trio.</div>
+
+      <div class="concept">
+        <div class="concept-head">Magnetism Basics</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Magnetic field around current</span><span class="v">Discovered by <strong>Oersted</strong> (1820)</span></li>
+            <li><span class="k">Right-hand thumb rule</span><span class="v">Thumb = current direction; fingers curl = magnetic field direction</span></li>
+            <li><span class="k">Fleming's left-hand rule</span><span class="v">For force on current-carrying conductor in magnetic field (<strong>motor</strong>)</span></li>
+            <li><span class="k">Fleming's right-hand rule</span><span class="v">For induced current (<strong>generator/dynamo</strong>)</span></li>
+            <li><span class="k">Earth's magnetic north pole</span><span class="v">Near <strong>geographic SOUTH</strong> (that's why N of compass points geographic N)</span></li>
+            <li><span class="k">Diamagnetic</span><span class="v">Weakly repelled by magnet · bismuth, copper, water, gold</span></li>
+            <li><span class="k">Paramagnetic</span><span class="v">Weakly attracted · aluminium, platinum, oxygen</span></li>
+            <li><span class="k">Ferromagnetic</span><span class="v">Strongly attracted · <strong>iron, cobalt, nickel</strong></span></li>
+            <li><span class="k">Magnet loses magnetism on</span><span class="v">Heating, hammering</span></li>
+            <li><span class="k">Curie temperature</span><span class="v">Above this, ferromagnetic becomes paramagnetic (iron: 770°C)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Electromagnetic Induction (Faraday's Discovery)</div>
+        <div class="concept-body">
+          When magnetic flux through a coil changes, an EMF is induced.
+          <ul class="kv">
+            <li><span class="k">Discovered by</span><span class="v"><strong>Michael Faraday</strong> (1831)</span></li>
+            <li><span class="k">Lenz's law</span><span class="v">Induced current opposes the change causing it (energy conservation)</span></li>
+            <li><span class="k">Generator (Dynamo)</span><span class="v">Mechanical → Electrical (uses EMI) · Fleming's right hand rule</span></li>
+            <li><span class="k">Electric Motor</span><span class="v">Electrical → Mechanical · Fleming's left hand rule</span></li>
+            <li><span class="k">Transformer</span><span class="v">Changes AC voltage · uses <strong>mutual induction</strong> · works only on AC</span></li>
+            <li><span class="k">Step-up transformer</span><span class="v">N_s &gt; N_p · ↑V, ↓I · used in power transmission</span></li>
+            <li><span class="k">Step-down transformer</span><span class="v">N_s &lt; N_p · ↓V, ↑I · used in domestic supply</span></li>
+            <li><span class="k">Why AC for transmission</span><span class="v">Easily stepped up to high voltage → less current → less I²R loss</span></li>
+            <li><span class="k">Electromagnet uses</span><span class="v">Soft iron (loses magnetism quickly) · ferromagnetic, high permeability</span></li>
+            <li><span class="k">Permanent magnet uses</span><span class="v">Steel (retains magnetism)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="qprobe">
+        <div class="qprobe-q">Why is the core of transformer laminated?</div>
+        <div class="qprobe-a">To reduce <strong>eddy current losses</strong>. Thin laminations break eddy current paths.</div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 15: ATOM -->
+    <!-- =========================== -->
+    <div class="section" id="s15">
+      <div class="section-eyebrow">Section 15 · Modern Physics</div>
+      <h2 class="section-title"><span class="section-num">15</span>Atom &amp; <span class="italic-green">Nucleus</span></h2>
+      <div class="section-sub">Discoveries — names and years; the BPSC standard.</div>
+
+      <div class="concept">
+        <div class="concept-head">Discoveries — A Crucial Table</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Discovery</th><th>Scientist</th><th>Year</th></tr></thead>
+            <tbody>
+              <tr><td>Electron</td><td><strong>J.J. Thomson</strong></td><td>1897</td></tr>
+              <tr><td>Proton</td><td><strong>Goldstein</strong> (canal rays); identified as proton by Rutherford</td><td>1886 / 1919</td></tr>
+              <tr><td>Neutron</td><td><strong>James Chadwick</strong></td><td>1932</td></tr>
+              <tr><td>Nucleus</td><td><strong>Ernest Rutherford</strong> (gold foil experiment)</td><td>1911</td></tr>
+              <tr><td>Atomic model (Planetary)</td><td>Rutherford → improved by <strong>Niels Bohr</strong></td><td>1913</td></tr>
+              <tr><td>Radioactivity</td><td><strong>Henri Becquerel</strong></td><td>1896</td></tr>
+              <tr><td>Radium &amp; Polonium</td><td>Marie &amp; Pierre Curie</td><td>1898</td></tr>
+              <tr><td>X-rays</td><td>Wilhelm Röntgen</td><td>1895</td></tr>
+              <tr><td>Photoelectric effect (theory)</td><td><strong>Albert Einstein</strong> (Nobel 1921)</td><td>1905</td></tr>
+              <tr><td>Quantum theory</td><td>Max Planck</td><td>1900</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Atomic Number, Mass Number, Isotopes</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Atomic Number (Z)</span><span class="v">Number of protons · defines the element</span></li>
+            <li><span class="k">Mass Number (A)</span><span class="v">Protons + Neutrons</span></li>
+            <li><span class="k">Isotopes</span><span class="v">Same Z, different A · e.g. ¹H, ²H (deuterium), ³H (tritium); ¹²C, ¹³C, ¹⁴C</span></li>
+            <li><span class="k">Isobars</span><span class="v">Same A, different Z · e.g. ⁴⁰Ar, ⁴⁰K, ⁴⁰Ca</span></li>
+            <li><span class="k">Isotones</span><span class="v">Same number of neutrons</span></li>
+            <li><span class="k">Isotopes are chemically</span><span class="v">Identical (same Z, same electron config)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 16: RADIOACTIVITY -->
+    <!-- =========================== -->
+    <div class="section" id="s16">
+      <div class="section-eyebrow">Section 16 · Modern Physics</div>
+      <h2 class="section-title"><span class="section-num">16</span>Radioactivity &amp; <span class="italic-green">Nuclear</span></h2>
+      <div class="section-sub">Alpha-Beta-Gamma + Fission vs Fusion. Two facts, six questions.</div>
+
+      <div class="concept">
+        <div class="concept-head">Types of Radiation</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Radiation</th><th>Nature</th><th>Charge</th><th>Penetration</th><th>Stopped by</th></tr></thead>
+            <tbody>
+              <tr><td>Alpha (α)</td><td>Helium nucleus (2p+2n)</td><td>+2</td><td>Least</td><td>Paper / skin</td></tr>
+              <tr><td>Beta (β)</td><td>Fast electron</td><td>−1</td><td>Medium</td><td>Aluminium sheet</td></tr>
+              <tr><td>Gamma (γ)</td><td>EM wave (high freq)</td><td>0</td><td>Most</td><td>Thick lead / concrete</td></tr>
+            </tbody>
+          </table>
+          <ul class="kv">
+            <li><span class="k">Ionizing power</span><span class="v">α &gt; β &gt; γ</span></li>
+            <li><span class="k">Penetrating power</span><span class="v">γ &gt; β &gt; α</span></li>
+            <li><span class="k">Half-life</span><span class="v">Time for half the nuclei to decay · characteristic of isotope</span></li>
+            <li><span class="k">Carbon dating</span><span class="v">Uses <strong>C-14</strong> isotope (half-life ~5730 years)</span></li>
+            <li><span class="k">Rock dating</span><span class="v">Uses <strong>U-238 / Pb-206</strong> (half-life 4.5 billion years)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">Fission vs Fusion</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Aspect</th><th>Fission</th><th>Fusion</th></tr></thead>
+            <tbody>
+              <tr><td>Process</td><td>Heavy nucleus splits</td><td>Light nuclei combine</td></tr>
+              <tr><td>Fuel</td><td><strong>U-235, Pu-239</strong></td><td><strong>Hydrogen isotopes (D, T)</strong></td></tr>
+              <tr><td>Temperature needed</td><td>Normal conditions OK</td><td>Millions of degrees</td></tr>
+              <tr><td>Energy released</td><td>Large</td><td>Much larger per kg</td></tr>
+              <tr><td>Examples</td><td>Atomic bomb · Nuclear reactor</td><td>Hydrogen bomb · Sun &amp; stars</td></tr>
+              <tr><td>Byproducts</td><td>Radioactive waste</td><td>Cleaner</td></tr>
+            </tbody>
+          </table>
+          <ul class="kv">
+            <li><span class="k">Source of Sun's energy</span><span class="v"><strong>Nuclear fusion</strong> (H → He)</span></li>
+            <li><span class="k">First atomic bomb (test)</span><span class="v">USA, 1945 (Trinity, New Mexico)</span></li>
+            <li><span class="k">Hiroshima bomb</span><span class="v"><strong>Uranium-235</strong> (Little Boy)</span></li>
+            <li><span class="k">Nagasaki bomb</span><span class="v"><strong>Plutonium-239</strong> (Fat Man)</span></li>
+            <li><span class="k">India's first nuclear test</span><span class="v"><strong>Pokhran-I (Smiling Buddha), 1974</strong></span></li>
+            <li><span class="k">Pokhran-II</span><span class="v">May 1998 (Operation Shakti)</span></li>
+            <li><span class="k">First Indian nuclear reactor</span><span class="v"><strong>Apsara</strong> (1956, Trombay)</span></li>
+            <li><span class="k">Moderator in reactor</span><span class="v">Slows neutrons · <strong>heavy water (D₂O)</strong> or graphite</span></li>
+            <li><span class="k">Control rod</span><span class="v">Absorbs neutrons · <strong>Cadmium / Boron</strong></span></li>
+            <li><span class="k">Coolant in reactor</span><span class="v">Water / heavy water / molten sodium</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 17: SEMICONDUCTORS -->
+    <!-- =========================== -->
+    <div class="section" id="s17">
+      <div class="section-eyebrow">Section 17 · Modern Physics</div>
+      <h2 class="section-title"><span class="section-num">17</span>Semiconductors &amp; <span class="italic-green">Lasers</span></h2>
+      <div class="section-sub">Diode, transistor, LASER acronym — the modern essentials.</div>
+
+      <div class="concept">
+        <div class="concept-head">Semiconductors</div>
+        <div class="concept-body">
+          Conductivity between conductor and insulator. Examples: <strong>Silicon (Si), Germanium (Ge)</strong>.
+          <ul class="kv">
+            <li><span class="k">Intrinsic semiconductor</span><span class="v">Pure (Si, Ge)</span></li>
+            <li><span class="k">Extrinsic semiconductor</span><span class="v">Doped to increase conductivity</span></li>
+            <li><span class="k">n-type</span><span class="v">Doped with pentavalent (P, As) · majority carriers = electrons</span></li>
+            <li><span class="k">p-type</span><span class="v">Doped with trivalent (B, Al) · majority carriers = holes</span></li>
+            <li><span class="k">Diode (p-n junction)</span><span class="v">Allows current in one direction · used in rectifiers</span></li>
+            <li><span class="k">Rectifier</span><span class="v">Converts AC → DC</span></li>
+            <li><span class="k">Transistor</span><span class="v">Three-terminal · invented 1947 (Bell Labs)</span></li>
+            <li><span class="k">LED</span><span class="v"><strong>Light Emitting Diode</strong> · forward biased p-n junction</span></li>
+            <li><span class="k">Solar cell</span><span class="v">Photovoltaic effect · light → electricity</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">LASER</div>
+        <div class="concept-body">
+          <strong>L</strong>ight <strong>A</strong>mplification by <strong>S</strong>timulated <strong>E</strong>mission of <strong>R</strong>adiation.
+          <ul class="kv">
+            <li><span class="k">Properties</span><span class="v">Monochromatic · coherent · highly directional · intense</span></li>
+            <li><span class="k">First laser</span><span class="v">Theodore Maiman, 1960 (ruby laser)</span></li>
+            <li><span class="k">Applications</span><span class="v">Eye surgery (LASIK) · barcode scanners · CD/DVD · optical communication · cutting metals · holography · printing · range-finding</span></li>
+            <li><span class="k">Maser</span><span class="v">Microwave version of laser</span></li>
+            <li><span class="k">Optical fibre</span><span class="v">Uses <strong>TIR</strong> · made of pure silica glass · used in high-speed data communication, endoscopy</span></li>
+            <li><span class="k">Holography</span><span class="v">3D imaging using laser · invented by Dennis Gabor (Nobel 1971)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 18: SCIENTISTS -->
+    <!-- =========================== -->
+    <div class="section" id="s18">
+      <div class="section-eyebrow">Section 18 · Exam Armory</div>
+      <h2 class="section-title"><span class="section-num">18</span>Indian Physicists &amp; <span class="italic-green">World Names</span></h2>
+      <div class="section-sub">Father-of-X questions. Nobel Prize Indians. Memorize every name.</div>
+
+      <div class="concept">
+        <div class="concept-head">Indian Physicists — Must Remember</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Scientist</th><th>Known For</th></tr></thead>
+            <tbody>
+              <tr><td>C.V. Raman</td><td><strong>Raman Effect (scattering of light) · Nobel Prize 1930</strong> — first Indian Nobel in Science</td></tr>
+              <tr><td>J.C. Bose</td><td>Plant response to stimuli · <strong>Crescograph</strong> · microwave research · radio waves</td></tr>
+              <tr><td>Homi J. Bhabha</td><td><strong>Father of Indian Nuclear Programme</strong> · founded TIFR (1945) · BARC named after him</td></tr>
+              <tr><td>Vikram Sarabhai</td><td><strong>Father of Indian Space Programme</strong> · founded ISRO (1969) · PRL</td></tr>
+              <tr><td>A.P.J. Abdul Kalam</td><td><strong>Missile Man of India</strong> · led Pokhran-II · 11th President</td></tr>
+              <tr><td>Satyendra Nath Bose</td><td><strong>Bose-Einstein statistics</strong> · <strong>boson</strong> particle named after him</td></tr>
+              <tr><td>Meghnad Saha</td><td><strong>Saha equation</strong> (thermal ionization) · stellar spectra</td></tr>
+              <tr><td>S. Chandrasekhar</td><td><strong>Nobel Prize 1983</strong> · <strong>Chandrasekhar limit</strong> (1.4 solar masses) · stellar evolution</td></tr>
+              <tr><td>Hargobind Khorana</td><td>Nobel 1968 (Medicine) · genetic code (this is biology, but often asked)</td></tr>
+              <tr><td>Venkatraman Ramakrishnan</td><td>Nobel 2009 (Chemistry) · ribosome structure</td></tr>
+              <tr><td>Abhay Ashtekar</td><td>Loop quantum gravity</td></tr>
+              <tr><td>K.S. Krishnan</td><td>Worked with C.V. Raman on Raman effect</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">World Scientists — Inventions/Discoveries</div>
+        <div class="concept-body">
+          <table class="tbl">
+            <thead><tr><th>Discovery / Invention</th><th>Scientist</th></tr></thead>
+            <tbody>
+              <tr><td>Theory of Gravitation, Laws of Motion</td><td>Isaac Newton</td></tr>
+              <tr><td>Theory of Relativity, E=mc², Photoelectric Effect</td><td>Albert Einstein</td></tr>
+              <tr><td>Telephone</td><td>Alexander Graham Bell</td></tr>
+              <tr><td>Telegraph</td><td>Samuel Morse</td></tr>
+              <tr><td>Electric Bulb, Phonograph</td><td>Thomas Edison</td></tr>
+              <tr><td>Radio</td><td>G. Marconi (with J.C. Bose's contribution)</td></tr>
+              <tr><td>Television</td><td>John Logie Baird</td></tr>
+              <tr><td>Steam Engine</td><td>James Watt</td></tr>
+              <tr><td>Dynamo / Electromagnetic Induction</td><td>Michael Faraday</td></tr>
+              <tr><td>X-rays</td><td>W.C. Röntgen</td></tr>
+              <tr><td>Radioactivity</td><td>Henri Becquerel</td></tr>
+              <tr><td>Radium</td><td>Marie &amp; Pierre Curie</td></tr>
+              <tr><td>Penicillin</td><td>Alexander Fleming</td></tr>
+              <tr><td>Smallpox Vaccine</td><td>Edward Jenner</td></tr>
+              <tr><td>Polio Vaccine</td><td>Jonas Salk</td></tr>
+              <tr><td>Periodic Table</td><td>Dmitri Mendeleev</td></tr>
+              <tr><td>Aeroplane</td><td>Wright Brothers (1903)</td></tr>
+              <tr><td>Computer (mechanical)</td><td>Charles Babbage (Father of Computer)</td></tr>
+              <tr><td>WWW</td><td>Tim Berners-Lee (1989)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 19: TRAP PATTERNS -->
+    <!-- =========================== -->
+    <div class="section" id="s19">
+      <div class="section-eyebrow">Section 19 · Exam Armory</div>
+      <h2 class="section-title"><span class="section-num">19</span>BPSC <span class="italic-green">Trap Patterns</span></h2>
+      <div class="section-sub">The 20 trickiest physics questions BPSC consistently asks — pre-loaded answers.</div>
+
+      <div class="concept">
+        <div class="concept-body">
+          <div class="qprobe">
+            <div class="qprobe-q">First Indian to win Nobel Prize in Physics?</div>
+            <div class="qprobe-a"><strong>C.V. Raman (1930)</strong> — for Raman Effect. (NOT Tagore — he won in Literature.)</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Father of Indian Space Programme?</div>
+            <div class="qprobe-a"><strong>Vikram Sarabhai</strong> · NOT APJ Abdul Kalam (he is "Missile Man").</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Father of Indian Nuclear Programme?</div>
+            <div class="qprobe-a"><strong>Homi J. Bhabha</strong>.</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Who discovered radioactivity?</div>
+            <div class="qprobe-a"><strong>Henri Becquerel (1896)</strong> · NOT Marie Curie (she discovered radium &amp; polonium, 1898).</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Speed of light in vacuum?</div>
+            <div class="qprobe-a"><strong>3 × 10⁸ m/s</strong> (precisely 299,792,458 m/s).</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">1 Horsepower equals how many watts?</div>
+            <div class="qprobe-a"><strong>746 W</strong>.</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Audible range of human ear?</div>
+            <div class="qprobe-a"><strong>20 Hz to 20,000 Hz</strong>.</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Mirror used in vehicle rear-view?</div>
+            <div class="qprobe-a"><strong>Convex</strong> (gives wider field of view; image always erect &amp; diminished).</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Mirror used in car/torch headlights?</div>
+            <div class="qprobe-a"><strong>Concave</strong> (parabolic — sends parallel beam).</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Density of water is maximum at?</div>
+            <div class="qprobe-a"><strong>4°C</strong> (anomalous expansion below 4°C).</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Value of g at Earth's centre?</div>
+            <div class="qprobe-a"><strong>Zero</strong> (mass pulls equally in all directions).</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Eye defect corrected by concave lens?</div>
+            <div class="qprobe-a"><strong>Myopia</strong> (short-sightedness). Convex lens corrects Hypermetropia.</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Why is sky blue?</div>
+            <div class="qprobe-a"><strong>Rayleigh scattering</strong> · shorter wavelengths (blue) scatter more.</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Why is sun red at sunrise/sunset?</div>
+            <div class="qprobe-a">Long atmospheric path scatters away short wavelengths; only red survives.</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Source of Sun's energy?</div>
+            <div class="qprobe-a"><strong>Nuclear fusion</strong> (Hydrogen → Helium), NOT fission.</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Element used in atomic bomb?</div>
+            <div class="qprobe-a"><strong>Uranium-235</strong> or <strong>Plutonium-239</strong>.</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Moderator used in nuclear reactor?</div>
+            <div class="qprobe-a"><strong>Heavy water (D₂O)</strong> or graphite — slows down neutrons.</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Best conductor of electricity?</div>
+            <div class="qprobe-a"><strong>Silver</strong> · followed by Copper. (Copper is used in wires because it's cheaper.)</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Why does a swimming pool appear shallower than it is?</div>
+            <div class="qprobe-a"><strong>Refraction</strong> of light from denser water to rarer air.</div>
+          </div>
+          <div class="qprobe">
+            <div class="qprobe-q">Why doesn't sound travel in vacuum?</div>
+            <div class="qprobe-a">Sound is a <strong>mechanical wave</strong> — needs a medium for propagation.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================== -->
+    <!-- SECTION 20: LAST MILE -->
+    <!-- =========================== -->
+    <div class="section" id="s20">
+      <div class="section-eyebrow">Section 20 · Exam Armory</div>
+      <h2 class="section-title"><span class="section-num">20</span>Last-Mile <span class="italic-green">Revision Sheet</span></h2>
+      <div class="section-sub">The 60 numbers, names &amp; pairs to revise on exam morning.</div>
+
+      <div class="concept">
+        <div class="concept-head">The Numbers</div>
+        <div class="concept-body">
+          <div class="fact-grid">
+            <div class="fact"><span class="fact-label">Speed of light</span><span class="fact-val">3 × 10⁸ m/s</span></div>
+            <div class="fact"><span class="fact-label">Speed of sound (air)</span><span class="fact-val">343 m/s</span></div>
+            <div class="fact"><span class="fact-label">g (avg)</span><span class="fact-val">9.8 m/s²</span></div>
+            <div class="fact"><span class="fact-label">Escape velocity</span><span class="fact-val">11.2 km/s</span></div>
+            <div class="fact"><span class="fact-label">1 HP</span><span class="fact-val">746 W</span></div>
+            <div class="fact"><span class="fact-label">1 kWh</span><span class="fact-val">3.6 × 10⁶ J</span></div>
+            <div class="fact"><span class="fact-label">1 atm</span><span class="fact-val">760 mm Hg</span></div>
+            <div class="fact"><span class="fact-label">Audible range</span><span class="fact-val">20 Hz–20 kHz</span></div>
+            <div class="fact"><span class="fact-label">Water max density</span><span class="fact-val">at 4°C</span></div>
+            <div class="fact"><span class="fact-label">Body temp</span><span class="fact-val">37°C / 98.6°F</span></div>
+            <div class="fact"><span class="fact-label">Latent heat ice</span><span class="fact-val">80 cal/g</span></div>
+            <div class="fact"><span class="fact-label">Latent heat steam</span><span class="fact-val">540 cal/g</span></div>
+            <div class="fact"><span class="fact-label">Sp. heat water</span><span class="fact-val">1 cal/g·°C</span></div>
+            <div class="fact"><span class="fact-label">Geo-sat altitude</span><span class="fact-val">36,000 km</span></div>
+            <div class="fact"><span class="fact-label">Persistence of vision</span><span class="fact-val">1/16 sec</span></div>
+            <div class="fact"><span class="fact-label">India domestic</span><span class="fact-val">220 V, 50 Hz</span></div>
+            <div class="fact"><span class="fact-label">Iceberg above</span><span class="fact-val">1/10</span></div>
+            <div class="fact"><span class="fact-label">Moon weight</span><span class="fact-val">1/6 of Earth</span></div>
+            <div class="fact"><span class="fact-label">Critical angle (diamond)</span><span class="fact-val">24°</span></div>
+            <div class="fact"><span class="fact-label">Near point of eye</span><span class="fact-val">25 cm</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="concept">
+        <div class="concept-head">The Pairs (Don't Confuse)</div>
+        <div class="concept-body">
+          <ul class="kv">
+            <li><span class="k">Convex mirror</span><span class="v">Rear-view of vehicles</span></li>
+            <li><span class="k">Concave mirror</span><span class="v">Headlight of vehicles, shaving</span></li>
+            <li><span class="k">Convex lens</span><span class="v">Hypermetropia (long-sight)</span></li>
+            <li><span class="k">Concave lens</span><span class="v">Myopia (short-sight)</span></li>
+            <li><span class="k">SONAR</span><span class="v">Ultrasound (underwater)</span></li>
+            <li><span class="k">RADAR</span><span class="v">Radio waves (planes)</span></li>
+            <li><span class="k">Sun energy</span><span class="v">Fusion (NOT fission)</span></li>
+            <li><span class="k">Nuclear reactor</span><span class="v">Fission</span></li>
+            <li><span class="k">H-bomb</span><span class="v">Fusion</span></li>
+            <li><span class="k">Atomic bomb</span><span class="v">Fission</span></li>
+            <li><span class="k">Father of Nuclear (India)</span><span class="v">Homi Bhabha</span></li>
+            <li><span class="k">Father of Space (India)</span><span class="v">Vikram Sarabhai</span></li>
+            <li><span class="k">Missile Man</span><span class="v">APJ Abdul Kalam</span></li>
+            <li><span class="k">Raman Effect</span><span class="v">C.V. Raman (1930 Nobel)</span></li>
+            <li><span class="k">Chandrasekhar limit</span><span class="v">S. Chandrasekhar (1983 Nobel)</span></li>
+            <li><span class="k">Crescograph</span><span class="v">J.C. Bose</span></li>
+            <li><span class="k">Periodic table</span><span class="v">Mendeleev</span></li>
+            <li><span class="k">Penicillin</span><span class="v">Alexander Fleming</span></li>
+            <li><span class="k">Discovered nucleus</span><span class="v">Rutherford (1911)</span></li>
+            <li><span class="k">Discovered electron</span><span class="v">J.J. Thomson (1897)</span></li>
+            <li><span class="k">Discovered neutron</span><span class="v">James Chadwick (1932)</span></li>
+            <li><span class="k">Discovered radioactivity</span><span class="v">Henri Becquerel (1896)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout">
+        <div class="callout-title">Final Coach Note</div>
+        <div class="callout-body">
+          Don't try to memorize this in one sitting. <strong>Revise this part 4 times before September 2026</strong> — once now, once after 30 days, once 2 weeks before the exam, once on D-1 (last-mile sheet only). Your engineering background already gives you intuition for <em>why</em> things work; BPSC tests <em>which</em> works where. Anchor on the facts in green — those are the answer keys to most prelims questions.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-eyebrow">★★ End of Part I · Next: Chemistry</div>
+    <div class="footer-title">After Part I, Physics is <span class="italic-green">fully locked</span>.</div>
+    <div class="footer-text">
+      Combined with Bihar GS (40+) and General Studies of national importance, your Physics floor is set at 3–5/5. Part II — Chemistry will follow next: atomic structure, periodic table, chemical bonding, acids–bases–salts, metals/non-metals, carbon compounds, everyday chemistry, fertilizers, fuels &amp; pollution. Same density. Same trap-mapping. Same zero-miss design. Tell me when to start.
+    </div>
+  </footer>
+
+</main>
+</div>
+</body>
+</html>
