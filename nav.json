@@ -225,7 +225,50 @@
 
       ]
     },
+    {
+      "name": "GS",
+            "icon": "🏛",
 
+      "sections": [
+
+        {
+          "title": "Physics",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/GS/physics/core-1.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/history/tests/buddhism-test.html"
+            }
+
+          ]
+        },
+
+        {
+          "title": "Chemistry",
+
+          "items": [
+
+            {
+              "name": "📘 Core",
+              "file": "pages/history/maurya.html"
+            },
+
+            {
+              "name": "📝 Test",
+              "file": "pages/history/tests/maurya-test.html"
+            }
+
+          ]
+        }
+
+      ]
+    },
     {
       "name": "History",
       "icon": "🏛",
